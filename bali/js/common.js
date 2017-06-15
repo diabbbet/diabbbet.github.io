@@ -21,4 +21,11 @@ $(function() {
 		]
 	});
 
+	$('.about-slider').slick({
+		slidesToShow: 2,
+		appendArrows: $('.slider-buttons'),
+		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
+		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
+	});
+
 });
