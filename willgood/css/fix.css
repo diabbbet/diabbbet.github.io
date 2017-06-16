@@ -1,0 +1,26 @@
+section.entry {
+	background-attachment: fixed;
+}
+
+.title {
+	background-image: url(../img/header-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: 100%;
+	background-position: center center;
+}
+
+.header .header-triangle {
+	z-index: 10;
+}
+
+section.title .red-line {
+	z-index: 0;
+}
+
+.video-how--first {
+	pointer-events: auto;
+}
+
+.video-how--second {
+	pointer-events: auto;
+}
