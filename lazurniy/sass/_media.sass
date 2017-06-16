@@ -1,0 +1,639 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1440px)
+	.footer
+		.footerTop
+			height: calc(100% - 200px)
+			.container-fluid
+				height: 100%
+				.col-lg-7
+					padding-right: 0
+					padding-left: 0
+				>.row
+					height: 100%
+					.salesDepartment
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						flex-direction: column
+						justify-content: space-between
+						height: 50%
+						padding-left: 30px
+						background-color: #f4fdff
+						padding-top: 20px
+						padding-bottom: 20px
+						a
+							color: $accent
+						h2
+							font-family: $default-font
+							font-size: 28px
+							font-weight: 900
+							line-height: 1.2
+							text-transform: uppercase
+							color: $accent
+							margin-bottom: 0
+						p
+							font-family: $default-font
+							font-size: 14px
+							font-weight: 700
+							color: $accent
+							margin-top: 0
+							margin-bottom: 0
+						.phone
+							font-family: $accent-font
+							font-size: 36px
+							font-weight: 400
+							text-transform: uppercase
+							margin-top: 0
+							color: $accent
+
+	.areaCarousel
+		.slides
+			img
+				max-height: 300px
+
+	.footer .footerTop .container-fluid > .row .questions form input[type="submit"]
+		margin-top: 20px
+	.footer .footerTop .container-fluid > .row .questions h3
+		margin: 0
+		font-size: 24px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.navigationWrapp
+		display: none
+
+	.modalPopup
+		display: none
+
+	.firstSection
+		.fp-tableCell
+			.headerDownLine
+				.col-lg-4
+					.sale
+						font-size: 28px
+					.phone
+						a
+							font-size: 28px
+
+	section.layouts
+		.roomBg
+			height: 41.666667vh
+			background-size: cover
+		h2
+			margin-top: 60px
+			text-align: center
+			font-size: 30px
+
+	.lauyoutsCarousel
+		.slides
+			img
+				height: 250px
+			p
+				font-size: 20px
+				margin: 0
+			.underRoom
+				font-size: 30px
+		.room
+			.col-lg-5
+				height: 58.333333vh
+	
+
+
+	.areaCarousel
+		margin-top: 0
+
+	a.prevArrow,
+	a.nextArrow
+		top: 30%
+		left: 0
+		opacity: 1
+	a.nextArrow
+		right: 0
+		left: inherit
+	body
+		.slick-dots
+			width: 100%
+			top: 44vh
+			right: 1%
+			left: 1%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+
+	.galleryCarousel
+		display: none
+	.galleryCarouselMobile
+		display: block
+		.gallerySlide
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+	.gallery
+		.galleryWrapper
+			margin-left: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			h2
+				margin-bottom: 60px
+			img
+				height: 500px
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.firstSection
+		.fp-tableCell
+			vertical-align: bottom
+			.headerDownLine
+				width: 100%
+				height: auto
+				background-color: $accent
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				.first-column
+					order: 2
+					.sale
+						text-align: center
+				.second-column
+					height: 170px
+					.logo
+						&:before
+							top: -115px
+					order: 1
+				.third-column
+					order: 3
+
+	a.nextArrow
+		left: 702px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.firstSection
+		.fp-tableCell
+			vertical-align: bottom
+			.headerDownLine
+				width: 100%
+				height: 160px
+				background-color: $accent
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				padding-bottom: 30px
+				.first-column
+					order: 2
+					.sale
+						text-align: center
+						font-size: 20px;
+						text-align: left
+				.second-column
+					height: 150px
+					order: 1
+					.logo
+						&:before
+							content: ''
+							width: 170px
+							height: 170px
+							background-size: 90%
+							background-position: 10px 30px
+							top: 11px
+				.third-column
+					order: 3
+					.phone
+						margin: 10px 0
+						text-align: right
+						a
+							margin: 0
+							font-size: 20px
+	section.layouts
+		h2
+			margin-top: 60px
+			text-align: center
+			font-size: 30px
+
+	.lauyoutsCarousel
+		.areaCarousel
+			margin-top: 20px
+		.slides
+			img
+				height: 250px
+			p
+				font-size: 20px
+				margin: 0
+			.underRoom
+				font-size: 30px
+		.room
+			.col-lg-5
+
+	section.objects
+		.carousel-indicators-wrapper
+			display: none
+		img
+			height: 100vh
+
+	.mobile-underwrapper
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 30%
+		width: 100%
+		background-color: rgba(0,0,0,0.5)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.svgWrapp
+			margin-right: 30px
+		h3
+			font-family: $default-font
+			font-size: 24px
+			font-weight: 900
+			line-height: 30px
+			text-transform: uppercase
+			color: #fff
+		p
+			font-family: $default-font
+			font-size: 14px
+			font-weight: 700
+			line-height: 18px
+			color: #fff
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon
+		background-color: rgba(0,0,0,0.5)
+		border-radius: 50%
+	.carousel-control-prev,
+	.carousel-control-next
+		display: flex
+
+	.gallery
+		.galleryWrapper
+			justify-content: center
+			h2
+				margin-bottom: 40px
+			img
+				height: 400px
+			.galleryCarouselMobile
+				.slick-prev
+				.slick-next
+
+	.mapWrapper
+		display: none
+
+	.footer
+		.footerTop
+			height: calc(100% - 200px)
+			.container-fluid
+				.col-lg-7
+					display: none
+
+	.footerLine
+		.col-lg-7
+			display: none
+		.parus
+			margin-top: 80px
+
+	.areaCarousel .slides .svg-container
+		height: auto
+		margin-bottom: 20px
+
+
+
+@media only screen and (max-width : 750px)
+	section.layouts
+		h2
+			margin-top: 40px
+		.lauyoutsCarousel
+			.areaCarousel
+				margin-top: 0px
+			.slides
+				img
+					height: 200px
+		.room
+			.roomBg
+				display: none
+
+	a.prevArrow,
+	a.nextArrow
+		top: 20%
+		left: 0
+		opacity: 1
+
+	a.nextArrow
+		left: inherit
+
+	body
+		.slick-dots
+			width: 100%
+			top: 20px
+			right: 1%
+			left: 1%
+			margin-left: 0
+			padding-left: 0
+	
+
+	.gallery
+		.galleryWrapper
+			justify-content: center
+			h2
+				font-size: 20px
+				margin-bottom: 40px
+			img
+				max-height: 250px
+			.galleryCarouselMobile
+				.slick-prev
+				.slick-next
+
+	.mobile-underwrapper
+		height: 50%
+
+	.carousel-control-prev,
+	.carousel-control-next
+		display: flex
+		align-items: flex-start
+		margin-top: 50px
+
+	.footer .footerTop .container-fluid > .row .questions h3
+			display: none
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+	/**/
+	.firstSection
+		.fp-tableCell
+			vertical-align: bottom
+			.headerDownLine
+				width: 100%
+				height: 160px
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				padding: 0
+				.first-column
+					order: 2
+					.sale
+						text-align: center
+						font-size: 16px;
+				.second-column
+					height: 150px
+					.logo
+						&:before
+							content: ''
+							width: 150px
+							height: 150px
+							background-size: 90%
+							background-position: 10px 30px
+							top: 5px
+				.third-column
+					order: 3
+					.phone
+						margin: 0 0
+						text-align: center
+						a
+							margin: 10px 0
+							font-size: 16px
+
+	.gallery
+		z-index: -1
+		.overlay
+			z-index: -1
+		.slick-list
+			z-index: -1
+		.galleryWrapper
+			justify-content: center
+			h2
+				font-size: 20px
+				margin-bottom: 40px
+			img
+				max-height: 200px
+			.galleryCarouselMobile
+				.slick-prev
+					margin-left: 15px
+				.slick-next
+					margin-right: 15px
+
+	.slick-prev:before,
+	.slick-next:before
+		z-index: 9999
+
+	section.layouts 
+		h2
+			font-size: 20px
+		.lauyoutsCarousel
+			.areaCarousel
+				p
+					font-size: 14px
+				img
+					height: 170px
+
+	.mobile-underwrapper
+		height: 60%
+
+	.carousel-control-prev,
+	.carousel-control-next
+		display: flex
+		align-items: flex-start
+		margin-top: 50px
+
+	.footer .footerTop .container-fluid > .row .questions h3
+			display: none
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.firstSection
+		.fp-tableCell
+			vertical-align: bottom
+			.headerDownLine
+				width: 100%
+				height: 250px
+				background-color: $accent
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				.first-column
+					order: 2
+					.sale
+						text-align: center
+						font-size: 20px;
+				.second-column
+					height: 150px
+					.logo
+						&:before
+							content: ''
+							width: 200px
+							height: 200px
+							background-size: 90%
+							background-position: 10px 30px
+							top: -52px
+				.third-column
+					order: 3
+					.phone
+						margin: 20px 0
+						text-align: center
+						a
+							margin: 0
+							font-size: 20px
+	body
+		.slick-dots
+			li
+				button
+					&:before
+						font-size: 13px
+	section.layouts
+		h2
+			margin-top: 60px
+		.lauyoutsCarousel
+			.areaCarousel
+				margin-top: 130px
+
+	a.prevArrow,
+	a.nextArrow
+		top: -60px
+		bottom: inherit
+		left: 0
+		opacity: 1
+
+	a.nextArrow
+		left: inherit
+
+	.section.aboutComplex
+		h2
+			font-size: 24px
+		.space 
+			h2
+				font-size: 24px
+				line-height: 28px
+
+	section.layouts 
+		h2
+			font-size: 30px
+		.lauyoutsCarousel
+			.areaCarousel
+				p
+					font-size: 22px
+				img
+					height: 210px
+
+	.footer .footerTop .container-fluid > .row .questions form input[type="tel"]
+		margin-top: 10px
+	.footer .footerTop .container-fluid > .row .questions form input[type="submit"]
+		margin-top: 10px
+
+	.footer .footerTop .container-fluid > .row .salesDepartment h2
+		font-size: 20px
+		line-height: 20px
+	.footer .footerTop .container-fluid > .row .salesDepartment .phone
+		font-size: 22px
+
+	.footerLine
+		.logo
+			display: none
+
+	.mobile-underwrapper
+		height: 40%
+
+	.carousel-control-prev,
+	.carousel-control-next
+		display: flex
+		align-items: center
+		margin-top: 0
+
+	.footer .footerTop .container-fluid > .row .questions h3
+			display: none
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.section.aboutComplex
+		h2
+			font-size: 20px
+			margin-bottom: 0
+		.space 
+			h2
+				font-size: 20px
+				line-height: 28px
+			p
+				font-size: 12px
+
+	section.layouts 
+		h2
+			font-size: 30px
+		.lauyoutsCarousel
+			.areaCarousel
+				p
+					font-size: 22px
+				img
+					height: 210px
+
+	.mobile-underwrapper
+		height: 60%
+		h3
+			font-size: 20px
+
+	.carousel-control-prev,
+	.carousel-control-next
+		display: flex
+		align-items: flex-start
+		margin-top: 50px
+
+	.footer .footerTop .container-fluid > .row .questions h3
+			display: none
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
