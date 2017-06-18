@@ -42,6 +42,14 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
+	$('.about-btn, .footer-btn').click(function() {
+		$('.modal-place--wrapper').fadeIn();
+	});
+
+	$('.modal-place--overlay').click(function() {
+		$('.modal-place--wrapper').fadeOut();
+	});
+
 	
 
 });
