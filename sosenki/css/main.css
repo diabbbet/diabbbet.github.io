@@ -666,6 +666,16 @@ body {
   .main .title .scroll-arrow {
     margin-top: 85px;
     text-align: center; }
+    .main .title .scroll-arrow svg {
+      -webkit-animation-name: arrow;
+              animation-name: arrow;
+      -webkit-animation-duration: 5s;
+              animation-duration: 5s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      cursor: pointer; }
 
 .main .teaser {
   padding-top: 100px;
@@ -2540,8 +2550,6 @@ body {
       .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info {
         display: none;
         position: absolute;
-        bottom: 55px;
-        left: -118px;
         background-color: #fff;
         padding-bottom: 30px;
         -webkit-border-radius: 5px;
@@ -2549,8 +2557,6 @@ body {
         .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info:after {
           content: '';
           position: absolute;
-          bottom: -10px;
-          left: 124.5px;
           background-color: #fff;
           width: 21px;
           height: 21px;
@@ -2619,11 +2625,13 @@ body {
             width: 17px;
             height: 11px; }
         .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info .home-info--img {
+          position: relative;
           width: 269px;
           height: 127px;
           background-image: url("../img/home-info.jpg");
           -webkit-border-radius: 5px 5px 0 0;
-                  border-radius: 5px 5px 0 0; }
+                  border-radius: 5px 5px 0 0;
+          z-index: 1; }
         .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info .home-info--title {
           color: #282828;
           font-family: "ProximaNova", sans-serif;
@@ -2645,6 +2653,21 @@ body {
     .main .accomodation .accomodation-img #h63k {
       top: 63%;
       left: 55.7%; }
+      .main .accomodation .accomodation-img #h63k .accomodation-home--info {
+        bottom: 55px;
+        left: -118px; }
+        .main .accomodation .accomodation-img #h63k .accomodation-home--info:after {
+          bottom: -10px;
+          left: 124.5px; }
+    .main .accomodation .accomodation-img #h1 {
+      top: 10%;
+      left: 14%; }
+      .main .accomodation .accomodation-img #h1 .accomodation-home--info {
+        top: 55px;
+        left: -118px; }
+        .main .accomodation .accomodation-img #h1 .accomodation-home--info:after {
+          top: -10px;
+          left: 124.5px; }
 
 .main .accomodation-filter {
   padding-top: 90px;
@@ -4105,6 +4128,46 @@ body {
 .ymaps-2-1-50-float-button.ymaps-2-1-50-float-button_traffic_left {
   display: none; }
 
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  87% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  93% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  95% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  87% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  93% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  95% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
@@ -4259,7 +4322,13 @@ body {
     overflow: auto; }
   .main .gallery .gallery-img {
     margin: auto;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info .home-info--img {
+    display: none; }
+  .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info {
+    width: 269px; }
+  .main .accomodation .accomodation-img .accomodation-home .accomodation-home--info .home-info--left {
+    top: 50px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
@@ -4883,7 +4952,56 @@ body {
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .header .header-line .header-profile {
+    margin-top: 0; }
+  .header .header-line .header-contacts {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px; }
+  .header .header-line .header-contacts .header-btn {
+    font-size: 18px; }
+  .header .header-line .header-contacts .header-btn.phone {
+    margin-bottom: 10px; }
+  .header .header-line .header-profile {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px; }
+  .main .title {
+    margin-top: -277px;
+    padding-top: 287px; }
+  .header .header-line .header-logo span {
+    display: block; }
+  .header .header-line .header-logo {
+    width: 170px; }
+  .header .header-line .header-social {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header .header-line .header-profile a span {
+    display: block;
+    margin-top: 5px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

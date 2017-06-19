@@ -515,6 +515,12 @@ body
 		.scroll-arrow
 			margin-top: 85px
 			text-align: center
+			svg
+				animation-name: arrow
+				animation-duration: 5s
+				animation-timing-function: linear
+				animation-iteration-count: infinite
+				cursor: pointer
 
 	.teaser
 		padding-top: 100px
@@ -2016,16 +2022,12 @@ body
 				.accomodation-home--info
 					display: none
 					position: absolute
-					bottom: 55px
-					left: -118px
 					background-color: #fff
 					padding-bottom: 30px
 					border-radius: 5px
 					&:after
 						content: ''
 						position: absolute
-						bottom: -10px
-						left: 124.5px
 						background-color: #fff
 						width: 21px
 						height: 21px
@@ -2078,10 +2080,12 @@ body
 							width: 17px
 							height: 11px
 					.home-info--img
+						position: relative
 						width: 269px
 						height: 127px
 						background-image: url('../img/home-info.jpg')
 						border-radius: 5px 5px 0 0
+						z-index: 1
 					.home-info--title
 						color: #282828
 						font-family: $default-font
@@ -2103,6 +2107,21 @@ body
 			#h63k
 				top: 63%
 				left: 55.7%
+				.accomodation-home--info
+					bottom: 55px
+					left: -118px
+					&:after
+						bottom: -10px
+						left: 124.5px
+			#h1
+				top: 10%
+				left: 14%
+				.accomodation-home--info
+					top: 55px
+					left: -118px
+					&:after
+						top: -10px
+						left: 124.5px
 
 	.accomodation-filter
 		padding-top: 90px
@@ -3315,6 +3334,23 @@ body
 	display: none
 .ymaps-2-1-50-float-button.ymaps-2-1-50-float-button_traffic_left
 	display: none
+
+
+@keyframes arrow
+	0%
+		transform: translateY(0)
+	87%
+		transform: translateY(0)
+	90%
+		transform: translateY(-10px)
+	93%
+		transform: translateY(5px)
+	95%
+		transform: translateY(0)
+	100%
+		transform: translateY(0)
+
+
 
 
 

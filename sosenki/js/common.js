@@ -152,7 +152,8 @@ $(function() {
 	$('.accomodation-home--btn').click(function() {
 		$('.accomodation-home--btn').removeClass('active');
 		$(this).addClass('active');
-		$('.accomodation-home--info').fadeIn('fast');
+		$('.accomodation-home--info').fadeOut('fast');
+		$(this).parent().find('.accomodation-home--info').fadeIn('fast');
 	});
 
 	$('.home-info--exit').click(function() {
@@ -345,6 +346,10 @@ $(function() {
 		.add(myPlacemarkWithMastr)
 		.add(myPolyline);
 	});
+
+	$('.scroll-arrow svg').click(function() {
+		$('body').animate( { scrollTop: $('.teaser').offset().top }, 1000 );
+	})
 
 
 });
