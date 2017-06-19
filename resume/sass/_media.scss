@@ -1,0 +1,95 @@
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1199px) {
+	html {
+		font-size: 8px;
+	}
+
+	section.about .text .title {
+		font-size: 4.4rem;
+	}
+
+	section.projects .projects-wrapper .project {
+		width: 50%;
+		&:nth-last-child(1) {
+			border-bottom: 0;
+		}
+		&:nth-last-child(2) {
+			border-bottom: 0;
+		}
+		&:nth-last-child(3) {
+			border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+		}
+		&:not(:nth-child(3n+3)) {
+			border-right: 0;
+		}
+		&:not(:nth-child(2n+2)) {
+			border-right: 1px solid rgba(210, 215, 217, 0.75);
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	section.projects .projects-wrapper .project {
+		width: 100%;
+		&:not(:nth-child(2n+2)) {
+			border-right: 0;
+		}
+		&:nth-last-child(2) {
+			border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+		}
+	}
+	section.about .text .title {
+		font-size: 3.2rem;
+	}
+	section.about .text .description {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper {
+		padding: 0 20px;
+	}
+	section.about .text .title {
+		font-size: 3rem;
+	}
+	header {
+		padding-top: 50px;
+	}
+	main section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 575px) {
+	section.about .picture {
+		display: none;
+	}
+	section.about .text {
+		width: 100%;
+	}
+	html {
+		font-size: 6px;
+	}
+	section.about .text .title {
+		text-align: center;
+	}
+	section.about .text .description {
+		font-size: 2rem;
+	}
+	section.projects .projects-wrapper .project .project-picture img:not(.sosenki-img) {
+		width: 100%;
+	}
+	section.projects .projects-wrapper .project .project-picture {
+		height: 200px;
+		padding: 10px;
+	}
+	section.projects .projects-wrapper .project .project-picture .motor-name .motor-black {
+		margin-left: -5px;
+	}
+}
+
+
+
