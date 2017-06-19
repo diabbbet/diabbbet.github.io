@@ -1,0 +1,3321 @@
+@import "fonts"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 400
+	line-height: 20px
+
+*:-moz-placeholder
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 300
+	line-height: 20px
+
+*::-moz-placeholder
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 300
+	line-height: 20px
+
+*:-ms-input-placeholder
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 300
+	line-height: 20px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 400
+	line-height: 20px
+body input:required:valid,
+body textarea:required:valid
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 400
+	line-height: 20px
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+// master_page
+.master_page
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: center
+	padding-top: 20px
+	padding-bottom: 20px
+	ul
+		list-style: none
+
+.btn
+	color: #ffffff
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 700
+	line-height: 20px
+	text-transform: uppercase
+	border: none
+	border-radius: 25px
+	padding: 15px 45px
+	background-color: $accent_orange
+	cursor: pointer
+	transition: 200ms
+	&:hover
+		box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+		transform: scale(1.02)
+		color: #fff
+	&:focus
+		color: #fff
+
+.social-link
+	display: block
+	width: 44px
+	height: 44px
+	background-color: #fff
+	border-radius: 50%
+	background-repeat: no-repeat
+	background-position: center
+	.social-link--color
+		transition: 200ms
+	&:not(:last-child)
+		margin-right: 25px
+	&:hover .social-link--color
+		fill: $accent_orange
+
+.h2
+	color: #3391e8
+	font-family: $default-font
+	font-size: 80px
+	font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 0
+
+.header
+	.header-nav
+		position: relative
+		width: 100%
+		background-color: #fff
+		z-index: 21
+		.nav-list
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			list-style: none
+			padding: 0 40px
+			margin: 0
+			.nav-list--item
+				position: relative
+				a
+					display: inline-block
+					color: #282828
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 700
+					text-transform: uppercase
+					text-decoration: none
+					padding: 10px 0
+					transition: 200ms
+					&:hover
+						color: $accent_orange
+					&.active
+						color: $accent_orange
+			.nav-list--item:not(:last-child):after
+				content: ''
+				position: absolute
+				top: 9px
+				right: -12px
+				width: 1px
+				height: 24px
+				background-color: #c3c3c3
+	.header-line
+		position: relative
+		padding-top: 25px
+		padding-bottom: 25px
+		background-image: linear-gradient(180deg, #3391e8 0%, #3391e8 0%, rgba(51, 145, 232, 0.58) 100%), url(../img/header-line--bg.jpg)
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: cover
+		z-index: 20
+		.header-logo
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			text-decoration: none
+			img
+				display: block
+			span
+				display: block
+				color: #ffffff
+				font-family: $default-font
+				font-size: 34px
+				font-weight: 700
+				line-height: 42px
+				text-transform: uppercase
+				width: 180px
+				text-align: right
+		.header-social
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			margin-top: 20px
+		.header-profile
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			margin-top: 34px
+			a
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				color: #fff
+				font-family: $default-font
+				font-size: 16px
+				font-weight: 700
+				line-height: 20px
+				text-decoration: underline
+				text-transform: uppercase
+				margin-right: 20px
+				cursor: pointer
+				span
+					margin-right: 20px
+				.header-profile--color
+					transition: 200ms
+				&:hover 
+					text-decoration: none
+					.header-profile--color
+						fill: $accent_orange
+		.header-contacts
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			.header-btn
+				position: relative
+				display: block
+				color: #ffffff
+				font-family: $default-font
+				font-size: 18px
+				font-weight: 400
+				line-height: 26px
+				text-decoration: none
+				padding-top: 10px
+				padding-bottom: 9px
+				padding-right: 20px
+				padding-left: 19px
+				transition: 200ms
+				&.phone
+					background-color: rgba($accent_green, 0.55)
+					svg
+						position: relative
+						top: 3px
+						margin-left: 15px
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: -9px
+						border-left: 9px solid transparent
+						border-top: 22.5px solid rgba($accent_green, 0.55)
+						border-bottom: 22.5px solid rgba($accent_green, 0.55)
+						transition: 200ms
+					&:hover
+						background-color: rgba($accent_orange, 0.8)
+						&:before
+							border-top: 22.5px solid rgba($accent_orange, 0.8)
+							border-bottom: 22.5px solid rgba($accent_orange, 0.8)
+				&.path-us
+					background-color: rgba($accent_green, 0.8)
+					svg
+						position: relative
+						top: 5px
+						margin-left: 15px
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: -9px
+						border-left: 9px solid transparent
+						border-top: 22.5px solid rgba($accent_green, 0.8)
+						border-bottom: 22.5px solid rgba($accent_green, 0.8)
+						transition: 200ms
+					&:hover
+						background-color: $accent_orange
+						&:before
+							border-top: 22.5px solid $accent_orange
+							border-bottom: 22.5px solid $accent_orange
+				&:hover .header-btn--color
+					fill: #ff8e26
+
+.footer
+	.footer-subscribe
+		background-color: $accent_blue
+		padding-top: 63px
+		padding-bottom: 63px
+		.footer-subscribe--title
+			font-family: $default-font
+			color: #fff
+			text-transform: uppercase
+			font-size: 37px
+			font-weight: 900
+			line-height: 30px
+			margin-bottom: 10px
+		.footer-subscribe--desc
+			color: #fff
+			font-size: 14px
+			font-weight: 300
+			line-height: 34px
+			text-transform: uppercase
+		.footer-subscribe--mail
+			border: none
+			background: none
+			outline: none
+			color: #ffffff
+			font-family: $default-font
+			font-size: 15px
+			font-weight: 400
+			line-height: 20px
+			border-bottom: 2px dotted #fff
+			padding: 15px 2px
+			width: 310px
+			margin-left: 30px
+			margin-top: 8px
+		.footer-subscribe--btn
+			margin-top: 10px
+	.footer-line
+		background-color: #6badeb
+		padding-top: 50px
+		.footer-logo
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			text-decoration: none
+			img
+				width: 53px
+				height: 56px
+				margin-right: 15px
+			span
+				display: block
+				color: #ffffff
+				font-family: $default-font
+				font-size: 23px
+				font-weight: 700
+				line-height: 27px
+				text-transform: uppercase
+		.footer-social
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			margin-top: 3px
+		.footer-line--btn
+			color: #fff
+			padding-left: 35px
+			padding-right: 35px
+			margin-top: 40px
+		.footer-nav
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin-top: 40px
+			padding-left: 10px
+			padding-right: 30px
+			.footer-nav--column
+				.nav-list
+					list-style: none
+					padding: 0
+					.nav-list--item
+						margin-bottom: 30px
+						a
+							color: #ffffff
+							font-family: $default-font
+							font-size: 15px
+							font-weight: 300
+							line-height: 20px
+							text-decoration: underline
+							text-transform: uppercase
+							&:hover
+								text-decoration: none
+						.site-map
+							opacity: 0.6
+		.footer-copyright
+			margin-top: 50px
+			border-top: 1px solid #fff
+			.copyright
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 62px
+				.org-name
+					color: #ffffff
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 400
+					line-height: 20px
+				.parus
+					color: #ffffff
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 400
+					line-height: 20px
+					a
+						text-decoration: underline
+						color: #fff
+						&:hover
+							text-decoration: none
+.breadcrumbs
+	padding-top: 60px
+	text-align: center
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: center
+		li
+			margin-right: 10px
+			a
+				color: #a5a5a5
+				font-family: $default-font
+				font-size: 16px
+				font-weight: 400
+				line-height: 30px
+			svg
+				position: relative
+				top: 1px
+			&:last-child a
+				pointer-events: none
+			&:last-child
+				margin-right: 0
+	.breadcrumbs-title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 30px
+		font-weight: 900
+		line-height: 30px
+		text-transform: uppercase
+		margin-top: 20px
+
+.main
+	.title
+		position: relative
+		margin-top: -140px
+		background-image: url(../img/title-bg.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 0 0
+		padding-top: 205px
+		padding-bottom: 50px
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 340px
+			background-image: linear-gradient(180deg, #3391e8 0%, #3391e8 0%, rgba(51, 145, 232, 0) 100%)
+			background-position: 0 0
+			background-repeat: no-repeat
+			pointer-events: none
+		.h1
+			position: relative
+			margin: 0
+			span
+				color: #ffffff
+				font-family: $default-font
+				text-transform: uppercase
+				font-size: 218px
+				font-weight: 900
+				line-height: 160px
+				margin: 0   
+			.recreation
+				font-size: 118px
+				font-weight: 900
+				line-height: 120px
+		.family
+			font-family: $default-font
+			color: #fff
+			font-size: 60px
+			font-weight: 400
+			line-height: 60px
+			margin-top: 25px
+			text-transform: uppercase
+		.title-buttons
+			margin-top: 60px
+			.reserved-btn
+				padding-left: 39px
+				padding-right: 39px
+				margin-right: 30px
+			.video-btn
+				background-color: #f8a939
+		.scroll-arrow
+			margin-top: 85px
+			text-align: center
+
+	.teaser
+		padding-top: 100px
+		padding-bottom: 100px
+		.teaser-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			height: 130px
+			span
+				color: #282828
+				font-family: $default-font
+				font-size: 18px
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+
+	.auction-teaser
+		position: relative
+		background-repeat: no-repeat
+		background-position: 100% 0
+		background-size: 60% 100%
+		padding-bottom: 80px
+		overflow: hidden
+		background-image: url(../img/auction-teaser--bg.jpg)
+		.auction-teaser--overlay
+			position: absolute
+			top: 0
+			left: 0
+			width: 47.4%
+			height: 100%
+			background-color: $accent_blue
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: -226px
+				border-right: 227px solid transparent
+				border-top: 604px solid $accent_blue
+		.auction-teaser--time
+			color: #fff
+			font-family: $default-font
+			font-size: 33px
+			text-transform: uppercase
+			font-weight: 300
+			line-height: 35px
+			margin-top: 80px
+			.time-left
+				font-weight: 900
+		.auction-teaser--price
+			font-family: $default-font
+			font-size: 58px
+			line-height: 68px
+			text-transform: uppercase
+			color: #aed3f6
+			font-weight: 700
+			margin-top: 65px
+			.price
+				color: #fff
+				font-weight: 900
+		.auction-teaser--btn
+			margin-top: 55px
+
+	.siting
+		padding-top: 160px
+		&.about-siting
+			padding-top: 0
+		.siting-slider
+			position: relative
+			margin-top: 40px
+			.siting-slide
+				position: relative
+				height: 640px
+				width: 30%
+				margin-left: 10px
+				margin-right: 10px
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				.siting-slide--overlay
+					opacity: 0
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(#1ecf6d, 0.7)
+					transition: 200ms
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: column
+					align-items: center
+					span
+						display: block
+						color: #ffffff
+						font-family: $default-font
+						font-size: 66px
+						font-weight: 400
+						line-height: 103px
+						text-transform: uppercase
+						margin-top: 250px
+						text-align: center
+				&.slick-center:hover .siting-slide--overlay
+					opacity: 1
+			.slick-arrow
+				position: absolute
+				top: calc(50% - 28.5px)
+				width: 57px
+				height: 57px
+				border-radius: 50%
+				border: none
+				background-color: rgba(255, 255, 255, 0.4)
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				outline: none
+				cursor: pointer
+			.slick-prev
+				left: 375px
+				z-index: 1
+			.slick-next
+				right: 375px
+				z-index: 1
+
+	.review
+		padding-top: 150px
+		padding-bottom: 30px
+		.review-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			margin-top: 60px
+			.quotes
+				position: relative
+				top: 20px
+				align-self: flex-end
+				opacity: 0.2
+				margin-right: 40px
+			.review-item--name
+				color: #3391e8
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 31px
+				text-transform: uppercase
+			.review-item--desc
+				color: #282828
+				font-family: $default-font
+				font-size: 15px
+				font-weight: 400
+				line-height: 25px
+				padding-right: 150px
+				margin-top: 15px
+				max-height: 220px
+				.mCSB_draggerRail
+					width: 8px
+					border-right: 4px
+					background-color: #ffbb72
+				.mCSB_dragger_bar
+					width: 8px
+					border-radius: 4px
+					background-color: #ff8400
+		.review-buttons
+			margin-top: 90px
+			.review-view--btn
+				margin-right: 25px
+			.review-feedback--btn
+				background-color: transparent
+				border: 3px solid $accent_orange
+				color: $accent_orange
+				padding: 12px 35px
+				transition: 200ms
+				transform: none
+				&:hover
+					background-color: $accent_orange
+					color: #fff
+					transform: none
+					box-shadow: none
+
+	.review-review
+		.review-item
+			.review-item--desc
+				padding-right: 40px
+				overflow: auto
+
+	.auctions
+		padding-bottom: 90px
+		.auctions-rule
+			margin-top: 60px
+			font-family: $default-font
+			font-size: 15px
+			font-weight: 400
+			line-height: 25px
+			color: #282828
+			padding-bottom: 10px
+			.auctions-rule--btn
+				display: block
+				color: #ff8400
+				text-decoration: underline
+				cursor: pointer
+				border: none
+				background: none
+				outline: none
+				text-decoration: none
+				padding: 0
+				margin-top: 30px
+				&:hover
+					text-decoration: underline
+		.auctions-item
+			margin-top: 30px
+			.auctions-item--img
+				position: relative
+				height: 255px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				user-select: none
+				pointer-events: none
+				.fire
+					position: absolute
+					top: 55px
+					left: 160px
+					z-index: 999
+				.flipcounter
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: row
+					justify-content: center
+					&:before
+						content: ''
+						position: absolute
+						top: 24px
+						left: 0
+						right: 0
+						margin: auto
+						width: 20px
+						height: 40px
+						box-shadow: 0 1px 2px #000000
+						background-color: #96999b
+						background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%)
+					.flip-clock-divider
+						width: 4px
+						&.seconds
+							display: none
+						.flip-clock-dot
+							display: none
+						.flip-clock-label
+							top: 62px
+							left: 0px
+							color: #fff
+							z-index: 5
+							color: #dcdfe1
+							font-size: 16px
+							font-weight: 400
+							line-height: 20px
+					.flip
+						width: 43px
+						height: 87px
+						font-size: 12px
+						margin: 0
+						border-radius: 0px
+						box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7)
+						&:nth-of-type(8)
+							display: none
+						&:nth-of-type(7)
+							display: none
+						&:nth-of-type(1n) 
+							.inn
+								padding-left: 20px
+						&:nth-of-type(2n) 
+							.inn
+								padding-left: 0px
+								padding-right: 20px
+						.up
+							border-radius: 1px
+							background-color: rgba(25, 25, 27, 1)
+							background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.17) 100%)
+							&:after
+								content: ''
+								width: 100px
+								height: 4px
+								position: absolute
+								top: 37px
+								left: 0
+								background-color: rgba(25, 25, 27, 1)
+								background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.17) 100%)
+								z-index: 999
+						.down
+							border-radius: 1px
+							background-color: rgba(25, 25, 27, 1)
+							background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.17) 100%)
+						.shadow
+							display: none
+						.inn
+							font-family: 'Corki', sans-serif
+							font-weight: 700
+							text-shadow: 0 1px 2px #000000
+							color: #dcdfe1
+							font-size: 60px
+							line-height: 75px
+							background-color: rgba(25, 25, 27, 1)
+							background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.17) 100%)
+							border: none
+							border-radius: 1px
+			.auctions-item--info
+				background-color: #f9f9f9
+				padding-top: 20px
+				padding-bottom: 30px
+				text-align: center
+				.auctions-item--title
+					color: #282828
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					min-height: 56px
+				.auctions-item--desc
+					color: #2a2a2a
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 400
+					line-height: 20px
+					margin-top: 15px
+				.auctions-item--price
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					margin-top: 25px
+					.price-gray
+						color: #afafaf
+						text-decoration: line-through
+						margin-right: 20px
+					.price-blue
+						color: #3391e8
+				.auctions-item--btn
+					margin-top: 25px
+
+	.news
+		padding-top: 290px
+		background-image: url('../img/news-bg.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center 2px
+		padding-bottom: 95px
+		.news-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			padding-top: 65px
+			padding-bottom: 65px
+			padding-left: 40px
+			padding-right: 65px
+			background-color: #fff
+			margin-top: 70px
+			.news-date
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				margin-right: 30px
+				.news-date--number
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 155px
+					font-weight: 900
+					line-height: 155px
+					text-transform: uppercase
+				.news-date--desc
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 36px
+					font-weight: 900
+					line-height: 38px
+					text-transform: uppercase
+		.news-text
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			.news-text--title
+				color: #3391e8
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 28px
+				text-transform: uppercase
+			.news-text--desc
+				color: #282828
+				font-family: $default-font
+				font-size: 15px
+				font-weight: 400
+				line-height: 25px
+				margin-top: 10px
+		.news-view--btn
+			margin-top: 60px
+			padding-left: 40px
+			padding-right: 40px
+
+	.adress
+		padding-top: 115px
+		padding-bottom: 75px
+		.adress-title
+			color: #3391e8
+			font-family: $default-font
+			font-size: 66px
+			font-weight: 400
+			line-height: 66px
+			margin-top: 40px
+			text-transform: uppercase
+		.adress-fiz
+			position: relative
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 20px
+			line-height: 20px
+			font-weight: 400
+			margin-top: 40px
+		.adress-tel
+			position: relative
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 20px
+			line-height: 20px
+			font-weight: 700
+			margin-top: 40px
+			a
+				color: #2a2a2a
+		.adress-schedule
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			margin-top: 40px
+			.adress-schedule--day
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				color: #2a2a2a
+				font-family: $default-font
+				font-size: 20px
+				line-height: 20px
+				font-weight: 700
+				text-transform: uppercase
+				margin-right: 70px
+			.adress-schedule--time
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				color: #2a2a2a
+				font-family: $default-font
+				font-size: 20px
+				line-height: 20px
+				font-weight: 400
+		.adress-ico
+			position: relative
+			top: 3px
+			margin-right: 31px
+		.scheme
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 20px
+			line-height: 20px
+			font-weight: 400
+			list-style: none
+			padding-left: 38px
+			margin-top: 40px
+			li
+				margin-top: 20px
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 5px
+					left: -35px
+					width: 8px
+					height: 8px
+					border-radius: 50%
+					background-color: $accent_orange
+			li:first-child
+				font-weight: 700
+				margin-top: 0
+		.scheme-btn
+			margin-top: 40px
+			padding-left: 35px
+			padding-right: 35px
+
+	.map
+		#map
+			height: 655px
+	.title.error-page
+		text-align: center
+		padding-bottom: 120px
+		.nothing
+			color: #ffffff
+			font-family: $default-font
+			text-transform: uppercase
+			font-size: 40px
+			font-weight: 300
+			line-height: 60px
+		.home-btn
+			position: absolute
+			top: 170px
+			left: 0
+			right: 0
+			margin: auto
+			width: 211px
+
+	.contacts-adress
+		padding-top: 0
+		.adress-title
+			margin-top: 70px
+			font-size: 30px
+			font-weight: 400
+			line-height: 30px
+		.scheme.scheme-schedule
+			li
+				font-weight: 400
+				span
+					font-weight: 700
+				.scheme-schedule--orange
+					color: $accent_orange
+		.scheme-schedule + .scheme-btn
+			margin-top: 60px
+		.contacts-adress--form
+			width: 100%
+			height: 50px
+			border-radius: 5px
+			background-color: #f4f4f4
+			border: none
+			padding-left: 15px
+			padding-right: 15px
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+			margin-top: 30px
+		textarea.contacts-adress--form
+			padding-top: 15px
+			height: 190px
+			resize: none
+		.contacts-adress--form::-webkit-input-placeholder
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--form:-moz-placeholder
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--form::-moz-placeholder
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--form:-ms-input-placeholder
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--form:focus:required:invalid
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--form:required:valid
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+		.contacts-adress--btn
+			margin-top: 30px
+			padding-left: 40px
+			padding-left: 40px
+
+	.gallery
+		padding-top: 60px
+		padding-bottom: 100px
+		.gallery-img
+			display: block
+			width: 350px
+			height: 255px
+			margin-bottom: 30px
+			text-decoration: none
+			.gallery-img--overlay
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				width: 100%
+				height: 100%
+				background-color: rgba(30, 207, 109, 0.8)
+				text-align: center
+				opacity: 0
+				transition: 200ms
+				span
+					color: #ffffff
+					font-family: $default-font
+					font-size: 30px
+					font-weight: 300
+					line-height: 36px
+					text-transform: uppercase
+			&:hover .gallery-img--overlay
+				opacity: 1
+
+	.about
+		padding-top: 50px
+		padding-bottom: 60px
+		.about-img
+			height: 255px
+		.about-desc
+			color: #282828
+			font-family: $default-font
+			font-size: 15px
+			font-weight: 400
+			line-height: 25px
+			margin-top: 35px
+
+	.leadership
+		padding-top: 90px
+		padding-bottom: 90px
+		.leadership-title
+			color: #3391e8
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+			text-align: center
+		.leadership-circle--photo
+			border-radius: 50%
+			width: 245px
+			height: 245px
+			margin: auto
+			margin-top: 50px
+		.leadership-name
+			color: #282828
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+			text-align: center
+			margin-top: 30px
+		.leadership-position
+			color: #282828
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 400
+			line-height: 28px
+			text-align: center
+			margin-top: 10px
+
+	.faq
+		padding-top: 20px
+		padding-bottom: 90px
+		text-align: center
+		.faq-questions
+			list-style: none
+			padding: 0
+			li
+				position: relative
+				padding-left: 40px
+				padding-right: 90px
+				padding-top: 15px
+				padding-bottom: 15px
+				border-radius: 10px
+				background-color: #f6f6f6
+				margin-top: 20px
+				cursor: pointer
+				text-align: left
+				&:before
+					content: ''
+					position: absolute
+					top: 20px
+					left: 15px
+					width: 8px
+					height: 8px
+					border-radius: 50%
+					background-color: $accent_orange
+				.faq-questions--title
+					color: #2a2a2a
+					font-family: $default-font
+					font-size: 20px
+					line-height: 20px
+					font-weight: 700
+				.faq-questions--desc
+					color: #2a2a2a
+					font-family: $default-font
+					font-size: 20px
+					line-height: 20px
+					font-weight: 400
+					margin-top: 20px
+		.faq-write--title
+			text-align: center
+			margin-top: 80px
+			color: #3391e8
+			font-family: $default-font
+			font-size: 30px
+			font-weight: 900
+			line-height: 48px
+			text-transform: uppercase
+		.faq-write--btn
+			margin-top: 30px
+
+	.photoalbum
+		padding-top: 50px
+		padding-bottom: 90px
+		.photoalbum-slider
+			position: relative
+			.slick-arrow
+				position: absolute
+				top: calc(50% - 28.5px)
+				width: 57px
+				height: 57px
+				border-radius: 50%
+				border: none
+				background-color: rgba(255, 255, 255, 0.4)
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				outline: none
+				cursor: pointer
+			.slick-prev
+				left: 10px
+				z-index: 1
+			.slick-next
+				right: 10px
+				z-index: 1
+			.photoalbum-slider--item
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				height: 570px
+		.photoalbum-dots--wrapper
+			padding-left: 50px
+			padding-right: 50px
+			.photoalbum-dots
+				position: relative
+				margin-top: 40px
+				.slick-arrow
+					position: absolute
+					top: calc(50% - 28.5px)
+					width: 57px
+					height: 57px
+					border-radius: 50%
+					border: none
+					background: none
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					outline: none
+					cursor: pointer
+					.orange
+						transition: 200ms
+					&:hover
+						.orange
+							fill: $accent_orange
+				.slick-prev
+					left: -57px
+					z-index: 1
+				.slick-next
+					right: -57px
+					z-index: 1
+				.photoalbum-dots--item
+					background-repeat: no-repeat
+					background-position: center
+					background-size: cover
+					height: 154px
+					margin-left: 10px
+					margin-right: 10px
+	.articles
+		padding-bottom: 90px
+		.articles-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			background-color: #fff
+			padding-left: 40px
+			padding-right: 40px
+			margin-top: 100px
+			.articles-date
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				margin-right: 30px
+				text-align: center
+				.articles-date--number
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 155px
+					font-weight: 900
+					line-height: 135px
+					text-transform: uppercase
+				.articles-date--desc
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 36px
+					font-weight: 900
+					line-height: 38px
+					text-transform: uppercase
+		.articles-text
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			.articles-text--title
+				a
+					color: #3391e8
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					text-decoration: none
+					transition: 200ms
+					&:hover
+						color: $accent_orange
+			.articles-text--desc
+				color: #282828
+				font-family: $default-font
+				font-size: 15px
+				font-weight: 400
+				line-height: 25px
+				margin-top: 10px
+		.advertising
+			margin-top: 100px
+		.button-wrapper
+			margin-top: 100px
+			text-align: center
+	.review-review
+		padding-top: 0
+		.review-buttons
+			text-align: center
+			margin-top: 100px
+			.review-feedback--btn
+				background-color: $accent_orange
+				color: #fff
+				margin-right: 25px
+				&:hover
+					box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+					transform: scale(1.02)
+					color: #fff
+			.review-more--btn
+				background-color: #f8a939
+
+	.news_stocks
+		padding-bottom: 90px
+		.news_stocks-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			background-color: #fff
+			padding-left: 40px
+			padding-right: 40px
+			margin-top: 100px
+			.news_stocks-date
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				margin-right: 30px
+				text-align: center
+				.news_stocks-date--number
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 155px
+					font-weight: 900
+					line-height: 135px
+					text-transform: uppercase
+				.news_stocks-date--desc
+					opacity: 0.91
+					color: #1ecf6d
+					font-family: $default-font
+					font-size: 36px
+					font-weight: 900
+					line-height: 38px
+					text-transform: uppercase
+		.news_stocks-text
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			.news_stocks-text--title
+				a
+					color: #3391e8
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					transition: 200ms
+					text-decoration: none
+					&:hover
+						color: $accent_orange
+			.news_stocks-text--desc
+				color: #282828
+				font-family: $default-font
+				font-size: 15px
+				font-weight: 400
+				line-height: 25px
+				margin-top: 10px
+		.stock-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			padding-top: 90px
+			padding-bottom: 90px
+			background-color: $accent_blue
+			padding-left: 30px
+			padding-right: 30px
+			margin-top: 30px
+			text-decoration: none
+			span
+				display: block
+			.auction-persent--wrapper
+				display: block
+				.auction-persent
+					width: 164px
+					height: 136px
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					&:after
+						content: ''
+						position: absolute
+						bottom: -30px
+						left: 0
+						border-left: 82px solid $accent_orange
+						border-right: 82px solid $accent_orange
+						border-bottom: 30px solid transparent
+					svg
+						width: 60px
+						height: 60px
+			.stock-cutting
+				color: #ffffff
+				font-family: $default-font
+				font-size: 20px
+				text-transform: uppercase
+				font-weight: 400
+				line-height: 25px
+				span
+					font-weight: 900
+			.stock-price
+				font-family: $default-font
+				font-size: 30px
+				text-transform: uppercase
+				color: #9effc9
+				font-weight: 400
+				line-height: 35px
+				margin-top: 20px
+				span
+					color: #ffffff
+					font-weight: 900
+		.button-wrapper
+			text-align: center
+			margin-top: 100px
+
+	.articles-inside
+		padding-top: 60px
+		padding-bottom: 90px
+		color: #282828
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 25px
+		.articles-inside--wrapper
+			columns: 2
+			column-gap: 30px
+		.articles-inside--img
+			height: 330px
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			margin-top: 10px
+			margin-bottom: 20px
+		.articles-inside-date
+			color: #b4b4b4
+			font-family: $default-font
+			font-size: 12px
+			font-weight: 700
+			line-height: 20px
+			text-transform: uppercase
+
+	.news-inside
+		padding-top: 60px
+		padding-bottom: 90px
+		color: #282828
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 25px
+		.news-inside--wrapper
+			columns: 2
+			column-gap: 30px
+		.news-inside--img
+			height: 330px
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			margin-top: 10px
+			margin-bottom: 20px
+		.news-inside-date
+			color: #b4b4b4
+			font-family: $default-font
+			font-size: 12px
+			font-weight: 700
+			line-height: 20px
+			text-transform: uppercase
+
+	.services
+		padding-top: 60px
+		.services-items
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.services-item
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				align-items: center
+				.services-item--title
+					color: #282828
+					font-family: $default-font
+					font-size: 18px
+					font-weight: 700
+					line-height: 20px
+					text-transform: uppercase
+					margin-top: 30px
+					text-align: center
+		.services-desc
+			margin-top: 90px
+			columns: 2
+			column-gap: 30px
+			color: #282828
+			font-family:  $default-font
+			font-size: 15px
+			font-weight: 400
+			line-height: 25px
+	.services-price
+		margin-top: 90px
+		text-align: center
+		padding-bottom: 90px
+		.services-price--title
+			color: #3391e8
+			font-family: $default-font
+			font-size: 30px
+			font-weight: 900
+			text-transform: uppercase
+			text-align: center
+		.services-price--table-wrapper
+			height: 340px
+			overflow: auto
+			text-align: left
+			.mCSB_draggerRail
+				width: 8px
+				border-right: 4px
+				background-color: #ffbb72
+			.mCSB_dragger_bar
+				width: 8px
+				border-radius: 4px
+				background-color: #ff8400
+				pointer-events: auto
+		.services-price--table
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			flex-wrap: wrap
+			overflow: auto
+			margin-top: 30px
+			.price-item
+				width: 49%
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				align-items: flex-start
+				margin-top: 30px
+				.name
+					width: 49%
+					color: #282828
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 400
+					line-height: 15px
+					background-image: url('../img/more.svg')
+					background-size: 2%
+					background-repeat: repeat-x
+					background-position: 0 90%
+					span
+						background-color: #fff
+				.price
+					width: 49%
+					color: #282828
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 400
+					line-height: 25px
+		.services-price--btn
+			margin-top: 60px
+
+	.personal-page
+		padding-bottom: 90px
+		.personal-overlay
+			position: fixed
+			top: 0
+			left: 0
+			width: 100vw
+			height: 100vh
+			z-index: 10
+			display: none
+			&.active
+				display: block
+	.personal-page--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 28px
+		font-weight: 400
+		line-height: 30px
+		text-transform: uppercase
+		margin-top: 80px
+	ul.personal
+		padding: 0
+		list-style: none
+		padding-left: 30px
+		margin-top: 40px
+		li
+			position: relative
+			margin-top: 10px
+			color: #2a2a2a
+			font-family: $default-font
+			font-size: 20px
+			line-height: 20px
+			font-weight: 400
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			&:before
+				content: ''
+				position: absolute
+				top: 9px
+				left: -28px
+				width: 8px
+				height: 8px
+				background-color: $accent_orange
+				border-radius: 50%
+			&.personal-name
+				font-weight: 700
+			.pen
+				margin-left: 15px
+				position: relative
+				cursor: pointer
+				&:hover svg path
+					fill: $accent_orange
+			.personal-text
+				input
+					position: relative
+					border-radius: 5px
+					background-color: #efefef
+					border: none
+					width: 200px
+					height: 32px
+					padding-left: 15px
+					padding-right: 15px
+					outline: none
+					z-index: 11
+	.personal-page--btn
+		margin-top: 40px
+	.personal-page--item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 40px
+		.personal-page--text
+			margin-left: 40px
+			.text-title
+				color: #282828
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 28px
+				text-transform: uppercase
+			.text-date
+				color: #2a2a2a
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 400
+				line-height: 20px
+				margin-top: 10px
+		.personal-page--icon
+			position: relative
+			span
+				position: absolute
+				bottom: -10px
+				right: -10px
+				width: 36px
+				height: 36px
+				border: 4px solid #ff8400
+				background-color: #ffffff
+				border-radius: 50%
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #282828
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 28px
+				text-transform: uppercase
+	.bag
+		padding-top: 60px
+		padding-bottom: 40px
+		border-bottom: 1px solid #d7d7d7
+		.personal-page--item
+			margin: 0
+		.col-xl-5
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			justify-content: center
+		.bag-info
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.bag-info--text
+				color: #2a2a2a
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 400
+				line-height: 20px
+				ul
+					padding: 0
+					list-style: none
+					margin: 0
+			.bag-info--price
+				color: #282828
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 28px
+				text-transform: uppercase
+	.total
+		padding-top: 40px
+		padding-bottom: 90px
+		.total-form
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: flex-end
+		.total-text
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+			color: #282828
+		.total-price
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+			color: #3391e8
+			.total-price--input
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 900
+				line-height: 28px
+				text-transform: uppercase
+				color: #3391e8
+				border: none
+				height: auto
+				max-width: 100px
+				text-align: right
+				margin-right: 5px
+		.total-checkbox
+			margin-top: 20px
+			position: relative
+			user-select: none
+			margin-bottom: 0
+			input
+				display: none
+				&:checked + span b
+					display: inline-block
+			span
+				position: absolute
+				top: 2px
+				left: -30px
+				display: inline-block
+				border-radius: 50%
+				width: 21px
+				height: 21px
+				border: 2px solid #ff8400
+				background-color: #fff
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				b
+					display: none
+					width: 11px
+					height: 11px
+					background-color: #ff8400
+					border-radius: 50%
+		.total-btn--wrapper
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-end
+			width: 100%
+			margin-top: 20px
+			.total-btn
+			
+
+	.accomodation
+		margin-top: 60px
+		.accomodation-img
+			position: relative
+			color: #ffffff
+			font-family: $default-font
+			font-size: 12px
+			font-weight: 700
+			img
+				width: 100%
+				height: auto
+			.accomodation-home
+				position: absolute
+				width: 1.92708333333%
+				height: 5.28571428571%
+				.accomodation-home--btn
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					position: absolute
+					width: 100%
+					height: 100%
+					border-radius: 50%
+					opacity: 0
+					transition: 300ms
+					cursor: pointer
+					background-color: rgba(255, 255, 255, 0.6)
+					color: #3391e8
+					span
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						width: 25px
+						height: 25px
+						border-radius: 50%
+						background-color: rgba(255, 255, 255, 0.99)
+					&:hover
+						opacity: 1
+					&.active
+						background-color: #ffffff
+						opacity: 1
+						span
+							background-color: rgba(255, 132, 0, 0.99)
+							color: #fff
+				.accomodation-home--info
+					display: none
+					position: absolute
+					bottom: 55px
+					left: -118px
+					background-color: #fff
+					padding-bottom: 30px
+					border-radius: 5px
+					&:after
+						content: ''
+						position: absolute
+						bottom: -10px
+						left: 124.5px
+						background-color: #fff
+						width: 21px
+						height: 21px
+						transform: rotate(45deg)
+					.home-info--exit
+						position: absolute
+						top: 0
+						right: 0
+						width: 20px
+						height: 20px
+						border-radius: 0 5px 0 0
+						background-color: #f24848
+						border: none
+						cursor: pointer
+						outline: none
+						&:after
+							content: ''
+							position: absolute
+							top: 9px
+							left: 4px
+							width: 11px
+							height: 2px
+							background-color: #ffffff
+							transform: rotate(135deg)
+						&:before
+							content: ''
+							position: absolute
+							top: 9px
+							left: 4px
+							width: 11px
+							height: 2px
+							background-color: #ffffff
+							transform: rotate(45deg)
+					.home-info--left
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						justify-content: center
+						align-items: center
+						position: absolute
+						top: 185px
+						right: -23.5px
+						width: 47px
+						height: 47px
+						background-color: $accent_orange
+						border-radius: 50%
+						img
+							width: 17px
+							height: 11px
+					.home-info--img
+						width: 269px
+						height: 127px
+						background-image: url('../img/home-info.jpg')
+						border-radius: 5px 5px 0 0
+					.home-info--title
+						color: #282828
+						font-family: $default-font
+						font-size: 18px
+						font-weight: 700
+						line-height: 18px
+						margin-top: 20px
+						padding-left: 17px
+						padding-right: 17px
+					.home-info--desc
+						color: #919191
+						font-family: $default-font
+						font-size: 13px
+						font-weight: 400
+						line-height: 18px
+						padding-left: 17px
+						padding-right: 17px
+						margin-top: 20px
+			#h63k
+				top: 63%
+				left: 55.7%
+
+	.accomodation-filter
+		padding-top: 90px
+		padding-bottom: 90px
+		.accomodation-filter--title
+			color: #3391e8
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+		.type-home
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+		label
+			margin-top: 40px
+			color: #2e2e2e
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 700
+			line-height: 22px
+			margin-bottom: 0
+		.nice-select
+			position: relative
+			border-radius: 4px
+			border: 2px solid #a5a5a5
+			background-color: rgba(49, 168, 210, 0)
+			color: #a5a5a5
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 400
+			line-height: 50px
+			height: 50px
+			margin-top: 25px
+			&:before
+				content: ''
+				position: absolute
+				top: 15px
+				right: 15px
+				background-image: url('../img/home.svg')
+				width: 18px
+				height: 19px
+			&:after
+				display: none
+		.nice-select ul
+			width: 100%
+		.price-home
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+		#price-home
+			opacity: 0
+		.irs-line
+			height: 3px
+			background: #a5a5a5
+			border: none
+		.irs-bar
+			height: 3px
+			border: none
+			background: #ff8400
+		.irs-bar-edge
+			height: 3px
+			border: none
+			background: #ff8400
+		.irs-slider
+			width: 16px
+			height: 16px
+			background: #fff
+			border: 4px solid $accent_blue
+		.irs-from
+			top: 50px
+			background: none
+			color: #2e2e2e
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 700
+			line-height: 22px
+		.irs-to
+			top: 50px
+			background: none
+			color: #2e2e2e
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 700
+			line-height: 22px
+		.irs-single
+			top: 50px
+			background: none
+			color: #2e2e2e
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 700
+			line-height: 22px
+		.datepicker-here
+			position: relative
+			margin-top: 20px
+			height: 50px
+			border-radius: 4px
+			border: 2px solid #a5a5a5
+			background-color: rgba(49, 168, 210, 0)
+			color: #a5a5a5
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 400
+			line-height: 50px
+			width: 100%
+			padding-left: 25px
+			padding-right: 25px
+		.date-home--after
+			position: relative
+			display: block
+			&:after
+				content: ''
+				position: absolute
+				top: 32px
+				right: 15px
+				width: 24px
+				height: 26px
+				background-image: url('../img/date.png')
+		.num-person
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			.nice-select
+				width: auto
+				&:before
+					display: none
+		.accomodation-item
+			display: block
+			height: 270px
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			margin-top: 60px
+			text-decoration: none
+			.acc-btn-wrapper
+				opacity: 0
+				transition: 200ms
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				height: 100%
+				background-color: rgba(30, 207, 109, 0.7)
+			&:hover span
+				opacity: 1
+		.accomodation-item--info
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			background-color: #f9f9f9
+			padding-bottom: 30px
+			.accomodation-item--wrapper
+				width: 50%
+				padding-left: 15px
+				padding-right: 15px
+				svg
+					margin-right: 15px
+					position: relative
+					top: 5px
+				.accomodation-item--name
+					color: #282828
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					margin-top: 30px
+				.accomodation-item--price
+					color: #3391e8
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 900
+					line-height: 28px
+					text-transform: uppercase
+					margin-top: 20px
+				.accomodation-item--map
+					color: #2a2a2a
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 400
+					line-height: 20px
+					margin-top: 30px
+				.accomodation-item--date
+					color: #2a2a2a
+					font-family: $default-font
+					font-size: 20px
+					font-weight: 400
+					line-height: 20px
+					margin-top: 20px
+.datepicker
+	border-radius: 4px
+	background-color: #3391e8
+	.datepicker--pointer
+		background-color: #3391e8
+		border: none
+	.datepicker--nav-title
+		color: #ffffff
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+		&:hover
+			background-color: $accent_orange
+			border-radius: 10px
+		i
+			color: #ffffff
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+	.datepicker--nav-action
+		&:hover
+			background-color: $accent_orange
+			border-radius: 50%
+		svg
+			path
+				stroke: #fff
+	.datepicker--day-name
+		color: #ffffff
+		font-size: 15px
+		font-weight: 700
+		line-height: 22px
+	.datepicker--cell-day
+		color: #ffffff
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+		&.-selected-
+			background-color: $accent_orange
+			border-radius: 50%
+		&.-focus-
+			background-color: $accent_orange
+			border-radius: 50%
+.cottage-desc.accomo-inside
+		max-height: 190px
+		overflow: auto
+		.mCSB_draggerRail
+			width: 8px
+			border-right: 4px
+			background-color: rgba(255, 255, 255, 0.4);
+		.mCSB_dragger_bar
+			width: 8px
+			border-radius: 4px
+			background-color: #fff
+			pointer-events: auto
+
+.cottage
+	position: relative
+	height: 607px
+	margin-top: 60px
+	.cottage-slider
+		position: absolute
+		top: 0
+		right: 0
+		width: 60%
+		.cottage-slider--item
+			height: 607px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+		.slick-dots
+			position: absolute
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			bottom: 40px
+			left: calc(50% - 34px)
+			margin: auto
+			z-index: 999
+			list-style: none
+			padding: 0
+			font-size: 0
+			li:not(:last-child)
+				margin-right: 10px
+			button
+				display: block
+				border-radius: 50%
+				border: none
+				width: 15px
+				height: 15px
+				user-select: none
+				outline: none
+				background-color: transparent
+				border: 2px solid #ffffff
+			.slick-active
+				button
+					background-color: #fff
+	.cottage-overlay
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		background-color: $accent_blue
+		width: 46%
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -230px
+			border-left: 230px solid $accent_blue
+			border-bottom: 607px solid transparent
+	.cottage-desc
+		color: #ffffff
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 25px
+		margin-top: 40px
+	.cottage-desc.auctions-inside
+		max-height: 114px
+		overflow: auto
+		.mCSB_draggerRail
+			width: 8px
+			border-right: 4px
+			background-color: #ffbb72
+		.mCSB_dragger_bar
+			width: 8px
+			border-radius: 4px
+			background-color: #ff8400
+			pointer-events: auto
+	.cottage-additionally
+		padding-top: 10px
+		columns: 2
+		column-gap: 20px
+		.cottage-additionally--item
+			color: #ffffff
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 700
+			line-height: 20px
+			padding-top: 20px
+			span
+				position: relative
+				top: -3px
+				display: inline-block
+				width: 8px
+				height: 8px
+				background-color: #ff8400
+				border-radius: 50%
+				margin-right: 30px
+	.cottage-additionally--btn-wrapper
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		.cottage-additionally--btn
+			position: relative
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			border-radius: 25px
+			background-color: #ffffff
+			color: #ff8400
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 700
+			line-height: 20px
+			width: 320px
+			height: 50px
+			padding-left: 20px
+			padding-right: 10px
+			cursor: pointer
+			user-select: none
+			margin-top: 45px
+			span
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 36px
+				height: 36px
+				border-radius: 50%
+				background-color: $accent_orange
+				color: #ffffff
+				font-family: $default-font
+				font-size: 20px
+				font-weight: 700
+				line-height: 20px
+		.cottage-additionally--checkwrapper
+			position: absolute
+			top: -160px
+			left: 50px
+			width: 270px
+			height: 182px
+			border-radius: 4px
+			background-color: #ffffff
+			padding-top: 10px
+			padding-bottom: 20px
+			padding-left: 20px
+			display: none
+			&.active
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+			&:after
+				content: ''
+				position: absolute
+				bottom: -8px
+				right: 12px
+				width: 28px
+				height: 28px
+				border-radius: 4px
+				background-color: #ffffff
+				transform: rotate(45deg)
+			.cottage-checkwrapper
+				overflow: auto
+				color: #282828
+				font-size: 15px
+				font-weight: 700
+				line-height: 30px
+				.mCSB_draggerRail
+						width: 8px
+						border-right: 4px
+						background-color: #ffbb72
+				.mCSB_dragger_bar
+					width: 8px
+					border-radius: 4px
+					background-color: #ff8400
+					pointer-events: auto
+				.cottage-additionally--checkbox
+					display: block
+					cursor: pointer
+					margin: 0
+					.checkbox-square
+						position: relative
+						top: 3px
+						display: inline-block
+						width: 16px
+						height: 16px
+						border-radius: 4px
+						background-color: #fff
+						border: 2px solid $accent_orange
+						margin-right: 12px
+						span
+							display: block
+							position: relative
+							top: 3px
+							margin: auto
+							width: 6px
+							height: 6px
+							border-radius: 0px
+							opacity: 0
+							background-color: $accent_orange
+					input
+						display: none
+						&:checked + .checkbox-square span
+							opacity: 1
+		.cottage-additionally--clear
+			margin-top: 68px
+			margin-left: 20px
+			color: #94cbfe
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 400
+			line-height: 20px
+			text-decoration: underline
+			cursor: pointer
+			&:hover
+				text-decoration: none
+	.cottage-price--wrapper
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		margin-top: 40px
+		align-items: center
+		.cottage-price
+			color: #ffffff
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 900
+			line-height: 28px
+			text-transform: uppercase
+			margin-right: 35px
+	.cottage-rule-map
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		margin-top: 50px
+		.cottage-rule
+			color: #94cbfe
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 400
+			line-height: 20px
+			text-decoration: underline
+			background: none
+			border: none
+			outline: none
+			cursor: pointer
+			padding: 0
+			margin-right: 40px
+			&:hover
+				text-decoration: none
+		.cottage-map
+			color: #fefefe
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 400
+			line-height: 20px
+			svg
+				position: relative
+				top: 3px
+				margin-right: 15px
+			&:hover
+				text-decoration: underline
+				cursor: pointer
+	.cottage-teaser
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		margin-top: 30px
+		.cottage-teaser--start
+			position: relative
+			background-color: #27b2a4
+			color: #ffffff
+			font-family: $default-font
+			line-height: 28px
+			font-size: 14px
+			font-weight: 300
+			padding-top: 8px
+			padding-bottom: 8px
+			padding-right: 10px
+			padding-left: 13px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -10px
+				border-left: 10px solid transparent
+				border-top: 22.5px solid #27b2a4
+				border-bottom: 22.5px solid #27b2a4
+			.price
+				font-size: 16px
+				font-weight: 900
+				text-transform: uppercase
+		.cottage-teaser--now
+			position: relative
+			background-color: #ff8400
+			color: #ffffff
+			font-family: $default-font
+			line-height: 28px
+			font-size: 14px
+			font-weight: 300
+			padding-top: 8px
+			padding-bottom: 8px
+			padding-right: 10px
+			padding-left: 13px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -10px
+				border-left: 10px solid transparent
+				border-top: 22.5px solid #ff8400
+				border-bottom: 22.5px solid #ff8400
+			.price
+				font-size: 16px
+				font-weight: 900
+				text-transform: uppercase
+.auctions-title
+	margin-top: 90px
+	text-align: center
+	color: #3391e8
+	font-family: $default-font
+	font-size: 20px
+	font-weight: 900
+	line-height: 28px
+	text-transform: uppercase
+	padding-bottom: 20px
+.accomodation-inside--title
+	color: #3391e8
+	font-family: $default-font
+	font-size: 20px
+	font-weight: 900
+	line-height: 28px
+	text-transform: uppercase
+	text-align: center
+
+
+.auction-persent--wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	.auction-persent
+		position: relative
+		width: 129px
+		height: 107px
+		background-color: $accent_orange
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		&:after
+			content: ''
+			position: absolute
+			bottom: -23px
+			left: 0
+			border-left: 64.5px solid $accent_orange
+			border-right: 64.5px solid $accent_orange
+			border-bottom: 24px solid transparent
+
+
+// расходники
+.modal-btn--test
+	display: block
+	margin: auto
+	margin-bottom: 20px
+	margin-top: 20px
+
+.advertising
+	position: relative
+	height: 351px
+	background-repeat: no-repeat
+	background-position: 100% 0
+	margin-top: 60px
+	padding-top: 40px
+	padding-left: 40px
+	.advertising-overlay
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 520px
+		background-color: $accent_blue
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -130px
+			border-left: 130px solid $accent_blue
+			border-bottom: 351px solid transparent
+	.price-cutting
+		position: relative
+		z-index: 1
+		color: #ffffff
+		font-family: $default-font
+		font-size: 20px
+		text-transform: uppercase
+		font-weight: 400
+		line-height: 30px
+		span
+			display: block
+			font-weight: 900
+	.price
+		position: relative
+		z-index: 1
+		font-family: $default-font
+		font-size: 30px
+		text-transform: uppercase
+		color: #9effc9
+		font-weight: 700
+		line-height: 40px
+		margin-top: 25px
+		span
+			display: block
+			color: #ffffff
+			font-weight: 900
+	.advertising-btn
+		position: relative
+		z-index: 1
+		margin-top: 30px
+
+// модальные окна
+.modal-wrapper
+	display: none
+	width: 100vw
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 999
+	.modal-overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.scheme-modal
+	position: absolute
+	top: calc(50% - 235px)
+	width: 670px
+	height: 470px
+	left: 0
+	right: 0
+	margin: auto
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	#scheme
+		width: 100%
+		height: 100%
+
+.entry-modal
+	position: absolute
+	top: calc(50% - 160px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 470px
+	height: 320px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 40px
+	padding-left: 30px
+	padding-right: 30px
+	.entry-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	.entry-btn
+		padding: 12px 56px
+		margin-top: 40px
+		margin-right: 20px
+	.reg-btn
+		margin-top: 40px
+		padding: 15px 29px
+
+.register-modal
+	position: absolute
+	top: calc(50% - 220px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 810px
+	height: 440px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 40px
+	padding-left: 30px
+	padding-right: 30px
+	.register-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	form
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+		.modal-input
+			width: 49%
+		.modal-btn
+			margin: auto
+			margin-top: 35px
+		.sms-label
+			margin-bottom: 0
+			margin-top: 35px
+			user-select: none
+			cursor: pointer
+			width: 100%
+			.sms-checkbox
+				position: relative
+				top: 4px
+				display: inline-block
+				width: 21px
+				height: 21px
+				border: 2px solid #ff8400
+				border-radius: 50%
+				background-color: rgba(255, 255, 255, 0)
+				margin-right: 13px
+				span
+					position: relative
+					top: -5px
+					left: 0px
+					display: inline-block
+					border-radius: 50%
+					width: 11px
+					height: 11px
+					background-color: #ff8400
+					opacity: 0
+					transition: 200ms
+			input
+				display: none
+				&:checked + .sms-checkbox span
+					opacity: 1
+
+.thanks-modal
+	position: absolute
+	top: calc(50% - 150px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 470px
+	height: 300px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 45px
+	padding-left: 50px
+	padding-right: 50px
+	.exit
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 20px
+		height: 20px
+		cursor: pointer
+		span
+			position: absolute
+			top: 12px
+			left: 0
+			width: 100%
+			height: 3px
+			background-color: lighten(gray, 20%)
+			border-radius: 10px
+			transition: 200ms
+			&:nth-child(1)
+				transform: rotate(45deg)
+			&:nth-child(2)
+				transform: rotate(-45deg)
+		&:hover
+			span
+				background-color: $accent_orange
+	.thanks-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	.thanks-modal--desc
+		color: #282828
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 25px
+		margin-top: 35px
+	.thanks-modal--btn
+		color: $accent_orange
+		background-color: #fff
+		border: 3px solid $accent_orange
+		padding: 12px 38px
+		margin-top: 35px
+		&:hover
+			color: #fff
+			background-color: $accent_orange
+			transform: none
+			box-shadow: none
+.faq-modal
+	position: absolute
+	top: calc(50% - 270px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 470px
+	height: 540px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 45px
+	padding-left: 50px
+	padding-right: 50px
+	.faq-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	#faq-modal
+		margin-top: 5px
+
+.fedback-modal
+	position: absolute
+	top: calc(50% - 300px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 470px
+	height: 600px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 45px
+	padding-left: 50px
+	padding-right: 50px
+	.fedback-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	#fedback-modal
+		margin-top: 5px
+
+.rule-modal
+	position: absolute
+	top: calc(50% - 265px)
+	left: 0
+	right: 0
+	margin: auto
+	width: 810px
+	box-shadow: 0 11px 35px rgba(0, 65, 126, 0.3)
+	border-radius: 5px
+	background-color: #ffffff
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 45px
+	padding-left: 50px
+	padding-right: 50px
+	.rule-modal--title
+		color: #3391e8
+		font-family: $default-font
+		font-size: 20px
+		font-weight: 900
+		line-height: 31px
+		text-transform: uppercase
+	.rule-modal--desc
+		color: #282828
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 25px
+		margin-top: 50px
+		text-align: left
+	#rule-modal
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+	.rule-label
+		margin-bottom: 0
+		margin-top: 40px
+		user-select: none
+		cursor: pointer
+		.rule-checkbox
+			position: relative
+			top: 4px
+			display: inline-block
+			width: 21px
+			height: 21px
+			border: 2px solid #ff8400
+			border-radius: 50%
+			background-color: rgba(255, 255, 255, 0)
+			margin-right: 13px
+			span
+				position: relative
+				top: -5px
+				left: 0px
+				display: inline-block
+				border-radius: 50%
+				width: 11px
+				height: 11px
+				background-color: #ff8400
+				opacity: 0
+				transition: 200ms
+		input
+			display: none
+			&:checked + .rule-checkbox span
+				opacity: 1
+	.modal-btn
+		margin-top: 30px
+
+// модальные формы
+.modal-input
+	width: 100%
+	height: 50px
+	border-radius: 5px
+	background-color: #f1f1f1
+	border: none
+	outline: none
+	padding-left: 15px
+	padding-right: 15px
+	margin-top: 15px
+.modal-input::-webkit-input-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-input:-moz-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-input::-moz-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-input:-ms-input-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-input:focus:required:invalid
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-input:required:valid
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea
+	width: 100%
+	height: 200px
+	border-radius: 5px
+	background-color: #f1f1f1
+	border: none
+	outline: none
+	padding-left: 15px
+	padding-right: 15px
+	margin-top: 15px
+	padding-top: 15px
+	resize: none
+.modal-textarea::-webkit-input-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea:-moz-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea::-moz-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea:-ms-input-placeholder
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea:focus:required:invalid
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 20px
+.modal-textarea:required:valid
+	color: #2a2a2a
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+.modal-btn
+	border: 3px solid $accent_orange
+	background-color: #fff
+	color: $accent_orange
+	padding: 12px 25px
+	margin-top: 25px
+	&:focus
+		color: $accent_orange
+		outline: n
+	&:hover
+		background-color: $accent_orange
+		box-shadow: none
+		transform: none
+		color: #fff
+.header-burger
+	display: none
+	position: relative
+	padding-top: 10px
+	padding-bottom: 10px
+	z-index: 99
+	.burger-wrapper
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+	.burger
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		height: 26px
+		width: 26px
+		margin-right: 10px
+		span
+			display: block
+			width: 23px
+			height: 3px
+			background-color: #282828
+			border-radius: 20%
+			transition: 300ms
+	.burger.active span:nth-child(2)
+		display: none
+	.burger.active span:nth-child(1)
+		position: relative
+		top: 6px
+		transform: rotate(45deg)
+	.burger.active span:nth-child(3)
+		position: relative
+		top: -7px
+		transform: rotate(-45deg)
+	.text
+		color: #282828
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 700
+		text-transform: uppercase
+		text-decoration: none
+.scheme-modal--wrapper
+	width: 100vw
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	display: block
+	z-index: 55
+	opacity: 0
+	transition: 300ms
+	pointer-events: none
+	.scheme-overlay
+		width: 100%
+		height: 100%
+.ymaps-2-1-50-copyright__wrap
+	display: none
+.ymaps-2-1-50-controls__toolbar_left
+	display: none
+.ymaps-2-1-50-float-button ymaps-2-1-50-float-button_traffic_left
+	display: none
+.ymaps-2-1-50-listbox__button
+	display: none
+.ymaps-2-1-50-controls__control
+	display: none
+.ymaps-2-1-50-float-button.ymaps-2-1-50-float-button_traffic_left
+	display: none
+
+
+
+@import "media" // Всегда в конце
