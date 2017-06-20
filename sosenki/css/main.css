@@ -3244,7 +3244,7 @@ body {
             .cottage .cottage-additionally--btn-wrapper .cottage-additionally--checkwrapper .cottage-checkwrapper .cottage-additionally--checkbox input:checked + .checkbox-square span {
               opacity: 1; }
     .cottage .cottage-additionally--btn-wrapper .cottage-additionally--clear {
-      margin-top: 68px;
+      margin-top: 50px;
       margin-left: 20px;
       color: #94cbfe;
       font-family: "ProximaNova", sans-serif;
@@ -3252,7 +3252,10 @@ body {
       font-weight: 400;
       line-height: 20px;
       text-decoration: underline;
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none; }
       .cottage .cottage-additionally--btn-wrapper .cottage-additionally--clear:hover {
         text-decoration: none; }
   .cottage .cottage-price--wrapper {
@@ -4127,6 +4130,14 @@ body {
 
 .ymaps-2-1-50-float-button.ymaps-2-1-50-float-button_traffic_left {
   display: none; }
+
+.modal-video iframe {
+  position: absolute;
+  top: -webkit-calc(50% - 157.5px);
+  top: calc(50% - 157.5px);
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 @-webkit-keyframes arrow {
   0% {

@@ -87,6 +87,10 @@ $(function() {
 		$('.rule-modal--wrapper').fadeIn();
 	});
 
+	$('.video-btn').click(function() {
+		$('.modal-video').fadeIn();
+	});
+
 
 	// модалка схема 
 	$('.scheme-btn').click(function() {
@@ -172,10 +176,6 @@ $(function() {
 	// кнопка внутренняя аукциона
 	$('.cottage-additionally--btn').click(function() {
 		$('.cottage-additionally--checkwrapper').toggleClass('active');
-	});
-
-	$('.cottage-additionally--clear').click(function() {
-		$('input:checked').removeAttr('checked');
 	});
 
 	// селект фильтр
@@ -349,7 +349,25 @@ $(function() {
 
 	$('.scroll-arrow svg').click(function() {
 		$('body').animate( { scrollTop: $('.teaser').offset().top }, 1000 );
-	})
+	});
+
+	$('.checkbox-hidden').click(function() {
+		var num = $('.cottage-additionally--btn span').text();
+		var check = $(this).val();
+		if ($(this).prop("checked")) {
+			numCheck = parseInt(num) + parseInt(check)
+			$('.cottage-additionally--btn span').text(numCheck);
+		} else {
+			checkNum = num - check
+			$('.cottage-additionally--btn span').text(checkNum);
+		}
+	});
+
+	$('.cottage-additionally--clear').click(function() {
+		$('.cottage-additionally--btn span').text('0');
+	});
+
+	
 
 
 });

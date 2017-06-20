@@ -316,6 +316,21 @@
 
 		<section class="map">
 			<div id="map"></div>
+			<script>
+				function initMap() {
+					var uluru = {lat: 53.227592, lng: 50.266123};
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 12,
+						center: uluru,
+						scrollwheel: false
+					});
+					var marker = new google.maps.Marker({
+						position: uluru,
+						icon: "img/map-marker.svg",
+						map: map
+					});
+				}
+			</script>
 		</section>
 
 	</main>
@@ -326,23 +341,6 @@
 			<div id="scheme"></div>
 		</div>
 	</div>
-
-	<script>
-		function initMap() {
-			var uluru = {lat: 53.227592, lng: 50.266123};
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 12,
-				center: uluru,
-				scrollwheel: false
-			});
-			var marker = new google.maps.Marker({
-				position: uluru,
-				icon: "img/map-marker.svg",
-				map: map
-			});
-
-		}
-	</script>
 
 	<div class="modal-wrapper entry-modal--wrapper">
 		<div class="modal-overlay"></div>
@@ -387,9 +385,10 @@
 		</div>
 	</div>
 
-	<script async defer src="https://maps.googleapis.com/maps/api/
-	js?key=AIzaSyBLKZF6LDIa-Ee8sXa8_fWTm3kE08PR8Rs&callback=initMap"></script>
-	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<div class="modal-wrapper modal-video">
+		<div class="modal-overlay"></div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/5KUmklnqaZM" frameborder="0" allowfullscreen></iframe>
+	</div>
 
 
 	<footer class="footer">
@@ -492,6 +491,10 @@
 	<link rel="stylesheet" href="libs/ion.rangeSlider/ion.rangeSlider.skinHTML5.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/
+	js?key=AIzaSyBLKZF6LDIa-Ee8sXa8_fWTm3kE08PR8Rs&callback=initMap"></script>
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="libs/bootstrap-4.0.0/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
