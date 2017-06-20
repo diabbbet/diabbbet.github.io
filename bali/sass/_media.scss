@@ -135,6 +135,25 @@
 	.main-section {
 		background-image: url(../img/main-section--bg.jpg);
 	}
+	.tour-gallery {
+		margin: 0;
+	}
+	.days {
+		margin-top: 100px;
+	}
+	.gallery-slider {
+		margin-top: 50px;
+	}
+
+	.reviews .review-slider {
+		width: 450px;
+	}
+	.reviews .review-right {
+		padding-top: 0;
+	}
+	.reviews .review-slider--wrapper .review-buttons {
+		bottom: 5px;
+	}
 }
 
 @media screen and ( max-width: 991px ) { 
@@ -187,6 +206,30 @@
 	.reviews .reviews-hitch--title {
 		bottom: -30px;
 		left: 230px;
+	}
+	.about-tour .peoples-left {
+		margin-top: 40px;
+	}
+	.about-tour .title-wrapper .title-before {
+		left: 10.3%;
+	}
+	.about-tour .about-text {
+		margin-top: 100px;
+	}
+	.reviews .review-right {
+		display: none;
+	}
+	.reviews .review-slider {
+		width: 100%;
+	}
+	.reviews {
+		margin-top: 50px;
+	}
+	.about-tour .title-wrapper .title {
+		font-size: 7rem;
+	}
+	.about-tour .about-date--wrapper {
+		margin-top: 200px;
 	}
 }
 
@@ -371,6 +414,64 @@
 	}
 	.modal-place--wrapper .modal-place .modal-form {
 		width: 100%;
+	}
+	.about-tour .about-date--wrapper {
+		margin-top: 100px;
+	}
+	.about-tour .peoples-left .about-btn {
+		width: 150px;
+	}
+	.about-tour .peoples-left {
+		font-size: 1.1rem;
+	}
+	.about-tour .turtle {
+		display: none;
+	}
+	.about-tour .slider-container {
+		padding-top: 70px;
+	}
+	.tour-gallery .gallery-left .gallery-title .title {
+		font-size: 4.2rem;
+	}
+	.tour-gallery .gallery-left .gallery-title .title-hitch {
+		font-size: 3rem;
+	}
+	.about-tour .about-text .desc {
+		font-size: 1.5rem;
+	}
+	.tour-gallery .gallery-slider .gallery-item img {
+		width: 100%;
+	}
+	.about-slider img {
+		margin: auto;
+	}
+	.days .days-title {
+		font-size: 3.5rem;
+	}
+	.days .days-title {
+		left: -5px;
+	}
+	.days .days-desc {
+		padding-left: 50px;
+	}
+	.days .days-desc {
+		font-size: 1.4rem;
+	}
+	.reviews .review-slider .review-item .review-text .desc {
+		font-size: 1rem;
+	}
+	.reviews .review-slider .review-item .review-text {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.reviews .review-slider .review-item .review-text .name {
+		font-size: 2rem;
+	}
+	.modal-place--wrapper .modal-place .modal-form .title {
+		font-size: 1.8rem;
+	}
+	.modal-place--wrapper .modal-place .modal-form .modal-place--submit {
+		margin-top: 50px;
 	}
 }
 

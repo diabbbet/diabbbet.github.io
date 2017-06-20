@@ -559,10 +559,21 @@ header {
 }
 
 .about-tour {
+	position: relative;
 	background-image: url('../img/tour-main--bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 150px;
+	overflow: hidden;
+	.cloud_up {
+		position: absolute;
+		bottom: -300px;
+		left: 200px;
+		width: 1880px;
+		height: 470px;
+		background-image: url(../img/cloud_up.png);
+		animation: cloud 120s linear infinite;
+	}
 	.about-date--wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -777,8 +788,22 @@ header {
 }
 
 .reviews {
+	position: relative;
 	margin-top: 130px;
+	overflow: hidden;
+	.cloud_middle {
+		position: absolute;
+		bottom: -220px;
+		left: -340px;
+		width: 2795px;
+		height: 539px;
+		background-image: url(../img/cloud_middle.png);
+		animation: cloud_b 60s linear infinite;
+		z-index: 1;
+	}
 	.review-slider--wrapper {
+		position: relative;
+		z-index: 2;
 		.review-buttons {
 			position: absolute;
 			bottom: 20px;
@@ -835,6 +860,7 @@ header {
 		position: relative;
 		padding-left: 40px;
 		padding-top: 60px;
+		z-index: 2;
 		img {
 			position: relative;
 			z-index: 1;

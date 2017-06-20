@@ -595,10 +595,21 @@ header {
           transform: scale(1.05); }
 
 .about-tour {
+  position: relative;
   background-image: url("../img/tour-main--bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+  overflow: hidden; }
+  .about-tour .cloud_up {
+    position: absolute;
+    bottom: -300px;
+    left: 200px;
+    width: 1880px;
+    height: 470px;
+    background-image: url(../img/cloud_up.png);
+    -webkit-animation: cloud 120s linear infinite;
+    animation: cloud 120s linear infinite; }
   .about-tour .about-date--wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -809,12 +820,27 @@ header {
       font-weight: 700; }
 
 .reviews {
-  margin-top: 130px; }
-  .reviews .review-slider--wrapper .review-buttons {
+  position: relative;
+  margin-top: 130px;
+  overflow: hidden; }
+  .reviews .cloud_middle {
     position: absolute;
-    bottom: 20px;
-    right: -45px;
+    bottom: -220px;
+    left: -340px;
+    width: 2795px;
+    height: 539px;
+    background-image: url(../img/cloud_middle.png);
+    -webkit-animation: cloud_b 60s linear infinite;
+    animation: cloud_b 60s linear infinite;
     z-index: 1; }
+  .reviews .review-slider--wrapper {
+    position: relative;
+    z-index: 2; }
+    .reviews .review-slider--wrapper .review-buttons {
+      position: absolute;
+      bottom: 20px;
+      right: -45px;
+      z-index: 1; }
   .reviews .review-slider {
     width: 600px; }
     .reviews .review-slider .review-item {
@@ -870,7 +896,8 @@ header {
   .reviews .review-right {
     position: relative;
     padding-left: 40px;
-    padding-top: 60px; }
+    padding-top: 60px;
+    z-index: 2; }
     .reviews .review-right img {
       position: relative;
       z-index: 1; }
@@ -1259,7 +1286,19 @@ footer {
   .main-section:before {
     display: none; }
   .main-section {
-    background-image: url(../img/main-section--bg.jpg); } }
+    background-image: url(../img/main-section--bg.jpg); }
+  .tour-gallery {
+    margin: 0; }
+  .days {
+    margin-top: 100px; }
+  .gallery-slider {
+    margin-top: 50px; }
+  .reviews .review-slider {
+    width: 450px; }
+  .reviews .review-right {
+    padding-top: 0; }
+  .reviews .review-slider--wrapper .review-buttons {
+    bottom: 5px; } }
 
 @media screen and (max-width: 991px) {
   .about-company .carousel-wrapper .carousel {
@@ -1311,7 +1350,23 @@ footer {
     display: none; }
   .reviews .reviews-hitch--title {
     bottom: -30px;
-    left: 230px; } }
+    left: 230px; }
+  .about-tour .peoples-left {
+    margin-top: 40px; }
+  .about-tour .title-wrapper .title-before {
+    left: 10.3%; }
+  .about-tour .about-text {
+    margin-top: 100px; }
+  .reviews .review-right {
+    display: none; }
+  .reviews .review-slider {
+    width: 100%; }
+  .reviews {
+    margin-top: 50px; }
+  .about-tour .title-wrapper .title {
+    font-size: 7rem; }
+  .about-tour .about-date--wrapper {
+    margin-top: 200px; } }
 
 @media screen and (max-width: 767px) {
   .logo-wrapper img {
@@ -1440,4 +1495,43 @@ footer {
   .about-tour .about-teaser {
     font-size: 2rem; }
   .modal-place--wrapper .modal-place .modal-form {
-    width: 100%; } }
+    width: 100%; }
+  .about-tour .about-date--wrapper {
+    margin-top: 100px; }
+  .about-tour .peoples-left .about-btn {
+    width: 150px; }
+  .about-tour .peoples-left {
+    font-size: 1.1rem; }
+  .about-tour .turtle {
+    display: none; }
+  .about-tour .slider-container {
+    padding-top: 70px; }
+  .tour-gallery .gallery-left .gallery-title .title {
+    font-size: 4.2rem; }
+  .tour-gallery .gallery-left .gallery-title .title-hitch {
+    font-size: 3rem; }
+  .about-tour .about-text .desc {
+    font-size: 1.5rem; }
+  .tour-gallery .gallery-slider .gallery-item img {
+    width: 100%; }
+  .about-slider img {
+    margin: auto; }
+  .days .days-title {
+    font-size: 3.5rem; }
+  .days .days-title {
+    left: -5px; }
+  .days .days-desc {
+    padding-left: 50px; }
+  .days .days-desc {
+    font-size: 1.4rem; }
+  .reviews .review-slider .review-item .review-text .desc {
+    font-size: 1rem; }
+  .reviews .review-slider .review-item .review-text {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .reviews .review-slider .review-item .review-text .name {
+    font-size: 2rem; }
+  .modal-place--wrapper .modal-place .modal-form .title {
+    font-size: 1.8rem; }
+  .modal-place--wrapper .modal-place .modal-form .modal-place--submit {
+    margin-top: 50px; } }
