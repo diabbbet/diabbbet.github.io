@@ -698,13 +698,19 @@ header {
 .tour-gallery {
 	position: relative;
 	margin-top: -380px;
+	.flex-bug {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 	.gallery-left--wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		height: 100%;
 		align-items: flex-end;
 	}
 	.gallery-left {
