@@ -736,6 +736,14 @@ header {
 .tour-gallery {
   position: relative;
   margin-top: -380px; }
+  .tour-gallery .flex-bug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .tour-gallery .gallery-left--wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -744,7 +752,6 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
