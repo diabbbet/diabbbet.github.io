@@ -669,6 +669,42 @@ header {
 			bottom: 10px;
 			left: 30px;
 		}
+		.about-slide {
+			position: relative;
+			.about-slide--text {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 200px;
+				height: 200px;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: 200ms;
+				&:hover {
+					opacity: 1;
+				}
+				.name {
+					color: #ffffff;
+					font-family: "HitchHike";
+					font-size: 3rem;
+					font-weight: 400;
+				}
+				.work {
+					color: #ffffff;
+					font-family: $default-font;
+					font-size: 1.4rem;
+					font-weight: 400;
+				}
+				
+			}
+		}
 	}
 	.about-text {
 		margin-top: 180px;
