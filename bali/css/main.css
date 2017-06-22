@@ -93,7 +93,7 @@ header {
   display: flex;
   list-style: none;
   padding: 0; }
-  .navigation ul a {
+  .navigation ul button {
     position: relative;
     font-family: "ProximaNova", sans-serif;
     font-size: 1.6rem;
@@ -103,8 +103,13 @@ header {
     text-decoration: none;
     -webkit-transition: 300ms;
     -o-transition: 300ms;
-    transition: 300ms; }
-    .navigation ul a:after {
+    transition: 300ms;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer; }
+    .navigation ul button:after {
       content: '';
       position: absolute;
       bottom: -10px;
@@ -116,9 +121,9 @@ header {
       -o-transition: 300ms;
       transition: 300ms;
       opacity: 0; }
-    .navigation ul a:hover {
+    .navigation ul button:hover {
       color: #fb459f; }
-      .navigation ul a:hover:after {
+      .navigation ul button:hover:after {
         opacity: 1; }
   .navigation ul li {
     margin-right: 40px; }
@@ -207,6 +212,7 @@ header {
     -webkit-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
+    cursor: pointer;
     z-index: 2; }
     .main-section .main-btn:hover {
       -webkit-transform: scale(1.05);
@@ -388,7 +394,7 @@ header {
 
 .links {
   position: relative;
-  padding-top: 380px;
+  padding-top: 330px;
   padding-bottom: 170px;
   overflow: hidden; }
   .links:after {
@@ -889,8 +895,8 @@ header {
     z-index: 2; }
     .reviews .review-slider--wrapper .review-buttons {
       position: absolute;
-      bottom: 20px;
-      right: -45px;
+      bottom: 10px;
+      left: -100px;
       z-index: 1; }
   .reviews .review-slider {
     width: 600px; }
@@ -1423,7 +1429,7 @@ footer {
   .logo-wrapper img {
     width: calc(186px / 1.5);
     height: calc(85px / 1.5); }
-  .navigation ul a {
+  .navigation ul button {
     font-size: 1.3rem; }
   .gallery .gallery-wrapper .img-wrapper img {
     max-width: 510px; }
@@ -1466,7 +1472,7 @@ footer {
   .logo-wrapper img {
     width: calc(186px / 2);
     height: calc(85px / 2); }
-  .navigation ul a {
+  .navigation ul button {
     font-size: 0.8rem; }
   .navigation ul li {
     margin-right: 10px;

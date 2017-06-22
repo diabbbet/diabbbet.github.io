@@ -58,6 +58,22 @@ $(function() {
 		$('.modal-place--wrapper').fadeOut();
 	});
 
-	
+	$('.about-anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('.about-company .container').offset().top }, 1000 );
+	});
+
+	$('.tour-anchor, .main-btn').click(function(e) {
+		$('body').animate( { scrollTop: $('.links').offset().top }, 1000 );
+	});
+
+	$('.gallery-anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('.gallery').offset().top }, 1000 );
+	});
+
+	$('.about-tour-anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('.about-tour .about-text .title').offset().top }, 1000 );
+	});
+
+
 
 });
