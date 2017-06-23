@@ -54,7 +54,7 @@ $(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
-	$('.modal-place--overlay').click(function() {
+	$('.modal-place--overlay, .exit').click(function() {
 		$('.modal-place--wrapper').fadeOut();
 	});
 
