@@ -92,6 +92,7 @@ $(function() {
 
 	if ($(window).width() <= '576'){
 		$('.days-desc').hide();
+		$('.toggle-one').show();
 		$('.days-title').click(function(){
 			$(this).stop(true,true).toggleClass('opened').stop(true,true).toggleClass('closed').next().stop(true,true).slideToggle();
 			if($(this).hasClass('opened')) {
