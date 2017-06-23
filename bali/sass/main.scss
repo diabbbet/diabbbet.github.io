@@ -1132,13 +1132,14 @@ footer {
 		display: flex;
 		margin-top: 15px;
 		.social-btn {
-			background-color: #fff;
 			width: 37px;
 			height: 37px;
 			border-radius: 50%;
-			transition: 300ms;
 			&:hover {
-				background-color: #fb459f;
+				background-color: #fff;
+				path {
+					fill: #fb459f;
+				}
 			}
 			&:active {
 				transform: scale(1.05);

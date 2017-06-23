@@ -1189,15 +1189,13 @@ footer {
     display: flex;
     margin-top: 15px; }
     footer .social-links .social-btn {
-      background-color: #fff;
       width: 37px;
       height: 37px;
-      border-radius: 50%;
-      -webkit-transition: 300ms;
-      -o-transition: 300ms;
-      transition: 300ms; }
+      border-radius: 50%; }
       footer .social-links .social-btn:hover {
-        background-color: #fb459f; }
+        background-color: #fff; }
+        footer .social-links .social-btn:hover path {
+          fill: #fb459f; }
       footer .social-links .social-btn:active {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
