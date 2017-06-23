@@ -63,7 +63,7 @@ $(function() {
 	});
 
 	$('.about-anchor').click(function(e) {
-		$('body').animate( { scrollTop: $('.about-company .container').offset().top }, 1000 );
+		$('body').animate( { scrollTop: $('.about-company').offset().top }, 1000 );
 	});
 
 	$('.tour-anchor, .main-btn, .footer-btn.main-page').click(function(e) {
@@ -79,7 +79,7 @@ $(function() {
 	});
 
 	$('.about-tour-anchor').click(function(e) {
-		$('body').animate( { scrollTop: $('.about-tour .about-text .title').offset().top }, 1000 );
+		$('body').animate( { scrollTop: $('.about-tour .about-text').offset().top }, 1000 );
 	});
 
 	$('.review-anchor').click(function(e) {

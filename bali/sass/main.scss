@@ -200,9 +200,10 @@ header {
 
 .about-company {
 	position: relative;
-	padding-top: 100px;
+	padding-top: 60px;
 	padding-bottom: 50px;
 	overflow: hidden;
+	margin-top: 30px;
 	.cloud_up {
 		position: absolute;
 		top: 190px;
@@ -371,8 +372,8 @@ header {
 
 .links {
 	position: relative;
-	padding-top: 330px;
-	padding-bottom: 170px;
+	padding-top: 130px;
+	padding-bottom: 130px;
 	overflow: hidden;
 	&:after {
 		content: '';
@@ -396,6 +397,7 @@ header {
 		z-index: 2;
 	}
 	.wrapper {
+		padding-top: 200px;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -471,12 +473,13 @@ header {
 
 .gallery {
 	padding-bottom: 30px;
+	padding-top: 50px;
 	position: relative;
 	.cloud_bottom {
 		position: absolute;
 		bottom: 0px;
 		left: 0;
-		width: 1920px;
+		width: 100%;
 		height: 745px;
 		background-image: url(../img/cloud_bottom.png);
 	}
@@ -718,7 +721,8 @@ header {
 		}
 	}
 	.about-text {
-		margin-top: 180px;
+		margin-top: 130px;
+		padding-top: 50px;
 		.title {
 			color: #ffffff;
 			font-family: $default-font;
@@ -798,13 +802,15 @@ header {
 				border-top: 7px solid #fff;
 				border-right: 8px solid #fff;
 				border-bottom: 7px solid #fff;
+				margin: auto;
 			}
 		}
 	}
 }
 
 .days {
-	margin-top: 200px;
+	margin-top: 150px;
+	padding-top: 50px;
 	.days-title {
 		position: absolute;
 		top: 65px;
@@ -842,7 +848,8 @@ header {
 
 .reviews {
 	position: relative;
-	margin-top: 130px;
+	margin-top: 80px;
+	padding-top: 50px;
 	overflow: hidden;
 	.cloud_middle {
 		position: absolute;
@@ -1072,6 +1079,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow: hidden;
 	&.tour-footer {
 		margin-top: -160px;
 	}
