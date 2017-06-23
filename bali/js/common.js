@@ -50,7 +50,7 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
-	$('.about-btn, .footer-btn').click(function() {
+	$('.about-btn').click(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
@@ -58,12 +58,20 @@ $(function() {
 		$('.modal-place--wrapper').fadeOut();
 	});
 
+	$('.gallery-anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('section.gallery').offset().top }, 1000 );
+	});
+
 	$('.about-anchor').click(function(e) {
 		$('body').animate( { scrollTop: $('.about-company .container').offset().top }, 1000 );
 	});
 
-	$('.tour-anchor, .main-btn').click(function(e) {
-		$('body').animate( { scrollTop: $('.links').offset().top }, 1000 );
+	$('.tour-anchor, .main-btn, .footer-btn.main-page').click(function(e) {
+		$('body').animate( { scrollTop: $('.links .container').offset().top }, 1000 );
+	});
+
+	$('.footer-btn.tour-page').click(function(e) {
+		$('body').animate( { scrollTop: $('.about-tour').offset().top }, 1000 );
 	});
 
 	$('.gallery-anchor').click(function(e) {
@@ -73,6 +81,27 @@ $(function() {
 	$('.about-tour-anchor').click(function(e) {
 		$('body').animate( { scrollTop: $('.about-tour .about-text .title').offset().top }, 1000 );
 	});
+
+	$('.review-anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('.reviews').offset().top }, 1000 );
+	});
+
+	$('.schedule--anchor').click(function(e) {
+		$('body').animate( { scrollTop: $('.days').offset().top }, 1000 );
+	});
+
+	if ($(window).width() <= '576'){
+		$('.days-desc').hide();
+		$('.days-title').click(function(){
+			$(this).stop(true,true).toggleClass('opened').stop(true,true).toggleClass('closed').next().stop(true,true).slideToggle();
+			if($(this).hasClass('opened')) {
+				$(this);
+			}
+			else {
+				$(this);
+			}
+		});
+	}
 
 
 

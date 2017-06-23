@@ -107,15 +107,15 @@
 		justify-content: flex-end;
 	}
 	footer {
-		padding-top: 170px;
-		padding-bottom: 10px;
-		background-position: center 0;
+		padding-top: 50px;
+		padding-bottom: 5px;
+		background-position: center 100%;
 	}
 	footer .logo {
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 	footer .footer-btn {
-		margin-top: 30px;
+		margin-top: 0px;
 	}
 	footer .copyright {
 		margin-top: 10px;
@@ -127,7 +127,7 @@
 		font-size: 6.4rem;
 	}
 	footer .title-hitch {
-		margin-top: 20px;
+		margin-top: 70px;
 	}
 	.main-section:before {
 		display: none;
@@ -153,6 +153,22 @@
 	}
 	.reviews .review-slider--wrapper .review-buttons {
 		bottom: 5px;
+	}
+	.logo-wrapper img{
+		width: 150px;
+	}
+	footer .logo img {
+		width: 150px;
+	}
+	.gallery {
+		padding-bottom: 30px;
+	}
+	footer .footer-btn {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	footer.tour-footer {
+		margin-top: 0;
 	}
 }
 
@@ -230,6 +246,12 @@
 	}
 	.about-tour .about-date--wrapper {
 		margin-top: 200px;
+	}
+	.about-tour .slider-container {
+		margin-top: 20px;
+	}
+	.people-slider--title {
+		display: block;
 	}
 }
 
@@ -450,9 +472,19 @@
 	}
 	.days .days-title {
 		left: -5px;
+		position: static;
+		transform: none;
+		display: inline-block;
+	}
+	.days .days-title .days-hitch--title {
+		position: relative;
+		top: 0;
+		left: -20px;
+		transform: none;
+		display: inline-block;
 	}
 	.days .days-desc {
-		padding-left: 50px;
+		padding-left: 0px;
 	}
 	.days .days-desc {
 		font-size: 1.4rem;
@@ -472,6 +504,12 @@
 	}
 	.modal-place--wrapper .modal-place .modal-form .modal-place--submit {
 		margin-top: 50px;
+	}
+	.days {
+		margin-top: 50px;
+	}
+	.days .days-title {
+		margin-top: 20px;
 	}
 }
 
