@@ -443,6 +443,7 @@ header {
 	}
 	.link:nth-child(1) {
 		margin-right: 30px;
+		display: none;
 		.link-text {
 			top: 0;
 			left: 0;
@@ -452,6 +453,7 @@ header {
 		}
 	}
 	.link:nth-child(2) {
+		display: none;
 		.link-text {
 			top: 0;
 			left: 0;

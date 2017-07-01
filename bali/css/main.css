@@ -480,19 +480,22 @@ header {
         font-weight: 400;
         margin-top: 10px; }
   .links .link:nth-child(1) {
-    margin-right: 30px; }
+    margin-right: 30px;
+    display: none; }
     .links .link:nth-child(1) .link-text {
       top: 0;
       left: 0;
       width: 100%;
       text-align: center;
       margin-top: 350px; }
-  .links .link:nth-child(2) .link-text {
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 65px; }
+  .links .link:nth-child(2) {
+    display: none; }
+    .links .link:nth-child(2) .link-text {
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 65px; }
   .links .link:nth-child(3) {
     margin-top: 37px; }
     .links .link:nth-child(3) .link-text {
