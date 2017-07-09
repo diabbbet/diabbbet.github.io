@@ -226,7 +226,7 @@ $(function() {
 	});
 
 
-	var date = "june 29 2017 22:22:21";
+	var date = "august 29 2017 22:22:21";
 	var firstDate = new Date(date);
 	var lastDate = Date.now();
 	var remaining = firstDate - lastDate;
