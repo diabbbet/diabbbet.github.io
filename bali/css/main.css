@@ -635,8 +635,7 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
-    margin-top: 195px; }
+    align-items: center; }
     .about-tour .about-date--wrapper .about-date {
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
@@ -645,7 +644,8 @@ header {
       text-transform: uppercase;
       margin-right: 10px; }
   .about-tour .title-wrapper {
-    position: relative; }
+    position: relative;
+    margin-top: 195px; }
     .about-tour .title-wrapper .title {
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
@@ -851,21 +851,24 @@ header {
     margin: auto; }
 
 .days {
-  margin-top: 150px;
-  padding-top: 50px; }
+  margin-top: 100px; }
+  .days .title {
+    color: #48eafb;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-variant: small-caps; }
   .days .days-title {
-    position: absolute;
-    top: 65px;
-    left: 5px;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    position: relative;
+    display: inline-block;
     color: #eeeeee;
     font-family: "ProximaNova", sans-serif;
     font-size: 5rem;
     font-weight: 900;
     font-variant: small-caps;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 50px; }
     .days .days-title .days-hitch--title {
       position: absolute;
       top: -5px;
@@ -881,11 +884,189 @@ header {
     font-family: "ProximaNova", sans-serif;
     font-size: 2rem;
     color: #2c2c2c;
-    font-weight: 400;
-    padding-left: 110px; }
+    font-weight: 400; }
     .days .days-desc span {
       color: #01cbfe;
       font-weight: 700; }
+  .days .days-slider {
+    position: relative;
+    margin-top: 50px; }
+    .days .days-slider .slide .img1 {
+      width: 100%;
+      height: 250px;
+      background-color: blue; }
+    .days .days-slider .slide .img2 {
+      width: 100%;
+      height: 250px;
+      background-color: red; }
+    .days .days-slider .slide .img3 {
+      width: 100%;
+      height: 250px;
+      background-color: yellow; }
+    .days .days-slider .carousel-btn.left {
+      position: absolute;
+      top: calc(50% - 20.5px);
+      left: 0;
+      z-index: 5; }
+    .days .days-slider .carousel-btn.right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 5;
+      top: calc(50% - 20.5px); }
+
+.exist {
+  padding-top: 100px; }
+  .exist .title {
+    color: #48eafb;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin-bottom: 50px; }
+  .exist .exist-desc {
+    font-family: "ProximaNova", sans-serif;
+    font-size: 2rem;
+    color: #2c2c2c;
+    font-weight: 400; }
+  .exist .exist-slider {
+    position: relative; }
+    .exist .exist-slider .slide .img1 {
+      width: 100%;
+      height: 300px;
+      background-color: blue; }
+    .exist .exist-slider .slide .img2 {
+      width: 100%;
+      height: 300px;
+      background-color: red; }
+    .exist .exist-slider .slide .img3 {
+      width: 100%;
+      height: 300px;
+      background-color: yellow; }
+    .exist .exist-slider .carousel-btn.left {
+      position: absolute;
+      bottom: 0;
+      right: -71px;
+      z-index: 5; }
+    .exist .exist-slider .carousel-btn.right {
+      position: absolute;
+      bottom: 0;
+      right: -112px;
+      z-index: 5;
+      bottom: 0; }
+
+.tour-detail {
+  padding-top: 100px; }
+  .tour-detail .title {
+    color: #48eafb;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin-bottom: 50px; }
+  .tour-detail .detail {
+    padding: 0;
+    list-style: none; }
+    .tour-detail .detail .text {
+      font-family: "ProximaNova", sans-serif;
+      font-size: 2.4rem;
+      color: #2c2c2c;
+      font-weight: 400;
+      margin-right: 30px; }
+    .tour-detail .detail .desc {
+      font-family: "ProximaNova", sans-serif;
+      font-size: 2rem;
+      color: #2c2c2c;
+      font-weight: 400; }
+  .tour-detail .detail-price--title {
+    color: #eeeeee;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    margin-top: 50px; }
+  .tour-detail .detail-price--list {
+    list-style: none; }
+    .tour-detail .detail-price--list li {
+      position: relative;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 2rem;
+      color: #2c2c2c;
+      font-weight: 400;
+      margin-top: 10px; }
+      .tour-detail .detail-price--list li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #000; }
+  .tour-detail .detail-btn--wrapp {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 100px; }
+    .tour-detail .detail-btn--wrapp .detail-btn {
+      background-color: #fb459f;
+      border: none;
+      outline: none;
+      height: 39px;
+      border-radius: 22px;
+      width: 170px;
+      color: #fefefe;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      -webkit-transition: 200ms;
+      -o-transition: 200ms;
+      transition: 200ms;
+      cursor: pointer; }
+      .tour-detail .detail-btn--wrapp .detail-btn:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+
+.curators {
+  padding-top: 100px; }
+  .curators .title {
+    color: #48eafb;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin-bottom: 50px; }
+  .curators .curators-gallery {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .curators .curators-gallery .curators-galler--item {
+      width: 30%;
+      height: 250px;
+      background-color: tomato; }
 
 .reviews {
   position: relative;
