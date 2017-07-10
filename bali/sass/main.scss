@@ -581,6 +581,10 @@ header {
 	background-repeat: no-repeat;
 	padding-bottom: 150px;
 	overflow: hidden;
+	iframe {
+		position: relative;
+		z-index: 10;
+	}
 	.cloud_up {
 		position: absolute;
 		bottom: -220px;
@@ -589,6 +593,16 @@ header {
 		height: 470px;
 		background-image: url(../img/cloud_up.png);
 		animation: cloud 120s linear infinite;
+	}
+	.cloud_middle {
+		position: absolute;
+		bottom: -50px;
+		left: -340px;
+		width: 2795px;
+		height: 539px;
+		background-image: url(../img/cloud_middle.png);
+		animation: cloud_b 60s linear infinite;
+		z-index: 1;
 	}
 	.about-date--wrapper {
 		display: -webkit-flex;
@@ -944,7 +958,7 @@ header {
 	.title {
 		color: #48eafb;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 7.5rem;
+		font-size: 6rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		font-variant: small-caps;
@@ -953,6 +967,14 @@ header {
 	.detail {
 		padding: 0;
 		list-style: none;
+		li {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+		}
 		.text {
 			font-family: "ProximaNova", sans-serif;
 			font-size: 2.4rem;
@@ -968,7 +990,7 @@ header {
 		}
 	}
 	.detail-price--title {
-		color: #eeeeee;
+		color: #000;
 		font-family: "ProximaNova", sans-serif;
 		font-size: 3rem;
 		font-weight: 900;
@@ -1032,7 +1054,7 @@ header {
 	.title {
 		color: #48eafb;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 7.5rem;
+		font-size: 5rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		font-variant: small-caps;
@@ -1050,6 +1072,53 @@ header {
 			position: absolute;
 			bottom: -41px;
 			left: 51px;
+		}
+	}
+	.img-wrapper {
+		position: relative;
+		width: 370px;
+		overflow: hidden;
+	}
+	.down {
+		position: absolute;
+		bottom: 40px;
+		left: 20px;
+		.carousel-name {
+			color: #ffffff;
+			font-family: "HitchHike", sans-serif;
+			font-size: 3rem;
+			font-weight: 400;
+		}
+		.carousel-position {
+			color: #ffffff;
+			font-family: $default-font;
+			font-size: 1.4rem;
+			font-weight: 400;
+			margin-top: 5px;
+		}
+	}
+	.top {
+		position: absolute;
+		top: 41px;
+		right: -44px;
+		transform: rotate(-90deg);
+		.desc {
+			color: #ffffff;
+			font-family: $default-font;
+			font-size: 1.8rem;
+			font-weight: 700;
+			background-color: #fb459f;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			text-transform: uppercase;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		img {
+			position: absolute;
+			top: -15px;
+			left: -40px;
+			transform: rotate(90deg);
 		}
 	}
 }

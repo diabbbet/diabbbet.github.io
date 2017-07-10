@@ -615,6 +615,9 @@ header {
   background-repeat: no-repeat;
   padding-bottom: 150px;
   overflow: hidden; }
+  .about-tour iframe {
+    position: relative;
+    z-index: 10; }
   .about-tour .cloud_up {
     position: absolute;
     bottom: -220px;
@@ -624,6 +627,16 @@ header {
     background-image: url(../img/cloud_up.png);
     -webkit-animation: cloud 120s linear infinite;
     animation: cloud 120s linear infinite; }
+  .about-tour .cloud_middle {
+    position: absolute;
+    bottom: -50px;
+    left: -340px;
+    width: 2795px;
+    height: 539px;
+    background-image: url(../img/cloud_middle.png);
+    -webkit-animation: cloud_b 60s linear infinite;
+    animation: cloud_b 60s linear infinite;
+    z-index: 1; }
   .about-tour .about-date--wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -961,7 +974,7 @@ header {
   .tour-detail .title {
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 7.5rem;
+    font-size: 6rem;
     font-weight: 900;
     text-transform: uppercase;
     font-variant: small-caps;
@@ -969,6 +982,18 @@ header {
   .tour-detail .detail {
     padding: 0;
     list-style: none; }
+    .tour-detail .detail li {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
     .tour-detail .detail .text {
       font-family: "ProximaNova", sans-serif;
       font-size: 2.4rem;
@@ -981,7 +1006,7 @@ header {
       color: #2c2c2c;
       font-weight: 400; }
   .tour-detail .detail-price--title {
-    color: #eeeeee;
+    color: #000;
     font-family: "ProximaNova", sans-serif;
     font-size: 3rem;
     font-weight: 900;
@@ -1044,7 +1069,7 @@ header {
   .curators .title {
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 7.5rem;
+    font-size: 5rem;
     font-weight: 900;
     text-transform: uppercase;
     font-variant: small-caps;
@@ -1060,6 +1085,50 @@ header {
       position: absolute;
       bottom: -41px;
       left: 51px; }
+  .curators .img-wrapper {
+    position: relative;
+    width: 370px;
+    overflow: hidden; }
+  .curators .down {
+    position: absolute;
+    bottom: 40px;
+    left: 20px; }
+    .curators .down .carousel-name {
+      color: #ffffff;
+      font-family: "HitchHike", sans-serif;
+      font-size: 3rem;
+      font-weight: 400; }
+    .curators .down .carousel-position {
+      color: #ffffff;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 5px; }
+  .curators .top {
+    position: absolute;
+    top: 41px;
+    right: -44px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+    .curators .top .desc {
+      color: #ffffff;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      background-color: #fb459f;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      text-transform: uppercase;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .curators .top img {
+      position: absolute;
+      top: -15px;
+      left: -40px;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
 
 .reviews {
   position: relative;
