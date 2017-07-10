@@ -1050,28 +1050,21 @@ header {
     font-variant: small-caps;
     margin-bottom: 50px; }
   .curators .curators-gallery {
-    padding-left: 50px;
-    padding-right: 50px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .curators .curators-gallery .curators-galler--item {
-      width: 30%;
-      height: 250px;
-      background-color: tomato; }
+    position: relative; }
+    .curators .curators-gallery .carousel-btn.left {
+      position: absolute;
+      bottom: -41px;
+      left: 0;
+      z-index: 5; }
+    .curators .curators-gallery .carousel-btn.right {
+      position: absolute;
+      bottom: -41px;
+      left: 51px; }
 
 .reviews {
   position: relative;
-  margin-top: 80px;
   padding-top: 50px;
+  margin-top: 50px;
   overflow: hidden; }
   .reviews .cloud_middle {
     position: absolute;

@@ -1039,26 +1039,25 @@ header {
 		margin-bottom: 50px;
 	}
 	.curators-gallery {
-		padding-left: 50px;
-		padding-right: 50px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: space-between;
-		.curators-galler--item {
-			width: 30%;
-			height: 250px;
-			background-color: tomato;
+		position: relative;
+		.carousel-btn.left {
+			position: absolute;
+			bottom: -41px;
+			left: 0;
+			z-index: 5;
+		}
+		.carousel-btn.right {
+			position: absolute;
+			bottom: -41px;
+			left: 51px;
 		}
 	}
 }
 
 .reviews {
 	position: relative;
-	margin-top: 80px;
 	padding-top: 50px;
+	margin-top: 50px;
 	overflow: hidden;
 	.cloud_middle {
 		position: absolute;

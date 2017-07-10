@@ -110,6 +110,13 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
+	$('.curators-gallery').slick({
+		slidesToShow: 3,
+		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
+		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
+	});
+	
+
 
 
 });
