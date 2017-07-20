@@ -130,6 +130,32 @@ header {
   .navigation ul li {
     margin-right: 40px; }
 
+.header-contacts {
+  margin-left: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header-contacts .phone {
+    color: #fff;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    cursor: pointer; }
+    .header-contacts .phone:hover {
+      text-decoration: underline; }
+
 .language {
   display: -webkit-flex;
   display: -moz-flex;
@@ -308,7 +334,7 @@ header {
   .about-company .carousel-wrapper {
     position: absolute;
     top: 0;
-    left: 11%;
+    left: 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -322,8 +348,10 @@ header {
     justify-content: flex-end;
     width: 100%;
     margin-top: 220px; }
+    .about-company .carousel-wrapper .carousel-item {
+      outline: none; }
     .about-company .carousel-wrapper .carousel {
-      width: 62%;
+      width: 50%;
       z-index: 2; }
       .about-company .carousel-wrapper .carousel img {
         margin: 0; }
@@ -400,6 +428,15 @@ header {
   padding-top: 130px;
   padding-bottom: 130px;
   overflow: hidden; }
+  .links .title {
+    position: relative;
+    z-index: 5;
+    color: #48eafb;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 7.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-variant: small-caps; }
   .links:after {
     content: '';
     position: absolute;
@@ -421,7 +458,7 @@ header {
     animation: cloud_b 60s linear infinite;
     z-index: 2; }
   .links .wrapper {
-    padding-top: 200px;
+    padding-top: 100px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -562,6 +599,8 @@ header {
     .gallery .gallery-wrapper .img-wrapper {
       position: relative;
       margin-top: 30px; }
+      .gallery .gallery-wrapper .img-wrapper a {
+        outline: none; }
       .gallery .gallery-wrapper .img-wrapper img {
         -webkit-box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
         box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2); }
@@ -1536,16 +1575,13 @@ footer {
     -webkit-transform: translate(-100px);
     transform: translate(-100px); } }
 
-@media screen and (max-width: 1800px) {
-  .about-company .carousel-wrapper .carousel {
-    width: 50%; }
-  .about-company .carousel-wrapper {
-    left: 0; } }
-
 @media screen and (max-width: 1550px) {
   .about-company .carousel-wrapper .carousel {
-    width: 60%;
-    left: 12%; } }
+    width: 54%; } }
+
+@media screen and (max-width: 1399px) {
+  .about-company .carousel-wrapper .carousel {
+    width: 50%; } }
 
 @media screen and (max-width: 1199px) {
   body .container {

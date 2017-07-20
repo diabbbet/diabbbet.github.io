@@ -99,6 +99,28 @@ header {
 	}
 }
 
+.header-contacts {
+	margin-left: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	.phone {
+		color: #fff;
+		font-family: $default-font;
+		font-size: 1.6rem;
+		font-weight: 700;
+		text-decoration: none;
+		transition: 300ms;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .language {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -284,7 +306,7 @@ header {
 	.carousel-wrapper {
 		position: absolute;
 		top: 0;
-		left: 11%;
+		left: 0;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -293,8 +315,11 @@ header {
 		justify-content: flex-end;
 		width: 100%;
 		margin-top: 220px;
+		.carousel-item {
+			outline: none;
+		}
 		.carousel {
-			width: 62%;
+			width: 50%;
 			z-index: 2;
 			img {
 				margin: 0;
@@ -375,6 +400,16 @@ header {
 	padding-top: 130px;
 	padding-bottom: 130px;
 	overflow: hidden;
+	.title {
+		position: relative;
+		z-index: 5;
+		color: #48eafb;
+		font-family: $default-font;
+		font-size: 7.6rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-variant: small-caps;
+	}
 	&:after {
 		content: '';
 		position: absolute;
@@ -397,7 +432,7 @@ header {
 		z-index: 2;
 	}
 	.wrapper {
-		padding-top: 200px;
+		padding-top: 100px;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -525,6 +560,9 @@ header {
 		.img-wrapper {
 			position: relative;
 			margin-top: 30px;
+			a {
+				outline: none;
+			}
 			img {
 				box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
 			}

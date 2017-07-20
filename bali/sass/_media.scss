@@ -1,17 +1,12 @@
-
-@media screen and ( max-width: 1800px ) {
+@media screen and ( max-width: 1550px ) {
 	.about-company .carousel-wrapper .carousel {
-		width: 50%;
-	}
-	.about-company .carousel-wrapper {
-		left: 0;
+		width: 54%;
 	}
 }
 
-@media screen and ( max-width: 1550px ) {
+@media screen and ( max-width: 1399px ) {
 	.about-company .carousel-wrapper .carousel {
-		width: 60%;
-		left: 12%;
+		width: 50%;
 	}
 }
 
