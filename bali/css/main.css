@@ -1584,7 +1584,7 @@ header {
           -ms-transform: scale(1.1);
           transform: scale(1.1); }
         .modal-place--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-place--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-consult--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-consult--wrapper .modal-write .modal-form .modal-place--submit.write {
-          margin-top: 30px; }
+          margin-top: 60px; }
         .modal-place--wrapper .modal-place .modal-form .modal-place--submit.consult, .modal-place--wrapper .modal-write .modal-form .modal-place--submit.consult, .modal-write--wrapper .modal-place .modal-form .modal-place--submit.consult, .modal-write--wrapper .modal-write .modal-form .modal-place--submit.consult, .modal-consult--wrapper .modal-place .modal-form .modal-place--submit.consult, .modal-consult--wrapper .modal-write .modal-form .modal-place--submit.consult {
           width: 220px; }
       .modal-place--wrapper .modal-place .modal-form .residues, .modal-place--wrapper .modal-write .modal-form .residues, .modal-write--wrapper .modal-place .modal-form .residues, .modal-write--wrapper .modal-write .modal-form .residues, .modal-consult--wrapper .modal-place .modal-form .residues, .modal-consult--wrapper .modal-write .modal-form .residues {
