@@ -255,7 +255,7 @@ header {
     position: relative;
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 9.1rem;
+    font-size: 3.5rem;
     font-weight: 900;
     font-variant: small-caps;
     text-transform: uppercase;
@@ -266,7 +266,7 @@ header {
     font-family: "HitchHike", sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 10px;
     z-index: 2; }
   .main-section .main-btn {
     position: relative;
@@ -322,7 +322,7 @@ header {
     position: relative;
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 7.6rem;
+    font-size: 5.9rem;
     font-weight: 900;
     font-variant: small-caps;
     text-transform: uppercase; }
@@ -447,15 +447,42 @@ header {
           -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           transform: rotate(90deg); }
-      .about-company .carousel-wrapper .carousel .social {
+      .about-company .carousel-wrapper .carousel .social-vk {
         position: absolute;
         bottom: 40px;
-        right: 20px;
-        width: 50px;
-        height: 50px; }
-        .about-company .carousel-wrapper .carousel .social svg {
-          width: 50px;
-          height: 50px; }
+        right: 57px;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms; }
+        .about-company .carousel-wrapper .carousel .social-vk:hover {
+          background-color: #fff; }
+          .about-company .carousel-wrapper .carousel .social-vk:hover path {
+            fill: #fb459f; }
+        .about-company .carousel-wrapper .carousel .social-vk:active {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
+      .about-company .carousel-wrapper .carousel .social-inst {
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms; }
+        .about-company .carousel-wrapper .carousel .social-inst:hover {
+          background-color: #fff; }
+          .about-company .carousel-wrapper .carousel .social-inst:hover path {
+            fill: #fb459f; }
+        .about-company .carousel-wrapper .carousel .social-inst:active {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .carousel-btn {
   width: 41px;
@@ -711,6 +738,14 @@ header {
   background-repeat: no-repeat;
   padding-bottom: 150px;
   overflow: hidden; }
+  .about-tour .video-title {
+    color: #fefefe;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px; }
   .about-tour iframe {
     position: relative;
     z-index: 10;
@@ -814,7 +849,7 @@ header {
       outline: none;
       height: 39px;
       border-radius: 22px;
-      width: 170px;
+      width: 180px;
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
       font-size: 1.3rem;
@@ -1107,30 +1142,41 @@ header {
     margin-bottom: 50px; }
   .tour-detail .detail {
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .tour-detail .detail li {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
+      text-align: center;
+      position: relative; }
+      .tour-detail .detail li:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #000; }
     .tour-detail .detail .text {
       font-family: "ProximaNova", sans-serif;
       font-size: 2.4rem;
       color: #2c2c2c;
-      font-weight: 400;
-      margin-right: 30px; }
+      font-weight: 400; }
     .tour-detail .detail .desc {
       font-family: "ProximaNova", sans-serif;
       font-size: 2rem;
       color: #2c2c2c;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-top: 20px; }
   .tour-detail .detail-price--title {
     color: #000;
     font-family: "ProximaNova", sans-serif;
@@ -1164,10 +1210,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-right: 100px; }
     .tour-detail .detail-btn--wrapp .detail-btn {
       background-color: #fb459f;
@@ -1175,7 +1221,7 @@ header {
       outline: none;
       height: 39px;
       border-radius: 22px;
-      width: 170px;
+      width: 200px;
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
       font-size: 1.3rem;
@@ -1204,12 +1250,12 @@ header {
     position: relative; }
     .curators .curators-gallery .carousel-btn.left {
       position: absolute;
-      bottom: -41px;
+      bottom: -51px;
       left: 0;
       z-index: 5; }
     .curators .curators-gallery .carousel-btn.right {
       position: absolute;
-      bottom: -41px;
+      bottom: -51px;
       left: 51px; }
   .curators .img-wrapper {
     position: relative;

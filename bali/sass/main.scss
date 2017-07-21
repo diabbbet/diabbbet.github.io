@@ -203,7 +203,7 @@ header {
 		position: relative;
 		color: #48eafb;
 		font-family: $default-font;
-		font-size: 9.1rem;
+		font-size: 3.5rem;
 		font-weight: 900;
 		font-variant: small-caps;
 		text-transform: uppercase;
@@ -215,7 +215,7 @@ header {
 		font-family: "HitchHike", sans-serif;
 		font-size: 4rem;
 		font-weight: 400;
-		margin-top: 30px;
+		margin-top: 10px;
 		z-index: 2;
 	}
 	.main-btn {
@@ -271,7 +271,7 @@ header {
 		position: relative;
 		color: #48eafb;
 		font-family: $default-font;
-		font-size: 7.6rem;
+		font-size: 5.9rem;
 		font-weight: 900;
 		font-variant: small-caps;
 		text-transform: uppercase;
@@ -403,15 +403,40 @@ header {
 					transform: rotate(90deg);
 				}
 			}
-			.social {
+			.social-vk {
 				position: absolute;
 				bottom: 40px;
-				right: 20px;
-				width: 50px;
-				height: 50px;
-				svg {
-					width: 50px;
-					height: 50px;
+				right: 57px;
+				width: 37px;
+				height: 37px;
+				border-radius: 50%;
+				transition: 300ms;
+				&:hover {
+					background-color: #fff;
+					path {
+						fill: #fb459f;
+					}
+				}
+				&:active {
+					transform: scale(1.05);
+				}
+			}
+			.social-inst {
+				position: absolute;
+				bottom: 40px;
+				right: 10px;
+				width: 37px;
+				height: 37px;
+				border-radius: 50%;
+				transition: 300ms;
+				&:hover {
+					background-color: #fff;
+					path {
+						fill: #fb459f;
+					}
+				}
+				&:active {
+					transform: scale(1.05);
 				}
 			}
 		}
@@ -662,6 +687,15 @@ header {
 	background-repeat: no-repeat;
 	padding-bottom: 150px;
 	overflow: hidden;
+	.video-title {
+		color: #fefefe;
+		font-family: $default-font;
+		font-size: 2.5rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 	iframe {
 		position: relative;
 		z-index: 10;
@@ -759,7 +793,7 @@ header {
 			outline: none;
 			height: 39px;
 			border-radius: 22px;
-			width: 170px;
+			width: 180px;
 			color: #fefefe;
 			font-family: $default-font;
 			font-size: 1.3rem;
@@ -1082,26 +1116,38 @@ header {
 	.detail {
 		padding: 0;
 		list-style: none;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
 		li {
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			justify-content: space-between;
+			text-align: center;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				border-radius: 50%;
+				background-color: #000;
+			}
 		}
 		.text {
 			font-family: "ProximaNova", sans-serif;
 			font-size: 2.4rem;
 			color: #2c2c2c;
 			font-weight: 400;
-			margin-right: 30px;
 		}
 		.desc {
 			font-family: "ProximaNova", sans-serif;
 			font-size: 2rem;
 			color: #2c2c2c;
 			font-weight: 400;
+			margin-top: 20px;
 		}
 	}
 	.detail-price--title {
@@ -1139,7 +1185,7 @@ header {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		padding-right: 100px;
 		.detail-btn {
 			background-color: #fb459f;
@@ -1147,7 +1193,7 @@ header {
 			outline: none;
 			height: 39px;
 			border-radius: 22px;
-			width: 170px;
+			width: 200px;
 			color: #fefefe;
 			font-family: "ProximaNova", sans-serif;
 			font-size: 1.3rem;
@@ -1179,13 +1225,13 @@ header {
 		position: relative;
 		.carousel-btn.left {
 			position: absolute;
-			bottom: -41px;
+			bottom: -51px;
 			left: 0;
 			z-index: 5;
 		}
 		.carousel-btn.right {
 			position: absolute;
-			bottom: -41px;
+			bottom: -51px;
 			left: 51px;
 		}
 	}
