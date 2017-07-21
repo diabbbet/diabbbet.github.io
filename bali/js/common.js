@@ -48,8 +48,12 @@ $(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
-	$('.modal-place--overlay, .exit').click(function() {
-		$('.modal-place--wrapper').fadeOut();
+	$('.header-btn').click(function() {
+		$('.modal-write--wrapper').fadeIn();
+	});
+
+	$('.modal-place--overlay, .modal-write--overlay, .exit').click(function() {
+		$('.modal-place--wrapper, .modal-write--wrapper').fadeOut();
 	});
 
 	$('.gallery-anchor').click(function(e) {

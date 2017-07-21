@@ -87,7 +87,7 @@ header {
     display: -ms-flexbox;
     display: flex; }
 
-.navigation ul {
+.navigation {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -95,42 +95,59 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  padding: 0; }
-  .navigation ul button {
-    position: relative;
-    font-family: "ProximaNova", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-    -webkit-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
-    background: none;
-    border: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .navigation ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
     padding: 0;
-    outline: none;
-    cursor: pointer; }
-    .navigation ul button:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      width: 100%;
-      height: 10px;
-      background-image: url(../img/wave_nav.png);
+    margin: 0; }
+    .navigation ul button {
+      position: relative;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
       -webkit-transition: 300ms;
       -o-transition: 300ms;
       transition: 300ms;
-      opacity: 0; }
-    .navigation ul button:hover {
-      color: #fb459f; }
-      .navigation ul button:hover:after {
-        opacity: 1; }
-  .navigation ul li {
-    margin-right: 40px; }
+      background: none;
+      border: none;
+      padding: 0;
+      outline: none;
+      cursor: pointer; }
+      .navigation ul button:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-image: url(../img/wave_nav.png);
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;
+        opacity: 0; }
+      .navigation ul button:hover {
+        color: #fb459f; }
+        .navigation ul button:hover:after {
+          opacity: 1; }
+    .navigation ul li {
+      margin-right: 40px; }
 
 .header-contacts {
   margin-left: 40px;
@@ -141,6 +158,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -157,6 +183,26 @@ header {
     cursor: pointer; }
     .header-contacts .phone:hover {
       text-decoration: underline; }
+  .header-contacts .header-btn {
+    color: #fefefe;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 21px;
+    background-color: #fb459f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px; }
 
 .language {
   display: -webkit-flex;
@@ -1313,7 +1359,7 @@ header {
     font-size: 4rem;
     font-weight: 400; }
 
-.modal-place--wrapper {
+.modal-place--wrapper, .modal-write--wrapper {
   display: none;
   position: fixed;
   top: 0;
@@ -1321,14 +1367,14 @@ header {
   width: 100vw;
   height: 100vh;
   z-index: 99; }
-  .modal-place--wrapper .modal-place--overlay {
+  .modal-place--wrapper .modal-place--overlay, .modal-place--wrapper .modal-write--overlay, .modal-write--wrapper .modal-place--overlay, .modal-write--wrapper .modal-write--overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(14, 18, 86, 0.65); }
-  .modal-place--wrapper .modal-place {
+  .modal-place--wrapper .modal-place, .modal-place--wrapper .modal-write, .modal-write--wrapper .modal-place, .modal-write--wrapper .modal-write {
     width: 100%;
     height: 100%;
     display: -webkit-flex;
@@ -1346,7 +1392,7 @@ header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-    .modal-place--wrapper .modal-place .modal-form {
+    .modal-place--wrapper .modal-place .modal-form, .modal-place--wrapper .modal-write .modal-form, .modal-write--wrapper .modal-place .modal-form, .modal-write--wrapper .modal-write .modal-form {
       position: relative;
       display: -webkit-flex;
       display: -moz-flex;
@@ -1373,14 +1419,14 @@ header {
       background-image: url("../img/modal-bg.jpg");
       background-size: cover;
       background-position: center center; }
-      .modal-place--wrapper .modal-place .modal-form .exit {
+      .modal-place--wrapper .modal-place .modal-form .exit, .modal-place--wrapper .modal-write .modal-form .exit, .modal-write--wrapper .modal-place .modal-form .exit, .modal-write--wrapper .modal-write .modal-form .exit {
         position: absolute;
         top: 10px;
         right: 10px;
         width: 20px;
         height: 20px;
         cursor: pointer; }
-        .modal-place--wrapper .modal-place .modal-form .exit:before {
+        .modal-place--wrapper .modal-place .modal-form .exit:before, .modal-place--wrapper .modal-write .modal-form .exit:before, .modal-write--wrapper .modal-place .modal-form .exit:before, .modal-write--wrapper .modal-write .modal-form .exit:before {
           content: '';
           position: absolute;
           top: 8px;
@@ -1391,7 +1437,7 @@ header {
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
-        .modal-place--wrapper .modal-place .modal-form .exit:after {
+        .modal-place--wrapper .modal-place .modal-form .exit:after, .modal-place--wrapper .modal-write .modal-form .exit:after, .modal-write--wrapper .modal-place .modal-form .exit:after, .modal-write--wrapper .modal-write .modal-form .exit:after {
           content: '';
           position: absolute;
           top: 8px;
@@ -1402,7 +1448,7 @@ header {
           -webkit-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-      .modal-place--wrapper .modal-place .modal-form .title {
+      .modal-place--wrapper .modal-place .modal-form .title, .modal-place--wrapper .modal-write .modal-form .title, .modal-write--wrapper .modal-place .modal-form .title, .modal-write--wrapper .modal-write .modal-form .title {
         color: #fefefe;
         font-family: "ProximaNova", sans-serif;
         font-size: 2.4rem;
@@ -1410,7 +1456,7 @@ header {
         text-transform: uppercase;
         text-align: center;
         padding-bottom: 20px; }
-      .modal-place--wrapper .modal-place .modal-form .modal-place--input {
+      .modal-place--wrapper .modal-place .modal-form .modal-place--input, .modal-place--wrapper .modal-write .modal-form .modal-place--input, .modal-write--wrapper .modal-place .modal-form .modal-place--input, .modal-write--wrapper .modal-write .modal-form .modal-place--input {
         border-radius: 22px;
         border: 2px solid #ffffff;
         background-color: rgba(251, 69, 159, 0);
@@ -1423,19 +1469,45 @@ header {
         font-family: "ProximaNova", sans-serif;
         font-size: 2rem;
         font-weight: 400; }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--input::-webkit-input-placeholder {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--input::-webkit-input-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--input::-webkit-input-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--input::-webkit-input-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--input::-webkit-input-placeholder {
           color: #fff;
           opacity: 0.9; }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--input:-moz-placeholder {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--input:-moz-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--input:-moz-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--input:-moz-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--input:-moz-placeholder {
           color: #fff;
           opacity: 0.9; }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--input::-moz-placeholder {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--input::-moz-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--input::-moz-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--input::-moz-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--input::-moz-placeholder {
           color: #fff;
           opacity: 0.9; }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--input:-ms-input-placeholder {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--input:-ms-input-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--input:-ms-input-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--input:-ms-input-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--input:-ms-input-placeholder {
           color: #fff;
           opacity: 0.9; }
-      .modal-place--wrapper .modal-place .modal-form .modal-place--submit {
+      .modal-place--wrapper .modal-place .modal-form .modal-place--textarea, .modal-place--wrapper .modal-write .modal-form .modal-place--textarea, .modal-write--wrapper .modal-place .modal-form .modal-place--textarea, .modal-write--wrapper .modal-write .modal-form .modal-place--textarea {
+        border-radius: 22px;
+        border: 2px solid #ffffff;
+        background-color: rgba(251, 69, 159, 0);
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: none;
+        height: 100px;
+        resize: none;
+        color: #ffffff;
+        font-family: "ProximaNova", sans-serif;
+        font-size: 2rem;
+        font-weight: 400; }
+        .modal-place--wrapper .modal-place .modal-form .modal-place--textarea::-webkit-input-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--textarea::-webkit-input-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--textarea::-webkit-input-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--textarea::-webkit-input-placeholder {
+          color: #fff;
+          opacity: 0.9; }
+        .modal-place--wrapper .modal-place .modal-form .modal-place--textarea:-moz-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--textarea:-moz-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--textarea:-moz-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--textarea:-moz-placeholder {
+          color: #fff;
+          opacity: 0.9; }
+        .modal-place--wrapper .modal-place .modal-form .modal-place--textarea::-moz-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--textarea::-moz-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--textarea::-moz-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--textarea::-moz-placeholder {
+          color: #fff;
+          opacity: 0.9; }
+        .modal-place--wrapper .modal-place .modal-form .modal-place--textarea:-ms-input-placeholder, .modal-place--wrapper .modal-write .modal-form .modal-place--textarea:-ms-input-placeholder, .modal-write--wrapper .modal-place .modal-form .modal-place--textarea:-ms-input-placeholder, .modal-write--wrapper .modal-write .modal-form .modal-place--textarea:-ms-input-placeholder {
+          color: #fff;
+          opacity: 0.9; }
+      .modal-place--wrapper .modal-place .modal-form .modal-place--submit, .modal-place--wrapper .modal-write .modal-form .modal-place--submit, .modal-write--wrapper .modal-place .modal-form .modal-place--submit, .modal-write--wrapper .modal-write .modal-form .modal-place--submit {
         border-radius: 25px;
         background: none;
         background-color: #fb459f;
@@ -1454,15 +1526,17 @@ header {
         -o-transition: 200ms;
         transition: 200ms;
         -webkit-appearance: none; }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--submit:hover {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--submit:hover, .modal-place--wrapper .modal-write .modal-form .modal-place--submit:hover, .modal-write--wrapper .modal-place .modal-form .modal-place--submit:hover, .modal-write--wrapper .modal-write .modal-form .modal-place--submit:hover {
           -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
           transform: scale(1.05); }
-        .modal-place--wrapper .modal-place .modal-form .modal-place--submit:active {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--submit:active, .modal-place--wrapper .modal-write .modal-form .modal-place--submit:active, .modal-write--wrapper .modal-place .modal-form .modal-place--submit:active, .modal-write--wrapper .modal-write .modal-form .modal-place--submit:active {
           -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
           transform: scale(1.1); }
-      .modal-place--wrapper .modal-place .modal-form .residues {
+        .modal-place--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-place--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-write .modal-form .modal-place--submit.write {
+          margin-top: 10px; }
+      .modal-place--wrapper .modal-place .modal-form .residues, .modal-place--wrapper .modal-write .modal-form .residues, .modal-write--wrapper .modal-place .modal-form .residues, .modal-write--wrapper .modal-write .modal-form .residues {
         color: #fefefe;
         font-family: "ProximaNova", sans-serif;
         font-size: 1.3rem;

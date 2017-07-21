@@ -56,14 +56,22 @@ header {
 }
 
 .navigation {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
 	ul {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		align-items: center;
 		list-style: none;
 		padding: 0;
+		margin: 0;
 		button {
 			position: relative;
 			font-family: $default-font;
@@ -109,6 +117,8 @@ header {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	.phone {
 		color: #fff;
@@ -121,6 +131,25 @@ header {
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+	.header-btn {
+		color: #fefefe;
+		font-family:  $default-font;
+		font-size: 1.3rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		border-radius: 21px;
+		background-color: #fb459f;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		transition: 300ms;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		margin-top: 10px;
 	}
 }
 
@@ -1312,7 +1341,7 @@ header {
 	}
 }
 
-.modal-place--wrapper {
+.modal-place--wrapper, .modal-write--wrapper {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -1320,7 +1349,7 @@ header {
 	width: 100vw;
 	height: 100vh;
 	z-index: 99;
-	.modal-place--overlay {
+	.modal-place--overlay, .modal-write--overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -1328,7 +1357,7 @@ header {
 		height: 100%;
 		background-color: rgba(14, 18, 86, 0.65);
 	}
-	.modal-place {
+	.modal-place, .modal-write {
 		width: 100%;
 		height: 100%;
 		display: -webkit-flex;
@@ -1423,6 +1452,37 @@ header {
 					opacity: 0.9;
 				}
 			}
+			.modal-place--textarea {
+				border-radius: 22px;
+				border: 2px solid #ffffff;
+				background-color: rgba(251, 69, 159, 0);
+				margin-top: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+				outline: none;
+				height: 100px;
+				resize: none;
+				color: #ffffff;
+				font-family: $default-font;
+				font-size: 2rem;
+				font-weight: 400;
+				&::-webkit-input-placeholder {
+					color: #fff;
+					opacity: 0.9;
+				}
+				&:-moz-placeholder {
+					color: #fff;
+					opacity: 0.9;
+				}
+				&::-moz-placeholder {
+					color: #fff;
+					opacity: 0.9;
+				}
+				&:-ms-input-placeholder {
+					color: #fff;
+					opacity: 0.9;
+				}
+			}
 			.modal-place--submit {
 				border-radius: 25px;
 				background: none;
@@ -1445,6 +1505,9 @@ header {
 				}
 				&:active {
 					transform: scale(1.1);
+				}
+				&.write {
+					margin-top: 10px;
 				}
 			}
 			.residues {
