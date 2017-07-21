@@ -924,6 +924,16 @@ header {
     font-weight: 900;
     text-transform: uppercase;
     font-variant: small-caps; }
+  .days .days-global_carousel .days-global_prev {
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    z-index: 1; }
+  .days .days-global_carousel .days-global_next {
+    position: absolute;
+    top: 50px;
+    left: 221px;
+    z-index: 1; }
   .days .days-global_carousel .item {
     display: -webkit-flex;
     display: -moz-flex;
@@ -960,15 +970,18 @@ header {
       transform: rotate(-20deg); }
   .days .days-desc {
     font-family: "ProximaNova", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #2c2c2c;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px; }
     .days .days-desc span {
+      font-size: 2rem;
       color: #01cbfe;
       font-weight: 700; }
   .days .days-slider {
     position: relative;
-    margin-top: 50px; }
+    margin-top: 150px; }
     .days .days-slider .slide {
       outline: none; }
       .days .days-slider .slide .img1 {

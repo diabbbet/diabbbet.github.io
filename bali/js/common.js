@@ -108,7 +108,9 @@ $(function() {
 	});
 
 	$('.days-global_carousel').slick({
-		slidesToShow: 1
+		slidesToShow: 1,
+		prevArrow: '<button class="carousel-btn left days-global_prev"><img src="img/left-arrow.png" alt="arrow"></button>',
+		nextArrow: '<button class="carousel-btn right days-global_next"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
 

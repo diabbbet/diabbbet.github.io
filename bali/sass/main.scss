@@ -889,6 +889,18 @@ header {
 		font-variant: small-caps;
 	}
 	.days-global_carousel {
+		.days-global_prev {
+			position: absolute;
+			top: 50px;
+			left: 170px;
+			z-index: 1;
+		}
+		.days-global_next {
+			position: absolute;
+			top: 50px;
+			left: 221px;
+			z-index: 1;
+		}
 		.item {
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -927,17 +939,20 @@ header {
 	}
 	.days-desc {
 		font-family: $default-font;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		color: #2c2c2c;
 		font-weight: 400;
+		padding-left: 15px;
+		padding-right: 15px;
 		span {
+			font-size: 2rem;
 			color: #01cbfe;
 			font-weight: 700;
 		}
 	}
 	.days-slider {
 		position: relative;
-		margin-top: 50px;
+		margin-top: 150px;
 		.slide {
 			outline: none;
 			.img1 {
