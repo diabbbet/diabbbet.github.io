@@ -44,7 +44,7 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
-	$('.about-btn').click(function() {
+	$('.about-btn, .footer-btn').click(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
@@ -60,12 +60,8 @@ $(function() {
 		$('body').animate( { scrollTop: $('.about-company').offset().top }, 1000 );
 	});
 
-	$('.tour-anchor, .main-btn, .footer-btn.main-page').click(function(e) {
+	$('.tour-anchor, .main-btn').click(function(e) {
 		$('body').animate( { scrollTop: $('.links .container').offset().top }, 1000 );
-	});
-
-	$('.footer-btn.tour-page').click(function(e) {
-		$('body').animate( { scrollTop: $('.about-tour').offset().top }, 1000 );
 	});
 
 	$('.gallery-anchor').click(function(e) {
@@ -101,7 +97,8 @@ $(function() {
 	$('.days-slider, .exist-slider').slick({
 		slidesToShow: 1,
 		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
-		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
+		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>',
+		draggable: false
 	});
 
 	$('.curators-gallery').slick({
@@ -109,7 +106,10 @@ $(function() {
 		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
-	
+
+	$('.days-global_carousel').slick({
+		slidesToShow: 1
+	});
 
 
 

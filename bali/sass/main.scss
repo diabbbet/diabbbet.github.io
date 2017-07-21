@@ -41,6 +41,9 @@ header {
 	.logo-wrapper {
 		a {
 			display: block;
+			img {
+				width: 120px;
+			}
 		}
 	}
 	.header-top--right {
@@ -371,6 +374,17 @@ header {
 					transform: rotate(90deg);
 				}
 			}
+			.social {
+				position: absolute;
+				bottom: 40px;
+				right: 20px;
+				width: 50px;
+				height: 50px;
+				svg {
+					width: 50px;
+					height: 50px;
+				}
+			}
 		}
 	}
 }
@@ -622,6 +636,8 @@ header {
 	iframe {
 		position: relative;
 		z-index: 10;
+		border: 15px solid #fff;
+		border-radius: 20px;
 	}
 	.cloud_up {
 		position: absolute;
@@ -872,6 +888,22 @@ header {
 		text-transform: uppercase;
 		font-variant: small-caps;
 	}
+	.days-global_carousel {
+		.item {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			outline: none;
+			.text {
+				width: 50%;
+			}
+			.slider {
+				width: 50%;
+			}
+		}
+	}
 	.days-title {
 		position: relative;
 		display: inline-block;
@@ -907,6 +939,7 @@ header {
 		position: relative;
 		margin-top: 50px;
 		.slide {
+			outline: none;
 			.img1 {
 				width: 100%;
 				height: 250px;
@@ -1192,6 +1225,7 @@ header {
 			position: relative;
 			background: #fff;
 			box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+			outline: none;
 			img {
 				width: 100%;
 				padding: 7px;
@@ -1270,7 +1304,7 @@ header {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 2;
+	z-index: 99;
 	.modal-place--overlay {
 		position: absolute;
 		top: 0;
@@ -1468,6 +1502,9 @@ footer {
 	}
 	.logo {
 		margin-top: 105px;
+		img {
+			width: 120px;
+		}
 	}
 	.social-links {
 		display: -webkit-flex;
