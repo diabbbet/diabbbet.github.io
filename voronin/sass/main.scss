@@ -1,0 +1,179 @@
+@import "fonts.scss";
+@import "vars.scss";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.btn {
+	color: #fff;
+	font-family: "ProximaNova", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-image: linear-gradient(to left, #0ed8be 0%, #16b769 100%);
+	border-radius: 25px;
+	border: none;
+	width: 200px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+}
+
+.header {
+	position: relative;
+	background-color: #ffd202;
+	background-image: linear-gradient(-39deg, #0ed8be 0%, #16b769 100%);
+	.header-chevron {
+		position: absolute;
+		top: 62px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 83px;
+		height: 70px;
+		background-image: url('../img/header-chevron.png');
+	}
+	.nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 48px;
+		.nav-btn {
+			color: #ffffff;
+			font-family: "ProximaNova", sans-serif;
+			font-size: 1.8rem;
+			font-weight: 900;
+			line-height: 2.5;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 9px 0;
+			user-select: none;
+			&:not(:last-child) {
+				margin-right: 125px;
+			}
+		}
+	}
+}
+
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	.column {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 50%;
+		align-items: center;
+		&.left {
+			justify-content: flex-end;
+		}
+		&.right {
+			justify-content: flex-start;
+		}
+	}
+}
+
+// .founder {
+// 	display: none;
+// }
+.founder-text {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	padding-right: 145px;
+	padding-left: 60px;
+	width: 647px;
+	box-sizing: border-box;
+	.founder-name {
+		color: #202020;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 3.6rem;
+		font-weight: 900;
+		line-height: 1.25;
+		text-transform: uppercase;
+	}
+	.founder-title {
+		background-image: linear-gradient(to top, #0ed8be 0%, #16b769 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #03c795;
+		font-family: "Myriad Pro", sans-serif;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.5;
+		text-transform: uppercase;
+		span {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+	.founder-desc {
+		color: #b1b1b1;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.22;
+		margin-top: 50px;
+	}
+	.btn {
+		margin-top: 60px;
+	}
+}
+.founder-img {
+	width: 100%;
+	height: calc(100vh - 63px);
+	background-image: url('../img/voronin.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@import "media"; // Всегда в конце
