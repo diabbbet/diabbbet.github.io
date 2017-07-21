@@ -44,7 +44,7 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
-	$('.about-btn').click(function() {
+	$('.about-btn, .detail-btn').click(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
@@ -77,7 +77,7 @@ $(function() {
 	});
 
 	$('.about-tour-anchor').click(function(e) {
-		$('body').animate( { scrollTop: $('.about-tour .about-text').offset().top }, 1000 );
+		$('body').animate( { scrollTop: $('.tour-detail').offset().top }, 1000 );
 	});
 
 	$('.review-anchor').click(function(e) {
@@ -119,7 +119,8 @@ $(function() {
 		infinite: false,
 		slidesToShow: 1,
 		prevArrow: '<button class="carousel-btn left days-global_prev"><img src="img/left-arrow.png" alt="arrow"></button>',
-		nextArrow: '<button class="carousel-btn right days-global_next"><img src="img/right-arrow.png" alt="arrow"></button>'
+		nextArrow: '<button class="carousel-btn right days-global_next"><img src="img/right-arrow.png" alt="arrow"></button>',
+		adaptiveHeight: true
 	});
 
 
