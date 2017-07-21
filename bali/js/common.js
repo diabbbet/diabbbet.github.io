@@ -44,7 +44,7 @@ $(function() {
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
 	});
 
-	$('.about-btn, .footer-btn').click(function() {
+	$('.about-btn').click(function() {
 		$('.modal-place--wrapper').fadeIn();
 	});
 
@@ -52,8 +52,12 @@ $(function() {
 		$('.modal-write--wrapper').fadeIn();
 	});
 
+	$('.footer-btn').click(function() {
+		$('.modal-consult--wrapper').fadeIn();
+	});
+
 	$('.modal-place--overlay, .modal-write--overlay, .exit').click(function() {
-		$('.modal-place--wrapper, .modal-write--wrapper').fadeOut();
+		$('.modal-place--wrapper, .modal-write--wrapper, .modal-consult--wrapper').fadeOut();
 	});
 
 	$('.gallery-anchor').click(function(e) {

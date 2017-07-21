@@ -1005,7 +1005,6 @@ header {
 		font-size: 1.6rem;
 		color: #2c2c2c;
 		font-weight: 400;
-		padding-left: 15px;
 		padding-right: 15px;
 		span {
 			font-size: 2rem;
@@ -1387,7 +1386,7 @@ header {
 	}
 }
 
-.modal-place--wrapper, .modal-write--wrapper {
+.modal-place--wrapper, .modal-write--wrapper, .modal-consult--wrapper {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -1555,6 +1554,9 @@ header {
 				}
 				&.write {
 					margin-top: 30px;
+				}
+				&.consult {
+					width: 220px;
 				}
 			}
 			.residues {
