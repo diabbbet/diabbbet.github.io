@@ -370,7 +370,7 @@ header {
     .about-company .team .team-title .title {
       color: #eeeeee;
       font-family: "ProximaNova", sans-serif;
-      font-size: 7.6rem;
+      font-size: 7rem;
       font-weight: 900;
       font-variant: small-caps;
       text-transform: uppercase; }
@@ -668,7 +668,7 @@ header {
     .gallery .gallery-wrapper .title {
       color: #48eafb;
       font-family: "ProximaNova", sans-serif;
-      font-size: 7.6rem;
+      font-size: 7rem;
       font-weight: 900;
       text-transform: uppercase;
       font-variant: small-caps; }
@@ -1534,6 +1534,7 @@ header {
         margin-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 15px;
         outline: none;
         height: 100px;
         resize: none;
@@ -1581,7 +1582,7 @@ header {
           -ms-transform: scale(1.1);
           transform: scale(1.1); }
         .modal-place--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-place--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-write .modal-form .modal-place--submit.write {
-          margin-top: 10px; }
+          margin-top: 30px; }
       .modal-place--wrapper .modal-place .modal-form .residues, .modal-place--wrapper .modal-write .modal-form .residues, .modal-write--wrapper .modal-place .modal-form .residues, .modal-write--wrapper .modal-write .modal-form .residues {
         color: #fefefe;
         font-family: "ProximaNova", sans-serif;
