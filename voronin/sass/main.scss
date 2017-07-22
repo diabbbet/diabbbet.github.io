@@ -39,7 +39,7 @@ body {
 	font-size: 1.6rem;
 	min-width: 320px;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 	margin: 0;
 }
 
@@ -52,18 +52,23 @@ body {
 	background-image: linear-gradient(to left, #0ed8be 0%, #16b769 100%);
 	border-radius: 25px;
 	border: none;
-	width: 200px;
 	padding-top: 14px;
 	padding-bottom: 14px;
+	padding-left: 39px;
+	padding-right: 39px;
 	cursor: pointer;
 	user-select: none;
 	outline: none;
 }
 
 .header {
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	background-color: #ffd202;
 	background-image: linear-gradient(-39deg, #0ed8be 0%, #16b769 100%);
+	transform: translateY(-63px);
 	.header-chevron {
 		position: absolute;
 		top: 62px;
@@ -73,6 +78,7 @@ body {
 		width: 83px;
 		height: 70px;
 		background-image: url('../img/header-chevron.png');
+		cursor: pointer;
 	}
 	.nav {
 		display: flex;
@@ -110,18 +116,21 @@ body {
 		display: flex;
 		width: 50%;
 		align-items: center;
+		height: 100vh;
 		&.left {
 			justify-content: flex-end;
 		}
 		&.right {
 			justify-content: flex-start;
+			background-color: #f8f8f8;
 		}
 	}
 }
 
-// .founder {
-// 	display: none;
-// }
+.founder {
+	display: none;
+}
+
 .founder-text {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -133,6 +142,7 @@ body {
 	padding-left: 60px;
 	width: 647px;
 	box-sizing: border-box;
+	align-items: flex-start;
 	.founder-name {
 		color: #202020;
 		font-family: "ProximaNova", sans-serif;
@@ -170,10 +180,103 @@ body {
 }
 .founder-img {
 	width: 100%;
-	height: calc(100vh - 63px);
+	height: 100vh;
 	background-image: url('../img/voronin.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+// .help {
+// 	display: none;
+// }
+
+.help-text {
+	width: 647px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	.help-title {
+		color: #202020;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 3.6rem;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+	.help-desc {
+		color: #000;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.83;
+		margin-top: 25px;
+	}
+	.help-desc--green {
+		background-image: linear-gradient(to top, #0ed8be 0%, #16b769 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #03c795;
+		font-family: "Myriad Pro", sans-serif;
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 1.33;
+		margin-top: 35px;
+	}
+	.btn-wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		margin-top: 45px;
+	}
+	.btn {
+		margin-right: 30px;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	.btn-price {
+		color: #acacac;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.14;
+	}
+}
+
+.help-lists {
+	width: 647px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	ul {
+		padding-left: 15px;
+		list-style: none;
+		margin: 0 0 30px;
+		li {
+			position: relative;
+			color: #000;
+			font-family: "ProximaNova", sans-serif;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.14;
+			width: 265px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 11px;
+				left: -14px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background-color: #f50d34;
+			}
+		}
+	}
 }
 
 @import "media"; // Всегда в конце
