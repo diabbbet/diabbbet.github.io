@@ -80,6 +80,7 @@ body {
 	background-image: linear-gradient(-39deg, #0ed8be 0%, #16b769 100%);
 	transform: translateY(-63px);
 	transition: 200ms;
+	z-index: 999;
 	&.active {
 		transform: translateY(0);
 	}
@@ -109,6 +110,8 @@ body {
 			cursor: pointer;
 			padding: 9px 0;
 			user-select: none;
+			width: auto !important;
+			outline: none;
 			&:not(:last-child) {
 				margin-right: 125px;
 			}
@@ -116,39 +119,31 @@ body {
 	}
 }
 
-.container {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	.column {
+.main	{
+	.container {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		width: 50%;
-		align-items: center;
-		height: 100vh;
-		&.left {
-			justify-content: flex-end;
+		outline: none;
+		.column {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			width: 50%;
+			align-items: center;
+			height: 100vh;
+			&.left {
+				justify-content: flex-end;
+			}
+			&.right {
+				justify-content: flex-start;
+				background-color: #f8f8f8;
+			}
 		}
-		&.right {
-			justify-content: flex-start;
-			background-color: #f8f8f8;
-		}
-	}
-}
-
-.founder {
-	display: none;
-	&.active {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
 	}
 }
 
@@ -205,17 +200,6 @@ body {
 	background-image: url('../img/voronin.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.help {
-	display: none;
-	&.active {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-	}
 }
 
 .help-text {
@@ -298,17 +282,6 @@ body {
 	}
 }
 
-.calendar {
-	display: none;
-	&.active {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-	}
-}
-
 .session {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -386,9 +359,11 @@ body {
 		font-size: 3.6rem;
 		font-weight: 700;
 		line-height: 1.25;
+		margin-bottom: 40px;
 	}
 	.schedule-months {
 		padding-left: 35px;
+		margin-bottom: 20px;
 		.item {
 			color: #03c795;
 			font-family: "ProximaNova", sans-serif;
@@ -427,6 +402,41 @@ body {
 			background-position: center center;
 			background-size: 100% 100%;
 			cursor: pointer;
+		}
+	}
+	.calendar-table {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.calendar-row {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 400px;
+			.calendar-col {
+				&.day {
+					color: #8b8b8b;
+					font-family: "ProximaNova", sans-serif;
+					font-size: 2.7rem;
+					font-weight: 400;
+					line-height: 1.7;
+				}
+				&.number {
+					color: #202020;
+					font-family: "ProximaNova", sans-serif;
+					font-size: 2.7rem;
+					font-weight: 700;
+					line-height: 1.7;
+				}
+			}
 		}
 	}
 }

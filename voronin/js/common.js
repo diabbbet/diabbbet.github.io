@@ -1,25 +1,26 @@
 $(function() {
 
+	$('.nav').slick({
+		slidesToShow: 3,
+		asNavFor: '.main',
+		focusOnSelect: true,
+		draggable: false,
+		arrows: false
+	});
+
+	$('.main').slick({
+		slidesToShow: 1,
+		asNavFor: '.nav',
+		draggable: false,
+		arrows: false
+	});
+
 	$('.header').hover(function() {
 		$('.header').toggleClass('active');
 	});
 
-	$('.help-btn').click(function() {
-		$('section').removeClass('active');
-		$('.help').addClass('active');
-	});
-
-	$('.founder-btn').click(function() {
-		$('section').removeClass('active');
-		$('.founder').addClass('active');
-	});
-
-	$('.calendar-btn').click(function() {
-		$('section').removeClass('active');
-		$('.calendar').addClass('active');
-	});
-
 	$('.schedule-months').slick({
+		slidesToShow: 1
 	});
 
 });

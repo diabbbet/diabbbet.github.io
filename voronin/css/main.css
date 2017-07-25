@@ -126,7 +126,8 @@ body {
           transform: translateY(-63px);
   -webkit-transition: 200ms;
   -o-transition: 200ms;
-  transition: 200ms; }
+  transition: 200ms;
+  z-index: 999; }
   .header.active {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -167,19 +168,22 @@ body {
       -webkit-user-select: none;
          -moz-user-select: none;
           -ms-user-select: none;
-              user-select: none; }
+              user-select: none;
+      width: auto !important;
+      outline: none; }
       .header .nav .nav-btn:not(:last-child) {
         margin-right: 125px; }
 
-.container {
+.main .container {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .container .column {
+  display: flex;
+  outline: none; }
+  .main .container .column {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -193,28 +197,17 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 100vh; }
-    .container .column.left {
+    .main .container .column.left {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-    .container .column.right {
+    .main .container .column.right {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
               justify-content: flex-start;
       background-color: #f8f8f8; }
-
-.founder {
-  display: none; }
-  .founder.active {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
 
 .founder-text {
   display: -webkit-flex;
@@ -278,17 +271,6 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
-
-.help {
-  display: none; }
-  .help.active {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
 
 .help-text {
   width: 647px;
@@ -369,17 +351,6 @@ body {
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         background-color: #f50d34; }
-
-.calendar {
-  display: none; }
-  .calendar.active {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
 
 .session {
   display: -webkit-flex;
@@ -463,9 +434,11 @@ body {
     font-family: "ProximaNova", sans-serif;
     font-size: 3.6rem;
     font-weight: 700;
-    line-height: 1.25; }
+    line-height: 1.25;
+    margin-bottom: 40px; }
   .schedule .schedule-months {
-    padding-left: 35px; }
+    padding-left: 35px;
+    margin-bottom: 20px; }
     .schedule .schedule-months .item {
       color: #03c795;
       font-family: "ProximaNova", sans-serif;
@@ -504,5 +477,51 @@ body {
       -webkit-background-size: 100% 100%;
               background-size: 100% 100%;
       cursor: pointer; }
+  .schedule .calendar-table {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .schedule .calendar-table .calendar-row {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 400px; }
+      .schedule .calendar-table .calendar-row .calendar-col.day {
+        color: #8b8b8b;
+        font-family: "ProximaNova", sans-serif;
+        font-size: 2.7rem;
+        font-weight: 400;
+        line-height: 1.7; }
+      .schedule .calendar-table .calendar-row .calendar-col.number {
+        color: #202020;
+        font-family: "ProximaNova", sans-serif;
+        font-size: 2.7rem;
+        font-weight: 700;
+        line-height: 1.7; }
 
 /*==========  Desktop First  ==========*/
