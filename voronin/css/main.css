@@ -98,6 +98,20 @@ body {
           user-select: none;
   outline: none; }
 
+.btn-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px; }
+
 .header {
   position: fixed;
   top: 0;
@@ -109,7 +123,14 @@ body {
   background-image: linear-gradient(-39deg, #0ed8be 0%, #16b769 100%);
   -webkit-transform: translateY(-63px);
       -ms-transform: translateY(-63px);
-          transform: translateY(-63px); }
+          transform: translateY(-63px);
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms; }
+  .header.active {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
   .header .header-chevron {
     position: absolute;
     top: 62px;
@@ -186,6 +207,14 @@ body {
 
 .founder {
   display: none; }
+  .founder.active {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .founder-text {
   display: -webkit-flex;
@@ -250,6 +279,17 @@ body {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.help {
+  display: none; }
+  .help.active {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 .help-text {
   width: 647px;
   padding-left: 60px;
@@ -281,19 +321,6 @@ body {
     font-weight: 400;
     line-height: 1.33;
     margin-top: 35px; }
-  .help-text .btn-wrapper {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 45px; }
   .help-text .btn {
     margin-right: 30px;
     padding-left: 26px;
@@ -342,5 +369,140 @@ body {
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         background-color: #f50d34; }
+
+.calendar {
+  display: none; }
+  .calendar.active {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.session {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 647px;
+  padding-left: 30px; }
+  .session .session-title {
+    background-image: -webkit-gradient(linear, right top, left top, from(#0ed8be), to(#16b769));
+    background-image: -webkit-linear-gradient(right, #0ed8be 0%, #16b769 100%);
+    background-image: -o-linear-gradient(right, #0ed8be 0%, #16b769 100%);
+    background-image: linear-gradient(to left, #0ed8be 0%, #16b769 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #03c795;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 40px; }
+  .session .session-date {
+    color: #202020;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.88; }
+    .session .session-date span {
+      font-weight: 700; }
+  .session .session-place {
+    color: #202020;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.88; }
+    .session .session-place span {
+      font-weight: 700; }
+  .session .session-vacancy {
+    color: #202020;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.88; }
+    .session .session-vacancy span {
+      font-weight: 700; }
+  .session .btn {
+    margin-right: 50px; }
+  .session .btn-price {
+    color: #aaa;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.schedule {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 647px;
+  padding-left: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .schedule .schedule-title {
+    color: #202020;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.25; }
+  .schedule .schedule-months {
+    padding-left: 35px; }
+    .schedule .schedule-months .item {
+      color: #03c795;
+      font-family: "ProximaNova", sans-serif;
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 1.25; }
+    .schedule .schedule-months .slick-prev {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0;
+      width: 18px;
+      height: 34px;
+      background: none;
+      border: none;
+      outline: none;
+      background-image: url("../img/arrow-prev.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+      cursor: pointer; }
+    .schedule .schedule-months .slick-next {
+      position: absolute;
+      top: 0;
+      left: 150px;
+      font-size: 0;
+      width: 18px;
+      height: 34px;
+      background: none;
+      border: none;
+      outline: none;
+      background-image: url("../img/arrow-next.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+      cursor: pointer; }
 
 /*==========  Desktop First  ==========*/

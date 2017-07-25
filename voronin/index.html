@@ -24,6 +24,7 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -33,14 +34,14 @@
 	<header class="header">
 		<div class="header-chevron"></div>
 		<nav class="nav">
-			<a class="nav-btn">расписание</a>
-			<a class="nav-btn">школа</a>
-			<a class="nav-btn">нужна помощь?</a>
+			<a class="nav-btn calendar-btn">расписание</a>
+			<a class="nav-btn founder-btn">школа</a>
+			<a class="nav-btn help-btn">нужна помощь?</a>
 		</nav>
 	</header>
 
 	<main class="main">
-		<section class="container founder">
+		<section class="container founder active">
 			<div class="column left">
 				<div class="founder-text">
 					<div class="founder-name">Валентин Воронин</div>
@@ -109,9 +110,46 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="container calendar">
+			<div class="column left">
+				<div class="schedule">
+					<div class="schedule-title">Расписание мероприятий</div>
+					<div class="schedule-months">
+						<div class="item">Июнь</div>
+						<div class="item">Июль</div>
+						<div class="item">Август</div>
+					</div>
+					<!-- .calendar
+					<div class="calendar-row">
+						<div class="calendar-col">пн</div>
+						<div class="calendar-col">вт</div>
+						<div class="calendar-col">ср</div>
+						<div class="calendar-col">чт</div>
+						<div class="calendar-col">пт</div>
+						<div class="calendar-col">сб</div>
+						<div class="calendar-col">вс</div>
+					</div> -->
+				</div>
+			</div>
+
+			<div class="column right">
+				<div class="session">
+					<div class="session-title">“Название сеанса”</div>
+					<div class="session-date"><span>Дата:</span> 3 июня 2017</div>
+					<div class="session-place"><span>Место проведения:</span> о.Бали, г-ца</div>
+					<div class="session-vacancy"><span>Свободных мест:</span> 23</div>
+					<div class="btn-wrapper">
+						<button class="btn">хочу пойти</button>
+						<div class="btn-price">Следующий сеанс</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
