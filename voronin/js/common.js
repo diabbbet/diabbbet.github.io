@@ -33,4 +33,21 @@ $(function() {
 		arrows: false
 	});
 
+	$('.calendar-col.number.green').click(function() {
+		$('.calendar-col.number.green').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.june .calendar-col.number.green.one').click(function() {
+		$('.session-date span').text('1 июня 2017');
+	});
+
+	$('.jule .calendar-col.number.green.thirteen').click(function() {
+		$('.session-date span').text('13 июля 2017');
+	});
+
+	$('.august .calendar-col.number.green.twenty').click(function() {
+		$('.session-date span').text('20 августа 2017');
+	});
+
 });
