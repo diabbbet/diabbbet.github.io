@@ -20,7 +20,17 @@ $(function() {
 	});
 
 	$('.schedule-months').slick({
-		slidesToShow: 1
+		slidesToShow: 1,
+		asNavFor: '.months',
+		focusOnSelect: true,
+		draggable: false
+	});
+
+	$('.months').slick({
+		slidesToShow: 1,
+		asNavFor: '.schedule-months',
+		draggable: false,
+		arrows: false
 	});
 
 });

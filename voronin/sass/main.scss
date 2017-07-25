@@ -419,9 +419,9 @@ body {
 			display: -o-flex;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
 			width: 400px;
 			.calendar-col {
+				width: 57.14285714285714px;
 				&.day {
 					color: #8b8b8b;
 					font-family: "ProximaNova", sans-serif;
