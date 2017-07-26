@@ -6,7 +6,7 @@
 	font-family: "ProximaNova", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
-	line-height: 1.88;
+	line-height: 3.18;
 }
 
 *:-moz-placeholder {
@@ -14,7 +14,7 @@
 	font-family: "ProximaNova", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
-	line-height: 1.88;
+	line-height: 3.18;
 }
 
 *::-moz-placeholder {
@@ -22,7 +22,7 @@
 	font-family: "ProximaNova", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
-	line-height: 1.88;
+	line-height: 3.18;
 }
 
 *:-ms-input-placeholder {
@@ -201,9 +201,6 @@ body {
 		font-weight: 400;
 		line-height: 1.22;
 		margin-top: 50px;
-	}
-	.btn {
-		margin-top: 60px;
 	}
 }
 .main-section--img {
@@ -615,10 +612,14 @@ body {
 		margin-top: 40px;
 		input {
 			padding: 0 15px 0;
-			height: 40px;
 			border-radius: 4px;
 			background-color: #fff;
 			border: none;
+			color: #000;
+			font-family: "ProximaNova", sans-serif;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 3.18;
 			&:not(:first-child) {
 				margin-top: 30px;
 			}

@@ -12,7 +12,8 @@ $(function() {
 		slidesToShow: 1,
 		asNavFor: '.nav',
 		draggable: false,
-		arrows: false
+		arrows: false,
+		fade: true
 	});
 
 	$('.header').hover(function() {
@@ -38,6 +39,8 @@ $(function() {
 		$(this).addClass('active');
 	});
 
+	$('.session-date span').text('1 июня 2017');
+
 	$('.june .calendar-col.number.green.one').click(function() {
 		$('.session-date span').text('1 июня 2017');
 	});
@@ -56,6 +59,10 @@ $(function() {
 
 	$('.exit').click(function() {
 		$('.modal-wrapper').removeClass('active');
+	});
+
+	$('.main-calendar--btn').click(function() {
+		$('.main').slick('slickNext');
 	});
 
 });

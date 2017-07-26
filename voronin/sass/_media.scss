@@ -1,5 +1,62 @@
 /*==========  Desktop First  ==========*/
 
 @media (max-width: 1199px) {
+	.main-section--text {
+		padding-right: 30px;
+		padding-left: 30px;
+		width: 100%;
+	}
+
+	.schedule {
+		width: 100%;
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header .nav {
+		padding: 0;
+	}
+
+	.header .nav .nav-btn:not(:last-child) {
+		margin-right: 0;
+	}
+
+	.header .slick-track {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		width: 100% !important;
+	}
+
+	.header .slick-list {
+		width: 100%;
+	}
+
+	.main-section--img {
+		background-position-x: -130px;
+	}
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+	.header .slick-track {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header {
+		transform: translateY(-252px);
+	}
+
+	.header .header-chevron {
+		top: 252px;
+	}
 
 }
