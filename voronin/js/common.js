@@ -13,7 +13,7 @@ $(function() {
 		asNavFor: '.nav',
 		draggable: false,
 		arrows: false,
-		fade: true
+		speed: 700
 	});
 
 	$('.header').hover(function() {
@@ -40,17 +40,21 @@ $(function() {
 	});
 
 	$('.session-date span').text('1 июня 2017');
+	$('.session-title').text('сеанс 1');
 
 	$('.june .calendar-col.number.green.one').click(function() {
 		$('.session-date span').text('1 июня 2017');
+		$('.session-title').text('сеанс 1');
 	});
 
 	$('.jule .calendar-col.number.green.thirteen').click(function() {
 		$('.session-date span').text('13 июля 2017');
+		$('.session-title').text('сеанс 2');
 	});
 
 	$('.august .calendar-col.number.green.twenty').click(function() {
 		$('.session-date span').text('20 августа 2017');
+		$('.session-title').text('сеанс 3');
 	});
 
 	$('.modal-call').click(function() {

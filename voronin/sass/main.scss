@@ -40,7 +40,7 @@ body textarea:focus:required:invalid {
 
 body input:required:valid,
 body textarea:required:valid {
-	color: #666;
+	color: #000;
 }
 
 html {
@@ -503,7 +503,7 @@ body {
 		-webkit-text-fill-color: transparent;
 		color: #03c795;
 		font-family: "Myriad Pro", sans-serif;
-		font-size: 2.4rem;
+		font-size: 3rem;
 		font-weight: 400;
 		line-height: 1;
 	}
@@ -602,6 +602,15 @@ body {
 		text-transform: uppercase;
 		text-align: center;
 	}
+	.modal-title--small {
+		color: #fff;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 1.3rem;
+		font-weight: 700;
+		line-height: 1.88;
+		text-transform: uppercase;
+		text-align: center;
+	}
 	.form {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -609,7 +618,7 @@ body {
 		display: -o-flex;
 		display: flex;
 		flex-direction: column;
-		margin-top: 40px;
+		margin-top: 10px;
 		input {
 			padding: 0 15px 0;
 			border-radius: 4px;
@@ -634,6 +643,14 @@ body {
 			padding-left: 0;
 			padding-right: 0;
 		}
+	}
+	.confid {
+		color: #fff;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 1.2rem;
+		font-weight: 300;
+		line-height: 3.75;
+		text-align: center;
 	}
 }
 

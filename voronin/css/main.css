@@ -74,7 +74,7 @@ body textarea:focus:required:invalid {
 
 body input:required:valid,
 body textarea:required:valid {
-  color: #666; }
+  color: #000; }
 
 html {
   font-size: 10px; }
@@ -591,7 +591,7 @@ body {
     -webkit-text-fill-color: transparent;
     color: #03c795;
     font-family: "Myriad Pro", sans-serif;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1; }
   .founder-text .founder-desc {
@@ -704,6 +704,14 @@ body {
     line-height: 1.88;
     text-transform: uppercase;
     text-align: center; }
+  .modal .modal-title--small {
+    color: #fff;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.88;
+    text-transform: uppercase;
+    text-align: center; }
   .modal .form {
     display: -webkit-flex;
     display: -moz-flex;
@@ -717,7 +725,7 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 40px; }
+    margin-top: 10px; }
     .modal .form input {
       padding: 0 15px 0;
       -webkit-border-radius: 4px;
@@ -740,6 +748,13 @@ body {
       width: 240px;
       padding-left: 0;
       padding-right: 0; }
+  .modal .confid {
+    color: #fff;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 3.75;
+    text-align: center; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199px) {
