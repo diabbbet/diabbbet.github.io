@@ -1,7 +1,7 @@
 $(function() {
 
 	$('.nav').slick({
-		slidesToShow: 3,
+		slidesToShow: 4,
 		asNavFor: '.main',
 		focusOnSelect: true,
 		draggable: false,
@@ -48,6 +48,14 @@ $(function() {
 
 	$('.august .calendar-col.number.green.twenty').click(function() {
 		$('.session-date span').text('20 августа 2017');
+	});
+
+	$('.modal-call').click(function() {
+		$('.modal-wrapper').addClass('active');
+	});
+
+	$('.exit').click(function() {
+		$('.modal-wrapper').removeClass('active');
 	});
 
 });
