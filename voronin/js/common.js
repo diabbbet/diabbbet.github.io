@@ -69,4 +69,8 @@ $(function() {
 		$('.main').slick('slickNext');
 	});
 
+	$('.main-help--btn').click(function() {
+		$('.main').slick('slickPrev');
+	});
+
 });
