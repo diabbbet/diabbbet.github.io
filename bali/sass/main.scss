@@ -41,9 +41,6 @@ header {
 	.logo-wrapper {
 		a {
 			display: block;
-			img {
-				width: 90px;
-			}
 		}
 	}
 	.header-top--right {
@@ -111,14 +108,11 @@ header {
 }
 
 .header-contacts {
-	margin-left: 40px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
 	.phone {
 		color: #fff;
@@ -128,8 +122,13 @@ header {
 		text-decoration: none;
 		transition: 300ms;
 		cursor: pointer;
+		border-radius: 21px;
+		border: 2px solid #ffffff;
+		padding: 12.5px 24px;
+		margin-right: 30px;
+		transition: 300ms;
 		&:hover {
-			text-decoration: underline;
+			transform: scale(1.05);
 		}
 	}
 	.header-btn {
@@ -141,15 +140,19 @@ header {
 		text-decoration: none;
 		border-radius: 21px;
 		background-color: #fb459f;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 14.5px;
+		padding-bottom: 14.5px;
 		padding-left: 20px;
 		padding-right: 20px;
 		transition: 300ms;
 		border: none;
 		outline: none;
 		cursor: pointer;
-		margin-top: 10px;
+		margin-right: 20px;
+		transition: 300ms;
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 }
 
@@ -186,7 +189,8 @@ header {
 	height: 100vh;
 	background-size: cover;
 	background-position: center center;
-	padding-top: 180px;
+	padding-top: 220px;
+	text-align: center;
 	&:before {
 		position: absolute;
 		top: 0;
@@ -201,13 +205,14 @@ header {
 	}
 	.title {
 		position: relative;
-		color: #48eafb;
+		text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8);
+		color: #fefefe;
 		font-family: $default-font;
-		font-size: 6rem;
+		font-size: 6.5rem;
 		font-weight: 900;
-		font-variant: small-caps;
 		text-transform: uppercase;
 		z-index: 2;
+		text-align: center;
 	}
 	.title-hitch {
 		position: relative;
@@ -215,15 +220,16 @@ header {
 		font-family: "HitchHike", sans-serif;
 		font-size: 4rem;
 		font-weight: 400;
-		margin-top: 10px;
+		margin-top: 40px;
 		z-index: 2;
+		text-align: center;
 	}
 	.main-btn {
 		position: relative;
 		display: inline-block;
-		color: #c3fbf7;
+		color: #fff;
 		font-family:  $default-font;
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -231,7 +237,7 @@ header {
 		padding-right: 35px;
 		padding-top: 15px;
 		padding-bottom: 15px;
-		border: 2px solid #0393ad;
+		border: 2px solid #fb449f;
 		border-radius: 25px;
 		border-top: 0;
 		margin-top: 55px;
@@ -254,7 +260,7 @@ header {
 
 .about-company {
 	position: relative;
-	padding-top: 60px;
+	padding-top: 140px;
 	padding-bottom: 50px;
 	overflow: hidden;
 	margin-top: 30px;
@@ -290,7 +296,7 @@ header {
 		font-size: 2rem;
 		color: #2c2c2c;
 		margin-top: 50px;
-		padding-right: 90px;
+		padding-right: 120px;
 		line-height: 1.2;
 	}
 	.desc:not(:first-child) {
@@ -346,7 +352,7 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		width: 100%;
-		margin-top: 220px;
+		margin-top: 170px;
 		.carousel-item {
 			outline: none;
 		}
@@ -405,8 +411,8 @@ header {
 			}
 			.social-vk {
 				position: absolute;
-				bottom: 40px;
-				right: 57px;
+				bottom: 70px;
+				right: 25px;
 				width: 37px;
 				height: 37px;
 				border-radius: 50%;
@@ -423,8 +429,8 @@ header {
 			}
 			.social-inst {
 				position: absolute;
-				bottom: 40px;
-				right: 10px;
+				bottom: 25px;
+				right: 25px;
 				width: 37px;
 				height: 37px;
 				border-radius: 50%;
@@ -463,35 +469,16 @@ header {
 	}
 }
 
-.links {
+.mountain {
 	position: relative;
-	padding-top: 130px;
-	padding-bottom: 130px;
+	height: 589px;
+	background-image: url('../img/links-bg.jpg');
+	background-size: cover;
+	background-position: top center;
 	overflow: hidden;
-	.title {
-		position: relative;
-		z-index: 5;
-		color: #48eafb;
-		font-family: $default-font;
-		font-size: 7.6rem;
-		font-weight: 900;
-		text-transform: uppercase;
-		font-variant: small-caps;
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 590px;
-		background-image: url(../img/links-bg.jpg);
-		background-size: cover;
-		background-position: center center;
-	}
 	.cloud_middle {
 		position: absolute;
-		top: 390px;
+		top: 400px;
 		left: -340px;
 		width: 2795px;
 		height: 539px;
@@ -499,8 +486,14 @@ header {
 		animation: cloud_b 60s linear infinite;
 		z-index: 2;
 	}
+}
+
+.links {
+	position: relative;
+	padding-top: 47px;
+	padding-bottom: 130px;
+	overflow: hidden;
 	.wrapper {
-		padding-top: 100px;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -532,7 +525,7 @@ header {
 			.link-title {
 				color: #ffffff;
 				font-family: "HitchHike", sans-serif;
-				font-size: 3rem;
+				font-size: 4rem;
 				font-weight: 400;
 			}
 			.link-desc {
@@ -570,8 +563,8 @@ header {
 		.link-text {
 			top: 0;
 			left: 0;
-			margin-top: 60px;
-			margin-left: 90px;
+			margin-top: 120px;
+			margin-left: 130px;
 		}
 	}
 }
@@ -582,7 +575,7 @@ header {
 	position: relative;
 	.cloud_bottom {
 		position: absolute;
-		bottom: 0px;
+		bottom: -370px;
 		left: 0;
 		width: 100%;
 		height: 745px;
@@ -611,7 +604,7 @@ header {
 		.title {
 			color: #48eafb;
 			font-family: $default-font;
-			font-size: 7rem;
+			font-size: 5.6rem;
 			font-weight: 900;
 			text-transform: uppercase;
 			font-variant: small-caps;
@@ -685,22 +678,29 @@ header {
 	background-image: url('../img/tour-main--bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 150px;
+	padding-bottom: 140px;
 	overflow: hidden;
+	.text-center {
+		text-align: center;
+	}
 	.video-title {
 		color: #fefefe;
 		font-family: $default-font;
-		font-size: 2.5rem;
+		font-size: 3rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
+		margin-top: 130px;
 	}
 	iframe {
 		position: relative;
 		z-index: 10;
 		border: 15px solid #fff;
-		border-radius: 20px;
+		border-top: none;
+		box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+		width: 880px;
+		height: 473px;
 	}
 	.cloud_up {
 		position: absolute;
@@ -728,6 +728,8 @@ header {
 		display: -o-flex;
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
 		.about-date {
 			color: #fefefe;
 			font-family: $default-font;
@@ -739,31 +741,15 @@ header {
 	}
 	.title-wrapper {
 		position: relative;
-		margin-top: 195px;
+		margin-top: 260px;
 		.title {
 			color: #fefefe;
 			font-family: $default-font;
 			font-size: 7.2rem;
 			font-weight: 900;
 			text-transform: uppercase;
+			text-align: center;
 		}
-		.title-before {
-			position: absolute;
-			top: 25%;
-			left: 7.6%;
-			color: #fb459f;
-			font-family: "HitchHike", sans-serif;
-			font-size: 3.1rem;
-			font-weight: 400;
-			background-color: #fff;
-		}
-	}
-	.about-teaser {
-		color: #ffffff;
-		font-family: "HitchHike", sans-serif;
-		font-size: 4rem;
-		font-weight: 400;
-		margin-top: 30px;
 	}
 	.peoples-left {
 		display: -webkit-flex;
@@ -779,6 +765,7 @@ header {
 		font-size: 1.3rem;
 		font-weight: 700;
 		text-transform: uppercase;
+		margin: auto;
 		margin-top: 50px;
 		border: 3px solid #fb459f;
 		border-radius: 22px;
@@ -808,6 +795,9 @@ header {
 				transform: scale(1.1);
 			}
 		}
+	}
+	.turtle {
+		text-align: center;
 	}
 	.slider-container {
 		padding-left: 120px;
@@ -839,7 +829,7 @@ header {
 				}
 				.name {
 					color: #ffffff;
-					font-family: "HitchHike";
+					font-family: "HitchHike", sans-serif;
 					font-size: 3rem;
 					font-weight: 400;
 				}
@@ -922,7 +912,7 @@ header {
 				bottom: -40px;
 				left: 0;
 				color: #fb459f;
-				font-family: "HitchHike";
+				font-family: "HitchHike", sans-serif;
 				font-size: 4rem;
 				font-weight: 400;
 			}
@@ -942,26 +932,31 @@ header {
 }
 
 .days {
-	margin-top: 100px;
 	.title {
 		color: #48eafb;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 7.5rem;
+		font-size: 4.8rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		font-variant: small-caps;
 	}
+	.title-hitch {
+		color: #fb459f;
+		font-family: "HitchHike", sans-serif;
+		font-size: 3rem;
+		font-weight: 400;
+	}
 	.days-global_carousel {
 		.days-global_prev {
 			position: absolute;
-			top: 50px;
-			left: 170px;
+			top: 209px;
+			left: 0px;
 			z-index: 1;
 		}
 		.days-global_next {
 			position: absolute;
-			top: 50px;
-			left: 221px;
+			top: 209px;
+			right: 0;
 			z-index: 1;
 		}
 		.item {
@@ -972,7 +967,9 @@ header {
 			display: flex;
 			outline: none;
 			.text {
+				position: relative;
 				width: 50%;
+				padding-top: 70px;
 			}
 			.slider {
 				width: 50%;
@@ -980,7 +977,7 @@ header {
 		}
 	}
 	.days-title {
-		position: relative;
+		position: absolute;
 		display: inline-block;
 		color: #eeeeee;
 		font-family: $default-font;
@@ -988,16 +985,15 @@ header {
 		font-weight: 900;
 		font-variant: small-caps;
 		text-transform: uppercase;
-		margin-top: 50px;
-		&:nth-child(2) {
-			margin-left: 140px;
-		}
+		transform: rotate(-90deg);
+		margin-top: 85px;
+		left: 80px;
 		.days-hitch--title {
 			position: absolute;
 			top: -5px;
 			right: -20px;
 			color: #fb459f;
-			font-family: "HitchHike";
+			font-family: "HitchHike", sans-serif;
 			font-size: 4rem;
 			font-weight: 400;
 			transform: rotate(-20deg);
@@ -1005,12 +1001,13 @@ header {
 	}
 	.days-desc {
 		font-family: $default-font;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		color: #2c2c2c;
 		font-weight: 400;
 		padding-right: 15px;
+		padding-left: 200px;
 		span {
-			font-size: 3rem;
+			font-size: 2rem;
 			color: #01cbfe;
 			font-weight: 700;
 			text-transform: uppercase;
@@ -1018,23 +1015,43 @@ header {
 	}
 	.days-slider {
 		position: relative;
-		margin-top: 150px;
+		width: 470px;
+		box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+		.slick-dots {
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			padding: 0;
+			list-style: none;
+			width: 470px;
+			li {
+				display: inline-block;
+				width: 33.33333%;
+				button {
+					font-size: 0;
+					border: none;
+					height: 3px;
+					width: 100%;
+					background-color: #91898b;
+					outline: none;
+					cursor: pointer;
+				}
+				&.slick-active {
+					button {
+						background-color: #f1261e;
+					}
+				}
+			}
+		}
 		.slide {
 			outline: none;
-			.img1 {
-				width: 100%;
-				height: 250px;
-				background-color: blue;
-			}
-			.img2 {
-				width: 100%;
-				height: 250px;
-				background-color: red;
-			}
-			.img3 {
-				width: 100%;
-				height: 250px;
-				background-color: yellow;
+			.img {
+				width: 470px;
+				height: 473px;
+				background-image: url('../img/days-slider--img.jpg');
+				background-size: 100% 100%;
+				background-position: center center;
+				border-top: 15px solid #ffffff;
 			}
 		}
 		.carousel-btn.left {
@@ -1058,11 +1075,17 @@ header {
 	.title {
 		color: #48eafb;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 7.5rem;
+		font-size: 4.8rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		font-variant: small-caps;
-		margin-bottom: 50px;
+	}
+	.title-hitch {
+		color: #fb459f;
+		font-family: "HitchHike", sans-serif;
+		font-size: 3rem;
+		font-weight: 400;
+		margin-top: 10px;
 	}
 	.exist-desc {
 		font-family: "ProximaNova", sans-serif;
@@ -1072,33 +1095,24 @@ header {
 	}
 	.exist-slider {
 		position: relative;
+		margin: auto;
+		margin-top: 30px;
 		.slide {
-			.img1 {
-				width: 100%;
-				height: 300px;
-				background-color: blue;
-			}
-			.img2 {
-				width: 100%;
-				height: 300px;
-				background-color: red;
-			}
-			.img3 {
-				width: 100%;
-				height: 300px;
-				background-color: yellow;
+			outline: none;
+			img {
+				margin: auto;
 			}
 		}
 		.carousel-btn.left {
 			position: absolute;
-			bottom: 0;
-			right: -71px;
+			top: 260px;
+			left: 0;
 			z-index: 5;
 		}
 		.carousel-btn.right {
 			position: absolute;
-			bottom: 0;
-			right: -112px;
+			top: 260px;
+			right: 0;
 			z-index: 5;
 			bottom: 0;
 		}
@@ -1110,11 +1124,18 @@ header {
 	.title {
 		color: #48eafb;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 6rem;
+		font-size: 4.8rem;
 		font-weight: 900;
 		text-transform: uppercase;
 		font-variant: small-caps;
-		margin-bottom: 50px;
+	}
+	.title-hitch {
+		color: #fb459f;
+		font-family: "HitchHike", sans-serif;
+		font-size: 3rem;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 90px;
 	}
 	.detail {
 		padding: 0;
@@ -1125,60 +1146,69 @@ header {
 		display: -o-flex;
 		display: flex;
 		justify-content: space-between;
+		width: 830px;
+		margin: auto;
 		li {
 			text-align: center;
 			position: relative;
-			&:after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 0;
-				width: 100%;
-				height: 3px;
-				border-radius: 50%;
-				background-color: #000;
-			}
 		}
 		.text {
 			font-family: "ProximaNova", sans-serif;
 			font-size: 2.4rem;
-			color: #2c2c2c;
-			font-weight: 400;
+			color: #fc6aaf;
+			font-weight: 900;
+			font-variant: small-caps;
 		}
 		.desc {
 			font-family: "ProximaNova", sans-serif;
-			font-size: 2rem;
-			color: #2c2c2c;
+			font-size: 1.4rem;
 			font-weight: 400;
 			margin-top: 20px;
+			color: #9d9d9d;
+			font-variant: small-caps;
 		}
 	}
 	.detail-price--title {
-		color: #000;
 		font-family: "ProximaNova", sans-serif;
 		font-size: 3rem;
 		font-weight: 900;
 		font-variant: small-caps;
 		text-transform: uppercase;
-		margin-top: 50px;
+		margin-top: 115px;
+		color: #48eafb;
 	}
 	.detail-price--list {
 		list-style: none;
+		padding-left: 70px;
+		margin: 0;
 		li {
 			position: relative;
 			font-family: "ProximaNova", sans-serif;
 			font-size: 2rem;
 			color: #2c2c2c;
 			font-weight: 400;
-			margin-top: 10px;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -30px;
-				width: 15px;
-				height: 15px;
-				border: 2px solid #000;
+			margin-top: 35px;
+			&.green {
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -40px;
+					width: 24px;
+					height: 24px;
+					background-image: url('../img/access.png');
+				}
+			}
+			&.red {
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -40px;
+					width: 24px;
+					height: 24px;
+					background-image: url('../img/denied.png');
+				}
 			}
 		}
 	}
@@ -1190,13 +1220,13 @@ header {
 		display: flex;
 		justify-content: center;
 		padding-right: 100px;
+		margin-top: 85px;
 		.detail-btn {
 			background-color: #fb459f;
 			border: none;
 			outline: none;
-			height: 39px;
 			border-radius: 22px;
-			width: 200px;
+			width: 230px;
 			color: #fefefe;
 			font-family: "ProximaNova", sans-serif;
 			font-size: 1.3rem;
@@ -1206,6 +1236,8 @@ header {
 			-o-transition: 200ms;
 			transition: 200ms;
 			cursor: pointer;
+			padding-top: 14.5px;
+			padding-bottom: 14.5px;
 			&:hover {
 				transform: scale(1.05);
 			}
@@ -1285,6 +1317,42 @@ header {
 			transform: rotate(90deg);
 		}
 	}
+	.social-vk {
+		position: absolute;
+		bottom: 70px;
+		right: 25px;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		transition: 300ms;
+		&:hover {
+			background-color: #fff;
+			path {
+				fill: #fb459f;
+			}
+		}
+		&:active {
+			transform: scale(1.05);
+		}
+	}
+	.social-inst {
+		position: absolute;
+		bottom: 25px;
+		right: 25px;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		transition: 300ms;
+		&:hover {
+			background-color: #fff;
+			path {
+				fill: #fb459f;
+			}
+		}
+		&:active {
+			transform: scale(1.05);
+		}
+	}
 }
 
 .reviews {
@@ -1341,7 +1409,7 @@ header {
 				padding-right: 90px;
 				.name {
 					color: #ffffff;
-					font-family: "HitchHike";
+					font-family: "HitchHike", sans-serif;
 					font-size: 3rem;
 					font-weight: 400;
 					text-align: center;
@@ -1384,7 +1452,7 @@ header {
 		bottom: -50px;
 		left: 40px;
 		color: #fb459f;
-		font-family: "HitchHike";
+		font-family: "HitchHike", sans-serif;
 		font-size: 4rem;
 		font-weight: 400;
 	}

@@ -102,17 +102,40 @@ $(function() {
 		});
 	}
 
-	$('.days-slider, .exist-slider').slick({
+	$('.days-slider').slick({
 		slidesToShow: 1,
 		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
 		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>',
-		draggable: false
+		arrows: false,
+		dots: true
+	});
+
+	$('.exist-slider').slick({
+		slidesToShow: 1,
+		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
+		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>',
+		arrows: true,
+		dots: false
 	});
 
 	$('.curators-gallery').slick({
 		slidesToShow: 3,
 		prevArrow: '<button class="carousel-btn left"><img src="img/left-arrow.png" alt="arrow"></button>',
-		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>'
+		nextArrow: '<button class="carousel-btn right"><img src="img/right-arrow.png" alt="arrow"></button>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
 	});
 
 	$('.days-global_carousel').slick({
@@ -120,7 +143,9 @@ $(function() {
 		slidesToShow: 1,
 		prevArrow: '<button class="carousel-btn left days-global_prev"><img src="img/left-arrow.png" alt="arrow"></button>',
 		nextArrow: '<button class="carousel-btn right days-global_next"><img src="img/right-arrow.png" alt="arrow"></button>',
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		draggable: false,
+		swipe: false
 	});
 
 

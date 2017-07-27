@@ -76,8 +76,6 @@ header {
   padding: 10px 0 10px; }
   .header-top .logo-wrapper a {
     display: block; }
-    .header-top .logo-wrapper a img {
-      width: 90px; }
   .header-top .header-top--right {
     display: -webkit-flex;
     display: -moz-flex;
@@ -150,7 +148,6 @@ header {
       margin-right: 40px; }
 
 .header-contacts {
-  margin-left: 40px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -158,15 +155,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -180,9 +168,16 @@ header {
     -webkit-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 21px;
+    border: 2px solid #ffffff;
+    padding: 12.5px 24px;
+    margin-right: 30px;
+    transition: 300ms; }
     .header-contacts .phone:hover {
-      text-decoration: underline; }
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
   .header-contacts .header-btn {
     color: #fefefe;
     font-family: "ProximaNova", sans-serif;
@@ -192,8 +187,8 @@ header {
     text-decoration: none;
     border-radius: 21px;
     background-color: #fb459f;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
     padding-left: 20px;
     padding-right: 20px;
     -webkit-transition: 300ms;
@@ -202,7 +197,12 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-top: 10px; }
+    margin-right: 20px;
+    transition: 300ms; }
+    .header-contacts .header-btn:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
 
 .language {
   display: -webkit-flex;
@@ -239,7 +239,8 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center center;
-  padding-top: 180px; }
+  padding-top: 220px;
+  text-align: center; }
   .main-section:before {
     position: absolute;
     top: 0;
@@ -253,27 +254,29 @@ header {
     z-index: 1; }
   .main-section .title {
     position: relative;
-    color: #48eafb;
+    text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8);
+    color: #fefefe;
     font-family: "ProximaNova", sans-serif;
-    font-size: 6rem;
+    font-size: 6.5rem;
     font-weight: 900;
-    font-variant: small-caps;
     text-transform: uppercase;
-    z-index: 2; }
+    z-index: 2;
+    text-align: center; }
   .main-section .title-hitch {
     position: relative;
     color: #ffffff;
     font-family: "HitchHike", sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    margin-top: 10px;
-    z-index: 2; }
+    margin-top: 40px;
+    z-index: 2;
+    text-align: center; }
   .main-section .main-btn {
     position: relative;
     display: inline-block;
-    color: #c3fbf7;
+    color: #fff;
     font-family: "ProximaNova", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -281,7 +284,7 @@ header {
     padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 2px solid #0393ad;
+    border: 2px solid #fb449f;
     border-radius: 25px;
     border-top: 0;
     margin-top: 55px;
@@ -305,7 +308,7 @@ header {
 
 .about-company {
   position: relative;
-  padding-top: 60px;
+  padding-top: 140px;
   padding-bottom: 50px;
   overflow: hidden;
   margin-top: 30px; }
@@ -339,7 +342,7 @@ header {
     font-size: 2rem;
     color: #2c2c2c;
     margin-top: 50px;
-    padding-right: 90px;
+    padding-right: 120px;
     line-height: 1.2; }
   .about-company .desc:not(:first-child) {
     margin-top: 35px; }
@@ -395,7 +398,7 @@ header {
     -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
-    margin-top: 220px; }
+    margin-top: 170px; }
     .about-company .carousel-wrapper .carousel-item {
       outline: none; }
     .about-company .carousel-wrapper .carousel {
@@ -449,8 +452,8 @@ header {
           transform: rotate(90deg); }
       .about-company .carousel-wrapper .carousel .social-vk {
         position: absolute;
-        bottom: 40px;
-        right: 57px;
+        bottom: 70px;
+        right: 25px;
         width: 37px;
         height: 37px;
         border-radius: 50%;
@@ -467,8 +470,8 @@ header {
           transform: scale(1.05); }
       .about-company .carousel-wrapper .carousel .social-inst {
         position: absolute;
-        bottom: 40px;
-        right: 10px;
+        bottom: 25px;
+        right: 25px;
         width: 37px;
         height: 37px;
         border-radius: 50%;
@@ -507,33 +510,16 @@ header {
   .carousel-btn.left {
     margin-right: 5px; }
 
-.links {
+.mountain {
   position: relative;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  height: 589px;
+  background-image: url("../img/links-bg.jpg");
+  background-size: cover;
+  background-position: top center;
   overflow: hidden; }
-  .links .title {
-    position: relative;
-    z-index: 5;
-    color: #48eafb;
-    font-family: "ProximaNova", sans-serif;
-    font-size: 7.6rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-variant: small-caps; }
-  .links:after {
-    content: '';
+  .mountain .cloud_middle {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 590px;
-    background-image: url(../img/links-bg.jpg);
-    background-size: cover;
-    background-position: center center; }
-  .links .cloud_middle {
-    position: absolute;
-    top: 390px;
+    top: 400px;
     left: -340px;
     width: 2795px;
     height: 539px;
@@ -541,8 +527,13 @@ header {
     -webkit-animation: cloud_b 60s linear infinite;
     animation: cloud_b 60s linear infinite;
     z-index: 2; }
+
+.links {
+  position: relative;
+  padding-top: 47px;
+  padding-bottom: 130px;
+  overflow: hidden; }
   .links .wrapper {
-    padding-top: 100px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -592,7 +583,7 @@ header {
       .links .link .link-text .link-title {
         color: #ffffff;
         font-family: "HitchHike", sans-serif;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 400; }
       .links .link .link-text .link-desc {
         color: #ffffff;
@@ -622,8 +613,8 @@ header {
     .links .link:nth-child(3) .link-text {
       top: 0;
       left: 0;
-      margin-top: 60px;
-      margin-left: 90px; }
+      margin-top: 120px;
+      margin-left: 130px; }
 
 .gallery {
   padding-bottom: 30px;
@@ -631,7 +622,7 @@ header {
   position: relative; }
   .gallery .cloud_bottom {
     position: absolute;
-    bottom: 0px;
+    bottom: -370px;
     left: 0;
     width: 100%;
     height: 745px;
@@ -668,7 +659,7 @@ header {
     .gallery .gallery-wrapper .title {
       color: #48eafb;
       font-family: "ProximaNova", sans-serif;
-      font-size: 7rem;
+      font-size: 5.6rem;
       font-weight: 900;
       text-transform: uppercase;
       font-variant: small-caps; }
@@ -736,21 +727,28 @@ header {
   background-image: url("../img/tour-main--bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 150px;
+  padding-bottom: 140px;
   overflow: hidden; }
+  .about-tour .text-center {
+    text-align: center; }
   .about-tour .video-title {
     color: #fefefe;
     font-family: "ProximaNova", sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 50px;
+    margin-top: 130px; }
   .about-tour iframe {
     position: relative;
     z-index: 10;
     border: 15px solid #fff;
-    border-radius: 20px; }
+    border-top: none;
+    -webkit-box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+    box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+    width: 880px;
+    height: 473px; }
   .about-tour .cloud_up {
     position: absolute;
     bottom: -220px;
@@ -781,7 +779,12 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 40px; }
     .about-tour .about-date--wrapper .about-date {
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
@@ -791,28 +794,14 @@ header {
       margin-right: 10px; }
   .about-tour .title-wrapper {
     position: relative;
-    margin-top: 195px; }
+    margin-top: 260px; }
     .about-tour .title-wrapper .title {
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
       font-size: 7.2rem;
       font-weight: 900;
-      text-transform: uppercase; }
-    .about-tour .title-wrapper .title-before {
-      position: absolute;
-      top: 25%;
-      left: 7.6%;
-      color: #fb459f;
-      font-family: "HitchHike", sans-serif;
-      font-size: 3.1rem;
-      font-weight: 400;
-      background-color: #fff; }
-  .about-tour .about-teaser {
-    color: #ffffff;
-    font-family: "HitchHike", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    margin-top: 30px; }
+      text-transform: uppercase;
+      text-align: center; }
   .about-tour .peoples-left {
     display: -webkit-flex;
     display: -moz-flex;
@@ -835,6 +824,7 @@ header {
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin: auto;
     margin-top: 50px;
     border: 3px solid #fb459f;
     border-radius: 22px;
@@ -867,6 +857,8 @@ header {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
+  .about-tour .turtle {
+    text-align: center; }
   .about-tour .slider-container {
     padding-left: 120px; }
     .about-tour .slider-container .slider-buttons {
@@ -909,7 +901,7 @@ header {
           opacity: 1; }
         .about-tour .slider-container .about-slide .about-slide--text .name {
           color: #ffffff;
-          font-family: "HitchHike";
+          font-family: "HitchHike", sans-serif;
           font-size: 3rem;
           font-weight: 400; }
         .about-tour .slider-container .about-slide .about-slide--text .work {
@@ -986,7 +978,7 @@ header {
         bottom: -40px;
         left: 0;
         color: #fb459f;
-        font-family: "HitchHike";
+        font-family: "HitchHike", sans-serif;
         font-size: 4rem;
         font-weight: 400; }
   .tour-gallery .gallery-slider .gallery-item img {
@@ -996,139 +988,170 @@ header {
     border-bottom: 7px solid #fff;
     margin: auto; }
 
-.days {
-  margin-top: 100px; }
-  .days .title {
-    color: #48eafb;
-    font-family: "ProximaNova", sans-serif;
-    font-size: 7.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-variant: small-caps; }
-  .days .days-global_carousel .days-global_prev {
-    position: absolute;
-    top: 50px;
-    left: 170px;
-    z-index: 1; }
-  .days .days-global_carousel .days-global_next {
-    position: absolute;
-    top: 50px;
-    left: 221px;
-    z-index: 1; }
-  .days .days-global_carousel .item {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    outline: none; }
-    .days .days-global_carousel .item .text {
-      width: 50%; }
-    .days .days-global_carousel .item .slider {
-      width: 50%; }
-  .days .days-title {
+.days .title {
+  color: #48eafb;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-variant: small-caps; }
+
+.days .title-hitch {
+  color: #fb459f;
+  font-family: "HitchHike", sans-serif;
+  font-size: 3rem;
+  font-weight: 400; }
+
+.days .days-global_carousel .days-global_prev {
+  position: absolute;
+  top: 209px;
+  left: 0px;
+  z-index: 1; }
+
+.days .days-global_carousel .days-global_next {
+  position: absolute;
+  top: 209px;
+  right: 0;
+  z-index: 1; }
+
+.days .days-global_carousel .item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none; }
+  .days .days-global_carousel .item .text {
     position: relative;
-    display: inline-block;
-    color: #eeeeee;
-    font-family: "ProximaNova", sans-serif;
-    font-size: 5rem;
-    font-weight: 900;
-    font-variant: small-caps;
-    text-transform: uppercase;
-    margin-top: 50px; }
-    .days .days-title:nth-child(2) {
-      margin-left: 140px; }
-    .days .days-title .days-hitch--title {
-      position: absolute;
-      top: -5px;
-      right: -20px;
-      color: #fb459f;
-      font-family: "HitchHike";
-      font-size: 4rem;
-      font-weight: 400;
-      -webkit-transform: rotate(-20deg);
-      -ms-transform: rotate(-20deg);
-      transform: rotate(-20deg); }
-  .days .days-desc {
-    font-family: "ProximaNova", sans-serif;
-    font-size: 2rem;
-    color: #2c2c2c;
+    width: 50%;
+    padding-top: 70px; }
+  .days .days-global_carousel .item .slider {
+    width: 50%; }
+
+.days .days-title {
+  position: absolute;
+  display: inline-block;
+  color: #eeeeee;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-top: 85px;
+  left: 80px; }
+  .days .days-title .days-hitch--title {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    color: #fb459f;
+    font-family: "HitchHike", sans-serif;
+    font-size: 4rem;
     font-weight: 400;
-    padding-right: 15px; }
-    .days .days-desc span {
-      font-size: 3rem;
-      color: #01cbfe;
-      font-weight: 700;
-      text-transform: uppercase; }
-  .days .days-slider {
-    position: relative;
-    margin-top: 150px; }
-    .days .days-slider .slide {
-      outline: none; }
-      .days .days-slider .slide .img1 {
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+
+.days .days-desc {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  padding-right: 15px;
+  padding-left: 200px; }
+  .days .days-desc span {
+    font-size: 2rem;
+    color: #01cbfe;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.days .days-slider {
+  position: relative;
+  width: 470px;
+  -webkit-box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
+  box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2); }
+  .days .days-slider .slick-dots {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    width: 470px; }
+    .days .days-slider .slick-dots li {
+      display: inline-block;
+      width: 33.33333%; }
+      .days .days-slider .slick-dots li button {
+        font-size: 0;
+        border: none;
+        height: 3px;
         width: 100%;
-        height: 250px;
-        background-color: blue; }
-      .days .days-slider .slide .img2 {
-        width: 100%;
-        height: 250px;
-        background-color: red; }
-      .days .days-slider .slide .img3 {
-        width: 100%;
-        height: 250px;
-        background-color: yellow; }
-    .days .days-slider .carousel-btn.left {
-      position: absolute;
-      top: calc(50% - 20.5px);
-      left: 0;
-      z-index: 5; }
-    .days .days-slider .carousel-btn.right {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 5;
-      top: calc(50% - 20.5px); }
+        background-color: #91898b;
+        outline: none;
+        cursor: pointer; }
+      .days .days-slider .slick-dots li.slick-active button {
+        background-color: #f1261e; }
+  .days .days-slider .slide {
+    outline: none; }
+    .days .days-slider .slide .img {
+      width: 470px;
+      height: 473px;
+      background-image: url("../img/days-slider--img.jpg");
+      background-size: 100% 100%;
+      background-position: center center;
+      border-top: 15px solid #ffffff; }
+  .days .days-slider .carousel-btn.left {
+    position: absolute;
+    top: calc(50% - 20.5px);
+    left: 0;
+    z-index: 5; }
+  .days .days-slider .carousel-btn.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    top: calc(50% - 20.5px); }
 
 .exist {
   padding-top: 100px; }
   .exist .title {
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 7.5rem;
+    font-size: 4.8rem;
     font-weight: 900;
     text-transform: uppercase;
-    font-variant: small-caps;
-    margin-bottom: 50px; }
+    font-variant: small-caps; }
+  .exist .title-hitch {
+    color: #fb459f;
+    font-family: "HitchHike", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 10px; }
   .exist .exist-desc {
     font-family: "ProximaNova", sans-serif;
     font-size: 2rem;
     color: #2c2c2c;
     font-weight: 400; }
   .exist .exist-slider {
-    position: relative; }
-    .exist .exist-slider .slide .img1 {
-      width: 100%;
-      height: 300px;
-      background-color: blue; }
-    .exist .exist-slider .slide .img2 {
-      width: 100%;
-      height: 300px;
-      background-color: red; }
-    .exist .exist-slider .slide .img3 {
-      width: 100%;
-      height: 300px;
-      background-color: yellow; }
+    position: relative;
+    margin: auto;
+    margin-top: 30px; }
+    .exist .exist-slider .slide {
+      outline: none; }
+      .exist .exist-slider .slide img {
+        margin: auto; }
     .exist .exist-slider .carousel-btn.left {
       position: absolute;
-      bottom: 0;
-      right: -71px;
+      top: 260px;
+      left: 0;
       z-index: 5; }
     .exist .exist-slider .carousel-btn.right {
       position: absolute;
-      bottom: 0;
-      right: -112px;
+      top: 260px;
+      right: 0;
       z-index: 5;
       bottom: 0; }
 
@@ -1137,11 +1160,17 @@ header {
   .tour-detail .title {
     color: #48eafb;
     font-family: "ProximaNova", sans-serif;
-    font-size: 6rem;
+    font-size: 4.8rem;
     font-weight: 900;
     text-transform: uppercase;
-    font-variant: small-caps;
-    margin-bottom: 50px; }
+    font-variant: small-caps; }
+  .tour-detail .title-hitch {
+    color: #fb459f;
+    font-family: "HitchHike", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 90px; }
   .tour-detail .detail {
     padding: 0;
     list-style: none;
@@ -1155,55 +1184,60 @@ header {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 830px;
+    margin: auto; }
     .tour-detail .detail li {
       text-align: center;
       position: relative; }
-      .tour-detail .detail li:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        border-radius: 50%;
-        background-color: #000; }
     .tour-detail .detail .text {
       font-family: "ProximaNova", sans-serif;
       font-size: 2.4rem;
-      color: #2c2c2c;
-      font-weight: 400; }
+      color: #fc6aaf;
+      font-weight: 900;
+      font-variant: small-caps; }
     .tour-detail .detail .desc {
       font-family: "ProximaNova", sans-serif;
-      font-size: 2rem;
-      color: #2c2c2c;
+      font-size: 1.4rem;
       font-weight: 400;
-      margin-top: 20px; }
+      margin-top: 20px;
+      color: #9d9d9d;
+      font-variant: small-caps; }
   .tour-detail .detail-price--title {
-    color: #000;
     font-family: "ProximaNova", sans-serif;
     font-size: 3rem;
     font-weight: 900;
     font-variant: small-caps;
     text-transform: uppercase;
-    margin-top: 50px; }
+    margin-top: 115px;
+    color: #48eafb; }
   .tour-detail .detail-price--list {
-    list-style: none; }
+    list-style: none;
+    padding-left: 70px;
+    margin: 0; }
     .tour-detail .detail-price--list li {
       position: relative;
       font-family: "ProximaNova", sans-serif;
       font-size: 2rem;
       color: #2c2c2c;
       font-weight: 400;
-      margin-top: 10px; }
-      .tour-detail .detail-price--list li:before {
+      margin-top: 35px; }
+      .tour-detail .detail-price--list li.green:before {
         content: '';
         position: absolute;
         top: 0;
-        left: -30px;
-        width: 15px;
-        height: 15px;
-        border: 2px solid #000; }
+        left: -40px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/access.png"); }
+      .tour-detail .detail-price--list li.red:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/denied.png"); }
   .tour-detail .detail-btn--wrapp {
     display: -webkit-flex;
     display: -moz-flex;
@@ -1216,14 +1250,14 @@ header {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-right: 100px; }
+    padding-right: 100px;
+    margin-top: 85px; }
     .tour-detail .detail-btn--wrapp .detail-btn {
       background-color: #fb459f;
       border: none;
       outline: none;
-      height: 39px;
       border-radius: 22px;
-      width: 200px;
+      width: 230px;
       color: #fefefe;
       font-family: "ProximaNova", sans-serif;
       font-size: 1.3rem;
@@ -1232,7 +1266,9 @@ header {
       -webkit-transition: 200ms;
       -o-transition: 200ms;
       transition: 200ms;
-      cursor: pointer; }
+      cursor: pointer;
+      padding-top: 14.5px;
+      padding-bottom: 14.5px; }
       .tour-detail .detail-btn--wrapp .detail-btn:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -1303,6 +1339,42 @@ header {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
+  .curators .social-vk {
+    position: absolute;
+    bottom: 70px;
+    right: 25px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+    .curators .social-vk:hover {
+      background-color: #fff; }
+      .curators .social-vk:hover path {
+        fill: #fb459f; }
+    .curators .social-vk:active {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
+  .curators .social-inst {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+    .curators .social-inst:hover {
+      background-color: #fff; }
+      .curators .social-inst:hover path {
+        fill: #fb459f; }
+    .curators .social-inst:active {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
 
 .reviews {
   position: relative;
@@ -1368,7 +1440,7 @@ header {
         padding-right: 90px; }
         .reviews .review-slider .review-item .review-text .name {
           color: #ffffff;
-          font-family: "HitchHike";
+          font-family: "HitchHike", sans-serif;
           font-size: 3rem;
           font-weight: 400;
           text-align: center; }
@@ -1403,7 +1475,7 @@ header {
     bottom: -50px;
     left: 40px;
     color: #fb459f;
-    font-family: "HitchHike";
+    font-family: "HitchHike", sans-serif;
     font-size: 4rem;
     font-weight: 400; }
 
@@ -1762,7 +1834,7 @@ footer {
   .main-section .main-btn {
     margin-top: 45px; }
   .about-company .title {
-    font-size: 6.4rem; }
+    font-size: 4.6rem; }
   .about-company .text {
     font-size: 1.6rem;
     margin-top: 30px; }
@@ -1779,7 +1851,8 @@ footer {
   .about-company .cloud_up {
     display: none; }
   .links {
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 50px; }
   .gallery .cloud_bottom {
     display: none; }
   .gallery .gallery-wrapper:before {
@@ -1791,16 +1864,13 @@ footer {
     width: calc(470px / 1.5);
     height: calc(470px / 1.5); }
   .links .link:nth-child(3) img {
-    width: calc(970px / 1.5);
-    height: calc(200px / 1.5); }
+    width: 100%; }
   .links .link:nth-child(1) .link-text {
     margin-top: 210px; }
   .links .link:nth-child(2) .link-text {
     margin-top: 50px; }
   .links .link:nth-child(3) .link-text {
-    margin-top: 35px; }
-  .gallery .gallery-wrapper .title {
-    font-size: 6.4rem; }
+    margin-top: 100px; }
   .gallery .gallery-wrapper .img-wrapper {
     margin-top: 10px;
     margin-right: 10px; }
@@ -1857,16 +1927,46 @@ footer {
   .reviews .review-slider--wrapper .review-buttons {
     bottom: 5px; }
   .logo-wrapper img {
-    width: 150px; }
-  footer .logo img {
-    width: 150px; }
+    width: 70px; }
+  .navigation ul li {
+    margin-right: 20px; }
+  .header-contacts .phone {
+    margin-right: 10px;
+    display: none; }
+  .header-contacts .header-btn {
+    margin-right: 10px; }
   .gallery {
     padding-bottom: 30px; }
   footer .footer-btn {
     padding-top: 12px;
     padding-bottom: 12px; }
   footer.tour-footer {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .modal-place--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-place--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-write--wrapper .modal-write .modal-form .modal-place--submit.write, .modal-consult--wrapper .modal-place .modal-form .modal-place--submit.write, .modal-consult--wrapper .modal-write .modal-form .modal-place--submit.write {
+    margin-top: 10px; }
+  .modal-place--wrapper .modal-place .modal-form .modal-place--input, .modal-place--wrapper .modal-write .modal-form .modal-place--input, .modal-write--wrapper .modal-place .modal-form .modal-place--input, .modal-write--wrapper .modal-write .modal-form .modal-place--input, .modal-consult--wrapper .modal-place .modal-form .modal-place--input, .modal-consult--wrapper .modal-write .modal-form .modal-place--input {
+    margin-top: 10px; }
+  .days .days-title {
+    left: 10px; }
+  .days .days-desc {
+    padding-left: 120px; }
+  .days .days-slider {
+    width: 400px; }
+  .days .days-slider .slick-dots {
+    width: 400px; }
+  .exist .exist-slider .slide img {
+    width: 760px; }
+  .exist .exist-slider .carousel-btn.left {
+    top: 190px; }
+  .exist .exist-slider .carousel-btn.right {
+    top: 190px; }
+  .tour-detail .detail {
+    width: 750px; }
+  .days .days-slider .slide .img {
+    width: 400px;
+    height: 403px; }
+  .days .days-slider .slick-dots {
+    bottom: -7px; } }
 
 @media screen and (max-width: 991px) {
   .about-company .carousel-wrapper .carousel {
@@ -1933,17 +2033,59 @@ footer {
     margin-top: 50px; }
   .about-tour .title-wrapper .title {
     font-size: 7rem; }
-  .about-tour .about-date--wrapper {
-    margin-top: 200px; }
   .about-tour .slider-container {
     margin-top: 20px; }
   .people-slider--title {
-    display: block; } }
+    display: block; }
+  .header-contacts {
+    display: none; }
+  .main-section .title {
+    font-size: 5rem; }
+  .about-company {
+    margin-top: 80px;
+    padding-top: 0; }
+  .about-company .text {
+    padding-right: 0; }
+  .links .link:nth-child(3) .link-text {
+    margin-top: 80px;
+    margin-left: 60px; }
+  .about-tour .peoples-left .about-btn {
+    height: 42px; }
+  .about-tour .video-title {
+    font-size: 2.3rem; }
+  .about-tour iframe {
+    width: 690px;
+    height: 387px; }
+  .about-tour {
+    padding-bottom: 0; }
+  .days .days-global_carousel .item .text {
+    padding-top: 10px; }
+  .days .days-title {
+    left: -30px; }
+  .days .days-desc {
+    padding-left: 70px; }
+  .days .days-slider {
+    width: 300px;
+    height: 303px; }
+  .days .days-slider .slide .img {
+    width: 300px;
+    height: 303px; }
+  .days .days-slider .slick-dots {
+    width: 300px; }
+  .days .days-slider .slick-dots {
+    bottom: -11px; }
+  .exist .exist-slider .slide img {
+    width: 580px; }
+  .exist .exist-slider .carousel-btn.left {
+    top: 140px; }
+  .exist .exist-slider .carousel-btn.right {
+    top: 140px; }
+  .tour-detail .title {
+    font-size: 4.6rem; }
+  .tour-detail .detail {
+    width: 100%; } }
 
 @media screen and (max-width: 767px) {
-  .logo-wrapper img {
-    width: calc(186px / 1.5);
-    height: calc(85px / 1.5); }
   .navigation ul button {
     font-size: 1.3rem; }
   .gallery .gallery-wrapper .img-wrapper img {
@@ -1954,16 +2096,11 @@ footer {
   .links .link:nth-child(2) img {
     width: calc(470px / 2);
     height: calc(470px / 2); }
-  .links .link:nth-child(3) img {
-    width: calc(970px / 2);
-    height: calc(200px / 2); }
   .links .link:nth-child(1) .link-text {
     margin-top: 150px; }
   .links .link:nth-child(3) .link-text {
-    margin-top: 25px; }
-  .links {
-    padding-top: 210px;
-    padding-bottom: 120px; }
+    margin-top: 50px;
+    margin-left: 20px; }
   .gallery .gallery-wrapper .img-wrapper {
     margin: 0; }
   .gallery .gallery-wrapper .img-wrapper img {
@@ -1981,12 +2118,57 @@ footer {
   .review-slider--wrapper {
     width: 100%; }
   .reviews .review-slider {
-    width: 100%; } }
+    width: 100%; }
+  .main-section .title {
+    font-size: 3.6rem; }
+  .main-section .title-hitch {
+    font-size: 3rem;
+    margin-top: 20px; }
+  .about-tour iframe {
+    width: 510px;
+    height: 286px; }
+  .about-tour .title-wrapper {
+    margin-top: 200px; }
+  .about-tour .turtle {
+    display: none; }
+  .about-tour .cloud_middle {
+    bottom: -140px; }
+  .days .title {
+    font-size: 4rem; }
+  .days .days-global_carousel .item .slider {
+    display: none; }
+  .days .days-global_carousel .item .text {
+    width: 100%; }
+  .days .days-title {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    position: static;
+    margin-top: 20px; }
+  .days .days-desc {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block !important; }
+  .days .days-global_carousel .days-global_prev {
+    top: 150px; }
+  .days .days-global_carousel .days-global_next {
+    top: 150px; }
+  .exist .title {
+    font-size: 4rem; }
+  .exist .exist-slider .slide img {
+    width: 510px; }
+  .exist .exist-slider .carousel-btn.left {
+    top: 130px; }
+  .exist .exist-slider .carousel-btn.right {
+    top: 130px; }
+  .tour-detail .title {
+    font-size: 3.4rem; }
+  .tour-detail .detail .text {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 575px) {
   .logo-wrapper img {
-    width: calc(186px / 2);
-    height: calc(85px / 2); }
+    width: 40px; }
   .navigation ul button {
     font-size: 0.8rem; }
   .navigation ul li {
@@ -2009,9 +2191,10 @@ footer {
   .gallery .gallery-wrapper .img-wrapper img {
     width: 100%; }
   .main-section .title {
-    font-size: 4rem; }
+    font-size: 2rem; }
   .main-section .title-hitch {
-    font-size: 2.4rem; }
+    font-size: 1.8rem;
+    margin-top: 10px; }
   .about-company .title {
     font-size: 4rem; }
   .about-company .text {
@@ -2038,8 +2221,8 @@ footer {
     width: 100%;
     height: auto; }
   .links .link:nth-child(3) .link-text {
-    margin-top: 10px;
-    margin-left: 10px; }
+    margin-top: 20px;
+    margin-left: 20px; }
   .links .link .link-text .link-title {
     font-size: 2rem; }
   .links .link .link-text .link-desc {
@@ -2047,7 +2230,8 @@ footer {
   .links .link:nth-child(3) {
     margin-top: 0; }
   .gallery .gallery-wrapper .title {
-    font-size: 4rem; }
+    font-size: 3rem;
+    margin-bottom: 10px; }
   .gallery .gallery-wrapper .inst .inst-title {
     font-size: 4rem; }
   .gallery .gallery-wrapper .inst .inst-link {
@@ -2061,7 +2245,7 @@ footer {
   .about-tour .peoples-left {
     width: 100%; }
   .about-tour .title-wrapper .title {
-    font-size: 3rem; }
+    font-size: 2.8rem; }
   .about-tour .title-wrapper .title-before {
     display: none; }
   .about-tour .about-teaser {
@@ -2069,7 +2253,7 @@ footer {
   .modal-place--wrapper .modal-place .modal-form {
     width: 100%; }
   .about-tour .about-date--wrapper {
-    margin-top: 100px; }
+    margin-top: 10px; }
   .about-tour .peoples-left .about-btn {
     width: 150px; }
   .about-tour .peoples-left {
@@ -2106,9 +2290,10 @@ footer {
     transform: none;
     display: inline-block; }
   .days .days-desc {
-    padding-left: 0px; }
-  .days .days-desc {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px; }
   .reviews .review-slider .review-item .review-text .desc {
     font-size: 1rem; }
   .reviews .review-slider .review-item .review-text {
@@ -2123,4 +2308,84 @@ footer {
   .days {
     margin-top: 50px; }
   .days .days-title {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .main-section .main-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.4rem; }
+  .about-company .title {
+    font-size: 3rem; }
+  .modal-place--wrapper .modal-place .modal-form, .modal-place--wrapper .modal-write .modal-form, .modal-write--wrapper .modal-place .modal-form, .modal-write--wrapper .modal-write .modal-form, .modal-consult--wrapper .modal-place .modal-form, .modal-consult--wrapper .modal-write .modal-form {
+    width: 100%;
+    height: 100%; }
+  .about-tour .title-wrapper {
+    margin-top: 100px; }
+  .about-tour .about-date--wrapper .about-date {
+    font-size: 2.4rem; }
+  .about-tour .video-title {
+    margin-top: 70px;
+    font-size: 1.8rem; }
+  .about-tour iframe {
+    width: 290px;
+    height: 162px; }
+  .about-tour .cloud_middle {
+    bottom: -250px; }
+  .days .title {
+    font-size: 2.3rem; }
+  .days .title-hitch {
+    font-size: 2rem; }
+  .days .days-global_carousel .days-global_prev {
+    top: 25px;
+    left: auto;
+    right: 100px; }
+  .days .days-global_carousel .days-global_next {
+    top: 25px;
+    left: auto;
+    right: 50px; }
+  .exist {
+    padding-top: 50px; }
+  .exist .title {
+    font-size: 2.6rem; }
+  .exist .title-hitch {
+    font-size: 2rem;
+    margin-top: 0; }
+  .exist .exist-slider .slide img {
+    width: 290px; }
+  .exist .exist-slider .carousel-btn.left {
+    top: 60px; }
+  .exist .exist-slider .carousel-btn.right {
+    top: 60px; }
+  .tour-detail {
+    padding-top: 50px; }
+  .tour-detail .title {
+    font-size: 1.9rem; }
+  .tour-detail .title-hitch {
+    font-size: 1.8rem;
+    margin-bottom: 10px; }
+  .tour-detail .detail {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .tour-detail .detail li {
+    margin-top: 20px;
+    width: 50%; }
+  .tour-detail .detail .desc {
+    margin-top: 10px; }
+  .tour-detail .detail-price--title {
+    margin-top: 50px;
+    font-size: 2.8rem; }
+  .tour-detail .detail-price--list {
+    padding-left: 40px; }
+  .tour-detail .detail-price--list li {
+    font-size: 1.6rem; }
+  .tour-detail .detail-btn--wrapp {
+    margin-top: 20px;
+    padding: 0; }
+  .curators {
+    padding-top: 50px; }
+  .curators .title {
+    font-size: 3.2rem; }
+  .curators .img-wrapper {
+    width: 290px; }
+  .curators .img-wrapper img {
+    width: 100%; } }
