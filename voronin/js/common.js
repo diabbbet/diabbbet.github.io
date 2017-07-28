@@ -5,6 +5,7 @@ $(function() {
 		asNavFor: '.main',
 		focusOnSelect: true,
 		draggable: false,
+		swipe: false,
 		arrows: false
 	});
 
@@ -12,6 +13,7 @@ $(function() {
 		slidesToShow: 1,
 		asNavFor: '.nav',
 		draggable: false,
+		swipe: false,
 		arrows: false,
 		speed: 700
 	});
