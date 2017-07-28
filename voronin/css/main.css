@@ -276,7 +276,7 @@ body {
   .main-section--text .btn-price {
     color: #aaa;
     font-family: "ProximaNova", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.5;
     text-decoration: underline;
@@ -600,10 +600,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #03c795;
-    font-family: "Myriad Pro", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1; }
+    font-family: "ProximaNova", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.25; }
   .founder-text .founder-desc {
     color: #b1b1b1;
     font-family: "Myriad Pro", sans-serif;
@@ -631,7 +631,7 @@ body {
 
 .modal-wrapper {
   position: absolute;
-  top: 116px;
+  top: 70px;
   left: 50vw;
   width: 370px;
   overflow: hidden;
@@ -648,8 +648,8 @@ body {
   width: 370px;
   padding-left: 35px;
   padding-right: 35px;
-  padding-top: 55px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   background-image: -webkit-gradient(linear, right top, left top, from(#0ed8be), to(#16b769));
   background-image: -webkit-linear-gradient(right, #0ed8be 0%, #16b769 100%);
   background-image: -o-linear-gradient(right, #0ed8be 0%, #16b769 100%);
@@ -883,7 +883,39 @@ body {
   .help-text .help-desc--green {
     margin-top: 15px; }
   .btn-wrapper {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5555; }
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-transform: translate(-100vw);
+        -ms-transform: translate(-100vw);
+            transform: translate(-100vw);
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 @media (max-width: 767px) {
   .main .container {

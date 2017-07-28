@@ -223,6 +223,7 @@ header {
 		margin-top: 40px;
 		z-index: 2;
 		text-align: center;
+		text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8);
 	}
 	.main-btn {
 		position: relative;
@@ -244,6 +245,7 @@ header {
 		transition: 300ms;
 		cursor: pointer;
 		z-index: 2;
+		text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8);
 		&:hover {
 			transform: scale(1.05);
 		}
@@ -417,6 +419,7 @@ header {
 				height: 37px;
 				border-radius: 50%;
 				transition: 300ms;
+				outline: none;
 				&:hover {
 					background-color: #fff;
 					path {
@@ -435,6 +438,7 @@ header {
 				height: 37px;
 				border-radius: 50%;
 				transition: 300ms;
+				outline: none;
 				&:hover {
 					background-color: #fff;
 					path {
@@ -697,7 +701,6 @@ header {
 		position: relative;
 		z-index: 10;
 		border: 15px solid #fff;
-		border-top: none;
 		box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
 		width: 880px;
 		height: 473px;
@@ -1161,7 +1164,7 @@ header {
 		}
 		.desc {
 			font-family: "ProximaNova", sans-serif;
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 			font-weight: 400;
 			margin-top: 20px;
 			color: #9d9d9d;
@@ -1325,6 +1328,7 @@ header {
 		height: 37px;
 		border-radius: 50%;
 		transition: 300ms;
+		outline: none;
 		&:hover {
 			background-color: #fff;
 			path {
@@ -1343,6 +1347,7 @@ header {
 		height: 37px;
 		border-radius: 50%;
 		transition: 300ms;
+		outline: none;
 		&:hover {
 			background-color: #fff;
 			path {

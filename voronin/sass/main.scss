@@ -205,7 +205,7 @@ body {
 	.btn-price {
 		color: #aaa;
 		font-family: "ProximaNova", sans-serif;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		font-weight: 400;
 		line-height: 2.5;
 		text-decoration: underline;
@@ -513,10 +513,10 @@ body {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		color: #03c795;
-		font-family: "Myriad Pro", sans-serif;
-		font-size: 4rem;
-		font-weight: 400;
-		line-height: 1;
+		font-family: "ProximaNova", sans-serif;
+		font-size: 3.6rem;
+		font-weight: 700;
+		line-height: 1.25;
 	}
 	.founder-desc {
 		color: #b1b1b1;
@@ -546,7 +546,7 @@ body {
 
 .modal-wrapper {
 	position: absolute;
-	top: 116px;
+	top: 70px;
 	left: 50vw;
 	width: 370px;
 	overflow: hidden;
@@ -563,8 +563,8 @@ body {
 	width: 370px;
 	padding-left: 35px;
 	padding-right: 35px;
-	padding-top: 55px;
-	padding-bottom: 40px;
+	padding-top: 35px;
+	padding-bottom: 20px;
 	background-image: linear-gradient(to left, #0ed8be 0%, #16b769 100%);
 	border-radius: 0 10px 10px 0;
 	box-sizing: border-box;

@@ -270,7 +270,8 @@ header {
     font-weight: 400;
     margin-top: 40px;
     z-index: 2;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8); }
   .main-section .main-btn {
     position: relative;
     display: inline-block;
@@ -292,7 +293,8 @@ header {
     -o-transition: 300ms;
     transition: 300ms;
     cursor: pointer;
-    z-index: 2; }
+    z-index: 2;
+    text-shadow: 0 13px 46px rgba(5, 17, 175, 0.8); }
     .main-section .main-btn:hover {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -459,7 +461,8 @@ header {
         border-radius: 50%;
         -webkit-transition: 300ms;
         -o-transition: 300ms;
-        transition: 300ms; }
+        transition: 300ms;
+        outline: none; }
         .about-company .carousel-wrapper .carousel .social-vk:hover {
           background-color: #fff; }
           .about-company .carousel-wrapper .carousel .social-vk:hover path {
@@ -477,7 +480,8 @@ header {
         border-radius: 50%;
         -webkit-transition: 300ms;
         -o-transition: 300ms;
-        transition: 300ms; }
+        transition: 300ms;
+        outline: none; }
         .about-company .carousel-wrapper .carousel .social-inst:hover {
           background-color: #fff; }
           .about-company .carousel-wrapper .carousel .social-inst:hover path {
@@ -744,7 +748,6 @@ header {
     position: relative;
     z-index: 10;
     border: 15px solid #fff;
-    border-top: none;
     -webkit-box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
     box-shadow: 0 10px 22px rgba(0, 94, 84, 0.2);
     width: 880px;
@@ -1198,7 +1201,7 @@ header {
       font-variant: small-caps; }
     .tour-detail .detail .desc {
       font-family: "ProximaNova", sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 400;
       margin-top: 20px;
       color: #9d9d9d;
@@ -1348,7 +1351,8 @@ header {
     border-radius: 50%;
     -webkit-transition: 300ms;
     -o-transition: 300ms;
-    transition: 300ms; }
+    transition: 300ms;
+    outline: none; }
     .curators .social-vk:hover {
       background-color: #fff; }
       .curators .social-vk:hover path {
@@ -1366,7 +1370,8 @@ header {
     border-radius: 50%;
     -webkit-transition: 300ms;
     -o-transition: 300ms;
-    transition: 300ms; }
+    transition: 300ms;
+    outline: none; }
     .curators .social-inst:hover {
       background-color: #fff; }
       .curators .social-inst:hover path {
@@ -1818,7 +1823,7 @@ footer {
 
 @media screen and (max-width: 1550px) {
   .about-company .carousel-wrapper .carousel {
-    width: 54%; } }
+    width: 50%; } }
 
 @media screen and (max-width: 1399px) {
   .about-company .carousel-wrapper .carousel {
