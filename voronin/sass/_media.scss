@@ -164,6 +164,24 @@
 		transform: translate(-100vw);
 		justify-content: flex-end;
 	}
+
+	.main .container {
+		flex-direction: column;
+	}
+
+	.main .container .column {
+		width: 100vw;
+		height: 50vh;
+	}
+
+	.main-section--img {
+		height: 100%;
+		background-position: 0 0;
+	}
+	
+	.modal {
+		justify-content: center;
+	}
 }
 
 @media (max-width: 767px) {
