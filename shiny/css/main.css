@@ -229,7 +229,7 @@ header {
     width: 292px;
     margin-top: 45px; }
     .header-section .header-section--btn:hover {
-      background-color: #b38900; }
+      background-color: #cc9d00; }
     .header-section .header-section--btn:active {
       -webkit-transform: scale(0.98);
           -ms-transform: scale(0.98);
@@ -343,7 +343,7 @@ header {
     margin: auto;
     margin-top: 45px; }
     .partners .partners-btn:hover {
-      background-color: #b38900; }
+      background-color: #cc9d00; }
     .partners .partners-btn:active {
       -webkit-transform: scale(0.98);
           -ms-transform: scale(0.98);
@@ -537,7 +537,7 @@ header {
               .catalog .catalog-tabs .item .item-wrapper .item-wheel .buttons .button button.orange {
                 background-color: #ffc400; }
                 .catalog .catalog-tabs .item .item-wrapper .item-wheel .buttons .button button.orange:hover {
-                  background-color: #b38900; }
+                  background-color: #cc9d00; }
               .catalog .catalog-tabs .item .item-wrapper .item-wheel .buttons .button button:active {
                 -webkit-transform: scale(0.98);
                     -ms-transform: scale(0.98);
@@ -642,7 +642,7 @@ header {
           -ms-transform: scale(0.98);
               transform: scale(0.98); }
     .comparison .comparison-btn:hover {
-      background-color: #b38900; }
+      background-color: #cc9d00; }
 
 .bonus {
   padding-top: 70px; }
@@ -734,7 +734,7 @@ header {
           -ms-transform: scale(0.98);
               transform: scale(0.98); }
     .bonus .bonus-btn:hover {
-      background-color: #b38900; }
+      background-color: #cc9d00; }
   .bonus .bonus-desc {
     color: #5f605c;
     font-family: "ConquerorSans", sans-serif;
@@ -1004,7 +1004,7 @@ footer {
             -ms-transform: scale(0.98);
                 transform: scale(0.98); }
       footer .footer-modal .footer-modal--btn:hover {
-        background-color: #b38900; }
+        background-color: #cc9d00; }
   footer .footer-develop {
     position: absolute;
     bottom: 0;
@@ -1171,7 +1171,7 @@ footer {
               -ms-transform: scale(0.98);
                   transform: scale(0.98); }
         .modal-wrapper .modal .request-form .request-btn:hover {
-          background-color: #b38900; }
+          background-color: #cc9d00; }
     .modal-wrapper .modal .agree {
       text-align: center;
       font-family: "ConquerorSans", sans-serif;

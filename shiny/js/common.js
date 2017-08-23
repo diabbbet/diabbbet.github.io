@@ -67,7 +67,7 @@ $(function() {
 		return false;
 	});
 
-	$('#installation').click(function(e) {
+	$('#installation, #sixteen').click(function(e) {
 		$('body').animate( { scrollTop: $('.installation').offset().top }, 1000 );
 		$('header nav ul').removeClass('active');
 		return false;

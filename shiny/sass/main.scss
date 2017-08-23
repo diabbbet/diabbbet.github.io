@@ -220,7 +220,7 @@ header {
 		width: 292px;
 		margin-top: 45px;
 		&:hover {
-			background-color: darken(#ffc400, 15%);
+			background-color: darken(#ffc400, 10%);
 		}
 		&:active {
 			transform: scale(0.98);
@@ -324,7 +324,7 @@ header {
 		margin: auto;
 		margin-top: 45px;
 		&:hover {
-			background-color: darken(#ffc400, 15%);
+			background-color: darken(#ffc400, 10%);
 		}
 		&:active {
 			transform: scale(0.98);
@@ -496,7 +496,7 @@ header {
 								&.orange {
 									background-color: #ffc400;
 									&:hover {
-										background-color: darken(#ffc400, 15%);
+										background-color: darken(#ffc400, 10%);
 									}
 								}
 								&:active {
@@ -600,7 +600,7 @@ header {
 			transform: scale(0.98);
 		}
 		&:hover {
-			background-color: darken(#ffc400, 15%);
+			background-color: darken(#ffc400, 10%);
 		}
 	}
 }
@@ -682,7 +682,7 @@ header {
 			transform: scale(0.98);
 		}
 		&:hover {
-			background-color: darken(#ffc400, 15%);
+			background-color: darken(#ffc400, 10%);
 		}
 	}
 	.bonus-desc {
@@ -932,7 +932,7 @@ footer {
 				transform: scale(0.98);
 			}
 			&:hover {
-				background-color: darken(#ffc400, 15%);
+				background-color: darken(#ffc400, 10%);
 			}
 		}
 	}
@@ -1087,7 +1087,7 @@ footer {
 					transform: scale(0.98);
 				}
 				&:hover {
-					background-color: darken(#ffc400, 15%);
+					background-color: darken(#ffc400, 10%);
 				}
 			}
 		}
