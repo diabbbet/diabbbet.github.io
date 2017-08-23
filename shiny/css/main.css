@@ -61,7 +61,7 @@ body {
   margin: auto; }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -80,7 +80,8 @@ header {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 2; }
   header .wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -175,7 +176,8 @@ header {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 836px; }
+      width: 836px;
+      z-index: 3; }
       header nav ul li a {
         color: #fff;
         font-family: "ConquerorSansMedium", sans-serif;

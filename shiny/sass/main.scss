@@ -81,7 +81,7 @@ body {
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -93,6 +93,7 @@ header {
 	display: -o-flex;
 	display: flex;
 	align-items: center;
+	z-index: 2;
 	.wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -166,6 +167,7 @@ header {
 			display: flex;
 			justify-content: space-between;
 			width: 836px;
+			z-index: 3;
 			li {
 				a {
 					color: #fff;
