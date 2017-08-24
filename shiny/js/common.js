@@ -95,7 +95,7 @@ $(function() {
 
 	ymaps.ready(function () {
 		var myMap = new ymaps.Map('map', {
-			center: [55.885632, 37.685949],
+			center: [55.886818, 37.684321],
 			zoom: 16
 		}, {
 			searchControlProvider: 'yandex#search'
@@ -116,6 +116,16 @@ $(function() {
 		.add(myPlacemark);
 
 		myMap.behaviors.disable('scrollZoom'); 
+	});
+
+	$('.radius').niceSelect();
+
+	$('.input-width').on('input', function () {
+		$('.label-width').val($('.input-width').val());
+	});
+
+	$('.input-height').on('input', function () {
+		$('.label-height').val($('.input-height').val());
 	});
 
 	$("#request").submit(function() {

@@ -342,8 +342,7 @@ header {
     padding: 22px 0;
     width: 380px;
     display: block;
-    margin: auto;
-    margin-top: 45px; }
+    margin: auto; }
     .partners .partners-btn:hover {
       background-color: #cc9d00; }
     .partners .partners-btn:active {
@@ -1059,8 +1058,8 @@ footer {
             border-radius: 10px;
     background-color: #ffffff;
     width: 422px;
-    height: 485px;
-    padding-top: 45px;
+    height: 550px;
+    padding-top: 25px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .modal-wrapper .modal .exit {
@@ -1116,7 +1115,27 @@ footer {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .modal-wrapper .modal .request-form input[name="radius"] {
+      .modal-wrapper .modal .request-form select.radius {
+        display: block !important;
+        position: absolute;
+        pointer-events: none;
+        opacity: 0; }
+      .modal-wrapper .modal .request-form .radius {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 292px;
         height: 55px;
         -webkit-border-radius: 10px;
@@ -1124,15 +1143,117 @@ footer {
         border: 1px solid #c0c0c0;
         background-color: #ffffff;
         outline: none;
-        color: #333;
+        color: #848484;
         font-family: "ConquerorSans", sans-serif;
         font-size: 2rem;
         font-weight: 400;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         padding: 0; }
+        .modal-wrapper .modal .request-form .radius .list {
+          width: 100%;
+          text-align: center; }
+      .modal-wrapper .modal .request-form select.radius:focus:required:invalid + .nice-select.radius {
+        border: 1px solid red; }
+      .modal-wrapper .modal .request-form .label-width {
+        color: #848484;
+        font-family: "ConquerorSans", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 10px;
+        width: 292px;
+        text-align: center;
+        border: none;
+        outline: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        pointer-events: none; }
+        .modal-wrapper .modal .request-form .label-width:focus:required:invalid::-webkit-input-placeholder {
+          color: red; }
+      .modal-wrapper .modal .request-form .label-height {
+        color: #848484;
+        font-family: "ConquerorSans", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 10px;
+        width: 292px;
+        text-align: center;
+        border: none;
+        outline: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        pointer-events: none; }
+        .modal-wrapper .modal .request-form .label-height:focus:required:invalid::-webkit-input-placeholder {
+          color: red; }
+      .modal-wrapper .modal .request-form .range-wrapper {
+        position: relative; }
+        .modal-wrapper .modal .request-form .range-wrapper .min {
+          position: absolute;
+          left: 3px;
+          bottom: -18px;
+          display: inline-block;
+          color: #888888;
+          font-family: "ConquerorSansBold", sans-serif;
+          font-size: 1.2rem; }
+        .modal-wrapper .modal .request-form .range-wrapper .max {
+          position: absolute;
+          right: 3px;
+          bottom: -18px;
+          display: inline-block;
+          color: #888888;
+          font-family: "ConquerorSansBold", sans-serif;
+          font-size: 1.2rem; }
+      .modal-wrapper .modal .request-form input[type="range"] {
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        width: 292px;
+        height: 5px;
+        margin-top: 10px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background: #c0c0c0;
+        outline: none; }
+      .modal-wrapper .modal .request-form input[type="range"]::-moz-range-track {
+        border: inherit;
+        background: transparent; }
+      .modal-wrapper .modal .request-form input[type="range"]::-ms-track {
+        border: inherit;
+        color: transparent;
+        background: transparent; }
+      .modal-wrapper .modal .request-form input[type="range"]::-ms-fill-lower,
+      .modal-wrapper .modal .request-form input[type="range"]::-ms-fill-upper {
+        background: transparent; }
+      .modal-wrapper .modal .request-form input[type="range"]::-ms-tooltip {
+        display: none; }
+      .modal-wrapper .modal .request-form input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: none;
+        -webkit-border-radius: 12px;
+                border-radius: 12px;
+        background-color: #ffc400;
+        cursor: pointer; }
+      .modal-wrapper .modal .request-form input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 12px;
+        background-color: #ffc400;
+        cursor: pointer; }
+      .modal-wrapper .modal .request-form input[type="range"]::-ms-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 12px;
+        border: 0;
+        background-color: #ffc400;
+        cursor: pointer; }
       .modal-wrapper .modal .request-form input[name="phone"] {
         width: 292px;
         height: 55px;
@@ -1149,7 +1270,9 @@ footer {
         font-family: "ConquerorSans", sans-serif;
         font-size: 2rem;
         font-weight: 400;
-        margin-top: 10px; }
+        margin-top: 25px; }
+        .modal-wrapper .modal .request-form input[name="phone"]:focus:required:invalid {
+          border: 1px solid red; }
       .modal-wrapper .modal .request-form .request-btn {
         border: none;
         color: #333333;
