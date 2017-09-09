@@ -52,10 +52,7 @@ header {
   padding-bottom: 10px;
   z-index: 1;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 100ms;
-  -o-transition: 100ms;
-  transition: 100ms; }
+          box-sizing: border-box; }
   header.dark {
     background-color: #080808; }
   header .header-wrapper {
@@ -738,7 +735,8 @@ footer {
     font-size: 4.1rem;
     text-transform: uppercase; }
   .header-section {
-    padding-top: 270px; }
+    padding-top: 270px;
+    background-image: url("../img/mobile-header-bg.jpg"); }
   .header-section h1.title {
     margin-top: -20px;
     text-align: center; }

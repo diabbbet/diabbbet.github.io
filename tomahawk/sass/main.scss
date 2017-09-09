@@ -64,7 +64,6 @@ header {
 	padding-bottom: 10px;
 	z-index: 1;
 	box-sizing: border-box;
-	transition: 100ms;
 	&.dark {
 		background-color: #080808;
 	}
@@ -730,6 +729,7 @@ footer {
 	}
 	.header-section {
 		padding-top: 270px;
+		background-image: url('../img/mobile-header-bg.jpg');
 	}
 	.header-section h1.title {
 		margin-top: -20px;
