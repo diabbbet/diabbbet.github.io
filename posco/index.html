@@ -14,7 +14,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="libs/swiper.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -50,26 +49,32 @@
 		</div>
 
 		<div class="switcher" id="switcher_main">
-			<div class="item active" data-item="0" style="background-image: url('img/paris-bg.jpg');">
-				<div class="container">
-					<div class="switcher-title">ЖК «Париж»</div>
-					<div class="switcher-price">Цена от 45 000 ₽ за м2</div>
-					<div class="switcher-deadline"><i class="icon icon-calendar"></i>Срок сдачи</div>
-					<ul class="switcher-ul">
-						<li>4 квартал 2017 <span>5 секция</span></li>
-						<li>2 квартал 2018 <span>4 секция</span></li>
-					</ul>
+			<div class="item active" data-item="0" style="background-image: url('img/paris-bg_blur.jpg');">
+				<div class="item-inner" style="background-image: url('img/paris-bg.jpg');">
+					<div class="item-inner--overlay" style="background-image: url('../img/paris-bg-overlay.png');"></div>
+					<div class="container">
+						<div class="switcher-title">ЖК «Париж»</div>
+						<div class="switcher-price">Цена от 45 000 ₽ за м<sup>2</sup></div>
+						<div class="switcher-deadline"><i class="icon icon-calendar"></i>Срок сдачи</div>
+						<ul class="switcher-ul">
+							<li>4 квартал 2017 <span>5 секция</span></li>
+							<li>2 квартал 2018 <span>4 секция</span></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
-			<div class="item" data-item="1" style="background-image: url('img/vladimir-bg.jpg');">
-				<div class="container">
-					<div class="switcher-title">ЖК «На Владимирской»</div>
-					<div class="switcher-price">Цена от 45 000 ₽ за м2</div>
-					<div class="switcher-deadline"><i class="icon icon-calendar"></i>Срок сдачи</div>
-					<ul class="switcher-ul">
-						<li>2 квартал 2018</li>
-					</ul>
+			<div class="item" data-item="1" style="background-image: url('img/vladimir-bg_blur.jpg');">
+				<div class="item-inner" style="background-image: url('img/vladimir-bg.jpg');">
+					<div class="item-inner--overlay" style="background-image: url('../img/vladimir-bg-overlay.png');"></div>
+					<div class="container">
+						<div class="switcher-title">ЖК «На Владимирской»</div>
+						<div class="switcher-price">Цена от 45 000 ₽ за м<sup>2</sup></div>
+						<div class="switcher-deadline"><i class="icon icon-calendar"></i>Срок сдачи</div>
+						<ul class="switcher-ul">
+							<li>2 квартал 2018</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -81,10 +86,10 @@
 				<a href="choice-paris.html" class="lay-outs"><i class="icon icon-plan"></i>планировки и цены</a>
 				<ul class="menu">
 					<li><a href="about-complex.html"><i class="icon icon-apartment"></i>О комплексе</a></li>
-					<li><a href="#"><i class="icon icon-placeholder"></i>Расположение</a></li>
-					<li><a href="#"><i class="icon icon-documents"></i>Документы</a></li>
-					<li><a href="#"><i class="icon icon-camera"></i>Фото</a></li>
-					<li><a href="#"><i class="icon icon-video"></i>Видео</a></li>
+					<li><a href="map.html"><i class="icon icon-placeholder"></i>Расположение</a></li>
+					<li><a href="documents.html"><i class="icon icon-documents"></i>Документы</a></li>
+					<li><a href="photo.html"><i class="icon icon-camera"></i>Фото</a></li>
+					<li><a href="video.html"><i class="icon icon-video"></i>Видео</a></li>
 				</ul>
 			</div>
 
@@ -92,10 +97,10 @@
 				<a href="choice-vladimir.html" class="lay-outs"><i class="icon icon-plan"></i>планировки и цены</a>
 				<ul class="menu">
 					<li><a href="about-complex.html"><i class="icon icon-apartment"></i>О комплексе</a></li>
-					<li><a href="#"><i class="icon icon-placeholder"></i>Расположение</a></li>
-					<li><a href="#"><i class="icon icon-documents"></i>Документы</a></li>
+					<li><a href="map.html"><i class="icon icon-placeholder"></i>Расположение</a></li>
+					<li><a href="documents.html"><i class="icon icon-documents"></i>Документы</a></li>
 					<li><a href="#"><i class="icon icon-camera"></i>Фото</a></li>
-					<li><a href="#"><i class="icon icon-video"></i>Видео</a></li>
+					<li><a href="video.html"><i class="icon icon-video"></i>Видео</a></li>
 				</ul>
 			</div>
 		</div>
@@ -114,7 +119,6 @@
 
 
 	<script src="libs/jquery-3.2.1.min.js"></script>
-	<script src="libs/swiper.min.js"></script>
 	<script src="libs/jquery.maphilight.min.js"></script>
 	<script src="js/common.js"></script>
 

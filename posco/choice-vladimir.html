@@ -14,7 +14,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="libs/swiper.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -43,7 +42,9 @@
 		</div>
 	</header>
 
-	<main class="background main-fixed" style="background-image: url(img/paris-choice_inner.jpg);">
+	<div class="fixed-bg" style="background-image: url('img/vladimir-choice_blur.jpg');"></div>
+
+	<main class="main-fixed">
 		<div class="controllers">
 			<a href="choice-paris.html" class="controller paris">ЖК «Париж»</a>
 			<a href="#" class="controller vladimir active">ЖК «На Владимирской»</a>
@@ -64,7 +65,7 @@
 
 				<img src="img/vladimir-choice.jpg" alt="" usemap="#selector" data-fill="e8841a" data-opacity="0.9">
 				<map name="selector">
-					<area href="choice-vladimir_inner.html" class="select-home" shape="poly" coords="724,538,797,477,822,497,871,449,820,401,820,379,852,375,852,311,851,304,864,306,863,210,905,207,905,145,805,141,801,138,698,138,698,170,689,172,689,206,687,214,673,217,671,306,678,308,685,307,684,347,672,346,669,438,686,439,685,495,694">
+					<area href="choice-vladimir_inner.html" class="select-home" shape="poly" coords="725,786,799,715,825,741,869,697,826,651.1818237304688,826,626.1818237304688,855,623.1818237304688,853,555.1818237304688,867,553.1818237304688,865,458.18182373046875,907,456.18182373046875,907,392.18182373046875,806,388.18182373046875,804,380.18182373046875,693,383.18182373046875,694,418.18182373046875,685,417.18182373046875,685,452.18182373046875,680,459.18182373046875,672,462.18182373046875,667,557.1818237304688,681,558.1818237304688,678,592.1818237304688,667,593.1818237304688,665,689,682,691,679,747,717,793">
 				</map>
 			</div>
 
@@ -72,7 +73,7 @@
 				<div class="info">
 					<div class="selector-arrow"><a href="index.html"><i class="icon icon-button-arrow"></i></a></div>
 					<div class="selector-title">ЖК «На Владимирской»</div>
-					<div class="selector-price">Цена от 45 000 ₽ за м2</div>
+					<div class="selector-price">Цена от 45 000 ₽ за м<sup>2</sup></div>
 				</div>
 			</div>
 		</div>
@@ -105,7 +106,6 @@
 	
 	
 	<script src="libs/jquery-3.2.1.min.js"></script>
-	<script src="libs/swiper.min.js"></script>
 	<script src="libs/jquery.maphilight.min.js"></script>
 	<script src="js/common.js"></script>
 

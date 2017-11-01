@@ -14,7 +14,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="libs/swiper.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -43,7 +42,9 @@
 		</div>
 	</header>
 
-	<main class="background main-fixed" style="background-image: url(img/paris-choice_inner.jpg);">
+	<div class="fixed-bg" style="background-image: url('img/paris-choice_blur.jpg');"></div>
+
+	<main class="main-fixed">
 		<div class="controllers">
 			<a href="#" class="controller paris active">ЖК «Париж»</a>
 			<a href="choice-vladimir.html" class="controller vladimir">ЖК «На Владимирской»</a>
@@ -65,7 +66,7 @@
 
 				<img src="img/paris-choice.jpg" alt="" usemap="#selector" data-fill="0084ff" data-opacity="0.9">
 				<map name="selector">
-					<area class="select-home" href="choice-paris_inner.html" shape="poly" coords="599,243,615,238,615,212,692,209,703,224,748,229,668,254,705,505,637,461">
+					<area class="select-home" href="choice-paris_inner.html" shape="poly" coords="637,660,598,442,614,437,614,412,692,406,698,422,720,420,748,426,668,454,700,698">
 				</map>
 			</div>
 
@@ -73,7 +74,7 @@
 				<div class="info">
 					<div class="selector-arrow"><a href="index.html"><i class="icon icon-button-arrow"></i></a></div>
 					<div class="selector-title">ЖК «Париж»</div>
-					<div class="selector-price">Цена от 45 000 ₽ за м2</div>
+					<div class="selector-price">Цена от 45 000 ₽ за м<sup>2</sup></div>
 				</div>
 			</div>
 		</div>
@@ -106,7 +107,6 @@
 	
 	
 	<script src="libs/jquery-3.2.1.min.js"></script>
-	<script src="libs/swiper.min.js"></script>
 	<script src="libs/jquery.maphilight.min.js"></script>
 	<script src="js/common.js"></script>
 
