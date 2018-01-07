@@ -1,0 +1,22 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  .header {
+    &_menu {
+      display: flex;
+    }
+    &_item {
+      font-family: "Proxima Nova";
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 30px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}

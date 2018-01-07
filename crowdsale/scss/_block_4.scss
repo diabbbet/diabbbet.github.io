@@ -1,0 +1,38 @@
+.block_4 {
+  padding: 125px 200px;
+  background: $blue url(../img/bg_4.jpg) no-repeat center;
+  background-size: cover;
+  &__header {
+    font-size: 35px;
+    color: $white;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    margin-bottom: 90px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 135px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item {
+      flex-basis: 35%;
+      margin-right: 80px;
+      &__caption {
+        font-size: 21px;
+        color: $white;
+        font-weight: bold;
+      }
+      &__text {
+        color: $light_blue;
+      }
+    }
+  }
+}

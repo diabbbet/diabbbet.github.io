@@ -1,0 +1,158 @@
+.block_7 {
+  background: $blue url(../img/block_7_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 120px 200px;
+  color: $white;
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__header {
+    font-size: 35px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    max-width: 250px;
+  }
+  &__roadmap {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px $gold dashed;
+    padding-left: 50px;
+    margin-right: 200px;
+    &_item {
+      position: relative;
+      margin-bottom: 50px;
+      max-width: 210px;
+      &:first-of-type {
+        margin-top: -10px;
+      }
+      &:last-of-type {
+        margin-bottom: -77px;
+      }
+      &:before{
+        content: url(../img/block_7_dot.png);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -57.5px;
+      }
+      &__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+        &--gold {
+          color: $gold;
+        }
+      }
+      &__subtitle{
+
+      }
+    }
+  }
+  &__mechanics{
+    &__pictures{
+      position: relative;
+      width: 640px;
+      height: 400px;
+      & > * {
+        position: absolute;
+      }
+    }
+    &_icon_1 {
+      top: 5px;
+      left: -10px;
+    }
+    &_icon_2 {
+      top: -15px;
+      left: 329px;
+    }
+    &_icon_3 {
+      top: 50px;
+      left: 143px;
+    }
+    &__text {
+      max-width: 200px;
+      &--1 {
+        color: $gold;
+        font-size: 21px;
+        top: 155px;
+        left: 10px;
+      }
+      &--2{
+        top: 180px;
+        left: 10px;
+        max-width: 150px;
+      }
+      &--3 {
+        top: 0;
+        left: 130px;
+        text-align: center;
+      }
+      &--4{
+        left: 510px;
+        text-align: center;
+        top: 25px;
+      }
+      &--5{
+        right: 150px;
+        top: 170px;
+      }
+    }
+    &__table {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      margin-bottom: 20px;
+    }
+    &__row {
+      border-bottom: 1px solid $gold;
+      display: flex;
+      &:first-of-type .block_7__mechanics__item {
+        padding-top: 0 !important;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-basis: 50%;
+      padding: 20px 25px;
+      justify-content: center;
+      align-items: center;
+      &>div{
+        margin-right: 10px;
+      }
+      &:first-of-type {
+        border-right: 1px solid $gold;
+      }
+      &--full {
+        border-right: none !important;
+        flex-basis: 100%;
+        span {
+          max-width: 250px;
+          text-align: center;
+        }
+      }
+    }
+    &__last_icon {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 450px;
+      span {
+        text-transform: uppercase;
+      }
+      &--stick {
+        margin-bottom: 100px;
+        &:before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 70px;
+          background: $gold;
+          top: 115%;
+        }
+      }
+    }
+  }
+}

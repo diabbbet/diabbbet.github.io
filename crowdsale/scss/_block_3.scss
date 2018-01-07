@@ -1,0 +1,37 @@
+.block_3 {
+  background: $grey_bg;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    width: 980px;
+    margin: 0 auto 125px;
+    &__items {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+      padding: 0 40px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      background: $white;
+      flex: 0 0 25%;
+      padding: 30px 15px;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 7.5px;
+      &__caption {
+        text-align: center;
+      }
+    }
+    &__image {
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__header {
+    font-size: 25px;
+
+  }
+}

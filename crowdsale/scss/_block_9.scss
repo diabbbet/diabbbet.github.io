@@ -1,0 +1,13 @@
+.block_9 {
+  background: $blue url(../img/map.jpg) center no-repeat;
+  background-size: cover;
+  color: $white;
+  padding: 90px 200px;
+  height: 790px;
+  &__header {
+    font-size: 35px;
+    font-family: "Roboto";
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+}
