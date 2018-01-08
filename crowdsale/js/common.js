@@ -2,7 +2,7 @@ $(document).ready(()=>{
    $('.block_10__slider').slick({
        slidesToShow: 4,
        slidesToScroll: 4,
-       infinite: false,
+       infinite: true,
        dots: true,
        arrows: false,
        dotsClass: 'block_10_dots',
@@ -61,4 +61,15 @@ $(document).ready(()=>{
           parent.addClass('active');
        }
    })
+   $('.header_item--lang-item').click(function() {
+       $(this).next().toggleClass('active');
+       $(this).toggleClass('active');
+   });
+   $('.burger').click(function() {
+       $(this).toggleClass('active');
+       $('.header_menu').toggleClass('active');
+   })
 });
+
+
+
