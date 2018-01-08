@@ -24,7 +24,7 @@
                 <img src="img/logo.png" alt="Лого">
             </a>
             <div class="header_menu">
-                <a class="header_item" href="#">White paper</a>
+                <a class="header_item" data-index="wp" href="#">White paper</a>
                 <a class="header_item" href="#">Bounty</a>
                 <a class="header_item" href="#">Github</a>
                 <a class="header_item" href="#">Team</a>
@@ -42,7 +42,7 @@
                 <span></span>
             </div>
         </header>
-        <section class="block block_1">
+        <section class="block block_1" data-index="wp">
             <h1 class="block_1__header">
                 Бизнес-Акселлератор и краудфандинг-платформа
             </h1>
@@ -65,7 +65,10 @@
             </div>
             <div class="block_1__buttons">
                 <div class="block_1__email">
-                    <input class="block_1__email__input" type="text" placeholder="Your e-mail address">
+                    <form>
+                        <input class="block_1__email__input" type="text" placeholder="Your e-mail address">
+                        <button type="submit"></button>
+                    </form>
                 </div>
                 <a href="#" download class="block_1__button">White Paper</a>
             </div>
@@ -487,11 +490,12 @@
                 </div>
             </div>
             <div class="block_6__buttons">
-                <div class="block_6__button">
-                    Инструкция, как покупать
-                </div>
+                <a href="#" class="block_6__button">Инструкция, как покупать</a>
                 <div class="block_6__email">
-                    <input class="block_6__email__input" type="text" placeholder="Your e-mail address">
+                    <form>
+                        <input class="block_6__email__input" type="text" placeholder="Your e-mail address">
+                        <button type="submit"></button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -573,53 +577,53 @@
                         <div class="block_7__mechanics__mob_pictures only_mobile">
                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_ic1.png" alt=""
-                                   class="block_7__mechanics__mob_icon_1"></span>
-                                   <span class="block_7__mechanics__mob__text block_7__mechanics__mob__text--1">
-                                   CSN fund</span>
-                                   <span class="block_7__mechanics__mob__text block_7__mechanics__mob__text--2">
-                                   Аккумуляция инвестиции</span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics__mob_icon_1"></span>
+                                 <span class="block_7__mechanics__mob__text block_7__mechanics__mob__text--1">
+                                 CSN fund</span>
+                                 <span class="block_7__mechanics__mob__text block_7__mechanics__mob__text--2">
+                                 Аккумуляция инвестиции</span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_mob_arrow.png" alt=""
-                                   class="block_7__mechanics_mob_icon_arrow"></span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics_mob_icon_arrow"></span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span class="block_7__mechanics__mob__text block_7__mechanics__mob__text--3">
                                     Отбираем заявки стартапов
                                 </span>
                             </div>
                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_mob_arrow.png" alt=""
-                                   class="block_7__mechanics_mob_icon_arrow"></span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics_mob_icon_arrow"></span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_ic2.png" alt=""
-                                   class="block_7__mechanics__mob_icon_2"></span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics__mob_icon_2"></span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_mob_arrow.png" alt=""
-                                   class="block_7__mechanics_mob_icon_arrow"></span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics_mob_icon_arrow"></span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span class="block_7__mechanics__text block_7__mechanics__text--4">
                                     3-х уровневый отбор проектов
                                 </span>
                             </div>
                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_mob_arrow.png" alt=""
-                                   class="block_7__mechanics_mob_icon_arrow"></span>
-                               </div>
-                               <div class="block_7__mechanics__mob__item">
+                                 class="block_7__mechanics_mob_icon_arrow"></span>
+                             </div>
+                             <div class="block_7__mechanics__mob__item">
                                 <span class="block_7__mechanics__text block_7__mechanics__text--5">
                                     Стартап платит комиссию платформе после успешного ICO / Краудфандинг
                                 </span>
                             </div>
                             <div class="block_7__mechanics__mob__item">
                                 <span><img src="img/block_7_mob_arrow.png" alt=""
-                                   class="block_7__mechanics_mob_icon_arrow"></span>
-                               </div>
-                           </div>
-                           <div class="block_7__mechanics__table">
+                                 class="block_7__mechanics_mob_icon_arrow"></span>
+                             </div>
+                         </div>
+                         <div class="block_7__mechanics__table">
                             <div class="block_7__mechanics__row">
                                 <div class="block_7__mechanics__item">
                                     <div><img src="img/block_7_ic3.png" alt=""></div>
@@ -894,7 +898,7 @@
                             #SMM
                         </div>
                         <div class="block_8__tip__text">
-                            facebook, twitter,
+                            facebook, twitter,<br>
                             inkedin и др.
                         </div>
                         <div class="block_8__tip__secret">
@@ -914,7 +918,7 @@
                             #Translation
                         </div>
                         <div class="block_8__tip__text">
-                            campaign (за перевод WP)
+                            campaign<br> (за перевод WP)
                         </div>
 
                         <div class="block_8__tip__secret">
@@ -934,7 +938,7 @@
                             #PR
                         </div>
                         <div class="block_8__tip__text">
-                            campaign (Блог, Youtube)
+                            campaign<br> (Блог, Youtube)
                         </div>
 
                         <div class="block_8__tip__secret">
@@ -954,7 +958,7 @@
                             #Баунти
                         </div>
                         <div class="block_8__tip__text">
-                            за подключение партнеров
+                            за подключение партнеров<br>
                             в странах.
                         </div>
 
@@ -1137,7 +1141,10 @@
             </div>
             <div class="block_10__buttons">
                 <div class="block_10__email">
-                    <input class="block_10__email__input" type="text" placeholder="Your e-mail address">
+                    <form>
+                        <input class="block_10__email__input" type="text" placeholder="Your e-mail address">
+                        <button type="submit"></button>
+                    </form>
                 </div>
             </div>
         </section>

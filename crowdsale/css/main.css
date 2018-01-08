@@ -67,7 +67,8 @@
   -webkit-font-smoothing: antialiased;
   font-family: "Proxima Nova";
   font-size: 17px;
-  color: inherit; }
+  color: inherit;
+  outline: none; }
 
 img {
   max-width: 100%; }
@@ -257,7 +258,11 @@ header {
     background: -webkit-gradient(linear, left top, right top, from(#0156a7), to(#3187bd));
     background: -webkit-linear-gradient(left, #0156a7 0%, #3187bd 100%);
     background: -o-linear-gradient(left, #0156a7 0%, #3187bd 100%);
-    background: linear-gradient(to right, #0156a7 0%, #3187bd 100%); }
+    background: linear-gradient(to right, #0156a7 0%, #3187bd 100%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     .block_1__button:hover {
       background-image: -webkit-linear-gradient(24deg, #3086bd 0%, #3086bd 1%, #5ca4d2 100%);
       background-image: -o-linear-gradient(24deg, #3086bd 0%, #3086bd 1%, #5ca4d2 100%);
@@ -273,7 +278,7 @@ header {
       border: 1px #d2ab66 solid;
       color: #FFFFFF;
       font-size: 20px; }
-    .block_1__email:after {
+    .block_1__email button {
       position: absolute;
       content: '';
       display: block;
@@ -283,7 +288,11 @@ header {
       top: 0;
       right: 10px;
       width: 50px;
-      height: 100%; }
+      height: 100%;
+      border: none;
+      cursor: pointer; }
+      .block_1__email button:hover {
+        background-image: url("../img/email-input-hover.png"); }
 
 .block_2 {
   background: #090b12;
@@ -765,7 +774,16 @@ header {
       background: -webkit-linear-gradient(left, #0156a7 0%, #3187bd 100%);
       background: -o-linear-gradient(left, #0156a7 0%, #3187bd 100%);
       background: linear-gradient(to right, #0156a7 0%, #3187bd 100%);
-      display: inline; }
+      display: inline;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+      .block_5__content__button:hover {
+        background-image: -webkit-linear-gradient(24deg, #3086bd 0%, #3086bd 1%, #5ca4d2 100%);
+        background-image: -o-linear-gradient(24deg, #3086bd 0%, #3086bd 1%, #5ca4d2 100%);
+        background-image: linear-gradient(66deg, #3086bd 0%, #3086bd 1%, #5ca4d2 100%); }
     .block_5__content__second_items {
       display: -webkit-box;
       display: -webkit-flex;
@@ -931,7 +949,11 @@ header {
     margin-bottom: 30px;
     border-bottom: 1px solid #090b12;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
+    .block_6__button:hover {
+      color: #0156a7;
+      border-color: #0156a7; }
     .block_6__button:after {
       content: url(../img/block_6_button.png);
       position: absolute;
@@ -947,9 +969,9 @@ header {
               border-radius: 40px;
       outline: none;
       border: 1px #d2ab66 solid;
-      color: #FFFFFF;
+      color: #000;
       font-size: 20px; }
-    .block_6__email:after {
+    .block_6__email button {
       position: absolute;
       content: '';
       display: block;
@@ -959,7 +981,11 @@ header {
       top: 0;
       right: 10px;
       width: 50px;
-      height: 100%; }
+      height: 100%;
+      border: none;
+      cursor: pointer; }
+      .block_6__email button:hover {
+        background-image: url("../img/email-input-hover.png"); }
 
 .block_7 {
   background: #0156a7 url(../img/block_7_bg.jpg) no-repeat center;
@@ -1407,6 +1433,9 @@ header {
   .block_8__analytics_img {
     margin-bottom: 60px; }
 
+.block_8__tip__text {
+  text-align: center; }
+
 .block_9 {
   background: #0156a7 url(../img/map.jpg) center no-repeat;
   -webkit-background-size: cover;
@@ -1498,7 +1527,7 @@ header {
       border: 1px #d2ab66 solid;
       color: #FFFFFF;
       font-size: 20px; }
-    .block_10__email:after {
+    .block_10__email button {
       position: absolute;
       content: '';
       display: block;
@@ -1508,7 +1537,14 @@ header {
       top: 0;
       right: 10px;
       width: 50px;
-      height: 100%; }
+      height: 100%;
+      border: none;
+      cursor: pointer; }
+      .block_10__email button:hover {
+        background-image: url("../img/email-input-hover.png"); }
+
+.block_10_dots li {
+  cursor: pointer; }
 
 footer {
   display: -webkit-box;
@@ -1519,7 +1555,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0 200px;
+  padding: 0 200px 20px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -1545,11 +1581,23 @@ footer {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .footer_menu .header_item--lang-item--wrapper {
+      bottom: 100%;
+      top: auto; }
+    footer .footer_menu .header_item--lang {
+      position: relative;
+      cursor: pointer; }
   footer .footer_item {
     margin: 0 30px;
     text-decoration: none;
     font-size: 15px; }
+    footer .footer_item:hover {
+      color: #0156a7; }
 
 @media (max-width: 1099px) {
   header {

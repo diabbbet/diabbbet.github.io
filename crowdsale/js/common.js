@@ -69,6 +69,13 @@ $(document).ready(()=>{
        $(this).toggleClass('active');
        $('.header_menu').toggleClass('active');
    })
+   $('.header_item').click(function() {
+       $(this).addClass('active');
+       var attr = $(this).attr('data-index');
+       var top = $('sect.block[data-index="'+attr+'"]');
+       console.log(top)
+       $('body,html').animate({scrollTop: top}, 1000);
+   })
 });
 
 
