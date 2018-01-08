@@ -8,7 +8,7 @@ $(document).ready(()=>{
        dotsClass: 'block_10_dots',
        responsive: [
            {
-               breakpoint: 769,
+               breakpoint: 1200,
                settings: {
                    slidesToShow: 2,
                    slidesToScroll: 2,
@@ -41,16 +41,16 @@ $(document).ready(()=>{
            dotsClass: 'block_10_dots'
        });
    }
-   if (window.innerWidth <= 768){
-       $('.block_7__roadmap').slick({
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           infinite: false,
-           dots: false,
-           arrows: false,
-           dotsClass: 'block_10_dots'
-       })
-   }
+   // if (window.innerWidth <= 768){
+   //     $('.block_7__roadmap').slick({
+   //         slidesToShow: 1,
+   //         slidesToScroll: 1,
+   //         infinite: false,
+   //         dots: false,
+   //         arrows: false,
+   //         dotsClass: 'block_10_dots'
+   //     })
+   // }
    $('.block_8__expandable__item__caption').click((e)=>{
        let target = e.target;
        let parent = $(target.parentNode);
