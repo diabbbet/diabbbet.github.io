@@ -72,9 +72,9 @@ $(document).ready(()=>{
    $('.header_item').click(function() {
        $(this).addClass('active');
        var attr = $(this).attr('data-index');
-       var top = $('sect.block[data-index="'+attr+'"]');
-       console.log(top)
-       $('body,html').animate({scrollTop: top}, 1000);
+       var scroll = $('section.block[data-index="'+attr+'"]').offset().top;
+       $('html,body').animate ({scrollTop: scroll},500)
+       return false;
    })
 });
 
