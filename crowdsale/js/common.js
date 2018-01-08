@@ -31,10 +31,10 @@ $(document).ready(()=>{
            }
        ]
    });
-   if (window.innerWidth <= 540) {
+   if (window.innerWidth <= 767) {
        $('.block_5__content__item__charts').slick({
-           slidesToShow: 1,
-           slidesToScroll: 1,
+           slidesToShow: 2,
+           slidesToScroll: 2,
            infinite: false,
            dots: true,
            arrows: false,

@@ -1603,6 +1603,10 @@ footer {
     footer .footer_item:hover {
       color: #0156a7; }
 
+@media (max-width: 1499px) {
+  .block_7__roadmap {
+    margin-right: 100px; } }
+
 @media (max-width: 1199px) {
   header {
     padding-left: 55px;
@@ -1743,8 +1747,11 @@ footer {
             flex-basis: 47%;
     margin: 5px; }
   .block_4 {
-    background-image: url(../img/block_4_bg_ipad.jpg);
-    padding-bottom: 400px; }
+    position: relative;
+    background-image: url(../img/b4_bg_ipad.png.jpg);
+    padding-bottom: 400px;
+    -webkit-background-size: contain;
+            background-size: contain; }
     .block_4__header {
       margin-bottom: 50px; }
     .block_4__content {
@@ -1760,6 +1767,15 @@ footer {
                 flex-basis: 50%;
         margin-right: 0;
         margin-bottom: 50px; }
+    .block_4:after {
+      content: '';
+      position: absolute;
+      bottom: 40px;
+      width: 585px;
+      height: 341px;
+      left: 50%;
+      margin-left: -292.5px;
+      background-image: url("../img/mockup---phone-style-01.png"); }
   .block_5__content__item__header, .block_5__content__item__duration, .block_5__content__item__status {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -1945,11 +1961,14 @@ footer {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-@media (max-width: 540px) {
+@media (max-width: 767px) {
   header {
-    display: none; }
+    padding-left: 15px;
+    padding-right: 15px; }
+  .burger {
+    right: 15px; }
   .block {
-    padding: 100px 20px;
+    padding: 100px 15px;
     overflow: hidden; }
   .block_1__header {
     font-size: 27px; }
@@ -1973,10 +1992,16 @@ footer {
   .block_2__content {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .block_2__content__item {
       margin-right: 0;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      width: 100%; }
       .block_2__content__item--gold:before {
         top: -40px;
         left: 0; }
@@ -1997,8 +2022,7 @@ footer {
             flex-basis: 100%;
     margin-bottom: 30px; }
   .block_4 {
-    background-image: url(../img/block_4_bg_mob.jpg);
-    padding-bottom: 400px; }
+    padding-bottom: 150px; }
     .block_4__header {
       margin-bottom: 50px; }
     .block_4__content {
@@ -2239,4 +2263,66 @@ footer {
   .block_10_dots li {
     margin: 0 3px; }
   footer {
-    display: none; } }
+    display: none; }
+  .block_1__email__input {
+    padding: 10px 36.5px; }
+  .block_1__email button {
+    top: 7.5px;
+    right: 10px;
+    width: 30px;
+    height: 30px; }
+  .block_1__buttons > * {
+    margin: 0; }
+  .block_1__button {
+    padding: 12.5px 0;
+    margin-top: 30px; }
+  .block_1 {
+    padding-bottom: 55px; }
+  .block_2__content__item:last-child {
+    margin-bottom: 0; }
+  .block_4:after {
+    width: 320px;
+    height: 185px;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin-left: -160px; }
+  .block_5__content__item__chart span, .block_5__content__item__chart p {
+    margin-left: 50%; }
+  .block_5__content__button {
+    display: block;
+    padding: 12.5px 0; }
+  .block_10_dots {
+    margin-top: 0; }
+  .block_5__content__second_item__sub {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+  .block_6__content__item {
+    margin-left: 0;
+    width: 100%; }
+  .block_7__header {
+    font-size: 25px; }
+  .block_8__header {
+    font-size: 25px; }
+  .block_8__pentagram__item--8 {
+    left: -8%; }
+  .block_8__pentagram__item--3 {
+    left: 83%; }
+  .block_8__pentagram__item--1 {
+    left: 39%; }
+  .block_8__pentagram__item--9 {
+    left: 5%; }
+  .block_8__pentagram__item--4 {
+    left: 80%; }
+  .block_8__pentagram__item--5 {
+    left: 53%; }
+  .block_8__pentagram__item--6 {
+    left: 21%; }
+  .block_8__pentagram__item--7 {
+    left: -3%; }
+  .block_8 {
+    padding-bottom: 0; }
+  .block_9 {
+    background-position: center 70%; }
+  .block_10_dots {
+    margin-top: 20px; } }
