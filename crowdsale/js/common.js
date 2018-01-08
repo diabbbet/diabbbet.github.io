@@ -68,6 +68,7 @@ $(document).ready(()=>{
    $('.burger').click(function() {
        $(this).toggleClass('active');
        $('.header_menu').toggleClass('active');
+       $('body').toggleClass('fix');
    })
    $('.header_item').click(function() {
        $(this).addClass('active');

@@ -72,6 +72,8 @@
 
 body {
   overflow-x: hidden; }
+  body.fix {
+    overflow: hidden; }
 
 img {
   max-width: 100%; }
@@ -93,7 +95,7 @@ main {
     display: none !important; } }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -105,7 +107,9 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 100px; }
+  padding: 40px 100px;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.8); }
   header .header_menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1407,7 +1411,7 @@ header {
       padding: 40px 40px;
       left: -30%;
       right: -30%;
-      top: -110%;
+      bottom: 250px;
       opacity: 0;
       visibility: hidden; }
       .block_8__tip__secret:before {
@@ -1424,7 +1428,8 @@ header {
                 transform: rotate(45deg); }
     .block_8__tip:hover .block_8__tip__secret {
       opacity: 1;
-      top: -130%;
+      top: auto;
+      bottom: 250px;
       visibility: visible; }
     .block_8__tip__img {
       margin-bottom: 20px; }
@@ -1439,6 +1444,9 @@ header {
 
 .block_8__tip__text {
   text-align: center; }
+
+p.small {
+  font-size: 14px; }
 
 .block_9 {
   background: #0156a7 url(../img/map.jpg) center no-repeat;
@@ -1964,9 +1972,12 @@ footer {
 @media (max-width: 767px) {
   header {
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .burger {
-    right: 15px; }
+    right: 15px;
+    top: 30px; }
   .block {
     padding: 100px 15px;
     overflow: hidden; }
@@ -2043,7 +2054,7 @@ footer {
   .block_5__subheader {
     margin-top: -30px; }
   .block_5__content__item {
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
     .block_5__content__item__charts {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -2214,6 +2225,8 @@ footer {
             justify-content: center; }
     .block_8__tips__text {
       margin-bottom: 40px; }
+      .block_8__tips__text.padding {
+        margin-bottom: 100px; }
   .block_8__tip {
     margin-bottom: 20px; }
   .block_8__tip:hover .block_8__tip__secret {
