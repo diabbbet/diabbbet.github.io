@@ -409,3 +409,23 @@
 .block_5__content__item__chart p br {
   display: none;
 }
+
+.block_5__content__second_item--image {
+  position: relative;
+  overflow: hidden;
+}
+
+.block_5__content__second_item--image .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #090b12;
+  clip-path: polygon(2% 91%, 29% 91%, 36% 71%, 48% 55%, 72% 92%, 76% 94%, 65% 100%, 102% 100%, 100% -4%, 13% 2%);
+  transition: 1000ms;
+  opacity: 1;
+  &.anim {
+    opacity: 0;
+  }
+}

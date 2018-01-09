@@ -1,7 +1,5 @@
 .block_4 {
   padding: 125px 200px;
-  background: $blue url(../img/bg_4.jpg) no-repeat center;
-  background-size: cover;
   &__header {
     font-size: 35px;
     color: $white;
@@ -50,4 +48,10 @@
       }
     }
   }
+}
+
+.block_8__item_wrapper--row > .block_8__item_img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 70% center;
 }
