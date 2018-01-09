@@ -1,6 +1,124 @@
-@media (max-width: 768px) and (min-width: 541px) {
+@media (max-width: 1499px) {
+  .block_7__roadmap {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  header {
+    padding-left: 55px;
+    padding-right: 55px;
+    .header_menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999;
+      justify-content: center;
+      .header_item {
+        margin: 20px 0;
+      }
+      &.active {
+        display: flex;
+      }
+    }
+  }
+  .burger {
+    display: block;
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 50px;
+    right: 55px;
+    cursor: pointer;
+    z-index: 999;
+    span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: #d2ab66;
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        margin-top: -1px;
+      }
+      &:nth-child(3) {
+        top: 100%;
+        margin-top: -2px;
+      }
+    }
+    &.active {
+      span {
+        &:nth-child(1) {
+          top: 50%;
+          margin-top: -1px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          margin-top: -1px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .block_1__header {
+    font-size: 45px;
+  }
+
+  .block_2 {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .block_2__content__item--gold {
+    font-size: 17px;
+    width: auto;
+    max-width: 270px;
+    margin: 0;
+    padding-top: 40px;
+    width: 50%;
+  }
+  .block_2__content__item--gold:before {
+    left: 0;
+    top: -25px;
+  }
+  .block_2__content__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1199px) {
   .block {
     padding: 150px 60px;
+  }
+  
+  .block_1__buttons {
+    flex-direction: column;
+  }
+  .block_1__button {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .block_5__content__item__chart p {
+    font-size: 13px;
+    i {
+      display: none;
+    }
+    br {
+      display: block;
+    }
   }
   .block_2 {
     &__content {
@@ -38,8 +156,10 @@
     }
   }
   .block_4 {
-    background-image: url(../img/block_4_bg_ipad.jpg);
+    position: relative;
+    background-image: url(../img/b4_bg_ipad.png.jpg);
     padding-bottom: 400px;
+    background-size: contain;
     &__header {
       margin-bottom: 50px;
     }
@@ -55,6 +175,17 @@
         margin-bottom: 50px;
       }
     }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 40px;
+      width: 585px;
+      height: 341px;
+      left: 50%;
+      margin-left: -292.5px;
+      background-image: url('../img/mockup---phone-style-01.png');
+
+    }
   }
   .block_5 {
     &__content{
@@ -64,6 +195,7 @@
       &__item--now &__item__chart{
         flex-basis: 50%;
         margin-bottom: 80px;
+        align-items: center;
       }
       &__item--next &__item__charts{
         width: 100%;
@@ -154,5 +286,148 @@
     &__pentagram{
       margin-bottom: 60px;
     }
+  }
+  .block_5__content__item__status.second {
+    margin-right: 0;
+  }
+  .block_5__content__second_item__sub {
+    flex-basis: 25%;
+  }
+  .block_6__content__item {
+    margin-left: 150px;
+    width: 55%;
+    margin-bottom: 100px;
+  }
+  .block_6__content__item img {
+    left: -150px;
+    top: 0;
+  }
+  .block_7__header {
+    max-width: none;
+  }
+  .block_7__roadmap {
+    flex-direction: row;
+    width: 1880px;
+  }
+  .block_7__roadmap_wrapper {
+    width: 100%;
+  }
+  .block_7__roadmap_container {
+    overflow: auto;
+    width: 100%;
+  }
+  .block_7__roadmap_item {
+    width: 240px;
+    max-width: none;
+    margin-bottom: 20px !important;
+  }
+  .block_7__mechanics_wrapper {
+    margin-top: 100px;
+  }
+  .block_8__item_wrapper {
+    width: 100%;
+  }
+  .block_8__expandable__item.active .block_8__expandable__item__content {
+    max-width: 475px;
+  }
+  .block_8__expandable_img {
+    top: 50px;
+    right: -35%;
+  }
+  .block_8__header br {
+    display: none;
+  }
+  .block_8__pentagram {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .block_8__tip__secret {
+    left: 0; right: 0;
+  }
+  .block_8 {
+    padding-bottom: 0;
+  }
+  .block_9 {
+    background: #0156a7 url(../img/map.jpg) bottom center no-repeat;
+    height: 600px;
+    background-size: contain;
+  }
+  footer {
+    padding-left: 55px;
+    padding-right: 55px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer_links {
+    margin-bottom: 50px;
+  }
+  .block_7__content {
+    justify-content: center;
+  }
+  .block_2__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_2__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_3__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_3__content__items {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_4__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_4__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_5__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_5__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_5__content__item__chart .pre-ico .pre-ico--img {
+    transform: rotate(0deg);
+  }
+  .block_5__content__item__chart .ico-duration--wrapper .ico-duration .ico-duration--img {
+    transform: rotate(0deg);
+  }
+  .block_6__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_6__subheader {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_6__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_7__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_7__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_8__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .block_8__content {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

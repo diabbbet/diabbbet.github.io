@@ -9,11 +9,26 @@
     font-family: "Roboto";
     text-transform: uppercase;
     margin-bottom: 90px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 500ms;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   &__content {
     display: flex;
     flex-direction: column;
     width: calc(100% / 3);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 500ms;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 100ms;
+    }
     &__items {
       display: flex;
       justify-content: flex-start;

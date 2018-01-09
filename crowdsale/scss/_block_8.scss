@@ -7,10 +7,25 @@
     font-family: "Roboto";
     margin-bottom: 50px;
     text-transform: uppercase;
+    transition: 500ms;
+    transform: translateY(100px);
+    opacity: 0;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   &__content {
     display: flex;
     flex-direction: column;
+    transition: 500ms;
+    transform: translateY(100px);
+    opacity: 0;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 100ms;
+    }
     &_item {
       margin-bottom: 60px;
     }
@@ -209,6 +224,7 @@
     align-items: center;
     cursor: pointer;
     position: relative;
+    width: 25%;
     &__secret {
       background: $white;
       border-radius: 5px;
@@ -217,7 +233,7 @@
       padding: 40px 40px;
       left: -30%;
       right: -30%;
-      top: -110%;
+      bottom: 250px;
       opacity: 0;
       visibility: hidden;
       &:before {
@@ -236,7 +252,8 @@
     &:hover {
       .block_8__tip__secret {
         opacity: 1;
-        top: -130%;
+        top: auto;
+        bottom: 250px;
         visibility: visible;
       }
     }
@@ -255,4 +272,12 @@
   &__analytics_img {
     margin-bottom: 60px;
   }
+}
+
+.block_8__tip__text {
+  text-align: center;
+}
+
+p.small {
+  font-size: 14px;
 }

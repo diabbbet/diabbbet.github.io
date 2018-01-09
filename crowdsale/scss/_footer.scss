@@ -4,7 +4,7 @@ footer{
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0 200px;
+  padding: 0 200px 20px;
   justify-content: space-between;
   color: $white;
   .footer_links {
@@ -22,10 +22,22 @@ footer{
   }
   .footer_menu{
     display: flex;
+    align-items: center;
+    .header_item--lang-item--wrapper {
+      bottom: 100%;
+      top: auto;
+    }
+    .header_item--lang {
+      position: relative;
+      cursor: pointer;
+    }
   }
   .footer_item{
     margin: 0 30px;
     text-decoration: none;
     font-size: 15px;
+    &:hover {
+      color: #0156a7;
+    }
   }
 }

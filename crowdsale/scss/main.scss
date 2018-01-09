@@ -15,3 +15,63 @@
 @import "footer";
 @import "media_tablet";
 @import "media_phones";
+
+@media (min-width: 1199px) {
+	.text-anim {
+		animation: text 500ms ease-in-out;
+	}
+
+	.text-anim2 {
+		animation: text2 500ms 100ms ease-in-out;
+	}
+
+	.text-anim3 {
+		animation: text2 500ms 150ms ease-in-out;
+	}
+	.text-anim4 {
+		animation: text2 500ms 200ms ease-in-out;
+	}
+
+	@keyframes text {
+		0% {
+			transform: translateY(200px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes text2 {
+		0% {
+			transform: translateY(200px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes text3 {
+		0% {
+			transform: translateY(200px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	@keyframes text4 {
+		0% {
+			transform: translateY(200px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}

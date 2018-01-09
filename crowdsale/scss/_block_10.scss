@@ -19,6 +19,7 @@
       font-size: 22px;
     }
     &__about {
+      text-align: center;
       span {
         color: $grey;
       }
@@ -61,16 +62,29 @@
       color: $white;
       font-size: 20px;
     }
-    &:after{
-      position: absolute;
-      content: '';
-      display: block;
-      background: url(../img/email-input.png) no-repeat center;
-      background-size: 90%;
-      top: 0;
-      right: 10px;
-      width: 50px;
-      height: 100%;
+    button {
+     position: absolute;
+     content: '';
+     display: block;
+     background: url(../img/email-input.png) no-repeat center;
+     background-size: 90%;
+     top: 0;
+     right: 10px;
+     width: 50px;
+     height: 100%;
+     border: none;
+     cursor: pointer;
+     &:hover {
+      background-image: url('../img/email-input-hover.png');
     }
   }
+}
+}
+.block_10_dots li {
+  cursor: pointer;
+}
+
+.block_10__slide__img {
+  border-radius: 50%;
+  overflow: hidden;
 }

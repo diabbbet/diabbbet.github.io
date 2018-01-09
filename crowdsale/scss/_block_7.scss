@@ -6,6 +6,13 @@
   &__content {
     display: flex;
     justify-content: flex-start;
+    transform: translateY(100px);
+    transition: 500ms;
+    opacity: 0;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   &__header {
     font-size: 35px;

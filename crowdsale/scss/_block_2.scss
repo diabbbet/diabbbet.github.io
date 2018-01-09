@@ -8,6 +8,13 @@
   padding: 120px 200px;
   &__header {
     margin-bottom: 110px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 500ms;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
     h2 {
       font-size: 35px;
       font-family: "Roboto";
@@ -28,6 +35,14 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 500ms;
+    transition-delay: 100ms;
+    &.anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
     &__item{
       &--gold{
         font-weight: bold;
