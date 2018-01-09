@@ -1689,8 +1689,10 @@ p.small {
       margin-top: 20px;
       color: #d2ab66;
       font-size: 22px; }
-    .block_10__slide__about span {
-      color: #B2B2B2; }
+    .block_10__slide__about {
+      text-align: center; }
+      .block_10__slide__about span {
+        color: #B2B2B2; }
   .block_10_dots {
     display: -webkit-box;
     display: -webkit-flex;
