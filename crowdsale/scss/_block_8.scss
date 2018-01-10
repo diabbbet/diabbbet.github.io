@@ -289,11 +289,14 @@ p.small {
   text-align: center;
   margin-top: 50px;
   .how {
-    font-size: 40px;
+    font-size: 35px;
+    font-family: "Roboto";
+    text-transform: uppercase;
   }
   .num {
     font-size: 80px;
     font-weight: 400;
     line-height: 1;
+    margin-top: 20px;
   }
 }

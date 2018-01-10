@@ -7,7 +7,6 @@
   }
   .burger {
     right: 15px;
-    top: 30px;
   }
   .block {
     padding: 100px 15px;
@@ -309,20 +308,10 @@
   footer {
     display: none;
   }
-  .block_1__email__input {
-    padding: 10px 36.5px;
-  }
-  .block_1__email button {
-    top: 7.5px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-  }
   .block_1__buttons > * {
     margin: 0;
   }
   .block_1__button {
-    padding: 12.5px 0;
     margin-top: 30px;
   }
   .block_1 {
@@ -343,6 +332,9 @@
   .block_5__content__button {
     display: block;
     padding: 12.5px 0;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .block_10_dots {
     margin-top: 0;
@@ -398,4 +390,33 @@
     width: 10px;
     height: 10px;
   }
+  .tickets .how {
+    font-size: 25px;
+  }
+  .tickets .num {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 420px) {
+  .topline .anchor {
+    display: block;
+    width: 320px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  header {
+    top: 81px;
+  }
+  .tickets .how {
+    font-size: 18px;
+  }
+  .tickets .num {
+    font-size: 40px;
+  }
+  .block_10_dots li {
+    height: 8px;
+    width: 8px;
+  }
+  
 }

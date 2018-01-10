@@ -33,7 +33,8 @@
     width: 30px;
     height: 15px;
     position: absolute;
-    top: 50px;
+    top: 50%;
+    margin-top: -7.5px;
     right: 55px;
     cursor: pointer;
     z-index: 999;
@@ -100,6 +101,9 @@
 }
 
 @media (max-width: 1199px) {
+  .block_5__content__second_item--image .after {
+    display: none;
+  }
   .block {
     padding: 150px 60px;
   }

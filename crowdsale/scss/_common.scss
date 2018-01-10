@@ -28,6 +28,15 @@ main{
   border-bottom: 1px $gold solid;
 }
 
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+}
+
 .only_mobile {
   display: none;
   @media (max-width: 767px) {

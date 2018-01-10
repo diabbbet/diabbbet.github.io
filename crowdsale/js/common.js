@@ -90,7 +90,7 @@ $(document).ready(()=>{
     var scroll = $('.block_8__content_item[data-index="'+attr+'"]').offset().top - 80;
     $('html,body').animate ({scrollTop: scroll},500)
   })
-   if ($(window).width() > 1200) {
+   if ($(window).width() > 1199) {
      $(window).scroll(function() {
       var windowScrollTop = $(window).scrollTop();
       var block2 = $('.block_2').offset().top - 100;
@@ -100,9 +100,9 @@ $(document).ready(()=>{
       var block6 = $('.block_6').offset().top - 100;
       var block7 = $('.block_7').offset().top - 100;
       var block8 = $('.block_8').offset().top - 100;
-      var block9 = $('.block_5__content__second_items').offset().top - 100;
-      var block_now = $('.block_5__content__item--now').offset().top - 100;
-      var block_next = $('.block_5__content__item--next').offset().top - 100;
+      var block9 = $('.block_5__content__second_items').offset().top - 140;
+      var block_now = $('.block_5__content__item--now').offset().top - 140;
+      var block_next = $('.block_5__content__item--next').offset().top - 140;
       if (windowScrollTop > block2) {
         $('.block_2__header').addClass('anim');
         $('.block_2__content').addClass('anim');
@@ -141,16 +141,21 @@ $(document).ready(()=>{
       if (windowScrollTop > block9) {
         $('.block_5__content__second_item--image .after').addClass('anim');
       }
-
-      console.log($('header').offset().top - windowScrollTop);
-      if ($('.block_1').offset().top - windowScrollTop == 0 || $('.block_1').offset().top - windowScrollTop < 0) {
-        $('header').css('top', 0);
-      } else {
-        var offset = 50 - windowScrollTop;
-        $('header').css('top', offset);
-      }
-    })
+    });
    }
+   $(window).scroll(function() {
+    var windowScrollTop = $(window).scrollTop();
+    if ($('.block_1').offset().top - windowScrollTop == 0 || $('.block_1').offset().top - windowScrollTop < 0) {
+      $('header').css('top', 0);
+    } else {
+      var offset = $('.block_1').offset().top - windowScrollTop;
+      $('header').css('top', offset);
+    }
+  });
+
+   particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
  });
 
 
