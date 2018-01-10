@@ -286,12 +286,14 @@ p.small {
 }
 
 .tickets {
-  text-align: right;
+  text-align: center;
   margin-top: 50px;
   .how {
     font-size: 40px;
   }
   .num {
-    font-size: 70px;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
   }
 }

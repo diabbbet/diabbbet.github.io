@@ -82,12 +82,17 @@ header {
 
 .topline {
 	width: 100%;
-	padding: 14.5px 0;
+	padding: 5px 0;
 	background-color: #d2ab66;
 	text-align: center;
 	.anchor {
 		display: inline-block;
 		cursor: pointer;
-		color: #0156a7;
+		color: #FFFFFF;
+		background: linear-gradient(to right, #0156a7 0%, #3187bd 100%);
+		padding: 0 30px;
+		line-height: 40px;
+		border-radius: 20px;
+		margin-left: 10px;
 	}
 }
