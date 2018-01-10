@@ -2,6 +2,9 @@
   background: $black;
   padding: 125px 200px;
   color: $white;
+  .btn-wrapper {
+    text-align: center;
+  }
   &__header {
     font-size: 35px;
     font-family: "Roboto";
@@ -162,7 +165,7 @@
     }
     &__simple_text {
       color: $grey;
-      margin-bottom: 30px;
+      margin-bottom: 100px;
     }
   }
   &__expandable {
@@ -280,4 +283,15 @@
 
 p.small {
   font-size: 14px;
+}
+
+.tickets {
+  text-align: right;
+  margin-top: 50px;
+  .how {
+    font-size: 40px;
+  }
+  .num {
+    font-size: 70px;
+  }
 }

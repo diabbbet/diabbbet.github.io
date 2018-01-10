@@ -96,7 +96,7 @@ main {
 
 header {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -168,6 +168,22 @@ header {
 
 .burger {
   display: none; }
+
+.header_logo {
+  width: 150px;
+  height: 35px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat; }
+
+.topline {
+  width: 100%;
+  padding: 14.5px 0;
+  background-color: #d2ab66;
+  text-align: center; }
+  .topline .anchor {
+    display: inline-block;
+    cursor: pointer;
+    color: #0156a7; }
 
 .block_1 {
   background: url(../img/bg_1.jpg) #090b12 no-repeat;
@@ -1361,6 +1377,8 @@ header {
   background: #090b12;
   padding: 125px 200px;
   color: #FFFFFF; }
+  .block_8 .btn-wrapper {
+    text-align: center; }
   .block_8__header {
     font-size: 35px;
     font-family: "Roboto";
@@ -1551,7 +1569,7 @@ header {
     margin-bottom: 100px; }
   .block_8__item__simple_text {
     color: #B2B2B2;
-    margin-bottom: 30px; }
+    margin-bottom: 100px; }
   .block_8__expandable {
     position: relative;
     z-index: 1; }
@@ -1669,6 +1687,14 @@ header {
 
 p.small {
   font-size: 14px; }
+
+.tickets {
+  text-align: right;
+  margin-top: 50px; }
+  .tickets .how {
+    font-size: 40px; }
+  .tickets .num {
+    font-size: 70px; }
 
 .block_9 {
   background: #0156a7 url(../img/map.jpg) center no-repeat;

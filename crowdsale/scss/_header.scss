@@ -1,6 +1,6 @@
 header {
 	position: fixed;
-	top: 0;
+	top: 50px;
 	left: 0;
 	right: 0;
 	display: flex;
@@ -71,4 +71,23 @@ header {
 
 .burger {
 	display: none;
+}
+
+.header_logo {
+	width: 150px;
+	height: 35px;
+	background-image: url('../img/logo.svg');
+	background-repeat: no-repeat;
+}
+
+.topline {
+	width: 100%;
+	padding: 14.5px 0;
+	background-color: #d2ab66;
+	text-align: center;
+	.anchor {
+		display: inline-block;
+		cursor: pointer;
+		color: #0156a7;
+	}
 }
