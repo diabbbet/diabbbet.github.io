@@ -1765,11 +1765,11 @@ p.small {
 .tickets {
   text-align: center;
   margin-top: 50px; }
-  .tickets .how {
+  .tickets .num {
     font-size: 35px;
     font-family: "Roboto";
     text-transform: uppercase; }
-  .tickets .num {
+  .tickets .how {
     font-size: 80px;
     font-weight: 400;
     line-height: 1;
@@ -2771,9 +2771,9 @@ footer {
   .block_10_dots li {
     width: 10px;
     height: 10px; }
-  .tickets .how {
-    font-size: 25px; }
   .tickets .num {
+    font-size: 25px; }
+  .tickets .how {
     font-size: 54px; } }
 
 @media (max-width: 420px) {
