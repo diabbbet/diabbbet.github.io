@@ -16,9 +16,9 @@ CountdownTimer.prototype={
   var me=this;
 
   if( ( this.tl - today ) > 0 ){
-   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+day+' :</div><div class="block_1__timer__caption">дней</div></div>';
-   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+hour+' :</div><div class="block_1__timer__caption">часов</div></div>';
-   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+this.addZero(min)+'</div><div class="block_1__timer__caption">минут</div></div>';
+   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+day+' :</div><div class="block_1__timer__caption"><b class="ru">дней</b><b class="en">days</b></div></div>';
+   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+hour+' :</div><div class="block_1__timer__caption"><b class="ru">часов</b><b class="en">hours</b></div></div>';
+   timer += '<div class="block_1__timer__item"><div class="block_1__timer__number">'+this.addZero(min)+'</div><div class="block_1__timer__caption"><b class="ru">минут</b><b class="en">minutes</b></div></div>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );
   }else{

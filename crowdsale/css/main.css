@@ -310,6 +310,10 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .block_1__timer.ru b.en {
+      display: none; }
+    .block_1__timer.en b.ru {
+      display: none; }
     .block_1__timer__item {
       display: -webkit-box;
       display: -webkit-flex;
@@ -570,7 +574,11 @@ header {
               transform: translateY(0); }
 
 .block_4 {
-  padding: 100px 200px; }
+  padding: 100px 200px;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center; }
   .block_4__header {
     font-size: 35px;
     color: #FFFFFF;
@@ -1450,7 +1458,8 @@ header {
 .block_8 {
   background: #090b12;
   padding: 125px 200px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  overflow: hidden; }
   .block_8 .btn-wrapper {
     text-align: center; }
   .block_8__header {
@@ -1764,16 +1773,16 @@ p.small {
 
 .tickets {
   text-align: center;
-  margin-top: 50px; }
+  margin: 150px 0 100px; }
   .tickets .num {
-    font-size: 35px;
+    font-size: 46px;
     font-family: "Roboto";
-    text-transform: uppercase; }
-  .tickets .how {
-    font-size: 80px;
-    font-weight: 400;
-    line-height: 1;
+    text-transform: uppercase;
     margin-top: 20px; }
+  .tickets .how {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1; }
 
 .block_8__content_item {
   position: relative; }
@@ -1954,7 +1963,11 @@ footer {
 
 @media (max-width: 1499px) {
   .block_7__roadmap {
-    margin-right: 100px; } }
+    margin-right: 100px; }
+  .tickets .how {
+    font-size: 50px; }
+  .tickets .num {
+    font-size: 36px; } }
 
 @media (max-width: 1199px) {
   header {
@@ -2046,7 +2059,11 @@ footer {
   .block_2__content__item {
     width: 50%; }
   .particles {
-    display: none; } }
+    display: none; }
+  .block_10_dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 20px; } }
 
 @media (max-width: 1199px) {
   .block_5__content__second_item--image .after {
@@ -2397,6 +2414,12 @@ footer {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); } }
+
+@media (max-width: 991px) {
+  .tickets .how {
+    font-size: 40px; }
+  .tickets .num {
+    font-size: 26px; } }
 
 @media (max-width: 767px) {
   .block-wrapp {
@@ -2772,9 +2795,9 @@ footer {
     width: 10px;
     height: 10px; }
   .tickets .num {
-    font-size: 25px; }
+    font-size: 26px; }
   .tickets .how {
-    font-size: 54px; } }
+    font-size: 26px; } }
 
 @media (max-width: 420px) {
   .topline .anchor {

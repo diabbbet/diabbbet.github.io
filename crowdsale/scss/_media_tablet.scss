@@ -2,6 +2,12 @@
   .block_7__roadmap {
     margin-right: 100px;
   }
+  .tickets .how {
+    font-size: 50px;
+  }
+  .tickets .num {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -100,6 +106,11 @@
   }
   .particles {
     display: none;
+  }
+  .block_10_dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 20px;
   }
 }
 
@@ -436,5 +447,14 @@
   .block_8__content {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .tickets .how {
+    font-size: 40px;
+  }
+  .tickets .num {
+    font-size: 26px;
   }
 }
