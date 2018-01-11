@@ -86,7 +86,7 @@ main {
 
 #particles-js {
   position: absolute;
-  left: 0;
+  left: 100px;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -96,10 +96,54 @@ main {
 
 #particles-js-2 {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -300px;
+  top: 300px;
   width: 600px;
   height: 600px; }
+
+.n20 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.block-wrapp {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .block-wrapp .left {
+    margin-right: 25px; }
+  .block-wrapp .right .block_6__buttons {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .block-wrapp .right .block_6__button {
+    margin-bottom: 0;
+    margin-top: 30px; }
+  .block-wrapp .blue {
+    color: #0459a9;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 420px;
+    margin-bottom: 100px; }
 
 .only_mobile {
   display: none; }
@@ -1734,6 +1778,9 @@ p.small {
 .block_8__content_item {
   position: relative; }
 
+.block_8 {
+  position: relative; }
+
 .block_9 {
   background: #0156a7 url(../img/map.jpg) center no-repeat;
   -webkit-background-size: cover;
@@ -1997,7 +2044,9 @@ footer {
     left: 0;
     top: -25px; }
   .block_2__content__item {
-    width: 50%; } }
+    width: 50%; }
+  .particles {
+    display: none; } }
 
 @media (max-width: 1199px) {
   .block_5__content__second_item--image .after {
@@ -2350,6 +2399,12 @@ footer {
             transform: translateY(0); } }
 
 @media (max-width: 767px) {
+  .block-wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   header {
     padding-left: 15px;
     padding-right: 15px;

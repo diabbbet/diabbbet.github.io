@@ -30,7 +30,7 @@ main{
 
 #particles-js {
   position: absolute;
-  left: 0;
+  left: 100px;
   top: 50%;
   transform: translateY(-50%);
   width: 600px;
@@ -39,10 +39,46 @@ main{
 
 #particles-js-2 {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -300px;
+  top: 300px;
   width: 600px;
   height: 600px;
+}
+.n20 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.block-wrapp {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .left {
+    margin-right: 25px;
+  }
+  .right {
+    .block_6__buttons {
+      align-items: flex-start;
+    }
+    .block_6__button {
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
+  .blue {
+    color: #0459a9;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 420px;
+    margin-bottom: 100px;
+  }
 }
 
 .only_mobile {

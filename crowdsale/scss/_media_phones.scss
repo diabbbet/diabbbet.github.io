@@ -1,4 +1,7 @@
 @media (max-width: 767px) {
+  .block-wrapp {
+    flex-direction: column;
+  }
   header {
     padding-left: 15px;
     padding-right: 15px;
