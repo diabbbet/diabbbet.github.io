@@ -175,9 +175,9 @@
   }
   .block_4 {
     position: relative;
-    background-image: url(../img/b4_bg_ipad.png.jpg);
+    background-image: url(../img/b4_bg_ipad.png);
     padding-bottom: 400px;
-    background-size: contain;
+    background-size: cover;
     &__header {
       margin-bottom: 50px;
     }

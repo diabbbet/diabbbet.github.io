@@ -574,6 +574,7 @@ header {
               transform: translateY(0); }
 
 .block_4 {
+  background-image: url(../img/phone-bg.jpg);
   padding: 100px 200px;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -2119,10 +2120,10 @@ footer {
     margin: 5px; }
   .block_4 {
     position: relative;
-    background-image: url(../img/b4_bg_ipad.png.jpg);
+    background-image: url(../img/b4_bg_ipad.png);
     padding-bottom: 400px;
-    -webkit-background-size: contain;
-            background-size: contain; }
+    -webkit-background-size: cover;
+            background-size: cover; }
     .block_4__header {
       margin-bottom: 50px; }
     .block_4__content {
