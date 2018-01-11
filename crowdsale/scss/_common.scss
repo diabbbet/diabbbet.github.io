@@ -37,6 +37,14 @@ main{
   height: 600px;
 }
 
+#particles-js-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 600px;
+}
+
 .only_mobile {
   display: none;
   @media (max-width: 767px) {

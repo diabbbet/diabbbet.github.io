@@ -94,6 +94,13 @@ main {
   width: 600px;
   height: 600px; }
 
+#particles-js-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 600px; }
+
 .only_mobile {
   display: none; }
   @media (max-width: 767px) {
@@ -1723,6 +1730,9 @@ p.small {
     font-weight: 400;
     line-height: 1;
     margin-top: 20px; }
+
+.block_8__content_item {
+  position: relative; }
 
 .block_9 {
   background: #0156a7 url(../img/map.jpg) center no-repeat;
