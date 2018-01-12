@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/libs/slick.css">
+	<link rel="stylesheet" href="css/libs/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="logo">
+					<div class="logo-img"></div>
+					<div class="logo-text">
+						<div class="logo-title">Чемпионат мира по футболу 2018</div>
+						<div class="logo-desc">Спецпроект РФПЛ</div>
+					</div>
+				</div>
+
+				<nav>
+					<div class="item"><a href="#">Новости</a></div>
+					<div class="item active"><a href="#">Матчи</a></div>
+					<div class="item"><a href="#">Турнирная таблица</a></div>
+					<div class="item"><a href="#">Команды</a></div>
+					<div class="item"><a href="#">Города</a></div>
+				</nav>
+
+				<div class="social">
+					<a class="item" target="_blank" href="#"><i class="icon icon-vk"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-fb"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-twitter"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-insta"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-googleplus"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main class="gray">
+		<div class="header-indent"></div>
+
+		<div class="scoreboard" style="background-image: url(img/scoreboard-bg.jpg);">
+			<div class="container">
+				<div class="title">Групповой этап -Группа B</div>
+				<div class="date">15 июня 2018, суббота, 18:00 МСК</div>
+				<div class="place">Санкт-Петербург, "Стадион Санкт-Петербург"</div>
+				<div class="match-state">матч идет</div>
+				<div class="score">
+					<div class="flag left" style="background-image: url(img/flags/Portugal.jpg);">
+						<div class="name">Португалия</div>
+					</div>
+					<span>3</span>
+					<span class="dots">:</span>
+					<span>3</span>
+					<div class="flag right" style="background-image: url(img/flags/Spain.jpg);">
+						<div class="name">Испания</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="controlls-v2" id="match_controlls">
+			<div data-item="0" class="item active">Cобытия</div>
+			<div data-item="1" class="item">Составы команд</div>
+			<div data-item="2" class="item">Трансляция</div>
+		</div>
+
+		<div class="match-items" id="match_items">
+
+			<div class="match-item active" data-item="0">
+				<h2 class="h2">События матча</h2>
+				<div class="container">
+					<div class="content">
+						<div class="match-row">
+							<div class="players left">
+								<span class="goal">Алан Дзагоев</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+							<div class="event-icon">
+								<i class="icon icon-ball"></i>
+							</div>
+							<div class="time">75’</div>
+							<div class="event-icon">
+								<i class="icon icon-ball"></i>
+							</div>
+							<div class="players right">
+								<span class="goal">Алан Дзагоев</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+						</div>
+
+						<div class="match-row">
+							<div class="players left">
+								<span class="goal">Александр Кержаков</span>
+							</div>
+							<div class="event-icon">
+								<i class="card red"></i>
+							</div>
+							<div class="time">62’</div>
+							<div class="event-icon">
+								<i class="card red"></i>
+							</div>
+							<div class="players right">
+								<span class="goal">Александр Кержаков</span>
+							</div>
+						</div>
+
+						<div class="match-row">
+							<div class="players left">
+								<span class="goal">Александр Кержаков</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+							<div class="event-icon">
+								<i class="card yellow"></i>
+							</div>
+							<div class="time">45+1’</div>
+							<div class="event-icon">
+								<i class="card yellow"></i>
+							</div>
+							<div class="players right">
+								<span class="goal">Александр Кержаков</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+						</div>
+
+						<div class="match-row">
+							<div class="players left">
+								<span class="goal">Александр Кержаков</span>
+							</div>
+							<div class="event-icon">
+								<i class="card red"></i>
+							</div>
+							<div class="time">62’</div>
+							<div class="event-icon">
+								<i class="card red"></i>
+							</div>
+							<div class="players right">
+								<span class="goal">Александр Кержаков</span>
+							</div>
+						</div>
+
+						<div class="match-row">
+							<div class="players left">
+								<span class="goal">Александр Кержаков</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+							<div class="event-icon">
+								<i class="card yellow"></i>
+							</div>
+							<div class="time">45+1’</div>
+							<div class="event-icon">
+								<i class="card yellow"></i>
+							</div>
+							<div class="players right">
+								<span class="goal">Александр Кержаков</span>
+								<span class="pass">Василий Мурысев</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="match-item" data-item="1">
+				<h2 class="h2">Составы команд</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col w50">
+							<div class="content">
+								<div class="structure-title">
+									<div class="wrapper">
+										<div class="flag" style="background-image: url(img/flags/Portugal.jpg);"></div>
+										<span>Португалия</span>
+									</div>
+								</div>
+								<table class="structure-table">
+									<tr>
+										<th class="num">№</th>
+										<th class="photo"></th>
+										<th class="name">Игрок</th>
+										<th class="info">Амплуа</th>
+										<th class="info">Возраст</th>
+										<th class="info">Рост</th>
+										<th class="info">вес</th>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Рики ван Вольфсвинкель</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">51</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Виктор Васин</td>
+										<td class="info">защ</td>
+										<td class="info">24</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="col w50">
+							<div class="content">
+								<div class="structure-title">
+									<div class="wrapper">
+										<div class="flag" style="background-image: url(img/flags/Portugal.jpg);"></div>
+										<span>Португалия</span>
+									</div>
+								</div>
+								<table class="structure-table">
+									<tr>
+										<th class="num">№</th>
+										<th class="photo"></th>
+										<th class="name">Игрок</th>
+										<th class="info">Амплуа</th>
+										<th class="info">Возраст</th>
+										<th class="info">Рост</th>
+										<th class="info">вес</th>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">51</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Виктор Васин</td>
+										<td class="info">защ</td>
+										<td class="info">24</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+
+									<tr>
+										<td class="num">1</td>
+										<td class="photo">
+											<div class="img-wrapper">
+												<img src="img/player-3.jpg" alt="">
+											</div>
+										</td>
+										<td class="name">Игорь Акинфеев</td>
+										<td class="info">вр</td>
+										<td class="info">33</td>
+										<td class="info">190</td>
+										<td class="info">79</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="match-item" data-item="2">
+				<h2 class="h2">Трансляция матча</h2>
+				<div class="container">
+					<div class="content">
+						<div class="translation-item">
+							<div class="title">Фотографии матча</div>
+							<div class="photos" id="translation_photos">
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+								<div class="item" data-img="img/translation-img_0.jpg">
+									<div class="img" style="background-image: url(img/translation-img_0.jpg);"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="translation-item">
+							<div class="title">Запись матча</div>
+							<div class="video">
+								<iframe src="https://www.youtube.com/embed/wqZjjE7gqvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="footer-indent"></div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-text">© 2001-2017 Некоммерческое партнёрство «Российская футбольная Премьер-Лига»</div>
+
+				<div class="social">
+					<a class="item" target="_blank" href="#"><i class="icon icon-vk"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-fb"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-twitter"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-insta"></i></a>
+					<a class="item" target="_blank" href="#"><i class="icon icon-googleplus"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-wrapper" id="translation_gallery">
+		<div class="overlay"></div>
+		<div class="modal-close">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="modal-gallery">
+		</div>
+	</div>
+
+
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+	<script type="text/javascript" src="http://twiwall.colibrisocial.ru/embeds/11.js"></script>
+	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/jquery.formstyler.min.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlAo0DFIEl4RJhTIadwZoXV7tVUKpjsik"></script> -->
+	<script src="js/libs/form.js"></script>
+	<script src="js/libs/jquery_maska.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
