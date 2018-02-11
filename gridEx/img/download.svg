@@ -1,0 +1,18 @@
+<svg width="13" height="13" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(13132 222)">
+<g id="Group 4">
+<g id="Line 4">
+<use xlink:href="#path0_stroke" transform="translate(-13132 -209)" fill="#FFFFFF"/>
+</g>
+<g id="Arrow">
+<use xlink:href="#path1_stroke" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 -13125.5 -222)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 13 0L 13 -1L 0 -1L 0 0Z"/>
+<path id="path1_stroke" d="M 12.5411 0.353553C 12.7363 0.158291 12.7363 -0.158291 12.5411 -0.353553L 9.35907 -3.53553C 9.16381 -3.7308 8.84723 -3.7308 8.65197 -3.53553C 8.4567 -3.34027 8.4567 -3.02369 8.65197 -2.82843L 11.4804 0L 8.65197 2.82843C 8.4567 3.02369 8.4567 3.34027 8.65197 3.53553C 8.84723 3.7308 9.16381 3.7308 9.35907 3.53553L 12.5411 0.353553ZM 0 0.5L 12.1875 0.5L 12.1875 -0.5L 0 -0.5L 0 0.5Z"/>
+</defs>
+</svg>
