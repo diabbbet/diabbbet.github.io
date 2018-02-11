@@ -2,7 +2,9 @@
 // 2017 Countdown JS
 // ========================== //
 
-var countdown = new Date("06 17, 2018");
+var dataDate = $('#countdown').attr('data-date');
+
+var countdown = new Date(dataDate);
 
 function getRemainingTime(endtime) {
   var milliseconds = Date.parse(endtime) - Date.parse(new Date());

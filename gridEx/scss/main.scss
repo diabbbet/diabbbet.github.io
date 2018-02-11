@@ -214,6 +214,7 @@ header {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom center;
+		opacity: 0.5;
 	}
 	.wrapper {
 		position: relative;
@@ -294,20 +295,17 @@ header {
 				position: relative;
 				height: 4px;
 				background-color: #fff;
-				border-radius: 5px ;
-				&:after {
-					content: '';
+				border-radius: 5px;
+				.line-after {
 					position: absolute;
 					top: 0;
 					bottom: 0;
 					left: 0;
-					width: 20%;
 					background-color: $lightBlue_color;
 					border-radius: 5px 0 0 5px;
 				}
 				.circle {
 					position: absolute;
-					left: 20%;
 					top: 50%;
 					transform: translateY(-50%);
 					width: 13px;
@@ -324,6 +322,15 @@ header {
 						height: 30px;
 						width: 1px;
 						background-color: #fff;
+					}
+					.persent {
+						position: absolute;
+						top: -40px;
+						left: 15px;
+						font-size: 18px;
+						color: #fff;
+						font-family: $accent_font;
+						font-weight: 700;
 					}
 				}
 			}
@@ -427,6 +434,32 @@ header {
 				}
 			}
 		}
+	}
+}
+
+.infrastructure {
+	background-color: #fff;
+	padding-top: 115px;
+	.h2 {
+		text-align: center;
+		color: $blue_color;
+		max-width: 840px;
+		margin: auto;
+	}
+	.narrowly {
+		max-width: 665px;
+		margin: auto;
+		text-align: center;
+		line-height: 25px;
+		margin-top: 20px;
+	}
+	.desc {
+		font-size: 25px;
+		text-align: center;
+		width: 635px;
+		margin: auto;
+		line-height: 37px;
+		margin-top: 70px;
 	}
 }
 
