@@ -1114,6 +1114,57 @@ header {
   .block_5__content__second_item--image .after.anim {
     opacity: 0; }
 
+.block_5__partners_items {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+  .block_5__partners_items.anim {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition-delay: 100ms;
+         -o-transition-delay: 100ms;
+            transition-delay: 100ms; }
+
+.block-wrapp {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+  .block-wrapp.anim {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition-delay: 100ms;
+         -o-transition-delay: 100ms;
+            transition-delay: 100ms; }
+
+.block_8__item_wrapper--penta {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+  .block_8__item_wrapper--penta.anim {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition-delay: 100ms;
+         -o-transition-delay: 100ms;
+            transition-delay: 100ms; }
+
 .block_6 {
   background: #FFFFFF;
   padding: 125px 200px; }
@@ -2409,6 +2460,21 @@ footer {
         -ms-transform: translateY(0);
             transform: translateY(0); }
   .block_8__content {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .block_5__partners_items {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .block-wrapp {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .block_8__item_wrapper--penta {
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
