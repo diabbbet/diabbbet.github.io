@@ -24,6 +24,7 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 	font-family: $default_font;
+	color: $black_color;
 	font-size: 1.6rem;
 	line-height: 1;
 	padding: 0;
@@ -146,6 +147,9 @@ img {
 	}
 	&.w40 {
 		width: 40%;
+	}
+	&.w33 {
+		width: 33.33333%;
 	}
 	&.w25 {
 		width: 25%;
@@ -438,8 +442,8 @@ header {
 }
 
 .infrastructure {
-	background-color: #fff;
-	padding-top: 115px;
+	background-color: #F2F2F2;
+	padding: 115px 0;
 	.h2 {
 		text-align: center;
 		color: $blue_color;
@@ -453,13 +457,112 @@ header {
 		line-height: 25px;
 		margin-top: 20px;
 	}
-	.desc {
+	.desc-narrowly {
 		font-size: 25px;
 		text-align: center;
 		width: 635px;
 		margin: auto;
 		line-height: 37px;
 		margin-top: 70px;
+	}
+	.teaser {
+		position: relative;
+		margin-top: 70px;
+		.teaser-img {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+		}
+		.teaser-text {
+			margin-left: 144px;
+			margin-right: 120px;
+			p {
+				line-height: 28px;
+				margin: 0;
+			}
+		}
+	}
+	.text-wrapper {
+		padding: 0 10px;
+		margin-top: 100px;
+		.desc {
+			font-size: 25px;
+			line-height: 28px;
+		}
+		p {
+			margin-top: 40px;
+			line-height: 28px;
+		}
+	}
+}
+
+.map {
+	position: relative;
+	background-color: #F4EBFC;
+	padding-top: 100px;
+	img {
+		position: relative;
+		margin: auto;
+		z-index: 1;
+	}
+}
+
+.features {
+	position: relative;
+	background-color: $blue_color;
+	padding-top: 115px;
+	padding-bottom: 115px;
+	margin-top: -68px;
+	z-index: 0;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 145px 145px 0 0;
+		border-color: rgba(187, 107, 217, 0.07) transparent transparent transparent;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 336px 336px 0 0;
+		border-color: rgba(187, 107, 217, 0.07) transparent transparent transparent;
+	}
+	.h3 {
+		font-size: 30px;
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.features-item {
+		position: relative;
+		margin-top: 60px;
+	}
+	.features-icon {
+		position: absolute;
+		top: 5px;
+		left: 0;
+	}
+	.features-text {
+		margin-left: 65px;
+		font-size: 17px;
+		color: #fff;
+		font-family: $accent_font;
+		line-height: 30px;
+		font-weight: 400;
+		.bold {
+			font-weight: 700;
+		}
 	}
 }
 
