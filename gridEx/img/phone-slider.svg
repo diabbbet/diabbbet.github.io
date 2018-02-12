@@ -1,0 +1,42 @@
+<svg width="469" height="234" viewBox="0 0 469 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(12113 -5383)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 -11644 5383.23)" fill="#FFFFFF"/>
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 -11644 5383.23)" fill="url(#paint1_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 1 -11644 5383.23)" fill="#FFFFFF"/>
+</g>
+<g id="Vector" opacity="0.6">
+<use xlink:href="#path2_fill" transform="matrix(-1 0 0 1 -11695.9 5398.99)" fill="url(#paint3_linear)"/>
+</g>
+<g id="Vector" opacity="0.6">
+<use xlink:href="#path3_fill" transform="matrix(-1 0 0 1 -11695.9 5398.99)" fill="url(#paint4_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-36 -370 744.763 -72.4634 -90.3814 354.001)">
+<stop offset="0" stop-color="#8C3DB8"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-289.476 210.23 -210.358 -289.299 483.815 96.7493)">
+<stop offset="0" stop-color="#8490AD"/>
+<stop offset="0.1641" stop-color="#8D98B3" stop-opacity="0.8359"/>
+<stop offset="0.4318" stop-color="#A5AFC3" stop-opacity="0.5682"/>
+<stop offset="0.7677" stop-color="#CDD4DD" stop-opacity="0.2323"/>
+<stop offset="1" stop-color="#ECF1F2" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(259 -118 118.076 258.844 -4.96105 18.5885)">
+<stop offset="0" stop-color="#9B31E9"/>
+<stop offset="1" stop-color="#E04E8D"/>
+</linearGradient>
+<path id="path0_fill" d="M 468.868 69.3522C 468.737 65.4212 466.639 61.4901 462.312 59.5246L 339.064 5.01395C 323.592 -1.79988 305.892 -1.66885 290.551 5.40706L 6.42465 135.656C 2.09784 137.622 0 141.815 0 145.877L 0 162.649C 0 166.711 2.09784 170.773 6.55576 172.739L 132.82 228.56C 146.456 234.588 161.927 234.457 175.432 228.298L 462.575 96.6075C 466.901 94.642 468.999 90.5799 468.999 86.6489L 468.868 69.3522Z"/>
+<path id="path1_fill" d="M 175.433 211.263L 462.575 79.573C 471.229 75.6419 471.098 63.3246 462.444 59.5246L 339.064 5.01395C 323.593 -1.79988 305.892 -1.66885 290.552 5.40706L 6.42502 135.656C -2.22859 139.587 -2.09747 151.904 6.55614 155.704L 132.82 211.525C 146.456 217.553 161.928 217.422 175.433 211.263Z"/>
+<path id="path2_fill" d="M 130.853 174.408L 385.085 57.7865L 254.364 0L -2.00066e-06 116.621L 130.853 174.408Z"/>
+<path id="path3_fill" d="M 130.853 174.408L 385.085 57.7865L 254.364 0L 0 116.621L 130.853 174.408Z"/>
+</defs>
+</svg>

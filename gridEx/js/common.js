@@ -1,16 +1,17 @@
 $(function() {
 
+	$('#slider').slick({
+		dots: true,
+		appendDots: $('#slider_controlls'),
+		infinite: false
+	});
 
-	anyFunction();
+	$('#slider_controlls').find('button').each(function(i) {
+		var num = i+1;
+		$(this).text('STAGE '+num+'');
+	});
 
 });
-
-function anyFunction() {
-
-	console.log('check!!!');
-
-}
-
 
 //форма
 function anyForm() {
