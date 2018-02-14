@@ -1055,7 +1055,8 @@ footer {
 			font-weight: 700;
 			font-family: $accent_font;
 			max-width: 840px;
-			margin: auto;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		img {
 			margin: 35px auto 0;
@@ -1253,6 +1254,233 @@ footer {
 				color: #fff;
 				margin-top: 10px;
 				padding: 0 10px;
+			}
+		}
+	}
+}
+
+.roadmap {
+	padding-top: 120px;
+	padding-bottom: 90px;
+	.h3 {
+		text-align: center;
+		text-transform: uppercase;
+		max-width: 840px;
+		margin: auto;
+	}
+	.date {
+		font-size: 18px;
+		font-family: $accent_font;
+		min-height: 60px;
+	}
+	.text {
+		margin-top: 90px;
+		font-size: 18px;
+		line-height: 26px;
+		font-family: $accent_font;
+	}
+	.stg {
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 700;
+		font-family: $accent_font;
+		text-transform: uppercase;
+	}
+	.wrapper {
+		position: relative;
+		.line {
+			position: absolute;
+			left: 0; right: 0;
+			top: 80px;
+			height: 1px;
+			background-color: #56CCF2;
+			.dot {
+				position: absolute;
+				top: 0;
+				transform: translateY(-50%);
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background-color: #56CCF2;
+				&.dot1 {
+					left: 0;
+				}
+				&.dot2 {
+					left: 300px;
+				}
+				&.dot3 {
+					left: 600px;
+				}
+				&.dot4 {
+					left: 900px;
+				}
+			}
+		}
+	}
+	.slider {
+		margin-top: 70px;
+		.item {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0; right: 0;
+				top: 81px;
+				height: 1px;
+				background-color: #56CCF2;
+			}
+			&:first-child {
+				&:before {
+					left: 50%;
+					right: 0;
+				}
+			}
+			&:last-child {
+				&:before {
+					right: 75%;
+					left: 0;
+				}
+				.wrapper {
+					.line {
+						background: none;
+						&:before {
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0; right: 0;
+							transform: translateX(-74%);
+							height: 1px;
+							background-color: #56CCF2;
+						}
+					}
+				}
+			}
+		}
+		.slick-arrow {
+			position: absolute;
+			top: 81px;
+			transform: translateY(-50%);
+			font-size: 0;
+			border: none;
+			padding: 0;
+			width: 20.5px;
+			height: 40px;
+			background: none;
+			background-repeat: no-repeat;
+			background-size: 20.5px 40px;
+			z-index: 1;
+			cursor: pointer;
+			transition: 100ms;
+		}
+		.slick-prev {
+			left: 20px;
+			background-image: url('../img/chevron_left.svg');
+		}
+		.slick-next {
+			right: 20px;
+			background-image: url('../img/chevron_right.svg');
+		}
+		.slick-disabled {
+			opacity: 0;
+		}
+	}
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: 99;
+	background: rgba(30, 33, 79, 0.8);
+	.form {
+		position: absolute;
+		top: 50%;
+		left: 0; right: 0;
+		margin: auto;
+		transform: translateY(-50%);
+		max-width: 600px;
+		background-color: #fff;
+		box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+		padding: 75px 0 50px;
+		text-align: center;
+		.exit {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			cursor: pointer;
+			user-select: none;
+		}
+		.field {
+			display: block;
+			margin: 0 100px;
+			.input {
+				height: 60px;
+				width: 100%;
+				border: 1px solid #BB6BD9;
+				padding: 0 20px;
+				color: #000;
+				font-family: $accent_font;
+				font-size: 18px;
+				font-weight: 400;
+				&::-webkit-input-placeholder {
+					color: $gray_color;
+				}
+				&::-moz-placeholder {
+					color:#c0392b;
+				}
+				&:-ms-input-placeholder {
+					color:#c0392b;
+				}
+			}
+			.checkbox-label {
+				display: inline-block;
+				cursor: pointer;
+				user-select: none;
+				font-family: $accent_font;
+				font-size: 12px;
+				color: $gray_color;
+				margin-top: 10px;
+				&.error {
+					.checkbox-icon {
+						border-color: red;
+					}
+				}
+			}
+			.checkbox-icon {
+				position: relative;
+				top: 2px;
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 1px solid #BB6BD9;
+			}
+			.checkbox {
+				display: none;
+				&:checked + .checkbox-icon {
+					background-image: url('../img/check.svg');
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+			}
+			&.error {
+				.input {
+					border-color: red;
+				}
+			}
+		}
+		.btn {
+			background-color: #BB6BD9;
+			box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+			width: 270px;
+			margin-top: 30px;
+			transition: 100ms;
+			&:hover {
+				background-color: #D483F2;
+			}
+			&:active {
+				background-color: #A254BF;
+				box-shadow: inset 0px 4px 10px #8C3DB8;
 			}
 		}
 	}

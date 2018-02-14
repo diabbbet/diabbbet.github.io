@@ -86,7 +86,7 @@
 								</div>
 							</div>
 
-							<button class="btn">Регистрация</button>
+							<button class="btn" id="btn_reg">Регистрация</button>
 
 						</div>
 						<div class="col w40">
@@ -568,6 +568,125 @@
 			</div>
 		</section>
 
+		<section class="roadmap">
+			<h3 class="h3">Roadmap</h3>
+			<div class="slider" id="roadmap_slider">
+				<div class="item">
+					<div class="container">
+						<div class="wrapper">
+							<div class="line">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+								<div class="dot dot4"></div>
+							</div>
+							<div class="row">
+								<div class="col w25">
+									<div class="date">Май 2017</div>
+									<div class="text">Формирование идеи</div>
+								</div>
+								<div class="col w25">
+									<div class="date">Июнь 2017</div>
+									<div class="text">Маркетинговые исследования</div>
+								</div>
+								<div class="col w25">
+									<div class="date">Август 2017 Март 2018</div>
+									<div class="text">Разработка прототипа</div>
+								</div>
+								<div class="col w25">
+									<div class="date">Март 2018</div>
+									<div class="text">Pre-ICO</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="container">
+						<div class="wrapper">
+							<div class="line">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+								<div class="dot dot4"></div>
+							</div>
+							<div class="row">
+								<div class="col w25">
+									<div class="date">Май 2018</div>
+									<div class="text">ICO и выпуск токенов</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 1</div>Сентябрь 2018</div>
+									<div class="text">Запуск биржи</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 2</div>Ноябрь 2018</div>
+									<div class="text">Смартфон приложение для конвертации криптовалют (IOS/Android)</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 3</div>Декабрь 2018</div>
+									<div class="text">Подключение продавцов к системе продажи товара за криптовалюту в странах, разрешающих подобное</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="container">
+						<div class="wrapper">
+							<div class="line">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+								<div class="dot dot4"></div>
+							</div>
+							<div class="row">
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 4</div>Февраль 2019</div>
+									<div class="text">Механизм шифрования всей информации о пользователе пользовательским криптоключем с невозможностью получения его данных третьими лицами(включая биржу) без его ключа.</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 5</div>май 2019</div>
+									<div class="text">Реализация инфраструктуры для децентрализованного хранения приватных ключей криптовалютных активов в зашифрованном виде</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 6</div>август 2019</div>
+									<div class="text">Страхование рисков простоя биржи(возможно, других рисков) через смарт- контракты одного из блокчейнов.</div>
+								</div>
+								<div class="col w25">
+									<div class="date"></div>
+									<div class="text">Запуск дополнительных экземпляров биржи в разных регионах планеты, имеющих разные стаканы для торговли, но общие балансы пользователей.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="container">
+						<div class="wrapper">
+							<div class="line">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+							</div>
+							<div class="row">
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 8</div>Январь 2020</div>
+									<div class="text">Торгово-аналитический терминал с расширенным набором инструментов технического анализа и алготрейдингом.</div>
+								</div>
+								<div class="col w25">
+									<div class="date"><div class="stg">stage 9</div>Май 2020</div>
+									<div class="text">Года-криптовалюта GridEx, первая реализация на F#, с поддержкой Тьюринг неполных смарт-контрактов для исполнения страховых обязательств биржи с возможностью переноса токенов GEX в Ethereum на криптовалюту GridEx.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="team">
 			<h3 class="h3">Team</h3>
 			<div class="wrapper">
@@ -648,10 +767,30 @@
 		</div>
 	</footer>
 
+	<div class="modal" id="reg_modal">
+		<div class="form">
+			<div class="exit"><img src="img/exit.svg" alt=""></div>
+			<form action="#url" id="reg_form">
+				<div class="field">
+					<input class="input validate" type="email" data-validate="email" placeholder="Введите свою почту">
+				</div>
+				<div class="field">
+					<label class="checkbox-label">
+						<input class="checkbox validate" data-validate="checkbox" type="checkbox">
+						<i class="checkbox-icon"></i>
+						<span>Подтверждаю свое согласие на обработку персональных данных</span>
+					</label>
+				</div>
+				<button class="btn submit">Регистрация</button>
+			</form>
+		</div>
+	</div>
+
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/libs/countdown.js"></script>
+	<script src="js/libs/form.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

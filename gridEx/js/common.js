@@ -25,14 +25,28 @@ $(function() {
 		$('#slider_in_slider').slick('slickPrev');
 	});
 
+	$('#roadmap_slider').slick({
+		infinite: false
+	});
+
+	$('#btn_reg').on('click', function() {
+		$('#reg_modal').fadeIn('fast');
+	});
+
+	$('.exit').on('click', function() {
+		$('#reg_modal').fadeOut('fast');
+	});
+
+	form();
+
 });
 
 //форма
-function anyForm() {
+function form() {
 
-	if ($('#any_form').length) {
-		function initMapForm() {
-			var $form = $('#any_form');
+	if ($('#reg_form').length) {
+		function initForm() {
+			var $form = $('#reg_form');
 			$form.on('change', '.validate', function(){
 				validateField($(this));
 			});
@@ -40,8 +54,9 @@ function anyForm() {
 			$form.find('.submit').on('click', function(){
 				if (validateForm($form)) {
 					var data = $form.serialize();
+					var url = $form.attr('action');
 					$.ajax({
-						url: '#api',
+						url: url,
 						type: 'POST',
 						dataType: 'json',
 						data: data,
@@ -66,7 +81,7 @@ function anyForm() {
 
 			}
 		}
-		initMapForm();
+		initForm();
 
 	}
 

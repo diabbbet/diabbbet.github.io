@@ -914,7 +914,8 @@ footer {
       font-weight: 700;
       font-family: "Open Sans", sans-serif;
       max-width: 840px;
-      margin: auto; }
+      margin-left: auto;
+      margin-right: auto; }
     .token-detail .wrapper img {
       margin: 35px auto 0; }
     .token-detail .wrapper .items {
@@ -1093,3 +1094,209 @@ footer {
         color: #fff;
         margin-top: 10px;
         padding: 0 10px; }
+
+.roadmap {
+  padding-top: 120px;
+  padding-bottom: 90px; }
+  .roadmap .h3 {
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 840px;
+    margin: auto; }
+  .roadmap .date {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    min-height: 60px; }
+  .roadmap .text {
+    margin-top: 90px;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif; }
+  .roadmap .stg {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase; }
+  .roadmap .wrapper {
+    position: relative; }
+    .roadmap .wrapper .line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80px;
+      height: 1px;
+      background-color: #56CCF2; }
+      .roadmap .wrapper .line .dot {
+        position: absolute;
+        top: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 13px;
+        height: 13px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #56CCF2; }
+        .roadmap .wrapper .line .dot.dot1 {
+          left: 0; }
+        .roadmap .wrapper .line .dot.dot2 {
+          left: 300px; }
+        .roadmap .wrapper .line .dot.dot3 {
+          left: 600px; }
+        .roadmap .wrapper .line .dot.dot4 {
+          left: 900px; }
+  .roadmap .slider {
+    margin-top: 70px; }
+    .roadmap .slider .item {
+      position: relative; }
+      .roadmap .slider .item:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 81px;
+        height: 1px;
+        background-color: #56CCF2; }
+      .roadmap .slider .item:first-child:before {
+        left: 50%;
+        right: 0; }
+      .roadmap .slider .item:last-child:before {
+        right: 75%;
+        left: 0; }
+      .roadmap .slider .item:last-child .wrapper .line {
+        background: none; }
+        .roadmap .slider .item:last-child .wrapper .line:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          -webkit-transform: translateX(-74%);
+              -ms-transform: translateX(-74%);
+                  transform: translateX(-74%);
+          height: 1px;
+          background-color: #56CCF2; }
+    .roadmap .slider .slick-arrow {
+      position: absolute;
+      top: 81px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      font-size: 0;
+      border: none;
+      padding: 0;
+      width: 20.5px;
+      height: 40px;
+      background: none;
+      background-repeat: no-repeat;
+      -webkit-background-size: 20.5px 40px;
+              background-size: 20.5px 40px;
+      z-index: 1;
+      cursor: pointer;
+      -webkit-transition: 100ms;
+      -o-transition: 100ms;
+      transition: 100ms; }
+    .roadmap .slider .slick-prev {
+      left: 20px;
+      background-image: url("../img/chevron_left.svg"); }
+    .roadmap .slider .slick-next {
+      right: 20px;
+      background-image: url("../img/chevron_right.svg"); }
+    .roadmap .slider .slick-disabled {
+      opacity: 0; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(30, 33, 79, 0.8); }
+  .modal .form {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 600px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+            box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+    padding: 75px 0 50px;
+    text-align: center; }
+    .modal .form .exit {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+    .modal .form .field {
+      display: block;
+      margin: 0 100px; }
+      .modal .form .field .input {
+        height: 60px;
+        width: 100%;
+        border: 1px solid #BB6BD9;
+        padding: 0 20px;
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400; }
+        .modal .form .field .input::-webkit-input-placeholder {
+          color: #ADADAD; }
+        .modal .form .field .input::-moz-placeholder {
+          color: #c0392b; }
+        .modal .form .field .input:-ms-input-placeholder {
+          color: #c0392b; }
+      .modal .form .field .checkbox-label {
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        color: #ADADAD;
+        margin-top: 10px; }
+        .modal .form .field .checkbox-label.error .checkbox-icon {
+          border-color: red; }
+      .modal .form .field .checkbox-icon {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #BB6BD9; }
+      .modal .form .field .checkbox {
+        display: none; }
+        .modal .form .field .checkbox:checked + .checkbox-icon {
+          background-image: url("../img/check.svg");
+          background-repeat: no-repeat;
+          background-position: center center; }
+      .modal .form .field.error .input {
+        border-color: red; }
+    .modal .form .btn {
+      background-color: #BB6BD9;
+      -webkit-box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+              box-shadow: 0px 4px 10px rgba(187, 107, 217, 0.5);
+      width: 270px;
+      margin-top: 30px;
+      -webkit-transition: 100ms;
+      -o-transition: 100ms;
+      transition: 100ms; }
+      .modal .form .btn:hover {
+        background-color: #D483F2; }
+      .modal .form .btn:active {
+        background-color: #A254BF;
+        -webkit-box-shadow: inset 0px 4px 10px #8C3DB8;
+                box-shadow: inset 0px 4px 10px #8C3DB8; }
