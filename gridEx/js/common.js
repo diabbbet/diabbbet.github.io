@@ -11,6 +11,20 @@ $(function() {
 		$(this).text('STAGE '+num+'');
 	});
 
+	$('#slider_in_slider').slick({
+		draggable: false,
+		infinite: false,
+		arrows: false
+	});
+
+	$('#arrow_next').on('click', function() {
+		$('#slider_in_slider').slick('slickNext');
+	});
+
+	$('#arrow_prev').on('click', function() {
+		$('#slider_in_slider').slick('slickPrev');
+	});
+
 });
 
 //форма
