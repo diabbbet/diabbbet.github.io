@@ -35,7 +35,12 @@
 
 		<div class="container">
 			<div class="nav-wrapper">
-				<nav>
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="nav">
 					<div class="nav-item">Pre-ICO</div>
 					<div class="nav-item">What is GridEx </div>
 					<div class="nav-item">Roadmap</div>
@@ -46,7 +51,10 @@
 					<div class="nav-item">En/Language</div>
 				</nav>
 				<div class="logo">
-					<img src="img/logo.svg" alt="">
+					<div class="wrapper-anim">
+						<img class="img-logo" src="img/logo.svg" alt="">
+						<img class="img-logo2" src="img/gridex_logo2.svg" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -61,21 +69,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col w60">
-							<h1 class="h1">GridEx</h1>
-							<p><span>Первая глобальная</span> геодецентрализированная экосистема торговли криптовалютной ликвидностью</p>
+							<h1 class="h1 animate">GridEx</h1>
+							<p class="animate delay-01"><span>Первая глобальная</span> геодецентрализированная экосистема торговли криптовалютной ликвидностью</p>
 
 							<div class="countdown" id="countdown" data-date="06 17, 2018">
-								<div class="countdown-item">
+								<div class="countdown-item animate delay-02">
 									<div class="countdown-timer js-countdown-days"></div>
 									<div class="countdown-label" id="day-countdown">дней</div>
 								</div>
 
-								<div class="countdown-item">
+								<div class="countdown-item animate delay-03">
 									<div class="countdown-timer js-countdown-hours"></div>
 									<div class="countdown-label" id="hour-countdown">часов</div>
 								</div>
 
-								<div class="countdown-item">
+								<div class="countdown-item animate delay-04">
 									<div class="countdown-timer js-countdown-minutes"></div>
 									<div class="countdown-label" id="minute-countdown">Минут</div>
 								</div>
@@ -86,40 +94,40 @@
 								</div>
 							</div>
 
-							<button class="btn" id="btn_reg">Регистрация</button>
+							<button class="btn animate" id="btn_reg">Регистрация</button>
 
 						</div>
 						<div class="col w40">
 							<div class="main-info">
 								<div class="info-cnt">
-									<h2 class="h2">Держатели токенов</h2>
-									<p>Стоимость токенов CRPT*</p>
-									<div class="price">$ 1 394 656 963</div>
+									<h2 class="h2 animate">Держатели токенов</h2>
+									<p class="animate delay-01">Стоимость токенов CRPT*</p>
+									<div class="price animate delay-01">$ 1 394 656 963</div>
 									<div class="row">
 										<div class="col w50">
-											<p>BTC Raised</p>
-											<div class="price">4 981 567</div>
+											<p class="animate delay-02">BTC Raised</p>
+											<div class="price animate delay-02">4 981 567</div>
 
-											<p>Eth</p>
-											<div class="price">981</div>
+											<p class="animate delay-03">Eth</p>
+											<div class="price animate delay-03">981</div>
 										</div>
 										<div class="col w50">
-											<p>USD Raised</p>
-											<div class="price">3 364 763</div>
+											<p class="animate delay-04">USD Raised</p>
+											<div class="price animate delay-04">3 364 763</div>
 
-											<p>Purchasers</p>
-											<div class="price">3 763</div>
+											<p class="animate delay-05">Purchasers</p>
+											<div class="price animate delay-05">3 763</div>
 										</div>
 									</div>
 
-									<div class="range">
+									<div class="range animate">
 										<div class="line">
 											<div class="line-after" style="width: 20%"></div>
 											<div class="circle" style="left: 20%"><div class="persent">20%</div></div>
 										</div>
 									</div>
 
-									<button class="btn">Смотреть видео <img src="img/triangle.svg" alt=""></button>
+									<button class="btn animate" id="btn_video">Смотреть видео <img src="img/triangle.svg" alt=""></button>
 								</div>
 							</div>
 						</div>
@@ -131,17 +139,17 @@
 				<div class="container">
 					<div class="row">
 						<div class="col w40">
-							<h2 class="h2">Why GridEx?</h2>
-							<div class="desc">Over 6 200 active Telegram</div>
-							<button class="btn">Подробнее</button>
+							<h2 class="h2 animate">Why GridEx?</h2>
+							<div class="desc animate delay-01">Over 6 200 active Telegram</div>
+							<button class="btn animate delay-02">Подробнее</button>
 						</div>
 						<div class="col w60">
 							<div class="links">
-								<a class="links-item" href="#"><span class="icon"><svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#path0_stroke" transform="translate(0 13)" fill="#FFF"/><use xlink:href="#path1_stroke" transform="rotate(90 3.2 3.2)" fill="#FFF"/><defs><path id="path0_stroke" d="M0 0h13v-1H0v1z"/><path id="path1_stroke" d="M12.5.4c.2-.2.2-.6 0-.8L9.4-3.5a.5.5 0 1 0-.7.7L11.5 0 8.7 2.8a.5.5 0 1 0 .7.7L12.5.4zM0 .5h12.2v-1H0v1z"/></defs></svg></span>White Paper</a>
-								<div class="links-item">OnePage</div>
-								<div class="links-item">Buy BTC</div>
-								<div class="links-item">ETH</div>
-								<div class="links-item">Tezos</div>
+								<a class="links-item animate" href="#"><span class="icon"><svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#path0_stroke" transform="translate(0 13)" fill="#FFF"/><use xlink:href="#path1_stroke" transform="rotate(90 3.2 3.2)" fill="#FFF"/><defs><path id="path0_stroke" d="M0 0h13v-1H0v1z"/><path id="path1_stroke" d="M12.5.4c.2-.2.2-.6 0-.8L9.4-3.5a.5.5 0 1 0-.7.7L11.5 0 8.7 2.8a.5.5 0 1 0 .7.7L12.5.4zM0 .5h12.2v-1H0v1z"/></defs></svg></span>White Paper</a>
+								<div class="links-item animate delay-01">OnePage</div>
+								<div class="links-item animate delay-02">Buy BTC</div>
+								<div class="links-item animate delay-03">ETH</div>
+								<div class="links-item animate delay-04">Tezos</div>
 							</div>
 						</div>
 					</div>
@@ -151,10 +159,10 @@
 
 		<section class="infrastructure">
 			<div class="container">
-				<h2 class="h2">Геодецентрализированная инфраструктура GridEx </h2>
-				<p class="narrowly">решает проблему ликвидности значимых криптовалютных активов как для обычных пользователей, так и для банковских групп</p>
-				<div class="desc-narrowly">Мы представляем безопасную <nobr>и высокопроизводительную инновационную</nobr> инфраструктуру круглосуточно для <nobr>автоматического и ручного трейдинга.</nobr></div>
-				<div class="teaser">
+				<h2 class="h2 animate">Геодецентрализированная инфраструктура GridEx </h2>
+				<p class="narrowly animate">решает проблему ликвидности значимых криптовалютных активов как для обычных пользователей, так и для банковских групп</p>
+				<div class="desc-narrowly animate">Мы представляем безопасную и высокопроизводительную инновационную инфраструктуру круглосуточно для автоматического и ручного трейдинга.</div>
+				<div class="teaser animate">
 					<div class="teaser-img">
 						<img src="img/safe.svg" alt="">
 					</div>
@@ -162,7 +170,7 @@
 						<p>Поддерживается как высокочастотный трейдинг через отдельный API до 100 тысяч транзакций в секунду для отдельного стакана, так и торговлю посредством отдельного торгово-аналитического терминала с богатой поддержкой технического анализа ТА и возможностью написания собственных индикаторов и торговых экспертов.</p>
 					</div>
 				</div>
-				<div class="text-wrapper">
+				<div class="text-wrapper animate">
 					<div class="desc">Мы разрабатываем экосистему, позволяющую каждому участнику использовать криптовалютные активы и конвертировать их с минимальными задержками и максимальной скоростью.</div>
 					<p>Зарегистрированный пользователь нашей экосистемы GridEx может выбрать необходимый ему функционал, состоящий из нескольких возможных сценариев использования: через смартфон, торговый терминал, сайт биржи либо в магазинах, использующих экосистему GridEx для приема оплаты в криптовалюте.</p>
 					<p>Для обеспечения этих задач мы разработали высокопроизводительную инфраструктуру, рассчитанную на масштабирование до миллионов транзакций в секунду, центром которой является наша биржа, выступающая бассейном ликвидности для остальных сервисов.</p>
@@ -171,15 +179,15 @@
 		</section>
 
 		<section class="map">
-			<img src="img/map.svg" alt="">
+			<img class="animate" src="img/map.svg" alt="">
 		</section>
 
 		<section class="features">
 			<div class="container">
-				<h3 class="h3">Особенности</h3>
+				<h3 class="h3 animate">Особенности</h3>
 				<div class="row">
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate">
 							<div class="features-icon">
 								<img src="img/features-icon1.svg" alt="">
 							</div>
@@ -188,7 +196,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-02">
 							<div class="features-icon">
 								<img src="img/features-icon2.svg" alt="">
 							</div>
@@ -197,7 +205,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-04">
 							<div class="features-icon">
 								<img src="img/features-icon3.svg" alt="">
 							</div>
@@ -208,7 +216,7 @@
 				<div class="row">
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate">
 							<div class="features-icon">
 								<img src="img/features-icon4.svg" alt="">
 							</div>
@@ -217,7 +225,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-02">
 							<div class="features-icon">
 								<img src="img/features-icon5.svg" alt="">
 							</div>
@@ -226,7 +234,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-04">
 							<div class="features-icon">
 								<img src="img/features-icon6.svg" alt="">
 							</div>
@@ -238,7 +246,7 @@
 				<div class="row">
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate">
 							<div class="features-icon">
 								<img src="img/features-icon7.svg" alt="">
 							</div>
@@ -247,7 +255,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-02">
 							<div class="features-icon">
 								<img src="img/features-icon8.svg" alt="">
 							</div>
@@ -256,7 +264,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-04">
 							<div class="features-icon">
 								<img src="img/features-icon9.svg" alt="">
 							</div>
@@ -268,7 +276,7 @@
 				<div class="row">
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate">
 							<div class="features-icon">
 								<img src="img/features-icon10.svg" alt="">
 							</div>
@@ -277,7 +285,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-02">
 							<div class="features-icon">
 								<img src="img/features-icon11.svg" alt="">
 							</div>
@@ -286,7 +294,7 @@
 					</div>
 
 					<div class="col w33">
-						<div class="features-item">
+						<div class="features-item animate delay-04">
 							<div class="features-icon">
 								<img src="img/features-icon12.svg" alt="">
 							</div>
@@ -299,15 +307,15 @@
 
 		<section class="owners">
 			<div class="container">
-				<h3 class="h3">Владельцы токенов</h3>
-				<p class="narrowly">принимают участие в опросе по выявлению наиболее востребованных коинов и токинов на криптовалютном рынке </p>
+				<h3 class="h3 animate">Владельцы токенов</h3>
+				<p class="narrowly animate delay-01">принимают участие в опросе по выявлению наиболее востребованных коинов и токинов на криптовалютном рынке </p>
 				<div class="row">
 					<div class="col w50">
-						<div class="desc">C прямым участием выпущенных токенов GEX в экосистеме GridEx через оплату комиссий при трейдинге и возможностью линейного масштабирования инфраструктуры.</div>
-						<div class="text text2">Для клиентов с более классическими требованиями к функционалу GridEx будет предоставляться возможность торговать через <nobr>web-браузер</nobr> и отдельное торговое приложение для смартфона.</div>
+						<div class="desc animate">C прямым участием выпущенных токенов GEX в экосистеме GridEx через оплату комиссий при трейдинге и возможностью линейного масштабирования инфраструктуры.</div>
+						<div class="text text2 animate">Для клиентов с более классическими требованиями к функционалу GridEx будет предоставляться возможность торговать через <nobr>web-браузер</nobr> и отдельное торговое приложение для смартфона.</div>
 					</div>
 					<div class="col w50">
-						<div class="text">Для пользователей с особыми требованиями к безопасности будет возможность использовать криптовалютный депозитарий с невозможностью проведения операций по причине отсутствия у инфраструктуры GridEx части приватной ключа пользователя.</div>
+						<div class="text animate delay-02">Для пользователей с особыми требованиями к безопасности будет возможность использовать криптовалютный депозитарий с невозможностью проведения операций по причине отсутствия у инфраструктуры GridEx части приватной ключа пользователя.</div>
 					</div>
 				</div>
 			</div>
@@ -316,18 +324,19 @@
 
 		<section class="what-is">
 			<div class="container">
-				<h3 class="h3">What is Gridex</h3>
+				<h3 class="h3 animate">What is Gridex</h3>
 				<div class="row">
 					<div class="col w50">
-						<div class="desc">Рынок криптовалют стремительно развивается, увеличивая охват населения, участвующего в нем. Среднесуточные объемы торгов составляют 40 млрд. долларов.*</div>
-						<p>Для сравнения-рынок форекса за сутки в среднем имеет объем не менее 3 триллионов долларов</p>
-						<p class="small">*согласно coinmarketcap.com от 29.01.2018</p>
-						<p class="">Ключевым моментом для достижения таких ежесуточных объемов «консервативных» рынков, как форекс, является массированное использование высокочастотного трейдинга других технологий автоторговли.</p>
+						<div class="desc animate">Рынок криптовалют стремительно развивается, увеличивая охват населения, участвующего в нем. Среднесуточные объемы торгов составляют 40 млрд. долларов.*</div>
+						<p class="animate">Для сравнения-рынок форекса за сутки в среднем имеет объем не менее 3 триллионов долларов</p>
+						<p class="small animate">*согласно coinmarketcap.com от 29.01.2018</p>
+						<p class="animate">Ключевым моментом для достижения таких ежесуточных объемов «консервативных» рынков, как форекс, является массированное использование высокочастотного трейдинга других технологий автоторговли.</p>
 					</div>
 					<div class="col w50">
-						<img src="img/whatis-diagram.svg" alt="">
-						<p class="right">Это значительно увеличивает ликвидность торгуемых активов, уменьшает спреды, устраняет перекосы в кросс-курсах и запускает очередной виток повышения ликвидности.</p>
-						<p class="right">Подобное ожидает и рынок криптовалют. На текущий момент <nobr>ни одна</nobr> существующая биржа не позволяет в полной мере реализовывать высокочастотный трейдинг. HFT.</p>
+						<img class="animate delay-02" class="img-desktop" src="img/whatis-diagram.svg" alt="">
+						<img class="img-mobile" src="img/whatis-diagram_mob.svg" alt="">
+						<p class="right animate delay-02">Это значительно увеличивает ликвидность торгуемых активов, уменьшает спреды, устраняет перекосы в кросс-курсах и запускает очередной виток повышения ликвидности.</p>
+						<p class="right animate delay-02">Подобное ожидает и рынок криптовалют. На текущий момент <nobr>ни одна</nobr> существующая биржа не позволяет в полной мере реализовывать высокочастотный трейдинг. HFT.</p>
 					</div>
 				</div>
 			</div>
@@ -335,14 +344,14 @@
 
 		<section class="gallery-eco">
 			<div class="container">
-				<h3 class="h3">GridEx - геодецентрализованная экосистема торговли криптовалютной ликвидностью</h3>
-				<p class="narrowly">Проект GridEx состоит из нескольких этапов, реализуемых либо <nobr>по очереди,</nobr> либо параллельно.</p>
+				<h3 class="h3 animate">GridEx - геодецентрализованная экосистема торговли криптовалютной ликвидностью</h3>
+				<p class="narrowly animate delay-01">Проект GridEx состоит из нескольких этапов, реализуемых либо <nobr>по очереди,</nobr> либо параллельно.</p>
 				<div class="row">
 					<div class="slider-wrapper">
-						<div class="slider-controlls" id="slider_controlls">
+						<div class="slider-controlls animate" id="slider_controlls">
 						</div>
-						<div class="slider" id="slider">
-							<div class="item">
+						<div class="slider animate delay-02" id="slider">
+							<div class="item item-1">
 								<div class="container">
 									<div class="row">
 										<div class="col w50">
@@ -356,7 +365,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-2">
 								<div class="container">
 									<div class="row">
 										<div class="col w50">
@@ -371,7 +380,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-3">
 								<div id="slider_in_slider">
 									<div class="item">
 										<div class="container">
@@ -403,13 +412,15 @@
 											<div class="row">
 												<div class="col w40">
 													<img class="book-img" src="img/img-stage3_2.svg" alt="">
-													<div class="arrow-prev" id="arrow_prev">
-														<div class="text">Назад</div>
-														<div class="img"><img src="img/prev_arrow.svg" alt=""></div>
-													</div>
 												</div>
 												<div class="col w60">
 													<div class="desc-another mt150">Планируется получить <span class="bold">прохождение 10% платежей всего рынка товаров и услуг за криптовалюту через 1 год работы реализованной  в STAGE3 инфраструктуры GridEx</span>. Комиссия нашей инфраструктуры при отправлении криптовалюты на кошелек продавца будет состоять из комиссии криптосети+1% комиссии нашей инфраструктуры.</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="arrow-prev" id="arrow_prev">
+													<div class="text">Назад</div>
+													<div class="img"><img src="img/prev_arrow.svg" alt=""></div>
 												</div>
 											</div>
 										</div>
@@ -417,7 +428,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-4">
 								<div class="container">
 									<div class="row">
 										<div class="col w40">
@@ -431,7 +442,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-5">
 								<div class="container">
 									<div class="row">
 										<div class="col w50">
@@ -445,7 +456,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-6">
 								<div class="container">
 									<div class="row">
 										<div class="col w50">
@@ -458,14 +469,14 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-7">
 								<div class="container">
 									<div class="desc ml50 mr200 mt100">Создание нескольких одновременно работающих криптовалютных бирж в основных финансовых центрах планеты </div>
 									<img class="img-stage7" src="img/img-stage_7.png" alt="">
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-8">
 								<div class="container">
 									<div class="row">
 										<div class="col w40">
@@ -479,7 +490,7 @@
 								</div>
 							</div>
 
-							<div class="item">
+							<div class="item item-9">
 								<div class="container">
 									<div class="row">
 										<div class="col w40">
@@ -499,20 +510,20 @@
 
 		<section class="crowdsale">
 			<div class="container">
-				<h3 class="h3">Crowdsale</h3>
-				<p class="narrow">При проведении Crowdsale будет распределено</p>
+				<h3 class="h3 animate">Crowdsale</h3>
+				<p class="narrow animate delay-01">При проведении Crowdsale будет распределено</p>
 				<div class="row">
 					<div class="col w50">
-						<img class="img" src="img/crowdsale.svg" alt="">
+						<img class="img animate scale" src="img/crowdsale.svg" alt="">
 					</div>
 					<div class="col w50">
 						<div class="info">
-							<div class="item"><i class="icon icon-1"></i>70%</div>
-							<div class="item"><i class="icon icon-2"></i>10%</div>
-							<div class="item"><i class="icon icon-3"></i>15%</div>
-							<div class="item"><i class="icon icon-4"></i>5%</div>
+							<div class="item animate delay-01"><i class="icon icon-1"></i>70%</div>
+							<div class="item animate delay-02"><i class="icon icon-2"></i>10%</div>
+							<div class="item animate delay-03"><i class="icon icon-3"></i>15%</div>
+							<div class="item animate delay-04"><i class="icon icon-4"></i>5%</div>
 						</div>
-						<p>70% токенов, 10% останется у команды разработчиков для раздачи членам команды  и будет заблокирована на 1 год, 15% останется в резервном фонде, 5% Маркетинг, пиар, эдвайзеры</p>
+						<p class="animate delay-05">70% токенов, 10% останется у команды разработчиков для раздачи членам команды  и будет заблокирована на 1 год, 15% останется в резервном фонде, 5% Маркетинг, пиар, эдвайзеры</p>
 					</div>
 				</div>
 			</div>
@@ -521,56 +532,57 @@
 		<section class="token-detail">
 			<div class="container">
 				<div class="wrapper">
-					<div class="title">Token details</div>
-					<img src="img/token_detail.svg" alt="">
-					<div class="title mt90">Детали Crowdsale</div>
+					<div class="title animate">Token details</div>
+					<img class="img-desctop animate delay-01" src="img/token_detail.svg" alt="">
+					<img class="img-tablet" src="img/token_detail-tablet.svg" alt="">
+					<div class="title mt90 animate">Детали Crowdsale</div>
 					<div class="items">
 						<div class="item">
-							<div class="label">Start date</div>
-							<div class="cnt">march 16</div>
+							<div class="label animate">Start date</div>
+							<div class="cnt animate">march 16</div>
 						</div>
 						<div class="item">
-							<div class="label">End date</div>
-							<div class="cnt">5 april with an intention to close it earlier</div>
+							<div class="label animate delay-01">End date</div>
+							<div class="cnt animate delay-01">5 april with an intention to close it earlier</div>
 						</div>
 						<div class="item">
-							<div class="label">Token distribution date</div>
-							<div class="cnt">immediately after the crowdsale</div>
+							<div class="label animate delay-02">Token distribution date</div>
+							<div class="cnt animate delay-02">immediately after the crowdsale</div>
 						</div>
 						<div class="item">
-							<div class="label">Accepted currencies</div>
-							<div class="cnt">ETH, BTC, TEZOS</div>
+							<div class="label animate delay-03">Accepted currencies</div>
+							<div class="cnt animate delay-03">ETH, BTC, TEZOS</div>
 						</div>
 						<div class="item">
-							<div class="label">Hard cap</div>
-							<div class="cnt">100 000 000 GEX</div>
+							<div class="label animate delay-04">Hard cap</div>
+							<div class="cnt animate delay-04">100 000 000 GEX</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col w25">
-						<div class="line"></div>
+						<div class="line animate"></div>
 					</div>
 					<div class="col w75">
-						<div class="text">Для получения одного токена GridEx (GEX) нужно внести 0.0001 ETH. Soft cap отсутствует, т.к. команда в любом случае реализует задуманное, hard cap 1 млрд. GEX. Токены будут выпущены в виде ERC20, начисление токенов будет производиться сразу после получения ETH.</div>
+						<div class="text animate delay-02">Для получения одного токена GridEx (GEX) нужно внести 0.0001 ETH. Soft cap отсутствует, т.к. команда в любом случае реализует задуманное, hard cap 1 млрд. GEX. Токены будут выпущены в виде ERC20, начисление токенов будет производиться сразу после получения ETH.</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="token-gex">
-			<h3 class="h3">Токен GEX</h3>
-			<p class="narrow"> предполагает использование в следующих сценариях</p>
+			<h3 class="h3 animate">Токен GEX</h3>
+			<p class="narrow animate delay-01"> предполагает использование в следующих сценариях</p>
 			<div class="wrapper">
-				<div class="desc desc-first"><div class="icon"><img src="img/gex-icon1.svg" alt=""></div><div class="num">1</div>Оплата комиссий экосистемы GridEx токенами GEX при совершении торговых сделок в любом направлении со скидкой в 50% от той комиссии в течении первого года работы платформы, что пришлось бы платить при совершении сделки без использования оплаты токенами GEX.</div>
-				<div class="desc desc-second"><div class="icon fix"><img src="img/gex-icon2.svg" alt=""></div><div class="num">2</div>Владельцы токенов принимают участие в опросе по выявлению наиболее востребованных коинов и токенов на криптовалютном рынке, т.к. биржа последовательно будет увеличивать количество оборудования, а значит, мы вынуждены создавать приоритет добавления торгуемых инструментов на биржу. В итоге из топ 5 инструментов, за который будет внесено наибольшее количество токенов, биржей будет выбран один и добавлен для листинга на бирже. Мониторинг будет проходить с определенной периодичностью, по мере масштабирования всей архитектуры биржи</div>
-				<div class="desc desc-first"><div class="icon"><img src="img/gex-icon3.svg" alt=""></div><div class="num">3</div>Токен GEX будет торговаться на самой бирже GridEx, поэтому все желающие купить либо продать GEX всегда будут иметь возможность это сделать в рамках объема торгового стакана GEX на нашей бирже.</div>
+				<div class="desc desc-first animate"><div class="icon"><img src="img/gex-icon1.svg" alt=""></div><div class="num">1</div>Оплата комиссий экосистемы GridEx токенами GEX при совершении торговых сделок в любом направлении со скидкой в 50% от той комиссии в течении первого года работы платформы, что пришлось бы платить при совершении сделки без использования оплаты токенами GEX.</div>
+				<div class="desc desc-second animate"><div class="icon fix"><img src="img/gex-icon2.svg" alt=""></div><div class="num">2</div>Владельцы токенов принимают участие в опросе по выявлению наиболее востребованных коинов и токенов на криптовалютном рынке, т.к. биржа последовательно будет увеличивать количество оборудования, а значит, мы вынуждены создавать приоритет добавления торгуемых инструментов на биржу. В итоге из топ 5 инструментов, за который будет внесено наибольшее количество токенов, биржей будет выбран один и добавлен для листинга на бирже. Мониторинг будет проходить с определенной периодичностью, по мере масштабирования всей архитектуры биржи</div>
+				<div class="desc desc-first animate"><div class="icon"><img src="img/gex-icon3.svg" alt=""></div><div class="num">3</div>Токен GEX будет торговаться на самой бирже GridEx, поэтому все желающие купить либо продать GEX всегда будут иметь возможность это сделать в рамках объема торгового стакана GEX на нашей бирже.</div>
 			</div>
 		</section>
 
 		<section class="roadmap">
-			<h3 class="h3">Roadmap</h3>
-			<div class="slider" id="roadmap_slider">
+			<h3 class="h3 animate">Roadmap</h3>
+			<div class="slider animate delay-01" id="roadmap_slider">
 				<div class="item">
 					<div class="container">
 						<div class="wrapper">
@@ -688,51 +700,53 @@
 		</section>
 
 		<section class="team">
-			<h3 class="h3">Team</h3>
+			<h3 class="h3 animate">Team</h3>
 			<div class="wrapper">
 				<div class="vector-bg"><img src="img/team-vector.svg" alt=""></div>
 				<div class="cnt">
 					<div class="arrow1"></div>
 					<div class="arrow2"></div>
-
-					<div class="item">
-						<div class="circle">
-							<div class="avatar" style="background-image: url(img/man.png);"></div>
+					
+					<div id="team-slider">
+						<div class="item">
+							<div class="circle animate">
+								<div class="avatar" style="background-image: url(img/man.png);"></div>
+							</div>
+							<div class="name animate">Олег Петров</div>
+							<div class="role animate">Формирование идеи</div>
 						</div>
-						<div class="name">Олег Петров</div>
-						<div class="role">Формирование идеи</div>
-					</div>
 
-					<div class="item">
-						<div class="circle">
-							<div class="avatar" style="background-image: url(img/man.png);"></div>
+						<div class="item">
+							<div class="circle animate delay-01">
+								<div class="avatar" style="background-image: url(img/man.png);"></div>
+							</div>
+							<div class="name animate delay-01">Олег Петров</div>
+							<div class="role animate delay-01">Формирование идеи</div>
 						</div>
-						<div class="name">Олег Петров</div>
-						<div class="role">Формирование идеи</div>
-					</div>
 
-					<div class="item">
-						<div class="circle">
-							<div class="avatar" style="background-image: url(img/man.png);"></div>
+						<div class="item">
+							<div class="circle animate delay-02">
+								<div class="avatar" style="background-image: url(img/man.png);"></div>
+							</div>
+							<div class="name animate delay-02">Олег Петров</div>
+							<div class="role animate delay-02">Формирование идеи</div>
 						</div>
-						<div class="name">Олег Петров</div>
-						<div class="role">Формирование идеи</div>
-					</div>
 
-					<div class="item">
-						<div class="circle">
-							<div class="avatar" style="background-image: url(img/man.png);"></div>
+						<div class="item">
+							<div class="circle animate delay-03">
+								<div class="avatar" style="background-image: url(img/man.png);"></div>
+							</div>
+							<div class="name animate delay-03">Олег Петров</div>
+							<div class="role animate delay-03">Формирование идеи</div>
 						</div>
-						<div class="name">Олег Петров</div>
-						<div class="role">Формирование идеи</div>
-					</div>
 
-					<div class="item">
-						<div class="circle">
-							<div class="avatar" style="background-image: url(img/man.png);"></div>
+						<div class="item">
+							<div class="circle animate delay-04">
+								<div class="avatar" style="background-image: url(img/man.png);"></div>
+							</div>
+							<div class="name animate delay-04">Олег Петров</div>
+							<div class="role animate delay-04">Формирование идеи</div>
 						</div>
-						<div class="name">Олег Петров</div>
-						<div class="role">Формирование идеи</div>
 					</div>
 				</div>
 			</div>
@@ -745,24 +759,24 @@
 	<footer>
 		<div class="container">
 			<div class="nav-wrapper">
-				<nav>
-					<div class="nav-item">Pre-ICO</div>
-					<div class="nav-item">What is GridEx </div>
-					<div class="nav-item">Roadmap</div>
-					<div class="nav-item">Team</div>
-					<div class="nav-item">FAQ </div>
-					<div class="nav-item">One Page</div>
-					<div class="nav-item">White Paper</div>
-					<div class="nav-item">En/Language</div>
-				</nav>
-				<div class="logo">
+				<div class="nav">
+					<div class="nav-item animate">Pre-ICO</div>
+					<div class="nav-item animate delay-01">What is GridEx </div>
+					<div class="nav-item animate delay-02">Roadmap</div>
+					<div class="nav-item animate delay-03">Team</div>
+					<div class="nav-item animate delay-04">FAQ </div>
+					<div class="nav-item animate delay-05">One Page</div>
+					<div class="nav-item animate delay-06">White Paper</div>
+					<div class="nav-item animate delay-07">En/Language</div>
+				</div>
+				<div class="logo animate">
 					<img src="img/logo.svg" alt="">
 				</div>
 			</div>
 			<div class="social">
-				<a href="#" class="soc-item" style="background-image: url(img/vk.svg);"></a>
-				<a href="#" class="soc-item" style="background-image: url(img/fb.svg);"></a>
-				<a href="#" class="soc-item" style="background-image: url(img/tw.svg);"></a>
+				<a href="#" class="soc-item animate" style="background-image: url(img/vk.svg);"></a>
+				<a href="#" class="soc-item animate delay-01" style="background-image: url(img/fb.svg);"></a>
+				<a href="#" class="soc-item animate delay-02" style="background-image: url(img/tw.svg);"></a>
 			</div>
 		</div>
 	</footer>
@@ -786,8 +800,18 @@
 		</div>
 	</div>
 
+	<div class="modal" id="video_modal">
+		<div class="video">
+			<div class="exit"><img src="img/exit.svg" alt=""></div>
+			<div class="iframe-wrapper">
+				<iframe src="https://www.youtube.com/embed/Uy0QeRqVKOI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/jquery.viewportchecker.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/libs/countdown.js"></script>
 	<script src="js/libs/form.js"></script>

@@ -112,7 +112,7 @@ function validateField($field) {
 
         // checkbox
         case 'checkbox':
-            var $checkbox = $field.find('input:checked');
+            var $checkbox = $field.parent().find('input:checked');
             if (!$checkbox.length) {
                 error++;
                 message = 'выберите вариант';

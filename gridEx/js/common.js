@@ -17,6 +17,31 @@ $(function() {
 		arrows: false
 	});
 
+	$('#team-slider').slick({
+		draggable: false,
+		infinite: false,
+		arrows: false,
+		slidesToShow: 5,
+		responsive: [{
+
+			breakpoint: 992,
+			settings: {
+				arrows: true,
+				slidesToShow: 2
+			}
+
+		}, {
+
+			breakpoint: 620,
+			settings: {
+				arrows: true,
+				slidesToShow: 1
+			}
+
+		}]
+
+	});
+
 	$('#arrow_next').on('click', function() {
 		$('#slider_in_slider').slick('slickNext');
 	});
@@ -33,9 +58,15 @@ $(function() {
 		$('#reg_modal').fadeIn('fast');
 	});
 
-	$('.exit').on('click', function() {
-		$('#reg_modal').fadeOut('fast');
+	$('#btn_video').on('click', function() {
+		$('#video_modal').fadeIn('fast');
 	});
+
+	$('.exit').on('click', function() {
+		$(this).parents('.modal').fadeOut('fast');
+	});
+
+	$('.animate').viewportChecker();
 
 	form();
 
