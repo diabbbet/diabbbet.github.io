@@ -95,6 +95,11 @@ $(function() {
 		typeSpeed: 30
 	});
 
+	$('.burger').on('click', function() {
+		$(this).toggleClass('active');
+		$('header .nav').toggleClass('active');
+	});
+
 });
 
 //форма

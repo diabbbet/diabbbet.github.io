@@ -906,7 +906,7 @@ footer {
     font-size: 17px; }
   .crowdsale .img-wrapper {
     position: relative;
-    width: 318px;
+    max-width: 318px;
     margin: auto; }
     .crowdsale .img-wrapper:after {
       content: '';
@@ -939,6 +939,8 @@ footer {
               animation: circle 2s ease infinite 0.8s; }
   .crowdsale .img {
     margin: 135px auto 0; }
+  .crowdsale .img-mobile {
+    display: none; }
   .crowdsale .info {
     margin-top: 144px; }
     .crowdsale .info .item {
@@ -1561,8 +1563,38 @@ iframe {
     margin-top: 130px; }
   h2, .h2 {
     font-size: 35px; }
-  nav {
-    display: none; }
+  header .nav-wrapper .header-nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    background: rgba(46, 50, 97, 0.8);
+    padding: 20px 0; }
+    header .nav-wrapper .header-nav .nav-item {
+      display: block;
+      margin: 0; }
+    header .nav-wrapper .header-nav.active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
   .burger {
     display: block;
     position: absolute;
@@ -1592,6 +1624,16 @@ iframe {
         -webkit-transform: translate(0, 21px);
             -ms-transform: translate(0, 21px);
                 transform: translate(0, 21px); }
+    .burger.active span:first-child {
+      -webkit-transform: translate(0, 11px) rotate(45deg);
+          -ms-transform: translate(0, 11px) rotate(45deg);
+              transform: translate(0, 11px) rotate(45deg); }
+    .burger.active span:nth-child(2) {
+      opacity: 0; }
+    .burger.active span:last-child {
+      -webkit-transform: translate(0, 11px) rotate(-45deg);
+          -ms-transform: translate(0, 11px) rotate(-45deg);
+              transform: translate(0, 11px) rotate(-45deg); }
   .nav-wrapper .logo {
     right: 0; }
   .main-section:before {
@@ -1764,6 +1806,8 @@ iframe {
       .token-detail .wrapper .items .item {
         margin-top: 40px;
         width: 33.33333%; }
+    .token-detail .wrapper .img-wrapper .img .column {
+      display: none; }
     .token-detail .col {
       float: left; }
     .token-detail .line {
@@ -1850,7 +1894,28 @@ iframe {
   footer .nav-wrapper .nav .nav-item {
     margin-top: 20px; }
   footer .social {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .modal .video {
+    top: 0;
+    bottom: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding: 0; }
+    .modal .video .exit {
+      z-index: 99;
+      top: 60px;
+      right: 20px; }
+    .modal .video .iframe-wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      .modal .video .iframe-wrapper iframe {
+        max-width: 100%; }
+      .modal .video .iframe-wrapper:after {
+        display: none; } }
 
 @media (max-width: 660px) {
   .gallery-eco .slider-wrapper .slider .slick-arrow.slick-next {
@@ -2021,6 +2086,14 @@ iframe {
     .crowdsale p {
       margin-right: 0;
       margin-top: 40px; }
+    .crowdsale .img-wrapper:before {
+      display: none; }
+    .crowdsale .img-wrapper:after {
+      display: none; }
+    .crowdsale .img-desktop {
+      display: none; }
+    .crowdsale .img-mobile {
+      display: block; }
   .token-detail {
     padding: 0;
     padding-bottom: 100px; }
@@ -2086,12 +2159,16 @@ iframe {
       bottom: -150px;
       top: auto;
       right: 50%;
-      margin: auto; }
+      margin: auto;
+      width: auto;
+      height: auto; }
   footer .social {
     text-align: center;
     margin-top: 50px; }
     footer .social .soc-item:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .what-is img {
+    display: none; } }
 
 @media (min-width: 1200px) {
   .animate {

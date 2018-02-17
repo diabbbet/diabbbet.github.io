@@ -1031,7 +1031,7 @@ footer {
 	}
 	.img-wrapper {
 		position: relative;
-		width: 318px;
+		max-width: 318px;
 		margin: auto;
 		&:after {
 			content: '';
@@ -1063,6 +1063,9 @@ footer {
 	}
 	.img {
 		margin: 135px auto 0;
+	}
+	.img-mobile {
+		display: none;
 	}
 	.info {
 		margin-top: 144px;
@@ -1802,9 +1805,29 @@ iframe {
 	h2, .h2 {
 		font-size: 35px;
 	}
-
-	nav {
-		display: none;
+	
+	header {
+		.nav-wrapper {
+			.header-nav {
+				display: none;
+				position: fixed;
+				top: 80px; bottom: 0;
+				left: 0; right: 0;
+				transform: none;
+				background: rgba(46, 50, 97, 0.8);
+				padding: 20px 0;
+				.nav-item {
+					display: block;
+					margin: 0;
+				}
+				&.active {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+				}
+			}
+		}
 	}
 
 	.burger {
@@ -1829,6 +1852,19 @@ iframe {
 			}
 			&:last-child {
 				transform: translate(0, 21px);
+			}
+		}
+		&.active {
+			span {
+				&:first-child {
+					transform: translate(0, 11px) rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:last-child {
+					transform: translate(0, 11px) rotate(-45deg);
+				}
 			}
 		}
 	}
@@ -2099,6 +2135,9 @@ iframe {
 					width: 33.33333%;
 				}
 			}
+			.img-wrapper .img .column {
+				display: none;
+			}
 		}
 		.col {
 			float: left;
@@ -2216,6 +2255,31 @@ iframe {
 		}
 		.social {
 			margin-top: 30px;
+		}
+	}
+
+	.modal {
+		.video {
+			top: 0;
+			bottom: 0;
+			transform: none;
+			padding: 0;
+			.exit {
+				z-index: 99;
+				top: 60px;
+				right: 20px;
+			}
+			.iframe-wrapper {
+				position: absolute;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				iframe {
+					max-width: 100%;
+				}
+				&:after {
+					display: none;
+				}
+			}
 		}
 	}
 }
@@ -2478,6 +2542,20 @@ iframe {
 			margin-right: 0;
 			margin-top: 40px;
 		}
+		.img-wrapper {
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: none;
+			}
+		}
+		.img-desktop {
+			display: none;
+		}
+		.img-mobile {
+			display: block;
+		}
 	}
 
 	.token-detail {
@@ -2571,6 +2649,8 @@ iframe {
 				top: auto;
 				right: 50%;
 				margin: auto;
+				width: auto;
+				height: auto;
 			}
 		}
 		.social {
@@ -2582,6 +2662,9 @@ iframe {
 				}
 			}
 		}
+	}
+	.what-is img {
+		display: none;
 	}
 
 }
