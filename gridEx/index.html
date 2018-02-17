@@ -41,19 +41,18 @@
 					<span></span>
 				</div>
 				<nav class="nav">
-					<div class="nav-item">Pre-ICO</div>
-					<div class="nav-item">What is GridEx </div>
-					<div class="nav-item">Roadmap</div>
-					<div class="nav-item">Team</div>
-					<div class="nav-item">FAQ </div>
-					<div class="nav-item">One Page</div>
-					<div class="nav-item">White Paper</div>
-					<div class="nav-item">En/Language</div>
+					<a href="#" class="nav-item" data-anchor="what_is">What is GridEx </a>
+					<a href="#" class="nav-item" data-anchor="roadmap">Roadmap</a>
+					<a href="#" class="nav-item" data-anchor="team">Team</a>
+					<a href="#" class="nav-item" data-anchor="faq">FAQ </a>
+					<a href="#" class="nav-item">One Page</a>
+					<a href="#" class="nav-item">White Paper</a>
+					<a href="#" class="nav-item">En/Language</a>
 				</nav>
 				<div class="logo">
 					<div class="wrapper-anim">
 						<img class="img-logo" src="img/logo.svg" alt="">
-						<img class="img-logo2" src="img/gridex_logo2.svg" alt="">
+						<img class="img-logo2" src="img/gridex_logo3.svg" alt="">
 					</div>
 				</div>
 			</div>
@@ -135,12 +134,26 @@
 				</div>
 			</div>
 
-			<div class="wrapper-why">
+			<div class="wrapper-why" data-anchor="faq">
 				<div class="container">
 					<div class="row">
 						<div class="col w40">
 							<h2 class="h2 animate">Why GridEx?</h2>
-							<div class="desc animate delay-01">Over 6 200 active Telegram</div>
+							<div class="desc animate delay-01" id="typed"><span></span></div>
+							<div class="typed-vars" id="typed_vars">
+								<div class="typed-var">Лучшая в мире экосистема для трейдинга и продаж товаров</div>
+								<div class="typed-var">Геодецентрализованная экосистема</div>
+								<div class="typed-var">Высокопроизводительная инфраструктура с мгновенными платежами</div>
+								<div class="typed-var">Страховка средств через смарт-контракт</div>
+								<div class="typed-var">Blockchain security P2P платежи</div>
+								<div class="typed-var">Глобальный рынок товаров</div>
+								<div class="typed-var">Мы быстрее VISA и Mastercard вместе взятых</div>
+								<div class="typed-var">Мы FOREX для крипты</div>
+								<div class="typed-var">GridEx разработан для HFT</div>
+								<div class="typed-var">Most world's faster exchange</div>
+								<div class="typed-var">Реферальная программа</div>
+								<div class="typed-var">Мощный инструментарий для TA</div>
+							</div>
 							<button class="btn animate delay-02">Подробнее</button>
 						</div>
 						<div class="col w60">
@@ -322,7 +335,7 @@
 			<div class="phone"><img src="img/phone.png" alt=""></div>
 		</section>
 
-		<section class="what-is">
+		<section class="what-is" data-anchor="what_is">
 			<div class="container">
 				<h3 class="h3 animate">What is Gridex</h3>
 				<div class="row">
@@ -514,7 +527,9 @@
 				<p class="narrow animate delay-01">При проведении Crowdsale будет распределено</p>
 				<div class="row">
 					<div class="col w50">
-						<img class="img animate scale" src="img/crowdsale.svg" alt="">
+						<div class="img-wrapper animate scale">
+							<img class="img" src="img/crowdsale.svg" alt="">
+						</div>
 					</div>
 					<div class="col w50">
 						<div class="info">
@@ -533,8 +548,20 @@
 			<div class="container">
 				<div class="wrapper">
 					<div class="title animate">Token details</div>
-					<img class="img-desctop animate delay-01" src="img/token_detail.svg" alt="">
-					<img class="img-tablet" src="img/token_detail-tablet.svg" alt="">
+					<div class="img-wrapper">
+						<div class="img animate delay-01">
+							<img class="img-desctop" src="img/token_detail.svg" alt="">
+							<div class="column blue n1"><span></span></div>
+							<div class="column blue n2"><span></span></div>
+							<div class="column blue n3"><span></span></div>
+							<div class="column blue n4"><span></span></div>
+							<div class="column purple n5"><span></span></div>
+							<div class="column purple n6"><span></span></div>
+							<div class="column purple n7"><span></span></div>
+							<div class="column purple n8"><span></span></div>
+							<img class="img-tablet" src="img/token_detail-tablet.svg" alt="">
+						</div>
+					</div>
 					<div class="title mt90 animate">Детали Crowdsale</div>
 					<div class="items">
 						<div class="item">
@@ -580,7 +607,7 @@
 			</div>
 		</section>
 
-		<section class="roadmap">
+		<section class="roadmap" data-anchor="roadmap">
 			<h3 class="h3 animate">Roadmap</h3>
 			<div class="slider animate delay-01" id="roadmap_slider">
 				<div class="item">
@@ -699,7 +726,7 @@
 			</div>
 		</section>
 
-		<section class="team">
+		<section class="team" data-anchor="team">
 			<h3 class="h3 animate">Team</h3>
 			<div class="wrapper">
 				<div class="vector-bg"><img src="img/team-vector.svg" alt=""></div>
@@ -760,14 +787,13 @@
 		<div class="container">
 			<div class="nav-wrapper">
 				<div class="nav">
-					<div class="nav-item animate">Pre-ICO</div>
-					<div class="nav-item animate delay-01">What is GridEx </div>
-					<div class="nav-item animate delay-02">Roadmap</div>
-					<div class="nav-item animate delay-03">Team</div>
-					<div class="nav-item animate delay-04">FAQ </div>
-					<div class="nav-item animate delay-05">One Page</div>
-					<div class="nav-item animate delay-06">White Paper</div>
-					<div class="nav-item animate delay-07">En/Language</div>
+					<a href="#" data-anchor="what_is" class="nav-item animate delay-01">What is GridEx </a>
+					<a href="#" data-anchor="roadmap" class="nav-item animate delay-02">Roadmap</a>
+					<a href="#" data-anchor="team" class="nav-item animate delay-03">Team</a>
+					<a href="#" data-anchor="faq" class="nav-item animate delay-04">FAQ </a>
+					<a href="#" class="nav-item animate delay-05">One Page</a>
+					<a href="#" class="nav-item animate delay-06">White Paper</a>
+					<a href="#" class="nav-item animate delay-07">En/Language</a>
 				</div>
 				<div class="logo animate">
 					<img src="img/logo.svg" alt="">
@@ -812,6 +838,7 @@
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/jquery.viewportchecker.js"></script>
+	<script src="js/libs/typed.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/libs/countdown.js"></script>
 	<script src="js/libs/form.js"></script>

@@ -70,6 +70,31 @@ $(function() {
 
 	form();
 
+	$('.nav-item').on('click', function() {
+		if ($(this).is("[data-anchor]")) {
+			var dataAttr = $(this).attr('data-anchor');
+			var headerHeight = $('header').height();
+			var topPos = $('[data-anchor="'+dataAttr+'"]:not(a)').offset().top;
+			var scrollHeight = topPos - headerHeight;
+
+			$('body,html').animate({scrollTop: scrollHeight}, 1000);
+			
+			return false;
+		}
+	});
+
+	var stringsElement = [];
+
+	$('#typed_vars').find('.typed-var').each(function() {
+		stringsElement.push($(this).text());
+	});
+	console.log(stringsElement);
+
+	var typed = new Typed('#typed span', {
+		strings: stringsElement,
+		typeSpeed: 30
+	});
+
 });
 
 //форма
