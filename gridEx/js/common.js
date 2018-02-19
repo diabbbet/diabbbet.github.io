@@ -60,10 +60,12 @@ $(function() {
 
 	$('#btn_video').on('click', function() {
 		$('#video_modal').fadeIn('fast');
+		$('body').addClass('hidden');
 	});
 
 	$('.exit').on('click', function() {
 		$(this).parents('.modal').fadeOut('fast');
+		$('body').removeClass('hidden');
 	});
 
 	$('.animate').viewportChecker();

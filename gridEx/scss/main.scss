@@ -1418,6 +1418,8 @@ footer {
 				width: 138px;
 				height: 138px;
 				border-radius: 50%;
+				background-position: top center;
+				background-size: contain;
 			}
 			.name {
 				font-family: $accent_font;
@@ -1706,6 +1708,12 @@ iframe {
 	color: #fff;
 	font-size: 30px;
 	font-weight: 700;
+}
+
+@media (max-width: 1399px) {
+	.modal .video {
+		max-width: 720px;
+	}
 }
 
 @media (max-width: 1259px) {
