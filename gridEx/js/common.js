@@ -51,7 +51,29 @@ $(function() {
 	});
 
 	$('#roadmap_slider').slick({
-		infinite: false
+		infinite: false,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		responsive: [{
+
+			breakpoint: 992,
+			settings: {
+				arrows: true,
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+
+		}, {
+
+			breakpoint: 620,
+			settings: {
+				arrows: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: true
+			}
+
+		}]
 	});
 
 	$('#btn_reg').on('click', function() {
@@ -80,6 +102,11 @@ $(function() {
 			var scrollHeight = topPos - headerHeight;
 
 			$('body,html').animate({scrollTop: scrollHeight}, 1000);
+
+			if ($(window).width() < 992) {
+				$('.burger').removeClass('active');
+				$('header .nav').removeClass('active');
+			}
 			
 			return false;
 		}
