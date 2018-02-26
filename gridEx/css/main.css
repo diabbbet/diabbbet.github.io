@@ -1972,7 +1972,10 @@ iframe {
       .modal .video .iframe-wrapper iframe {
         max-width: 100%; }
       .modal .video .iframe-wrapper:after {
-        display: none; } }
+        display: none; }
+  .nav-wrapper .nav .lang .lang-popup {
+    top: -100px;
+    background-color: #2e3261; } }
 
 @media (max-width: 660px) {
   .gallery-eco .slider-wrapper .slider .slick-arrow.slick-next {

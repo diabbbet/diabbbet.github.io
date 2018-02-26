@@ -2351,6 +2351,17 @@ iframe {
 			}
 		}
 	}
+
+	.nav-wrapper {
+		.nav {
+			.lang {
+				.lang-popup {
+					top: -100px;
+					background-color: rgba(46, 50, 97, 1);
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 660px) {
