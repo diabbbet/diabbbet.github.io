@@ -129,6 +129,11 @@ $(function() {
 		$('header .nav').toggleClass('active');
 	});
 
+	$('.lang-change').on('click', function() {
+		$(this).siblings('.lang-popup').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+
 });
 
 //форма

@@ -219,6 +219,7 @@ header {
 		right: 100px;
 		user-select: none;
 		.nav-item {
+			position: relative;
 			display: inline-block;
 			color: #fff;
 			font-size: 17px;
@@ -226,15 +227,82 @@ header {
 			user-select: none;
 			cursor: pointer;
 			text-decoration: none;
-			&:last-child {
-				margin-right: 0;
-			}
 			&:hover {
 				color: $lightBlue_color;
 				transition: none;
+				.icon-triangle {
+					border-color: $lightBlue_color transparent transparent transparent;
+				}
 			}
 			&:active {
 				color: #3CB1D6;
+			}
+		}
+		.lang {
+			position: relative;
+			display: inline-block;
+			.lang-item {
+				position: relative;
+				color: #fff;
+				font-size: 17px;
+				user-select: none;
+				cursor: pointer;
+				.icon-triangle {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: -15px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 5px 5px 0 5px;
+					border-color: #fff transparent transparent transparent;
+					margin-left: 5px;
+				}
+				&:hover {
+					color: $lightBlue_color;
+					transition: none;
+					.icon-triangle {
+						border-color: $lightBlue_color transparent transparent transparent;
+					}
+				}
+				&.active {
+					color: $lightBlue_color;
+					.icon-triangle {
+						border-color: $lightBlue_color transparent transparent transparent;
+						transform: translateY(-50%) rotate(180deg);
+					}
+				}
+			}
+			
+			.lang-popup {
+				display: none;
+				position: absolute;
+				top: 60px;
+				left: 0;
+				padding: 10px;
+				background-color: rgba(46, 50, 97, 0.8);
+				&:before {
+					content: '';
+					position: absolute;
+					top: -9px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 10px 10px 10px;
+					border-color: transparent transparent rgba(46, 50, 97, 0.8) transparent;
+				}
+				&.active {
+					display: block;
+				}
+				.lang-item {
+					line-height: 30px;
+					display: block;
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -1705,6 +1773,7 @@ iframe {
 	font-size: 30px;
 	font-weight: 700;
 }
+
 
 @media (max-width: 1399px) {
 	.modal .video {
