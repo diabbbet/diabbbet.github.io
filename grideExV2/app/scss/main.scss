@@ -1,0 +1,218 @@
+// fonts
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro.woff2') format('woff2'),
+	url('../fonts/DINPro.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+	url('../fonts/DINPro-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-Black.woff2') format('woff2'),
+	url('../fonts/DINPro-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'DINAlternate';
+	src: url('../fonts/DINAlternate-Bold.woff2') format('woff2'),
+	url('../fonts/DINAlternate-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+// vars
+$default_font: 'DINPro', sans-serif;
+$accent_font: 'DINAlternate', sans-serif;
+$default_color: red;
+$accent_color: blue;
+
+// default-sets
+html {
+	font-size: 10px;
+	height: 100%;
+	* {
+		box-sizing: border-box;
+		outline: none;
+	}
+}
+
+body {
+	overflow-x: hidden;
+	min-width: 320px;
+	font-family: $default_font;
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	&.hidden {
+		overflow: hidden;
+	}
+}
+
+// grid
+.space-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1240px;
+	margin: auto;
+}
+
+header {
+	.header-topline {
+		background-color: #04d2cb;
+		background-image: linear-gradient(to right, #dcd8d6 0%, #cdd8d5 0%, #a6d7d3 0%, #67d5d2 0%, #11d2cf 0%, #00d2ce 0%, #0fd3c2 7%, #35d8a3 20%, #74e071 39%, #a6e64a 52%, #47cbcc 100%);
+		.space-between {
+			align-items: center;
+			height: 40px;
+			max-width: 1340px;
+			margin: auto;
+		}
+		p {
+			margin: 0;
+			color: #5e5d5d;
+			font-size: 18px;
+			font-weight: 400;
+		}
+	}
+	.header-botline {
+		position: relative;
+		background-color: #12647e;
+		background-image: linear-gradient(to right, #11617c 0%, #12657f 31%, #167088 57%, #1c8298 83%, #2293a7 100%);
+		.space-between {
+			align-items: center;
+			height: 50px;
+			max-width: 1240px;
+			margin: auto;
+		}
+		.header-logo {
+			color: #ffffff;
+			font-family: $accent_font;
+			font-size: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.header-nav {
+		position: absolute;
+		top: 0; bottom: 0;
+		right: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.item {
+			margin: 0 10px;
+			cursor: pointer;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 700;
+			cursor: pointer;
+			.flag {
+				display: block;
+				width: 35px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+	}
+}
+
+main {
+
+}
+
+footer {
+	height: 1354px;
+	background-color: #127d91;
+	background-image: linear-gradient(to right, #117c90 0%, #147f93 43%, #1b8a9e 81%, #2293a7 100%);
+	padding-top: 95px;
+	.partners {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		max-width: 1050px;
+		margin: 110px auto 0;
+		img {
+			display: block;
+		}
+	}
+	.documents {
+		max-width: 1050px;
+		margin: 150px auto 0;
+		background-color: rgba(#00abba, 0.4);
+		padding: 10px 0 50px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.h2 {
+			text-align: center;
+			width: 100%;
+		}
+		.item {
+			width: 25%;
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			p {
+				margin: 20px 0 0;
+				font-family: $accent_font;
+				font-size: 24px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+// typographic
+h1, .h1 {
+}
+
+h2, .h2 {
+	color: #ffffff;
+	font-family: $default_font;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1.2;
+}
+
+h3, .h3 {
+}
+
+p {
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	li {
+	}
+}
+
+a {
+
+}
