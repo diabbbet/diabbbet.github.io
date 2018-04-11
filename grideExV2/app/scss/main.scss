@@ -44,8 +44,6 @@
 // vars
 $default_font: 'DINPro', sans-serif;
 $accent_font: 'DINAlternate', sans-serif;
-$default_color: red;
-$accent_color: blue;
 
 // default-sets
 html {
@@ -148,6 +146,7 @@ header {
 			font-size: 30px;
 			font-weight: 700;
 			text-transform: uppercase;
+			user-select: none;
 		}
 	}
 	.header-nav {
@@ -159,8 +158,23 @@ header {
 			cursor: pointer;
 			color: #ffffff;
 			font-size: 18px;
-			font-weight: 700;
+			font-weight: 400;
 			cursor: pointer;
+			transition: 100ms;
+			user-select: none;
+			&:hover {
+				color: darken(#fff, 15%);
+			}
+			&.item-btn {
+				background: linear-gradient(#00FFFF 0%, #0988A5 100%);
+				border-radius: 6px;
+				width: 84px;
+				height: 26px;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 26px;
+				text-align: center;
+			}
 			.flag {
 				display: block;
 				width: 35px;
@@ -221,8 +235,28 @@ section.main-section {
 		}
 		.cubes {
 			position: absolute;
-			left: 0; bottom: 70px;
-			pointer-events: none;
+			left: 0; bottom: 27px;
+			.cubes-cube {
+				position: absolute;
+				cursor: pointer;
+				display: flex;
+				p {
+					font-size: 16px;
+					font-weight: 700;
+				}
+				&.cubes-cube-1 {
+					top: 130px;
+					left: 20px;
+				}
+				&.cubes-cube-2 {
+					top: 80px;
+					left: 115px;
+				}
+				&.cubes-cube-3 {
+					top: 35px;
+					left: 195px;
+				}
+			}
 		}
 		.bonus {
 			position: absolute;
@@ -333,22 +367,35 @@ section.main-section {
 			align-items: center;
 			z-index: 5;
 			.item {
+				position: relative;
 				margin-right: 10px;
-				svg {
-					position: relative;
+				width: 52px;
+				height: 60px;
+				.item-soc {
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0; right: 0;
+					display: block;
+					background-repeat: no-repeat;
+					background-position: center center;
+					transition: 100ms;
 				}
-				&.gray {
-					position: relative;
-					&:hover {
-						&:before {
-							content: '';
-							position: absolute;
-							top: 0; bottom: 0;
-							left: 0; right: 0;
-							background-image: url('../img/gray-rumb.svg');
-							background-position: center center;
-							background-repeat: no-repeat;
-						}
+				.item-soc--hover {
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0; right: 0;
+					display: block;
+					background-repeat: no-repeat;
+					background-position: center center;
+					transition: 100ms;
+					opacity: 0;
+				}
+				&:hover {
+					.item-soc {
+						opacity: 0;
+					}
+					.item-soc--hover {
+						opacity: 1;
 					}
 				}
 				&.label {
@@ -358,6 +405,9 @@ section.main-section {
 					font-weight: 700;
 					line-height: 15px;
 					text-align: right;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 			}
 		}
@@ -371,21 +421,34 @@ section.main-section {
 			align-items: center;
 			.item {
 				margin-right: 10px;
-				svg {
-					position: relative;
+				position: relative;
+				width: 52px;
+				height: 60px;
+				.item-soc {
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0; right: 0;
+					display: block;
+					background-repeat: no-repeat;
+					background-position: center center;
+					transition: 100ms;
 				}
-				&.gray {
-					position: relative;
-					&:hover {
-						&:before {
-							content: '';
-							position: absolute;
-							top: 0; bottom: 0;
-							left: 0; right: 0;
-							background-image: url('../img/gray-rumb.svg');
-							background-position: center center;
-							background-repeat: no-repeat;
-						}
+				.item-soc--hover {
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0; right: 0;
+					display: block;
+					background-repeat: no-repeat;
+					background-position: center center;
+					transition: 100ms;
+					opacity: 0;
+				}
+				&:hover {
+					.item-soc {
+						opacity: 0;
+					}
+					.item-soc--hover {
+						opacity: 1;
 					}
 				}
 				&.label {
@@ -395,6 +458,9 @@ section.main-section {
 					font-weight: 700;
 					line-height: 15px;
 					text-align: right;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
 				}
 			}
 		}

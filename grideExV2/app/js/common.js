@@ -17,6 +17,28 @@ $(function() {
 			}
 		}]
 	});
+
+	$('.header-nav .item').on('click', function() {
+		if ($(this).is("[data-anchor]")) {
+			var dataAttr = $(this).attr('data-anchor');
+			var topPos = $('[data-anchor="'+dataAttr+'"]:not(.item)').offset().top;
+
+			$('body,html').animate({scrollTop: topPos}, 1000);
+
+			// if ($(window).width() < 992) {
+			// 	$('.burger').removeClass('active');
+			// 	$('header .nav').removeClass('active');
+			// }
+			
+			return false;
+		}
+	});
+
+	$('.qube-top').mouseenter(function() {
+		$(this).addClass('active');
+	}).mouseleave(function() {
+		$(this).removeClass('active');
+	})
 	
 
 	var countdown = new Date('june 7, 2018');
@@ -62,5 +84,7 @@ $(function() {
 	}
 
 	initClock('countdown', countdown);
+
+
 
 });
