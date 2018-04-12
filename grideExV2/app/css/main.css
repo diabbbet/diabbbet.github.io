@@ -61,7 +61,8 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
 
 .container {
   max-width: 1045px;
@@ -175,6 +176,48 @@ header .header-nav {
       height: 20px;
       background-repeat: no-repeat;
       background-position: center center; }
+
+header .flag-popup {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 200px;
+  z-index: 50;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(0, 255, 255, 0.2);
+  display: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+  header .flag-popup .popup-item {
+    padding: 0 15px;
+    border-bottom: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    header .flag-popup .popup-item:hover {
+      content: '';
+      background: -webkit-linear-gradient(333.87deg, rgba(0, 255, 255, 0.8) 7.03%, rgba(4, 216, 169, 0.8) 61.92%), #0E1221;
+      background: -o-linear-gradient(333.87deg, rgba(0, 255, 255, 0.8) 7.03%, rgba(4, 216, 169, 0.8) 61.92%), #0E1221;
+      background: linear-gradient(116.13deg, rgba(0, 255, 255, 0.8) 7.03%, rgba(4, 216, 169, 0.8) 61.92%), #0E1221;
+      opacity: 0.8; }
+  header .flag-popup .flag {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left cemter;
+    width: 35px;
+    height: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: middle; }
+  header .flag-popup p {
+    display: inline-block;
+    vertical-align: middle; }
 
 section.main-section {
   position: relative;

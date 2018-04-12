@@ -38,7 +38,16 @@ $(function() {
 		$(this).addClass('active');
 	}).mouseleave(function() {
 		$(this).removeClass('active');
-	})
+	});
+
+	$('.active').on('click', function() {
+
+		return false;
+	});
+	
+	$('.flag.active').on('click', function() {
+		$('.flag-popup').toggle();
+	});
 	
 
 	var countdown = new Date('june 7, 2018');
