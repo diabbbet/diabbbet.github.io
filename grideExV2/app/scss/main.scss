@@ -1060,6 +1060,12 @@ section.team {
 				&.photo-1 {
 					background-color: #168195;
 					background-image: linear-gradient(to right, #117c90 0%, #147f93 43%, #1b8a9e 81%, #2293a7 100%);
+					img {
+						position: absolute;
+						bottom: 0;
+						left: 0; right: 0;
+						margin: auto;
+					}
 				}
 				&.photo-2 {
 					margin-right: 40px;
@@ -1490,6 +1496,12 @@ footer {
 	}
 }
 
+header .header-nav .item.item-btn.btn-transparent {
+	display: none;
+	border: 1px solid #00FFFF;
+	background: none;
+}
+
 @media (max-width: 1199px) {
 	header {
 		.header-topline {
@@ -1510,5 +1522,37 @@ footer {
 			margin: 0 5px;
 		}
 	}
+
+}
+
+@media (max-width: 767px) {
+	// header .header-topline {
+	// 	display: none;
+	// }
+
+	// header .header-nav .item {
+	// 	display: none;
+	// 	&.item-btn {
+	// 		display: block;
+	// 		&.btn-transparent {
+	// 			display: block;
+	// 		}
+	// 	}
+	// 	&.item-lang {
+	// 		display: block;
+	// 	}
+	// }
+
+	// section.main-section {
+	// 	.main-section-content {
+	// 		flex-direction: column;
+	// 		.cubes {
+	// 			display: none;
+	// 		}
+	// 		.main-section-left {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 
 }

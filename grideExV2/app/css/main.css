@@ -1207,6 +1207,12 @@ section.team {
           background-image: -webkit-linear-gradient(left, #117c90 0%, #147f93 43%, #1b8a9e 81%, #2293a7 100%);
           background-image: -o-linear-gradient(left, #117c90 0%, #147f93 43%, #1b8a9e 81%, #2293a7 100%);
           background-image: linear-gradient(to right, #117c90 0%, #147f93 43%, #1b8a9e 81%, #2293a7 100%); }
+          section.team .team-items .item .photo.photo-1 img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
         section.team .team-items .item .photo.photo-2 {
           margin-right: 40px;
           background-color: #fff; }
@@ -1660,6 +1666,11 @@ footer {
     top: 10px; }
   section.team {
     overflow: hidden; } }
+
+header .header-nav .item.item-btn.btn-transparent {
+  display: none;
+  border: 1px solid #00FFFF;
+  background: none; }
 
 @media (max-width: 1199px) {
   header .header-topline .space-between {
