@@ -18,6 +18,14 @@ $(function() {
 		}]
 	});
 
+	if ($(window).width() < 768) {
+		$('.team-items').slick({
+			infinite: false,
+			nextArrow: '<button type="button" class="slick-next"></button>',
+			prevArrow: '<button type="button" class="slick-prev"></button>'
+		});
+	}
+
 	$('.header-nav .item').on('click', function() {
 		if ($(this).is("[data-anchor]")) {
 			var dataAttr = $(this).attr('data-anchor');
