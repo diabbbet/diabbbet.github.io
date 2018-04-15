@@ -64,7 +64,52 @@ $(function() {
 		$('#modal').addClass('active');
 	});
 
-	
+	//форма
+	function form() {
+
+		if ($('#modal_form').length) {
+			console.log('kek')
+			function initForm() {
+				var $form = $('#modal_form');
+				$form.on('change', '.validate', function(){
+					validateField($(this));
+				});
+
+				$form.find('.btn-submit').on('click', function(){
+					if (validateForm($form)) {
+						var data = $form.serialize();
+						$.ajax({
+							url: 'mail.php',
+							type: 'POST',
+							dataType: 'json',
+							data: data,
+							success: function(data) {
+								successForm();
+							},
+							error: function(data) {
+								successForm();
+							},
+							timeout: 60000
+						});
+					}
+					return false;
+				});
+
+
+				function successForm() {
+
+					setTimeout(function(){
+						clearForm($form);
+					}, 2000);
+
+				}
+			}
+			initForm();
+
+		}
+
+	}
+	form();
 
 	var countdown = new Date('june 7, 2018');
 

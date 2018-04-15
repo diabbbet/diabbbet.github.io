@@ -156,6 +156,14 @@ ul, ol {
       margin-top: 10px; }
       .modal .modal-content .field.w50 {
         width: 50%; }
+      .modal .modal-content .field.error .modal-input {
+        border-color: red; }
+      .modal .modal-content .field.error select {
+        border-color: red; }
+      .modal .modal-content .field.error .jq-selectbox__select {
+        border-color: red; }
+      .modal .modal-content .field.error .jq-selectbox__trigger {
+        border-color: red; }
     .modal .modal-content .btn-submit {
       width: 200px;
       height: 32px;

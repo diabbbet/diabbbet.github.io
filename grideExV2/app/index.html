@@ -794,10 +794,11 @@
 			<div class="close"><img src="img/cancel.svg" alt=""></div>
 			<form id="modal_form">
 				<div class="field">
-					<input name="email" class="modal-input" type="email" placeholder="Email" required>
+					<input name="email" class="modal-input validate" type="email" placeholder="Email" data-validate="email">
 				</div>
 				<div class="field w50">
-					<select name="region" required>
+					<select name="region" class="validate" data-validate="required_select">
+						<option value="0">code</option>
 						<option value="93">93</option>
 						<option value="355">355</option>
 						<option value="21">21</option>
@@ -1038,10 +1039,10 @@
 					</select>
 				</div>
 				<div class="field w50">
-					<input name="phone" class="modal-input" type="tel" placeholder="Phone number" required>
+					<input name="phone" class="modal-input validate" type="tel" placeholder="Phone number" data-validate="required">
 				</div>
 				<div class="field">
-					<input name="telegram" class="modal-input" type="text" placeholder="Link on Telegram" required>
+					<input name="telegram" class="modal-input validate" type="text" placeholder="Link on Telegram" data-validate="required">
 				</div>
 				<button class="btn-submit">send</button>
 			</form>
@@ -1052,6 +1053,7 @@
 	<script src="libs/jquery-3.2.1.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+	<script src="libs/form.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

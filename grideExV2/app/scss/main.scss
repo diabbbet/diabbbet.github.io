@@ -173,6 +173,20 @@ a {
 			&.w50 {
 				width: 50%;
 			}
+			&.error {
+				.modal-input {
+					border-color: red;
+				}
+				select {
+					border-color: red;
+				}
+				.jq-selectbox__select {
+					border-color: red;
+				}
+				.jq-selectbox__trigger {
+					border-color: red;
+				}
+			}
 		}
 		.btn-submit {
 			width: 200px;

@@ -57,7 +57,7 @@ function validateField($field) {
         //select обязательно для заполнения
         case 'required_select':
             val = $field.find('select').val();
-            if (val == null){
+            if (val == 0){
                 error++;
                 message = 'Поле обязательно для заполнения';
             }
