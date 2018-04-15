@@ -26,17 +26,12 @@ $(function() {
 		});
 	}
 
-	$('.header-nav .item').on('click', function() {
+	$('.header-nav .item, .about .link').on('click', function() {
 		if ($(this).is("[data-anchor]")) {
 			var dataAttr = $(this).attr('data-anchor');
 			var topPos = $('[data-anchor="'+dataAttr+'"]:not(.item)').offset().top;
 
 			$('body,html').animate({scrollTop: topPos}, 1000);
-
-			// if ($(window).width() < 992) {
-			// 	$('.burger').removeClass('active');
-			// 	$('header .nav').removeClass('active');
-			// }
 			
 			return false;
 		}
@@ -56,6 +51,19 @@ $(function() {
 	$('.flag.active').on('click', function() {
 		$('.flag-popup').toggle();
 	});
+
+	$('#modal .close').on('click', function() {
+		$('#modal').removeClass('active');
+	});
+
+	$('select').styler({
+
+	});
+
+	$('.modal-btn').on('click', function() {
+		$('#modal').addClass('active');
+	});
+
 	
 
 	var countdown = new Date('june 7, 2018');
