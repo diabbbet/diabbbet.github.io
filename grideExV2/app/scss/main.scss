@@ -876,15 +876,15 @@ section.earth {
 	background-color: #00929e;
 	.img-wrapper {
 		position: relative;
-		max-width: 860px;
+		max-width: 955px;
 		margin: auto;
 	}
 	.img {
 		position: relative;
 		display: block;
 		margin: auto;
-		max-width: 860px;
-		background-image: url('../img/earth.svg');
+		max-width: 955px;
+		background-image: url('../img/earth.png');
 		background-position: center center;
 		background-repeat: no-repeat;
 		overflow: hidden;
@@ -896,19 +896,19 @@ section.earth {
 	}
 	svg {
 		position: absolute;
-		top: 0;
+		top: 50px;
 		opacity: 0;
 		&:hover {
 			opacity: 1;
 		}
 		&.svg-1 {
-			left: -50px;
+			left: 0;
 		}
 		&.svg-3 {
-			right: -50px;
+			right: 0;
 		}
 		&.svg-2 {
-			left: 50%;
+			left: 51%;
 			transform: translateX(-50%);
 		}
 	}
@@ -1413,12 +1413,28 @@ section.events {
 			padding: 0 15px;
 			display: flex;
 			.item-content {
+				position: relative;
 				width: 100%;
 				background-color: #fff;
 				padding: 60px 20px 20px;
 				background-position: center center;
 				background-size: cover;
+				cursor: pointer;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0; right: 0;
+					background: rgba(#000, 0.2);
+					opacity: 0;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+				}
 				p {
+					position: relative;
 					margin: 30px 0 0 30%;
 					color: #fff;
 					font-size: 20px;
