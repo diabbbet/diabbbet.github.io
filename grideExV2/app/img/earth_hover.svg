@@ -1,0 +1,19 @@
+<svg width="959" height="861" viewBox="0 0 959 861" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group">
+<g id="Combined Shape">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 418.398 1L 240.974 0C 171.808 44 -9.62514 191 0.399272 423C 10.4227 655 154.768 796 235.962 857L 395.644 857C 396.779 858.388 397.902 859.721 399.013 861L 583.157 861C 583.157 861 583.744 860.02 584.83 858.093L 725.964 860C 814.964 793 958.964 640 958.964 425C 958.964 210 782.964 48 720.964 2L 563.278 2L 555.964 2L 417.322 2C 417.684 1.65991 418.043 1.32642 418.398 1Z" transform="translate(0.0283203 0)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 866 -2978.99 0 -530.532 2)">
+<stop stop-color="#427283" stop-opacity="0.01"/>
+<stop offset="0.5021" stop-color="#427283" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#427283" stop-opacity="0.01"/>
+</linearGradient>
+
+</defs>
+</svg>
+

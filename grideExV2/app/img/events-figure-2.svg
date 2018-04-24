@@ -1,0 +1,28 @@
+<svg width="92" height="112" viewBox="0 0 92 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group 38 Copy 5" filter="url(#filter0_d)">
+<g id="Shape">
+<path d="M 0 18.5011L 32 37L 64 18.5053L 32 0.00425703L 0 18.5011Z" transform="translate(22 0)" fill="#F9F9F9"/>
+</g>
+<g id="Combined Shape Copy">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 32 18.499L 0 0L 0 37L 32 55.5L 32 18.499Z" transform="translate(86 18.5) scale(-1 1)" fill="#B3B3B3"/>
+</g>
+<g id="Combined Shape">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 32 18.499L 0 0L 0 37L 32 55.5L 32 18.499Z" transform="translate(22 18.5)" fill="#E6E6E6"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.00390625" width="92" height="111.996" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="-8" dy="24"/>
+<feGaussianBlur stdDeviation="7"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.323653 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+
+</defs>
+</svg>
+

@@ -1,5 +1,14 @@
 $(function() {
 
+	// if ($(window).width() > 1920) {
+	// 	whiteRight();
+
+	// }
+
+	// $(window).on('resize', function() {
+	// 	whiteRight();
+	// });
+
 	$('#team_slider').slick({
 		infinite: false,
 		nextArrow: '<button type="button" class="slick-next"></button>',
@@ -53,6 +62,7 @@ $(function() {
 	});
 
 	$('#modal .close').on('click', function() {
+		$('body').removeClass('hidden');
 		$('#modal').removeClass('active');
 	});
 
@@ -62,7 +72,27 @@ $(function() {
 
 	$('.modal-btn').on('click', function() {
 		$('#modal').addClass('active');
+		$('body').addClass('hidden');
+		return false;
 	});
+
+	// function whiteRight() {
+	// 	var triangleOffsetLeft = $('.main-section_triangle').offset().left;
+	// 	var triangleWidth = $('.main-section_triangle').width();
+	// 	leftCoords = triangleOffsetLeft+triangleWidth-3;
+	// 	var rightCoords = $(window).width();
+
+	// 	if ($(window).width() > 1920) {
+	// 		$('.main-section_rigth-white').css({
+	// 			'left': leftCoords,
+	// 			'display': 'block'
+	// 		});
+	// 	} else {
+	// 		$('.main-section_rigth-white').css({
+	// 			'display': 'none'
+	// 		});
+	// 	}
+	// }
 
 	//форма
 	function form() {
@@ -100,6 +130,7 @@ $(function() {
 
 					setTimeout(function(){
 						clearForm($form);
+						$('#modal').removeClass('active');
 					}, 2000);
 
 				}
