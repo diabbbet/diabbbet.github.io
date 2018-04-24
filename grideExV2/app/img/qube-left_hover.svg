@@ -1,0 +1,26 @@
+<svg width="198" height="309" viewBox="0 0 198 309" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Combined Shape Copy 2" filter="url(#filter0_d)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 75 130.498L 150 86.995L 0 0L 0 173.995L 0 174L 0.00439453 173.998L 150 261L 150 87L 75 130.498Z" transform="translate(24 24)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="198" height="309" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.25098 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(234200 87850) scale(45162 78581.9)">
+<stop stop-color="#E49348"/>
+<stop offset="0.86" stop-color="#E7A65B"/>
+<stop offset="1" stop-color="#E8AA5F"/>
+</linearGradient>
+
+</defs>
+</svg>
+

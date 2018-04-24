@@ -65,9 +65,8 @@ function validateField($field) {
 
         //номер телефона
         case 'number_phone':
-            val = val.replace('+7 ', '');
             val = val.replace(/[()\_-\s]/g, '');
-            if (val == '' || val.search(regNum) == -1 || val.length != 10) {
+            if (val == '' || val.search(regNum) == -1 || val.length > 16) {
                 error++;
                 message = 'Укажите корректный номер телефона';
             }

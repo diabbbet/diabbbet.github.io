@@ -94,6 +94,12 @@ $(function() {
 	// 	}
 	// }
 
+	$('#modal_form select').on('change', function() {
+		var val = $(this).val();
+		console.log(val);
+		$('#code').text(val);
+	});
+
 	//форма
 	function form() {
 
