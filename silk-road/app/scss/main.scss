@@ -90,8 +90,307 @@ a {
 // grid
 .container {
 	padding: 0 20px;
-	max-width: 1044px;
+	max-width: 1064px;
 	margin: auto;
+}
+
+.calculator {
+	padding: 80px 0 50px;
+	background-color: #1D206E;
+	.h2 {
+		text-align: left;
+	}
+	.calculator-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.calc {
+			flex: 1 0;
+
+		}
+		.calculator-graph {
+			position: relative;
+			flex: 0 1 583px;
+			height: 498px;
+			background-image: url('../img/calc_graph.svg');
+			.price {
+				position: absolute;
+				font-size: 17px;
+				font-family: $default_font;
+				color: #FFFFFF;
+				transform: translateX(-50%);
+				&.price-1 {
+					left: 40px;
+					top: 378px;
+				}
+				&.price-2 {
+					left: 208px;
+					top: 279px;
+				}
+				&.price-3 {
+					left: 383px;
+					top: 205px;
+				}
+				&.price-4 {
+					left: 492px;
+					top: 64px;
+				}
+			}
+			.year {
+				position: absolute;
+				top: 100%;
+				font-size: 16px;
+				font-family: $default_font;
+				color: #FFFFFF;
+				transform: translateX(-50%);
+				&.y-1 {
+					left: 40px;
+				}
+				&.y-2 {
+					left: 208px;
+				}
+				&.y-3 {
+					left: 383px;
+				}
+				&.y-4 {
+					left: 560px;
+				}
+			}
+		}
+	}
+}
+
+.refferal {
+	padding: 70px 0 80px;
+	background-color: #1D206E;
+	background-image: url('../img/refferal_bg.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	.h2 {
+		text-align: left;
+	}
+	.lines {
+		margin-top: 70px;
+		.item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-top: 45px;
+			&:first-child {
+				margin-top: 0;
+			}
+			.text {
+				flex: 0 1 135px;
+				text-align: left;
+				font-size: 16px;
+				line-height: 21px;
+				font-family: $default_font;
+				color: #FFFFFF;
+			}
+			.line {
+				position: relative;
+				flex: 1 0;
+				height: 5px;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0; right: 0;
+					height: 3px;
+					border: 1px solid rgba(#FFFFFF, 0.1);
+					width: 90%;
+					border-left: none;
+					border-radius: 4px;
+				}
+				.line-fill {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 5px;
+					border-radius: 4px;
+				}
+			}
+			.percent {
+				flex: 0 1 80px;
+				text-align: right;
+				font-size: 16px;
+				font-family: $default_font;
+				color: #FFFFFF;
+			}
+			&.item-1 {
+				.line {
+					.line-fill {
+						width: 87%;
+						background: linear-gradient(270deg, #F12986 0%, #1D206E 98.35%);
+					}
+				}
+			}
+			&.item-2 {
+				.line {
+					.line-fill {
+						width: 25%;
+						background: linear-gradient(270deg, #1CC5FF 0%, #1D206E 98.12%);
+					}
+				}
+			}
+			&.item-3 {
+				.line {
+					.line-fill {
+						width: 25%;
+						background: linear-gradient(270deg, #292EF1 0%, #1D206E 100%);
+					}
+				}
+			}
+			&.item-4 {
+				.line {
+					.line-fill {
+						width: 15%;
+						background: linear-gradient(270deg, #28FBCB 0%, #1D206E 98.61%);
+					}
+				}
+			}
+		}
+	}
+
+	.diagramm-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		margin-top: 130px;
+		.item {
+			flex: 1 0;
+			.desc {
+				line-height: 26px;
+				font-size: 16px;
+				color: #50528E;
+				max-width: 390px;
+				margin-top: 35px;
+			}
+			.refferal-diagramm {
+				position: relative;
+				width: 300px;
+				height: 331px;
+				background-image: url('../img/refferal_diagramm.png');
+				.center-text {
+					position: absolute;
+					top: 178px;
+					left: 0; right: 0;
+					text-align: center;
+					color: #fff;
+					font-size: 10px;
+				}
+				.top-text {
+					position: absolute;
+					top: -8px; right: -20px;
+					transform: translateX(100%);
+					font-weight: 500;
+					font-size: 20px;
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
+}
+
+.roadmap {
+	position: relative;
+	padding: 175px 0 215px;
+	background-color: #0C0E46;
+	background-image: url('../img/roadmap_bg.png');
+	background-position: center center;
+	.roadmap-triangle {
+		position: absolute;
+		top: 0; left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent transparent transparent #1D206E;
+	}
+	.roadmap-graph {
+		position: relative;
+		width: 1024px;
+		height: 570px;
+		background-image: url('../img/roadmap_graph.svg');
+		margin: -25px auto 0;
+		.rectangle {
+			position: absolute;
+			top: 183px;
+			left: 158px;
+			width: 266px;
+			height: 116px;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			padding: 30px 30px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.circle {
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				background-color: #fff;
+				border-radius: 50%;
+				&.circle_1 {
+					left: -1px; top: -1px;
+				}
+				&.circle_2 {
+					right: -1px; top: -1px;
+				}
+				&.circle_3 {
+					right: -1px; bottom: -1px;
+				}
+				&.circle_4 {
+					left: -1px; bottom: -1px;
+				}
+			}
+			.red-text {
+				font-family: $default_font;
+				font-size: 16px;
+				color: #F12986;
+			}
+			.white-text {
+				font-family: $default_font;
+				font-size: 16px;
+				color: #fff;
+			}
+		}
+		.year {
+			position: absolute;
+			top: 100%;
+			transform: translateX(-50%);
+			&.y-1 {
+				left: 70px;
+			}
+			&.y-2 {
+				left: 288px;
+			}
+			&.y-3 {
+				left: 506px;
+			}
+			&.y-4 {
+				left: 725px;
+			}
+			&.y-5 {
+				left: 943px;
+			}
+			.num {
+				font-size: 16px;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			.month {
+				font-size: 16px;
+				text-align: center;
+				color: #F12986;
+				margin-top: 25px;
+			}
+			.desc {
+				font-size: 16px;
+				line-height: 26px;
+				text-align: center;
+				color: #fff;
+				margin-top: 9px;
+			}
+		}
+	}
 }
 
 .team {
@@ -99,6 +398,7 @@ a {
 	padding-top: 30px;
 	padding-bottom: 160px;
 	background-color: #0C0E46;
+	overflow: hidden;
 	&:before {
 		content: '';
 		position: absolute;
@@ -243,7 +543,7 @@ a {
 	.partners-items {
 		margin-top: 130px;
 		.item {
-			width: 120px;
+			width: 150px;
 			height: 80px;
 			background-repeat: no-repeat;
 			background-position: center center;

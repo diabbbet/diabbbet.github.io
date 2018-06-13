@@ -56,14 +56,330 @@ ul, ol {
 
 .container {
   padding: 0 20px;
-  max-width: 1044px;
+  max-width: 1064px;
   margin: auto; }
+
+.calculator {
+  padding: 80px 0 50px;
+  background-color: #1D206E; }
+  .calculator .h2 {
+    text-align: left; }
+  .calculator .calculator-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .calculator .calculator-wrapper .calc {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0;
+          -ms-flex: 1 0;
+              flex: 1 0; }
+    .calculator .calculator-wrapper .calculator-graph {
+      position: relative;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 583px;
+          -ms-flex: 0 1 583px;
+              flex: 0 1 583px;
+      height: 498px;
+      background-image: url("../img/calc_graph.svg"); }
+      .calculator .calculator-wrapper .calculator-graph .price {
+        position: absolute;
+        font-size: 17px;
+        font-family: "Circular Std", sans-serif;
+        color: #FFFFFF;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        .calculator .calculator-wrapper .calculator-graph .price.price-1 {
+          left: 40px;
+          top: 378px; }
+        .calculator .calculator-wrapper .calculator-graph .price.price-2 {
+          left: 208px;
+          top: 279px; }
+        .calculator .calculator-wrapper .calculator-graph .price.price-3 {
+          left: 383px;
+          top: 205px; }
+        .calculator .calculator-wrapper .calculator-graph .price.price-4 {
+          left: 492px;
+          top: 64px; }
+      .calculator .calculator-wrapper .calculator-graph .year {
+        position: absolute;
+        top: 100%;
+        font-size: 16px;
+        font-family: "Circular Std", sans-serif;
+        color: #FFFFFF;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        .calculator .calculator-wrapper .calculator-graph .year.y-1 {
+          left: 40px; }
+        .calculator .calculator-wrapper .calculator-graph .year.y-2 {
+          left: 208px; }
+        .calculator .calculator-wrapper .calculator-graph .year.y-3 {
+          left: 383px; }
+        .calculator .calculator-wrapper .calculator-graph .year.y-4 {
+          left: 560px; }
+
+.refferal {
+  padding: 70px 0 80px;
+  background-color: #1D206E;
+  background-image: url("../img/refferal_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat; }
+  .refferal .h2 {
+    text-align: left; }
+  .refferal .lines {
+    margin-top: 70px; }
+    .refferal .lines .item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 45px; }
+      .refferal .lines .item:first-child {
+        margin-top: 0; }
+      .refferal .lines .item .text {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 135px;
+            -ms-flex: 0 1 135px;
+                flex: 0 1 135px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: "Circular Std", sans-serif;
+        color: #FFFFFF; }
+      .refferal .lines .item .line {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0;
+            -ms-flex: 1 0;
+                flex: 1 0;
+        height: 5px; }
+        .refferal .lines .item .line:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 3px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          width: 90%;
+          border-left: none;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px; }
+        .refferal .lines .item .line .line-fill {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 5px;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px; }
+      .refferal .lines .item .percent {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 80px;
+            -ms-flex: 0 1 80px;
+                flex: 0 1 80px;
+        text-align: right;
+        font-size: 16px;
+        font-family: "Circular Std", sans-serif;
+        color: #FFFFFF; }
+      .refferal .lines .item.item-1 .line .line-fill {
+        width: 87%;
+        background: -webkit-gradient(linear, right top, left top, from(#F12986), color-stop(98.35%, #1D206E));
+        background: -webkit-linear-gradient(right, #F12986 0%, #1D206E 98.35%);
+        background: -o-linear-gradient(right, #F12986 0%, #1D206E 98.35%);
+        background: linear-gradient(270deg, #F12986 0%, #1D206E 98.35%); }
+      .refferal .lines .item.item-2 .line .line-fill {
+        width: 25%;
+        background: -webkit-gradient(linear, right top, left top, from(#1CC5FF), color-stop(98.12%, #1D206E));
+        background: -webkit-linear-gradient(right, #1CC5FF 0%, #1D206E 98.12%);
+        background: -o-linear-gradient(right, #1CC5FF 0%, #1D206E 98.12%);
+        background: linear-gradient(270deg, #1CC5FF 0%, #1D206E 98.12%); }
+      .refferal .lines .item.item-3 .line .line-fill {
+        width: 25%;
+        background: -webkit-gradient(linear, right top, left top, from(#292EF1), to(#1D206E));
+        background: -webkit-linear-gradient(right, #292EF1 0%, #1D206E 100%);
+        background: -o-linear-gradient(right, #292EF1 0%, #1D206E 100%);
+        background: linear-gradient(270deg, #292EF1 0%, #1D206E 100%); }
+      .refferal .lines .item.item-4 .line .line-fill {
+        width: 15%;
+        background: -webkit-gradient(linear, right top, left top, from(#28FBCB), color-stop(98.61%, #1D206E));
+        background: -webkit-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
+        background: -o-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
+        background: linear-gradient(270deg, #28FBCB 0%, #1D206E 98.61%); }
+  .refferal .diagramm-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 130px; }
+    .refferal .diagramm-wrapper .item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0;
+          -ms-flex: 1 0;
+              flex: 1 0; }
+      .refferal .diagramm-wrapper .item .desc {
+        line-height: 26px;
+        font-size: 16px;
+        color: #50528E;
+        max-width: 390px;
+        margin-top: 35px; }
+      .refferal .diagramm-wrapper .item .refferal-diagramm {
+        position: relative;
+        width: 300px;
+        height: 331px;
+        background-image: url("../img/refferal_diagramm.png"); }
+        .refferal .diagramm-wrapper .item .refferal-diagramm .center-text {
+          position: absolute;
+          top: 178px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #fff;
+          font-size: 10px; }
+        .refferal .diagramm-wrapper .item .refferal-diagramm .top-text {
+          position: absolute;
+          top: -8px;
+          right: -20px;
+          -webkit-transform: translateX(100%);
+              -ms-transform: translateX(100%);
+                  transform: translateX(100%);
+          font-weight: 500;
+          font-size: 20px;
+          color: #FFFFFF; }
+
+.roadmap {
+  position: relative;
+  padding: 175px 0 215px;
+  background-color: #0C0E46;
+  background-image: url("../img/roadmap_bg.png");
+  background-position: center center; }
+  .roadmap .roadmap-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #1D206E; }
+  .roadmap .roadmap-graph {
+    position: relative;
+    width: 1024px;
+    height: 570px;
+    background-image: url("../img/roadmap_graph.svg");
+    margin: -25px auto 0; }
+    .roadmap .roadmap-graph .rectangle {
+      position: absolute;
+      top: 183px;
+      left: 158px;
+      width: 266px;
+      height: 116px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 30px 30px 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .roadmap .roadmap-graph .rectangle .circle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+        .roadmap .roadmap-graph .rectangle .circle.circle_1 {
+          left: -1px;
+          top: -1px; }
+        .roadmap .roadmap-graph .rectangle .circle.circle_2 {
+          right: -1px;
+          top: -1px; }
+        .roadmap .roadmap-graph .rectangle .circle.circle_3 {
+          right: -1px;
+          bottom: -1px; }
+        .roadmap .roadmap-graph .rectangle .circle.circle_4 {
+          left: -1px;
+          bottom: -1px; }
+      .roadmap .roadmap-graph .rectangle .red-text {
+        font-family: "Circular Std", sans-serif;
+        font-size: 16px;
+        color: #F12986; }
+      .roadmap .roadmap-graph .rectangle .white-text {
+        font-family: "Circular Std", sans-serif;
+        font-size: 16px;
+        color: #fff; }
+    .roadmap .roadmap-graph .year {
+      position: absolute;
+      top: 100%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      .roadmap .roadmap-graph .year.y-1 {
+        left: 70px; }
+      .roadmap .roadmap-graph .year.y-2 {
+        left: 288px; }
+      .roadmap .roadmap-graph .year.y-3 {
+        left: 506px; }
+      .roadmap .roadmap-graph .year.y-4 {
+        left: 725px; }
+      .roadmap .roadmap-graph .year.y-5 {
+        left: 943px; }
+      .roadmap .roadmap-graph .year .num {
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center; }
+      .roadmap .roadmap-graph .year .month {
+        font-size: 16px;
+        text-align: center;
+        color: #F12986;
+        margin-top: 25px; }
+      .roadmap .roadmap-graph .year .desc {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #fff;
+        margin-top: 9px; }
 
 .team {
   position: relative;
   padding-top: 30px;
   padding-bottom: 160px;
-  background-color: #0C0E46; }
+  background-color: #0C0E46;
+  overflow: hidden; }
   .team:before {
     content: '';
     position: absolute;
@@ -206,7 +522,7 @@ ul, ol {
   .partners .partners-items {
     margin-top: 130px; }
     .partners .partners-items .item {
-      width: 120px;
+      width: 150px;
       height: 80px;
       background-repeat: no-repeat;
       background-position: center center; }

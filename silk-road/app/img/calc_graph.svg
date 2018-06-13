@@ -1,0 +1,23 @@
+<svg width="584" height="498" viewBox="0 0 584 498" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 463L19 436L49 425L86 418H95L119 400L129 404L164 371L171 373L192 344L196 345L209 328L225 326L258 322L270 323L289 317L326 281L327 286L362 253L368 256L402 251L431 252L448 245V251L462 245L485 207L488 214L505 189L519 181L529 164L545 158L556 87L573 46L581 0V463H0Z" transform="translate(1 7)" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H265V498H0V0Z" transform="translate(319)" fill="url(#paint1_linear)"/>
+<path d="M0 463L19 436L49 425L86 418H95L119 400L129 404L164 371L171 373L192 344L196 345L209 328L225 326L258 322L270 323L289 317L326 281L327 286L362 253L368 256L402 251L431 252L448 245V251L462 245L485 207L488 214L505 189L519 181L529 164L545 158L556 87L573 46L581 0" transform="translate(1 7)" stroke="#F12986" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.2" d="M1 104V0" transform="translate(212 380)" stroke="white" stroke-dasharray="1 5"/>
+<path opacity="0.2" d="M1 34V0" transform="translate(43 450)" stroke="white" stroke-dasharray="1 5"/>
+<path opacity="0.2" d="M1 207V0" transform="translate(386 278)" stroke="white" stroke-dasharray="1 5"/>
+<path opacity="0.2" d="M1 387V0" transform="translate(565 98)" stroke="white" stroke-dasharray="1 5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" transform="translate(209 330)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" transform="translate(384 257)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" transform="translate(561 73)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" transform="translate(41 430)" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(290.5) scale(581 463) rotate(90)">
+<stop stop-color="#F12986"/>
+<stop offset="1" stop-color="#1D206E"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(265 249) scale(265 498) rotate(180)">
+<stop stop-color="#1D206E"/>
+<stop offset="1" stop-color="#1D206E" stop-opacity="0.01"/>
+</linearGradient>
+</defs>
+</svg>

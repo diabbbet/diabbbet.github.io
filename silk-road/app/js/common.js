@@ -125,4 +125,5 @@ function form() {
 function triangles() {
 	var wWidth = $(window).width();
 	$('#team_triangle').css('border-width', '60px 0 0 '+wWidth+'px');
+	$('#roadmap_triangle').css('border-width', '0 0 110px '+wWidth+'px');
 }
