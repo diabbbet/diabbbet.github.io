@@ -63,6 +63,40 @@ $(function() {
 		triangles();
 	});
 
+
+	$('.range-slider').each(function() {
+		var item = $(this).attr('data-range');
+		var max = $(this).attr('data-max');
+		var val = $(this).attr('data-val');
+
+		$(this).slider({
+			range: 'min',
+			max: max,
+			value: val,
+			slide: function( event, ui ) {
+				$('.total-input[data-range="'+item+'"]').val(ui.value).attr('data-val', ui.value);
+			}
+		});
+	});
+
+	$('.total-input').each(function() {
+		var item = $(this).attr('data-range');
+		$(this).on('change', function() {
+			$(this).attr('data-val', $(this).val());
+			$('.range-slider[data-range="'+item+'"]').slider('value', $(this).val());
+		});
+	});
+
+	$('.total-input').keydown(function(event) {
+		if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || (event.keyCode == 65 && event.ctrlKey === true) || (event.keyCode >= 35 && event.keyCode <= 39)) {
+			return;
+		} else {
+			if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+				event.preventDefault(); 
+			}
+		}
+	});
+
 });
 
 // form
@@ -126,4 +160,6 @@ function triangles() {
 	var wWidth = $(window).width();
 	$('#team_triangle').css('border-width', '60px 0 0 '+wWidth+'px');
 	$('#roadmap_triangle').css('border-width', '0 0 110px '+wWidth+'px');
+	$('#calculator_triangle').css('border-width', '0 '+wWidth+'px 50px 0');
+	$('#how_triangle').css('border-width', '110px '+wWidth+'px 0 0');
 }

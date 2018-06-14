@@ -94,25 +94,256 @@ a {
 	margin: auto;
 }
 
+.how {
+	position: relative;
+	padding-top: 225px;
+	padding-bottom: 125px;
+	background-color: #0C0E46;
+	background-image: url('../img/how_bg.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+	.how-triangle {
+		position: absolute;
+		top: 0; left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: #1D206E transparent transparent transparent;
+	}
+	.how-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 5px;
+		margin: 120px auto 0;
+		max-width: 830px;
+		padding-bottom: 95px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -1046px;
+			width: 2092px;
+			height: 578px;
+			background-image: url('../img/how_graph.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			pointer-events: none;
+		}
+		.item {
+			width: 33.33333%;
+			padding: 0 20px;
+			margin-top: 45px;
+			&.item-2 {
+				position: relative;
+				top: 50px;
+			}
+			.icon {
+				position: relative;
+				width: 150px;
+				height: 150px;
+				background-color: #0C0E46;
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin: auto;
+				&.icon-0 {
+					background-image: url('../img/how_icon-0.svg');
+				}
+				&.icon-1 {
+					background-image: url('../img/how_icon-1.svg');
+				}
+				&.icon-2 {
+					background-image: url('../img/how_icon-2.svg');
+				}
+				&.icon-3 {
+					background-image: url('../img/how_icon-3.svg');
+				}
+				&.icon-4 {
+					background-image: url('../img/how_icon-4.svg');
+				}
+			}
+			.title {
+				font-weight: 500;
+				font-size: 18px;
+				text-align: center;
+				letter-spacing: -0.3px;
+				color: #FFFFFF;
+				max-width: 215px;
+				margin: auto;
+				line-height: 1.3;
+			}
+			.desc {
+				line-height: 24px;
+				font-size: 14px;
+				text-align: center;
+				color: #50528E;
+				max-width: 215px;
+				margin: 18px auto 0;
+			}
+		}
+		.line {
+			position: absolute;
+			&.line-0 {
+				background-image: url('../img/how_line-0.svg');
+				top: 140px;
+				left: 200px;
+				width: 161px;
+				height: 45px;
+			}
+			&.line-1 {
+				background-image: url('../img/how_line-1.svg');
+				top: 140px;
+				left: 470px;
+				width: 162px;
+				height: 45px;
+			}
+			&.line-2 {
+				background-image: url('../img/how_line-2.svg');
+				top: 185px;
+				left: 660px;
+				width: 64px;
+				height: 197px;
+			}
+			&.line-3 {
+				background-image: url('../img/how_line-3.svg');
+				top: 380px;
+				left: 330px;
+				width: 163px;
+				height: 23px;
+			}
+		}
+	}
+}
+
 .calculator {
+	position: relative;
 	padding: 80px 0 50px;
 	background-color: #1D206E;
+	background-image: url('../img/calc_bg.png');
+	background-repeat: no-repeat;
+	background-position: center 50px;
+	.calculator-triangle {
+		position: absolute;
+		top: 0; left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent #0C0E46 transparent transparent;
+	}
 	.h2 {
 		text-align: left;
 	}
 	.calculator-wrapper {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-end;
+		border-bottom: 1px dashed rgba(#FFFFFF, 0.1);
 		.calc {
 			flex: 1 0;
-
+			padding-right: 120px;
+			.calc-controlls {
+				padding-top: 20px;
+			}
+			.total {
+				position: relative;
+				display: flex;
+				align-items: center;
+				margin-top: 35px;
+				&:after {
+					content: '$';
+					position: absolute;
+					top: 50%; right: 35%;
+					transform: translateY(-50%);
+					color: #fff;
+					line-height: 1;
+				}
+				.label {
+					width: 60%;
+					font-size: 18px;
+					color: #FFFFFF;
+					opacity: 0.3;
+				}
+				.total-input {
+					width: 40%;
+					border: none;
+					padding: 5px 15px 5px 25px;
+					box-sizing: border-box;
+					background-color: rgba(0,0,0, 0.4);
+					font-family: $default_font;
+					color: #FFFFFF;
+				}
+			}
+			.range-slider {
+				height: 4px;
+				border-radius: 2px;
+				background: rgba(255, 255, 255, 0.1);
+				margin-top: 30px;
+				.ui-slider-range-min {
+					height: 4px;
+					border-radius: 2px;
+				}
+				&[data-range="1"] {
+					.ui-slider-range-min {
+						background: #F12986;
+					}
+				}
+				&[data-range="2"] {
+					.ui-slider-range-min {
+						background: #1CC5FF;
+					}
+				}
+				&[data-range="3"] {
+					.ui-slider-range-min {
+						background: #28FBCB;
+					}
+				}
+				.ui-slider-handle {
+					top: 50%;
+					margin-top: -15px;
+					width: 30px;
+					height: 30px;
+					cursor: pointer;
+					&:after {
+						content: '';
+						position: absolute;
+						top: 50%;
+						margin-top: -20px;
+						height: 40px;
+						width: 40px;
+						left: 50%;
+						margin-left: -20px;
+						background-image: url('../img/range-slider_caret.png');
+						background-position: center center;
+						pointer-events: none;
+					}
+				}
+			}
+			.calc-months {
+				margin-top: 30px;
+			}
+			.calc-month {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				font-size: 16px;
+				color: #FFFFFF;
+				padding: 30px 0 15px;
+				border-bottom: 1px dashed rgba(#FFFFFF, 0.1);
+				&:last-child {
+					border: none;
+				}
+			}
 		}
 		.calculator-graph {
 			position: relative;
 			flex: 0 1 583px;
 			height: 498px;
 			background-image: url('../img/calc_graph.svg');
+			margin-bottom: 30px;
 			.price {
 				position: absolute;
 				font-size: 17px;
@@ -155,6 +386,43 @@ a {
 				&.y-4 {
 					left: 560px;
 				}
+			}
+		}
+	}
+	.calculator-btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 60px;
+		.btn-invest {
+			display: block;
+			width: 210px;
+			height: 55px;
+			line-height: 55px;
+			background: #1CC5FF;
+			border-radius: 4px;
+			text-align: center;
+			font-size: 12px;
+			text-align: center;
+			font-weight: 700;
+			letter-spacing: 0.428571px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			text-decoration: none;
+			transition: 100ms;
+			margin-right: 40px;
+			&:hover {
+				background-color: darken(#1CC5FF, 10%);
+			}
+		}
+		.btn-hw {
+			font-weight: 500;
+			font-size: 16px;
+			color: #FFFFFF;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}

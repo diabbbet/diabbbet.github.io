@@ -17,6 +17,7 @@
 
 	<link rel="stylesheet" href="css/libs/normalize.css">
 	<link rel="stylesheet" href="css/libs/slick.css">
+	<link rel="stylesheet" href="css/libs/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,13 +26,98 @@
 	<header></header>
 
 	<main>
+		<section class="how">
+			<div class="how-triangle" id="how_triangle"></div>
+			<div class="container">
+				<h2 class="h2">How do investors make money?</h2>
+
+				<div class="how-wrapper">
+					<div class="item">
+						<div class="icon icon-0"></div>
+						<div class="title">Investor</div>
+						<div class="desc">This means no rent, which significantly reduces the cost</div>
+					</div>
+					<div class="item item-2">
+						<div class="icon icon-1"></div>
+						<div class="title">Profit</div>
+						<div class="desc">This means no rent, which significantly reduces the cost</div>
+					</div>
+					<div class="item">
+						<div class="icon icon-2"></div>
+						<div class="title">Exchange BTC</div>
+						<div class="desc">This means no rent, which significantly reduces the cost</div>
+					</div>
+					<div class="item">
+						<div class="icon icon-3"></div>
+						<div class="title">Distribution <br> of investments</div>
+						<div class="desc">This means no rent, which significantly reduces the cost</div>
+					</div>
+					<div class="item">
+						<div class="icon icon-4"></div>
+						<div class="title">Smart contract ETH</div>
+						<div class="desc">This means no rent, which significantly reduces the cost</div>
+					</div>
+
+					<div class="line line-0"></div>
+					<div class="line line-1"></div>
+					<div class="line line-2"></div>
+					<div class="line line-3"></div>
+				</div>
+			</div>
+		</section>
+
 		<section class="calculator">
+			<div class="calculator-triangle" id="calculator_triangle"></div>
 			<div class="container">
 				<div class="calculator-wrapper">
 					<div class="calc">
 						<h2 class="h2">Calculator</h2>
-						<div style="height: 538px;"></div>
+						<div class="calc-controlls">
+							<div class="total">
+								<div class="label">Investment amount:</div>
+								<input type="text" class="total-input" data-range="1" data-val="800000" value="800000">
+							</div>
+
+							<div class="range-slider" data-range="1" data-val="800000" data-max="1000000"></div>
+
+							<div class="total">
+								<div class="label">BTC price:</div>
+								<input type="text" class="total-input" data-range="2" data-val="10000" value="10000">
+							</div>
+
+							<div class="range-slider" data-range="2" data-val="10000" data-max="20000"></div>
+
+							<div class="total">
+								<div class="label">Isaac price:</div>
+								<input type="text" class="total-input" data-range="3" data-val="2500" value="2500">
+							</div>
+
+							<div class="range-slider" data-range="3" data-val="2500" data-max="10000"></div>
+						</div>
+
+						<div class="calc-months">
+							<div class="calc-month">
+								<div class="label">Month 1</div>
+								<div class="price">$<span>18.000</span></div>
+							</div>
+
+							<div class="calc-month">
+								<div class="label">Month 2</div>
+								<div class="price">$<span>21.000</span></div>
+							</div>
+
+							<div class="calc-month">
+								<div class="label">Month 3</div>
+								<div class="price">$<span>25.000</span></div>
+							</div>
+
+							<div class="calc-month">
+								<div class="label">Month 4</div>
+								<div class="price">$<span>32.000</span></div>
+							</div>
+						</div>
 					</div>
+
 					<div class="calculator-graph">
 						<div class="price price-1">$180.000</div>
 						<div class="price price-2">$210.000</div>
@@ -43,6 +129,11 @@
 						<div class="year y-3">2020</div>
 						<div class="year y-4">2021</div>
 					</div>
+				</div>
+
+				<div class="calculator-btns">
+					<a href="#" class="btn-invest">Invest</a>
+					<a href="#" class="btn-hw">How it works?</a>
 				</div>
 			</div>
 		</section>
@@ -434,6 +525,7 @@
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/jquery-ui.min.js"></script>
 	<script src="js/libs/form.js"></script>
 	<script src="js/common.js"></script>
 </body>
