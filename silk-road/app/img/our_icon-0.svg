@@ -1,0 +1,15 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.5556 15.2778C30.5556 23.7153 23.7153 30.5556 15.2778 30.5556C6.84028 30.5556 0 23.7153 0 15.2778C0 6.84028 6.84028 0 15.2778 0C23.7153 0 30.5556 6.84028 30.5556 15.2778Z" transform="translate(9.72217 9.72217)" stroke="#F12986"/>
+<path d="M0 0V5.55556" transform="translate(25)" stroke="#F12986"/>
+<path d="M0 0L2.77778 4.8125" transform="translate(12.5 3.34875)" stroke="#F12986"/>
+<path d="M0 0L4.81111 2.77778" transform="translate(3.34937 12.5)" stroke="#F12986"/>
+<path d="M0 0H5.55556" transform="translate(0 25)" stroke="#F12986"/>
+<path d="M0 2.77778L4.81111 0" transform="translate(3.34937 34.7222)" stroke="#F12986"/>
+<path d="M0 4.8125L2.77778 0" transform="translate(12.5 41.8387)" stroke="#F12986"/>
+<path d="M0 5.55556V0" transform="translate(25 44.4445)" stroke="#F12986"/>
+<path d="M2.77778 4.8125L0 0" transform="translate(34.7222 41.8387)" stroke="#F12986"/>
+<path d="M4.81111 2.77778L0 0" transform="translate(41.8394 34.7222)" stroke="#F12986"/>
+<path d="M5.55556 0H0" transform="translate(44.4443 25)" stroke="#F12986"/>
+<path d="M4.81111 0L0 2.77778" transform="translate(41.8394 12.5)" stroke="#F12986"/>
+<path d="M2.77778 0L0 4.8125" transform="translate(34.7222 3.34875)" stroke="#F12986"/>
+</svg>

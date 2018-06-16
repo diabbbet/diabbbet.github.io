@@ -53,14 +53,19 @@ $(function() {
 
 	// form
 	form();
+	// countdown
+	countdown();
 
 	// triangles
 	triangles();
+	// main height
+	mainHeight();
 
 	// resize
 	$(window).on('resize', function() {
 		// triangles
 		triangles();
+		mainHeight();
 	});
 
 
@@ -95,6 +100,28 @@ $(function() {
 				event.preventDefault(); 
 			}
 		}
+	});
+
+	var player = videojs('my-player');
+
+	$('#video').find('.controlls-video .item').on('click', function() {
+		if ($(this).hasClass('active')) {
+			return false;
+		}
+		$(this).addClass('active').siblings().removeClass('active');
+		var url = $(this).attr('data-url');
+		$('#video video').attr('src', url);
+	});
+
+	$('#scroll_btn').on('click', function() {
+		var top = $('.video').offset().top ++;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+
+	$('#sidebar').on('mouseenter', function() {
+		$(this).addClass('active');
+	}).on('mouseleave', function() {
+		$(this).removeClass('active');
 	});
 
 });
@@ -161,5 +188,61 @@ function triangles() {
 	$('#team_triangle').css('border-width', '60px 0 0 '+wWidth+'px');
 	$('#roadmap_triangle').css('border-width', '0 0 110px '+wWidth+'px');
 	$('#calculator_triangle').css('border-width', '0 '+wWidth+'px 50px 0');
-	$('#how_triangle').css('border-width', '110px '+wWidth+'px 0 0');
+	$('#how_triangle').css('border-width', '0 0 110px '+wWidth+'px');
+	$('#our_body_triangle').css('border-width', '75px '+wWidth/2+'px 0 '+wWidth/2+'px');
+	$('#main_triangle').css('border-width', '80px 0 0 '+wWidth+'px');
+}
+
+// main height
+function mainHeight() {
+	var wHeight = $(window).height();
+	if (wHeight > 799) {
+		$('#main_section').height(wHeight);
+	}
+}
+
+function countdown() {
+	var countdown = new Date('june 17, 2018');
+
+	function getRemainingTime(endtime) {
+		var milliseconds = Date.parse(endtime) - Date.parse(new Date());
+		var seconds = Math.floor(milliseconds / 1000 % 60);
+		var minutes = Math.floor(milliseconds / 1000 / 60 % 60);
+		var hours = Math.floor(milliseconds / (1000 * 60 * 60) % 24);
+		var days = Math.floor(milliseconds / (1000 * 60 * 60 * 24));
+
+		return {
+			'total': milliseconds,
+			'seconds': seconds,
+			'minutes': minutes,
+			'hours': hours,
+			'days': days
+		};
+	}
+
+	function initClock(id, endtime) {
+		var counter = document.getElementById(id);
+		// var daysItem = counter.querySelector('.js-countdown-days');
+		var hoursItem = counter.querySelector('.js-countdown-hours');
+		var minutesItem = counter.querySelector('.js-countdown-minutes');
+		var secondsItem = counter.querySelector('.js-countdown-seconds');
+
+		function updateClock() {
+			var time = getRemainingTime(endtime);
+
+			// daysItem.innerHTML = time.days;
+			hoursItem.innerHTML = ('0' + time.hours).slice(-2);
+			minutesItem.innerHTML = ('0' + time.minutes).slice(-2);
+			secondsItem.innerHTML = ('0' + time.seconds).slice(-2);
+
+			if (time.total <= 0) {
+				clearInterval(timeinterval);
+			}
+		}
+
+		updateClock();
+		var timeinterval = setInterval(updateClock, 1000);
+	}
+
+	initClock('countdown', countdown);
 }
