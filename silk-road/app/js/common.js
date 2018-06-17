@@ -1,5 +1,7 @@
 $(function() {
 
+	$('.animate').viewportChecker();
+
 	// team-slider
 	$('#team').slick({
 		fade: true,
@@ -124,6 +126,12 @@ $(function() {
 		$(this).removeClass('active');
 	});
 
+	$('#burger').on('click', function() {
+		$('body').toggleClass('hidden');
+		$(this).toggleClass('active');
+		$('#nav').toggleClass('mobile');
+	})
+
 });
 
 // form
@@ -187,22 +195,26 @@ function triangles() {
 	var wWidth = $(window).width();
 	$('#team_triangle').css('border-width', '60px 0 0 '+wWidth+'px');
 	$('#roadmap_triangle').css('border-width', '0 0 110px '+wWidth+'px');
-	$('#calculator_triangle').css('border-width', '0 '+wWidth+'px 50px 0');
-	$('#how_triangle').css('border-width', '0 0 110px '+wWidth+'px');
-	$('#our_body_triangle').css('border-width', '75px '+wWidth/2+'px 0 '+wWidth/2+'px');
-	$('#main_triangle').css('border-width', '80px 0 0 '+wWidth+'px');
+	$('#calculator_triangle').css('border-right-width', wWidth+'px');
+	$('#how_triangle').css('border-left-width', wWidth+'px');
+	$('#our_body_triangle').css({
+		'border-right-width': wWidth/2+'px',
+		'border-left-width': wWidth/2+'px'
+	});
+	$('#main_triangle').css('border-left-width', wWidth+'px');
 }
 
 // main height
 function mainHeight() {
 	var wHeight = $(window).height();
-	if (wHeight > 799) {
+	var wWidth = $(window).width();
+	if (wHeight > 799 || wWidth > 1043 ) {
 		$('#main_section').height(wHeight);
 	}
 }
 
 function countdown() {
-	var countdown = new Date('june 17, 2018');
+	var countdown = new Date('june 17, 2020');
 
 	function getRemainingTime(endtime) {
 		var milliseconds = Date.parse(endtime) - Date.parse(new Date());
