@@ -107,6 +107,7 @@ a {
 	left: 0; right: 0;
 	z-index: 1;
 	.burger {
+		display: none;
 		position: absolute;
 		top: 50%; left: 30px;
 		width: 16px;
@@ -792,12 +793,15 @@ a {
 				padding: 0 10px;
 			}
 			.icon {
-				width: 56px;
-				height: 56px;
+				width: 58px;
+				height: 58px;
 				background-position: center center;
 				background-repeat: no-repeat;
 				transition: 200ms;
 				transform: scale(0.9);
+				&:hover {
+					transform: scale(1.2);
+				}
 				&.icon-0 {
 					background-image: url('../img/our_icon-0.svg');
 				}
@@ -819,12 +823,6 @@ a {
 				&.icon-6 {
 					background-image: url('../img/our_icon-6.svg');
 				}
-				&:hover {
-					transform: scale(1.2);
-					& + .title + .desc {
-						opacity: 1;
-					}
-				}
 			}
 			.title {
 				font-family: $default_font;
@@ -835,11 +833,6 @@ a {
 				letter-spacing: -0.3px;
 				color: #FFFFFF;
 				margin-top: 30px;
-				&:hover {
-					& + .desc {
-						opacity: 1;
-					}
-				}
 			}
 			.desc {
 				font-family: $default_font;
@@ -848,8 +841,6 @@ a {
 				text-align: center;
 				color: #50528E;
 				margin-top: 20px;
-				opacity: 0;
-				transition: 200ms;
 			}
 		}
 	}
@@ -1280,6 +1271,22 @@ a {
 	background-image: url('../img/refferal_bg.png');
 	background-position: top center;
 	background-repeat: no-repeat;
+	.container {
+		position: relative;
+		.lines-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0; right: 0;
+			&.animate {
+				opacity: 1;
+				transition: 100ms;
+				transition-delay: 2500ms;
+				&.visible {
+					opacity: 0;
+				}
+			}
+		}
+	}
 	.h2 {
 		text-align: left;
 	}
@@ -1437,7 +1444,9 @@ a {
 		display: flex;
 		flex-direction: row;
 		align-items: flex-end;
-		margin-top: 130px;
+		opacity: 0;
+		transition: 1000ms;
+		transition-delay: 2500ms;
 		.item {
 			flex: 1 0;
 			.desc {
@@ -1471,6 +1480,7 @@ a {
 			}
 		}
 		&.animate {
+			opacity: 0;
 			.item {
 				.refferal-diagramm {
 					transform: scale(0);
@@ -1478,8 +1488,10 @@ a {
 				}
 			}
 			&.visible {
+				opacity: 1;
 				.refferal-diagramm {
 					transform: scale(1);
+					transition-delay: 3000ms;
 				}
 			}
 		}
@@ -1499,6 +1511,9 @@ a {
 		height: 0;
 		border-style: solid;
 		border-color: transparent transparent transparent #1D206E;
+		border-top-width: 0px;
+		border-right-width: 0px;
+		border-bottom-width: 110px;
 	}
 	.roadmap-graph {
 		position: relative;
@@ -1611,6 +1626,9 @@ a {
 		height: 0;
 		border-style: solid;
 		border-color: transparent transparent transparent #1D206E;
+		border-top-width: 60px;
+		border-right-width: 0px;
+		border-bottom-width: 0px;
 	}
 	.container {
 		position: relative;
@@ -1911,6 +1929,9 @@ a {
 	}
 
 	.header {
+		.burger {
+			display: block;
+		}
 		.header-wrapper {
 			justify-content: center;
 			height: 60px;
@@ -2031,6 +2052,10 @@ a {
 	}
 	.video {
 		padding-top: 85px;
+		&:after {
+			bottom: -80px;
+			left: -610px;
+		}
 		.bg-block {
 			margin: auto;
 		}
@@ -2040,6 +2065,9 @@ a {
 		.video-wrapper {
 			flex-wrap: wrap;
 			justify-content: center;
+			.big-video {
+				width: 100%;
+			}
 			.controlls-video {
 				width: 100%;
 				margin: auto;
@@ -2155,6 +2183,7 @@ a {
 				padding-right: 0;
 				justify-content: space-between;
 				align-items: center;
+				flex: 100%;
 				.h2 {
 					width: 100%;
 				}
@@ -2200,6 +2229,350 @@ a {
 					br {
 						display: none;
 					}
+				}
+			}
+		}
+	}
+
+	.roadmap {
+		padding-top: 130px;
+		padding-bottom: 130px;
+		.roadmap-triangle {
+			border-bottom-width: 60px;
+		}
+		.roadmap-graph {
+			background-image: url('../img/roadmap_graph-table.svg');
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			width: 680px;
+			height: 400px;
+			margin-top: 80px;
+			.rectangle {
+				top: 0;
+				left: 40px;
+			}
+			.year {
+				.month {
+					margin-top: 10px;
+				}
+				.desc {
+					display: none;
+				}
+				&.y-1 {
+					left: 54px;
+				}
+				&.y-2 {
+					left: 198px;
+				}
+				&.y-3 {
+					left: 326px;
+				}
+				&.y-4 {
+					left: 455px;
+				}
+				&.y-5 {
+					left: 583px;
+				}
+			}
+		}
+	}
+
+	.team {
+		padding-bottom: 140px;
+		.team-triangle {
+			border-top-width: 30px;
+		}
+		.team-items {
+			margin-top: 100px;
+			.item {
+				align-items: center;
+				.col {
+					&:first-child {
+						flex: 0 1 220px;
+					}
+					&:last-child {
+						flex: 1 0 auto;
+					}
+					.photo {
+						margin-right: 50px;
+					}
+					.name {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.partners {
+		padding: 60px 0 0;
+		.partners-items {
+			margin-top: 80px;
+		}
+		.partners-form {
+			margin-top: 70px;
+			flex-direction: column;
+			.item {
+				width: 100%;
+				&:first-child {
+					order: 2;
+					margin-top: 60px;
+				}
+				&:last-child {
+					order: 1;
+				}
+				.partners-logo {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 699px) {
+	h1, .h1 {
+		line-height: 46px;
+		font-size: 38px;
+		letter-spacing: -0.666667px;
+	}
+
+	h2, .h2 {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.container {
+		max-width: 360px;
+	}
+
+	.main {
+		padding-bottom: 30px;
+		.main-triangle {
+			display: none;
+		}
+		.main-wrapper {
+			max-width: 360px;
+			padding: 0 10px;
+		}
+		.main-block {
+			.left {
+				.desc {
+					line-height: 26px;
+					font-size: 17px;
+				}
+			}
+			.right {
+				.countdown {
+					.countdown-timer {
+						font-size: 60px;
+					}
+					.dots {
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+		.progress-bar {
+			max-width: 360px;
+			padding: 0 20px;
+			.line {
+				.dot {
+					&.dot-0 {
+						left: 5%;
+					}
+					&.dot-1 {
+						left: 28%;
+					}
+					&.dot-2 {
+						left: 50%;
+					}
+					&.dot-3 {
+						left: 72%;
+					}
+					&.dot-4 {
+						left: 95%;
+					}
+				}
+				.label {
+					font-size: 12px;
+					&.label-0 {
+						left: 5%;
+					}
+					&.label-1 {
+						left: 28%;
+					}
+					&.label-2 {
+						left: 50%;
+					}
+					&.label-3 {
+						left: 72%;
+					}
+					&.label-4 {
+						left: 95%;
+					}
+				}
+			}
+		}
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 60px;
+			.btn-pink {
+				margin: 0;
+			}
+			.btn-blue {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.sidebar {
+		position: relative;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		height: 80px;
+		width: 100%;
+		transform: none;
+		display: flex;
+		align-items: center;
+		.circle-btn {
+			display: none;
+		}
+		.social-btns {
+			position: relative;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+			flex-direction: row;
+			padding: 0 10px;
+			.gray-line {
+				display: none;
+			}
+			.social-btn {
+				margin: 0 10px;
+			}
+			.chat-btn {
+				position: absolute;
+				top: 50%; right: 20px;
+				margin-top: -20px;
+			}
+		}
+		.label {
+			font-size: 18px;
+			top: 50%;
+			left: 150px;
+			right: 55px;
+			text-align: center;
+			transform: translateY(-50%);
+		}
+	}
+
+	.video {
+		padding-top: 50px;
+		padding-bottom: 30px;
+		&:after {
+			display: none;
+		}
+		.desc {
+			font-size: 15px;
+			line-height: 25px;
+		}
+		.video-wrapper {
+			margin-top: 55px;
+			.big-video {
+				height: 190px;
+			}
+			.controlls-video {
+				margin-top: 30px;
+				.item {
+					height: 90px;
+					width: auto;
+					flex: 1 0;
+					&:first-child {
+						transform-origin: left;
+					}
+					&:last-child {
+						transform-origin: right;
+					}
+				}
+			}
+		}
+	}
+
+	.about {
+		padding-top: 30px;
+		margin-top: 0;
+		padding-bottom: 25px;
+		.desc {
+			font-size: 15px;
+			line-height: 25px;
+			margin-top: 20px;
+		}
+	}
+
+	.our-head {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
+
+	.our-body {
+		padding-bottom: 80px;
+		&:after {
+			display: none;
+		}
+		.our-body-triangle {
+			border-top-width: 30px;
+		}
+		.how-triangle {
+			border-bottom-width: 30px;
+		}
+		.our-items {
+			.item {
+				flex: 0 1 300px;
+				padding: 0 10px;
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.how {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.how-wrapper {
+			flex-direction: column;
+			&:before {
+				display: none;
+			}
+			.line {
+				display: none;
+			}
+			.item {
+				width: 100%;
+				transform: none !important;
+				top: 0 !important;
+				margin-top: 30px;
+			}
+		}
+		.how-bottom {
+			.left {
+				.how-diagramm {
+					width: 100%;
+					background-size: 100%;
+					height: 200px;
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+
+	.calculator {
+		.calculator-triangle {
+			border-bottom-width: 20px;
+		}
+		.calculator-wrapper {
+			.calc {
+				.calc-controlls {
+					max-width: 310px;
+					width: 100%;
 				}
 			}
 		}

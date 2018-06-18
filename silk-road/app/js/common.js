@@ -16,16 +16,22 @@ $(function() {
 		arrows: false,
 		draggable: false,
 		asNavFor: '#team',
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [{
+			breakpoint: 1044,
+			settings: {
+				slidesToShow: 3
+			}
+		}]
 	});
 
 	// partners-slider
 	$('#partners').slick({
 		variableWidth: true,
 		arrows: false,
-		speed: 1000,
-		cssEase: 'linear',
-		draggable: false
+		autoplay: true,
+		autoplaySpeed: 4000,
+		swipeToSlide: true
 	});
 
 	var hoverTimer = '';
@@ -126,11 +132,13 @@ $(function() {
 		$(this).removeClass('active');
 	});
 
-	$('#burger').on('click', function() {
-		$('body').toggleClass('hidden');
-		$(this).toggleClass('active');
-		$('#nav').toggleClass('mobile');
-	})
+	if ($(window).width() < 1024) {
+		$('#burger').on('click', function() {
+			$('body').toggleClass('hidden');
+			$(this).toggleClass('active');
+			$('#nav').toggleClass('mobile');
+		});
+	}
 
 });
 
@@ -193,8 +201,8 @@ function form() {
 // triangles
 function triangles() {
 	var wWidth = $(window).width();
-	$('#team_triangle').css('border-width', '60px 0 0 '+wWidth+'px');
-	$('#roadmap_triangle').css('border-width', '0 0 110px '+wWidth+'px');
+	$('#team_triangle').css('border-left-width', wWidth+'px');
+	$('#roadmap_triangle').css('border-left-width', wWidth+'px');
 	$('#calculator_triangle').css('border-right-width', wWidth+'px');
 	$('#how_triangle').css('border-left-width', wWidth+'px');
 	$('#our_body_triangle').css({
