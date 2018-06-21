@@ -76,15 +76,26 @@ $(function() {
 		mainHeight();
 	});
 
+	$('.anchor-btn').on('click', function() {
+		var dataAnchor = $(this).attr('data-anchor');
+		var topPos = $('.anchor-link').offset().top;
+		$('body,html').animate({scrollTop: topPos}, 1000);
+		return false;
+	});
+
 
 	$('.range-slider').each(function() {
-		var item = $(this).attr('data-range');
-		var max = $(this).attr('data-max');
-		var val = $(this).attr('data-val');
+		var item = $(this).attr('data-range')*1;
+		var max = $(this).attr('data-max')*1;
+		var min = $(this).attr('data-min')*1;
+		var val = $(this).attr('data-val')*1;
+		var step = $(this).attr('data-step')*1;
 
 		$(this).slider({
 			range: 'min',
+			min: min,
 			max: max,
+			step: step,
 			value: val,
 			slide: function( event, ui ) {
 				$('.total-input[data-range="'+item+'"]').val(ui.value).attr('data-val', ui.value);

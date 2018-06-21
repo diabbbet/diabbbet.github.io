@@ -1012,10 +1012,55 @@ a {
 			.how-diagramm {
 				width: 570px;
 				height: 333px;
-				background-image: url('../img/how_diagramm.svg');
-				background-position: center center;
-				background-repeat: no-repeat;
 				margin-top: 100px;
+				.text-10 {
+					transition: 100ms;
+					opacity: 0;
+				}
+				.text-15 {
+					transition: 100ms;
+					opacity: 0;
+				}
+				.text-20 {
+					transition: 100ms;
+					opacity: 0;
+				}
+				.text-55 {
+					transition: 100ms;
+					opacity: 0;
+				}
+				.line-10 {
+					cursor: pointer;
+					&:hover {
+						& + .line-20 + .text-55 + .text-10 {
+							opacity: 1;
+						}
+					}
+				}
+				.line-15 {
+					cursor: pointer;
+					&:hover {
+						& + .line-55 + .line-10 + .line-20 + .text-55 + .text-10 + .text-15 {
+							opacity: 1;
+						}
+					}
+				}
+				.line-20 {
+					cursor: pointer;
+					&:hover {
+						& + .text-55 + .text-10 + .text-15 + .text-20 {
+							opacity: 1;
+						}
+					}
+				}
+				.line-55 {
+					cursor: pointer;
+					&:hover {
+						& + .line-10 + .line-20 + .text-55 {
+							opacity: 1;
+						}
+					}
+				}
 			}
 		}
 		.right {
@@ -1460,7 +1505,18 @@ a {
 				position: relative;
 				width: 300px;
 				height: 331px;
-				background-image: url('../img/refferal_diagramm.png');
+				.text-marketing, .text-bounty, .text-team, .text-team, .text-procurement {
+					opacity: 0;
+					transition: 100ms;
+				}
+				.crcl-marketing, .crcl-bounty, .crcl-team, .crcl-team, .crcl-procurement {
+					opacity: 0;
+					transition: 100ms;
+				}
+				.arrow-marketing, .arrow-bounty, .arrow-team, .arrow-team, .arrow-procurement {
+					opacity: 0;
+					transition: 100ms;
+				}
 				.center-text {
 					position: absolute;
 					top: 178px;
@@ -1469,13 +1525,61 @@ a {
 					color: #fff;
 					font-size: 10px;
 				}
-				.top-text {
-					position: absolute;
-					top: -8px; right: -20px;
-					transform: translateX(100%);
-					font-weight: 500;
-					font-size: 20px;
-					color: #FFFFFF;
+				.line-marketing {
+					cursor: pointer;
+					&:hover {
+						& + .line-procurement + .text-marketing {
+							opacity: 1;
+							& + .crcl-marketing {
+								opacity: 1;
+								& + .arrow-marketing {
+									opacity: 0.1;
+								}
+							}
+						}
+					}
+				}
+				.line-bounty {
+					cursor: pointer;
+					&:hover {
+						& + .line-team + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty {
+							opacity: 1;
+							& + .crcl-bounty {
+								opacity: 1;
+								& + .arrow-bounty {
+									opacity: 0.1;
+								}
+							}
+						}
+					}
+				}
+				.line-team {
+					cursor: pointer;
+					&:hover {
+						& + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement + .text-team {
+							opacity: 1;
+							& + .crcl-team {
+								opacity: 1;
+								& + .arrow-team {
+									opacity: 0.1;
+								}
+							}
+						}
+					}
+				}
+				.line-procurement {
+					cursor: pointer;
+					&:hover {
+						& + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement {
+							opacity: 1;
+							& + .crcl-procurement {
+								opacity: 1;
+								& + .arrow-procurement {
+									opacity: 0.1;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1710,6 +1814,11 @@ a {
 		padding-top: 70px;
 		.item {
 			text-align: center;
+			&.slick-current {
+				.name {
+					color: #F12986;
+				}
+			}
 		}
 		.item-content {
 			display: inline-block;
