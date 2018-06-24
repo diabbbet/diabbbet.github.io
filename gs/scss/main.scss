@@ -48,7 +48,7 @@ body {
 .wrapper {
 	position: relative;
 	height: 100%;
-	background-image: radial-gradient(circle at 51% 50%, rgba(0, 0, 0, 0.6), #161616);
+	background-image: radial-gradient(circle at 51% 50%, rgba(0, 0, 0, 0.8), #161616);
 	overflow: hidden;
 	.circles-wrapper {
 		position: absolute;
@@ -65,34 +65,34 @@ body {
 			border: 1px solid #000;
 			border-radius: 50%;
 			transform: scale(2);
-			animation: wawes infinite 10000ms ease-out;
+			animation: wawes infinite 3000ms linear;
 			animation-play-state: running;
 			&.circle-1 {
-				animation-delay: 1000ms;
+				animation-delay: 300ms;
 			}
 			&.circle-2 {
-				animation-delay: 2000ms;
+				animation-delay: 600ms;
 			}
 			&.circle-3 {
-				animation-delay: 3000ms;
+				animation-delay: 900ms;
 			}
 			&.circle-4 {
-				animation-delay: 4000ms;
+				animation-delay: 1200ms;
 			}
 			&.circle-5 {
-				animation-delay: 5000ms;
+				animation-delay: 1500ms;
 			}
 			&.circle-6 {
-				animation-delay: 6000ms;
+				animation-delay: 1800ms;
 			}
 			&.circle-7 {
-				animation-delay: 7000ms;
+				animation-delay: 2100ms;
 			}
 			&.circle-8 {
-				animation-delay: 8000ms;
+				animation-delay: 2400ms;
 			}
 			&.circle-9 {
-				animation-delay: 9000ms;
+				animation-delay: 2700ms;
 			}
 		}
 		&.stop {
