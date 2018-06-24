@@ -17,6 +17,7 @@ $(function() {
 		draggable: false,
 		asNavFor: '#team',
 		focusOnSelect: true,
+		infinite: false,
 		responsive: [{
 			breakpoint: 1044,
 			settings: {
@@ -25,36 +26,45 @@ $(function() {
 		}]
 	});
 
-	// partners-slider
-	$('#partners').slick({
-		variableWidth: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000,
-		swipeToSlide: true
+	$('#partners').mousemove(function() {
+		var width = $(this).width();
+		var wrapperWidth = $(this).find('.partners-items-wrapper').width();
+		var offset = wrapperWidth - width;
+		var parentOffset = $(this).offset(); 
+		var relX = event.pageX - parentOffset.left;
+		var persent = relX / width * 100;
+		persent = Math.floor(persent);
+		var position = offset / 100 * persent;
+		if (offset > 1) {
+			$(this).find('.partners-items-wrapper').removeClass('short');
+			$(this).find('.partners-items-wrapper').css({
+				'transform': 'translateX(-'+position+'px)',
+				'cursor': 'move'
+			});
+		}
 	});
 
-	var hoverTimer = '';
-
-	$('#partners_prev')
-	.on('mouseenter', function() {
-		hoverTimer = setInterval(function() {
-			$('#partners').slick('slickPrev');
-		}, 10);
-	})
-	.on('mouseleave', function() {
-		clearInterval(hoverTimer);
-	});
-
-	$('#partners_next')
-	.on('mouseenter', function() {
-		hoverTimer = setInterval(function() {
-			$('#partners').slick('slickNext');
-		}, 10);
-	})
-	.on('mouseleave', function() {
-		clearInterval(hoverTimer);
-	});
+	if ($(window).width() < 1044) {
+		// partners-slider
+		$('#partners .partners-items-wrapper').slick({
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			slidesToShow: 5,
+			infinite: false,
+			responsive: [{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 3
+				}
+			},{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+	}
 
 	// placeholders
 	initPlaceholders();
@@ -150,6 +160,27 @@ $(function() {
 			$('#nav').toggleClass('mobile');
 		});
 	}
+
+	$('#roadmap_graph').find('.year')
+	.on('mouseenter', function() {
+		$('#roadmap_graph .rectangle .red-text').text($(this).attr('data-red'));
+		$('#roadmap_graph .rectangle .white-text').text($(this).attr('data-white'));
+	})
+	.on('mouseleave', function() {
+		$('#roadmap_graph .rectangle .red-text').text('');
+		$('#roadmap_graph .rectangle .white-text').text('');
+	});
+
+	$('.refferal-diagramm .line-diagramm')
+	.on('mouseenter', function() {
+		var percent = $(this).attr('data-percent');
+		$('.refferal-diagramm .center-text').text(percent);
+	})
+	.on('mouseleave', function() {
+		$('.refferal-diagramm .center-text').text('');
+	});
+
+	// calculator();
 
 });
 
@@ -276,4 +307,13 @@ function countdown() {
 	}
 
 	initClock('countdown', countdown);
+}
+
+function calculator() {
+	var profitability = $('#btc').val() * 0.00007777;
+	var profitabilityASIC = profitability * 1000000000000;
+	var profitabilityKoeff = profitabilityASIC * ($('#asic').val() / 1000000000000 / 1000000000000) * 30;
+	var deductions = profitabilityKoeff * 0.7;
+	var dividends = deductions * $('#invest').val();
+	console.log(dividends);
 }

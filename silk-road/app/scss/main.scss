@@ -975,10 +975,10 @@ a {
 						transition-delay: 1000ms;
 					}
 					&.item-4 {
-						transition-delay: 1500ms;
+						transition-delay: 2000ms;
 					}
 					&.item-5 {
-						transition-delay: 2000ms;
+						transition-delay: 1500ms;
 					}
 				}
 			}
@@ -1251,11 +1251,11 @@ a {
 			}
 			.year {
 				position: absolute;
-				top: 100%;
 				font-size: 16px;
 				font-family: $default_font;
 				color: #FFFFFF;
 				transform: translateX(-50%);
+				top: 100%;
 				&.y-1 {
 					left: 40px;
 				}
@@ -1518,12 +1518,19 @@ a {
 					transition: 100ms;
 				}
 				.center-text {
+					// position: absolute;
+					// top: 178px;
+					// left: 0; right: 0;
+					// text-align: center;
+					// color: #fff;
+					// font-size: 10px;
+
 					position: absolute;
-					top: 178px;
-					left: 0; right: 0;
+					top: 184px;
+					left: 135px;
 					text-align: center;
 					color: #fff;
-					font-size: 10px;
+					font-size: 18px;
 				}
 				.line-marketing {
 					cursor: pointer;
@@ -1670,6 +1677,9 @@ a {
 			position: absolute;
 			top: 100%;
 			transform: translateX(-50%);
+			top: calc(100% - 50px);
+			cursor: pointer;
+			padding-top: 50px;
 			&.y-1 {
 				left: 70px;
 			}
@@ -1748,6 +1758,7 @@ a {
 		.item {
 			display: flex;
 			flex-direction: row;
+			background-color: transparent;
 			.col {
 				flex: 1 50%;
 				align-items: stretch;
@@ -1812,8 +1823,13 @@ a {
 		margin-top: 50px;
 		border-top: 1px solid rgba(255,255,255, 0.05);
 		padding-top: 70px;
+		background-color: transparent;
+		.slick-list {
+			background-color: transparent;
+		}
 		.item {
 			text-align: center;
+			background-color: transparent;
 			&.slick-current {
 				.name {
 					color: #F12986;
@@ -1863,8 +1879,23 @@ a {
 	background-color: #1D206E;
 	overflow: hidden;
 	.partners-items {
-		margin-top: 130px;
+		margin-top: 90px;
+		position: relative;
+		height: 160px;
+		.partners-items-wrapper {
+			position: absolute;
+			top: 50%;
+			margin-top: -40px;
+			left: 0;
+			white-space: nowrap;
+			transition: 50ms;
+			&.short {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
 		.item {
+			display: inline-block;
 			width: 150px;
 			height: 80px;
 			background-repeat: no-repeat;
@@ -1874,6 +1905,7 @@ a {
 	.partners-wrapper {
 		position: relative;
 		z-index: 2;
+		user-select: none;
 		.prev-field {
 			position: absolute;
 			top: 0; bottom: 0;
@@ -1894,7 +1926,7 @@ a {
 		border-top: 1px solid rgba(#fff, 0.05);
 		padding-top: 60px;
 		padding-bottom: 60px;
-		margin-top: 160px;
+		margin-top: 120px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -2417,6 +2449,20 @@ a {
 		padding: 60px 0 0;
 		.partners-items {
 			margin-top: 80px;
+			height: auto;
+			.partners-items-wrapper {
+				position: static;
+				top: auto;
+				margin: auto;
+				white-space: normal;
+				&.short {
+					left: auto;
+					transform: none;
+				}
+				.item {
+					display: block;
+				}
+			}
 		}
 		.partners-form {
 			margin-top: 70px;

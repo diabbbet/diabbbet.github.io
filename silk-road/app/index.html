@@ -292,24 +292,24 @@
 						<div class="calc-controlls">
 							<div class="total">
 								<div class="label">Investment amount:</div>
-								<input type="text" class="total-input" data-range="1" data-min="100" data-max="20000000" data-val="800000" value="800000">
+								<input id="invest" type="text" class="total-input" data-range="1" data-min="100" data-max="20000000" data-val="800000" value="800000">
 							</div>
 
 							<div class="range-slider" data-range="1" data-val="800000" data-min="100" data-max="20000000" data-step="10"></div>
 
 							<div class="total">
 								<div class="label">BTC price:</div>
-								<input type="text" class="total-input" data-range="2" data-min="6500" data-max="25000" data-val="6500" value="6500">
+								<input id="btc" type="text" class="total-input" data-range="2" data-min="6500" data-max="25000" data-val="6500" value="6500">
 							</div>
 
 							<div class="range-slider" data-range="2" data-min="6500" data-max="25000" data-step="100" data-val="6500"></div>
 
 							<div class="total">
 								<div class="label">ASIC price:</div>
-								<input type="text" class="total-input" data-range="3" data-min="1000" data-max="3000" data-step="100" data-val="3000" value="3000">
+								<input id="asic" type="text" class="total-input" data-range="3" data-min="1000" data-max="3000" data-step="100" data-val="2000" value="3000">
 							</div>
 
-							<div class="range-slider" data-range="3" data-min="1000" data-max="3000" data-step="100" data-val="3000"></div>
+							<div class="range-slider" data-range="3" data-min="1000" data-max="3000" data-step="100" data-val="2000"></div>
 						</div>
 
 						<div class="calc-months">
@@ -398,8 +398,7 @@
 				<div class="diagramm-wrapper animate">
 					<div class="item">
 						<div class="refferal-diagramm">
-							<div class="center-text">Procurement</div>
-							<!-- <div class="top-text">Richmedia</div> -->
+							<div class="center-text"></div>
 							<svg width="456" height="344" viewBox="0 0 456 344" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.05" d="M0 0L271.5 271.5" transform="translate(16 57)" stroke="white"/>
 								<path opacity="0.05" d="M0 0L271.5 271.5" transform="translate(286.5 57) scale(-1 1)" stroke="white"/>
@@ -407,10 +406,10 @@
 								<path opacity="0.05" fill-rule="evenodd" clip-rule="evenodd" d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200Z" transform="translate(51 93)" stroke="white"/>
 								<path opacity="0.05" fill-rule="evenodd" clip-rule="evenodd" d="M150 300C232.843 300 300 232.843 300 150C300 67.1573 232.843 0 150 0C67.1573 0 0 67.1573 0 150C0 232.843 67.1573 300 150 300Z" transform="translate(1 43)" stroke="white"/>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z" transform="translate(101 143)" fill="#1D206E"/>
-								<path class="line-bounty" fill-rule="evenodd" clip-rule="evenodd" d="M0.917976 24.5924C14.9273 33.5109 26.6852 45.3058 35.5534 58.9773C36.1865 59.9519 37.4516 60.2875 38.4722 59.7322L58.8365 48.6448C59.9568 48.0361 60.3433 46.6019 59.6629 45.5235C48.2251 27.3761 32.7312 11.7997 14.1151 0.289047C13.1549 -0.304579 11.8887 0.0491777 11.3593 1.04796L0.227523 22.0173C-0.25358 22.9244 0.0523936 24.0411 0.917976 24.5924Z" transform="translate(211 72)" fill="#1FC9FF"/>
-								<path class="line-team" fill-rule="evenodd" clip-rule="evenodd" d="M35.686 65.9913C36.8734 66.0986 37.8987 65.1986 37.9352 64.0294C37.9767 62.6903 38 61.3473 38 59.9982C38 39.3548 33.3021 19.37 24.7412 1.25569C24.2022 0.114295 22.7798 -0.33372 21.6532 0.267275L1.15766 11.1935C0.130349 11.7418 -0.278954 12.9696 0.198229 14.0167C6.69642 28.2528 10.2495 43.8767 10.2495 59.9982C10.2495 60.6032 10.2424 61.2072 10.2312 61.8102C10.211 62.8602 11.0326 63.7423 12.0984 63.8397L35.686 65.9913Z" transform="translate(255 133)" fill="#292EEF"/>
-								<path class="line-marketing" fill-rule="evenodd" clip-rule="evenodd" d="M2.16088 27.6537C14.7842 28.6402 26.9985 31.7097 38.5998 36.8206C39.6018 37.262 40.7697 36.865 41.2827 35.8915L53 13.6771C52.908 13.4 52.861 13.2589 52.769 12.9808C36.8389 5.48667 19.9499 1.14053 2.45786 0.00486576C1.12494 -0.0817951 0 1.00046 0 2.34673V25.324C0 26.5523 0.944947 27.559 2.16088 27.6537Z" transform="translate(158 52)" fill="#28FBCB"/>
-								<path class="line-procurement" fill-rule="evenodd" clip-rule="evenodd" d="M255.305 158.278C254.243 158.179 253.297 158.921 253.117 159.972C243.968 213.543 197.204 254.448 141.066 254.448C78.385 254.448 27.391 203.455 27.391 140.774C27.391 113.576 37.147 87.2592 54.861 66.6742C72.393 46.2972 96.577 32.7522 122.957 28.5332C125.664 28.0992 128.425 27.7602 131.164 27.5242C131.511 27.4952 131.859 27.4692 132.208 27.4462C133.34 27.3722 134.218 26.4292 134.218 25.2952V2.16518C134.218 0.924179 133.173 -0.0728206 131.934 0.00417941C130.89 0.0701794 129.85 0.145179 128.814 0.235179C125.417 0.527179 121.991 0.947179 118.631 1.48518C85.868 6.72518 55.847 23.5312 34.097 48.8072C12.11 74.3612 0 107.022 0 140.774C0 218.557 63.283 281.84 141.066 281.84C211.365 281.84 269.808 230.146 280.406 162.777C280.588 161.622 279.742 160.551 278.577 160.443L255.305 158.278Z" transform="translate(9.99976 52.1604)" fill="url(#paint0_angular)"/>
+								<path class="line-bounty line-diagramm" data-percent="3%" fill-rule="evenodd" clip-rule="evenodd" d="M0.917976 24.5924C14.9273 33.5109 26.6852 45.3058 35.5534 58.9773C36.1865 59.9519 37.4516 60.2875 38.4722 59.7322L58.8365 48.6448C59.9568 48.0361 60.3433 46.6019 59.6629 45.5235C48.2251 27.3761 32.7312 11.7997 14.1151 0.289047C13.1549 -0.304579 11.8887 0.0491777 11.3593 1.04796L0.227523 22.0173C-0.25358 22.9244 0.0523936 24.0411 0.917976 24.5924Z" transform="translate(211 72)" fill="#1FC9FF"/>
+								<path class="line-team line-diagramm" data-percent="5%" fill-rule="evenodd" clip-rule="evenodd" d="M35.686 65.9913C36.8734 66.0986 37.8987 65.1986 37.9352 64.0294C37.9767 62.6903 38 61.3473 38 59.9982C38 39.3548 33.3021 19.37 24.7412 1.25569C24.2022 0.114295 22.7798 -0.33372 21.6532 0.267275L1.15766 11.1935C0.130349 11.7418 -0.278954 12.9696 0.198229 14.0167C6.69642 28.2528 10.2495 43.8767 10.2495 59.9982C10.2495 60.6032 10.2424 61.2072 10.2312 61.8102C10.211 62.8602 11.0326 63.7423 12.0984 63.8397L35.686 65.9913Z" transform="translate(255 133)" fill="#292EEF"/>
+								<path class="line-marketing line-diagramm" data-percent="5%" fill-rule="evenodd" clip-rule="evenodd" d="M2.16088 27.6537C14.7842 28.6402 26.9985 31.7097 38.5998 36.8206C39.6018 37.262 40.7697 36.865 41.2827 35.8915L53 13.6771C52.908 13.4 52.861 13.2589 52.769 12.9808C36.8389 5.48667 19.9499 1.14053 2.45786 0.00486576C1.12494 -0.0817951 0 1.00046 0 2.34673V25.324C0 26.5523 0.944947 27.559 2.16088 27.6537Z" transform="translate(158 52)" fill="#28FBCB"/>
+								<path class="line-procurement line-diagramm" data-percent="87%" fill-rule="evenodd" clip-rule="evenodd" d="M255.305 158.278C254.243 158.179 253.297 158.921 253.117 159.972C243.968 213.543 197.204 254.448 141.066 254.448C78.385 254.448 27.391 203.455 27.391 140.774C27.391 113.576 37.147 87.2592 54.861 66.6742C72.393 46.2972 96.577 32.7522 122.957 28.5332C125.664 28.0992 128.425 27.7602 131.164 27.5242C131.511 27.4952 131.859 27.4692 132.208 27.4462C133.34 27.3722 134.218 26.4292 134.218 25.2952V2.16518C134.218 0.924179 133.173 -0.0728206 131.934 0.00417941C130.89 0.0701794 129.85 0.145179 128.814 0.235179C125.417 0.527179 121.991 0.947179 118.631 1.48518C85.868 6.72518 55.847 23.5312 34.097 48.8072C12.11 74.3612 0 107.022 0 140.774C0 218.557 63.283 281.84 141.066 281.84C211.365 281.84 269.808 230.146 280.406 162.777C280.588 161.622 279.742 160.551 278.577 160.443L255.305 158.278Z" transform="translate(9.99976 52.1604)" fill="url(#paint0_angular)"/>
 								<path class="text-marketing" d="M17.3 20V5.82H14.04L9.5 16.64L4.9 5.82H1.7V20H4.04V9.6L8.42 20H10.5L14.92 9.56V20H17.3ZM19.8453 17.36C19.8453 18.9 21.1053 20.3 23.1453 20.3C24.7253 20.3 25.6853 19.5 26.1453 18.76C26.1453 19.54 26.2253 19.94 26.2453 20H28.4053C28.3853 19.9 28.2853 19.32 28.2853 18.44V13.6C28.2853 11.66 27.1453 9.96 24.1453 9.96C21.7453 9.96 20.2253 11.46 20.0453 13.14L22.1653 13.62C22.2653 12.64 22.9453 11.86 24.1653 11.86C25.4453 11.86 26.0053 12.52 26.0053 13.34C26.0053 13.68 25.8453 13.96 25.2853 14.04L22.7853 14.42C21.1253 14.66 19.8453 15.62 19.8453 17.36ZM23.5853 18.48C22.6653 18.48 22.1653 17.88 22.1653 17.22C22.1653 16.42 22.7453 16.02 23.4653 15.9L26.0053 15.52V15.96C26.0053 17.86 24.8853 18.48 23.5853 18.48ZM36.7898 10.2C36.6898 10.18 36.4498 10.14 36.1698 10.14C34.8898 10.14 33.8098 10.76 33.3498 11.82V10.26H31.0898V20H33.4098V15.36C33.4098 13.54 34.2298 12.5 36.0298 12.5C36.2698 12.5 36.5298 12.52 36.7898 12.56V10.2ZM47.8466 10.26H44.7666L41.0266 14.2V5.52H38.7266V20H41.0266V17.28L42.2266 16.02L45.0866 20H47.9266L43.8466 14.38L47.8466 10.26ZM50.7567 14.06C50.8367 13.02 51.6767 11.9 53.1367 11.9C54.7367 11.9 55.4967 12.92 55.5367 14.06H50.7567ZM55.7967 16.6C55.4767 17.56 54.7567 18.3 53.3567 18.3C51.9167 18.3 50.7567 17.24 50.6967 15.76H57.8167C57.8367 15.72 57.8767 15.4 57.8767 15.02C57.8767 11.94 56.1167 9.96 53.1167 9.96C50.6567 9.96 48.3767 12 48.3767 15.08C48.3767 18.38 50.7167 20.3 53.3567 20.3C55.6967 20.3 57.2367 18.92 57.7567 17.22L55.7967 16.6ZM63.0338 7.28H60.9337V8.74C60.9337 9.6 60.4737 10.26 59.4337 10.26H58.9338V12.32H60.7338V17.22C60.7338 19.04 61.8538 20.12 63.6537 20.12C64.4937 20.12 64.9338 19.96 65.0738 19.9V17.98C64.9738 18 64.5938 18.06 64.2738 18.06C63.4137 18.06 63.0338 17.7 63.0338 16.84V12.32H65.0538V10.26H63.0338V7.28ZM69.7375 20V10.26H67.4375V20H69.7375ZM67.0775 6.84C67.0775 7.68 67.7575 8.34 68.5775 8.34C69.4175 8.34 70.0975 7.68 70.0975 6.84C70.0975 6 69.4175 5.32 68.5775 5.32C67.7575 5.32 67.0775 6 67.0775 6.84ZM75.0505 14.38C75.0505 13.1 75.7505 12.08 77.0705 12.08C78.5305 12.08 79.0705 13.04 79.0705 14.24V20H81.3905V13.84C81.3905 11.7 80.2505 9.98 77.8705 9.98C76.7905 9.98 75.6305 10.44 74.9905 11.56V10.26H72.7305V20H75.0505V14.38ZM83.5148 20.54C83.7748 22.5 85.5748 24.1 88.1548 24.1C91.8148 24.1 93.1548 21.68 93.1548 19.08V10.26H90.9148V11.5C90.4948 10.7 89.5548 10.08 88.0348 10.08C85.3548 10.08 83.5348 12.22 83.5348 14.82C83.5348 17.56 85.4348 19.56 88.0348 19.56C89.4548 19.56 90.4348 18.9 90.8548 18.14V19.16C90.8548 21.14 89.9348 22.08 88.0948 22.08C86.7548 22.08 85.8148 21.18 85.6548 19.98L83.5148 20.54ZM88.4148 17.58C86.8948 17.58 85.8748 16.52 85.8748 14.82C85.8748 13.16 86.9348 12.08 88.4148 12.08C89.8548 12.08 90.9148 13.16 90.9148 14.82C90.9148 16.5 89.8948 17.58 88.4148 17.58Z" transform="translate(315)" fill="white"/>
 								<path class="crcl-marketing" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" transform="translate(288 12)" fill="#28FBCB"/>
 								<path class="arrow-marketing" opacity="0.1" d="M0 55.8059L55.8059 0H109.095" transform="translate(182 15)" stroke="white"/>
@@ -446,38 +445,30 @@
 			<div class="container">
 				<h2 class="h2">Roadmap</h2>
 
-				<div class="roadmap-graph">
+				<div class="roadmap-graph" id="roadmap_graph">
 					<div class="rectangle">
 						<div class="circle circle_1"></div>
 						<div class="circle circle_2"></div>
 						<div class="circle circle_3"></div>
 						<div class="circle circle_4"></div>
-						<div class="red-text">August 2018</div>
-						<div class="white-text">G3 Prototype Constructed</div>
+						<div class="red-text"></div>
+						<div class="white-text"></div>
 					</div>
 
-					<div class="year y-1">
+					<div class="year y-1" data-red="August" data-white="G3 Prototype Constructed">
 						<div class="num">2018</div>
 					</div>
-					<div class="year y-2">
+					<div class="year y-2" data-red="October" data-white="Pre-ICO completed">
 						<div class="num">2019</div>
-						<div class="month">October</div>
-						<div class="desc">Pre-ICO completed</div>
 					</div>
-					<div class="year y-3">
+					<div class="year y-3" data-red="June" data-white="Retail sales started">
 						<div class="num">2020</div>
-						<div class="month">June</div>
-						<div class="desc">Retail sales started </div>
 					</div>
-					<div class="year y-4">
+					<div class="year y-4" data-red="Marth" data-white="First deliveries to ICO Token holders">
 						<div class="num">2021</div>
-						<div class="month">Marth</div>
-						<div class="desc">First deliveries <br> to ICO Token holders</div>
 					</div>
-					<div class="year y-5">
+					<div class="year y-5" data-red="Marth" data-white="Retail sales started">
 						<div class="num">2025</div>
-						<div class="month">Marth</div>
-						<div class="desc"><nobr>Retail sales started</nobr></div>
 					</div>
 				</div>
 			</div>
@@ -735,19 +726,19 @@
 			</div>
 
 			<div class="partners-wrapper">
-				<div class="prev-field" id="partners_prev"></div>
 				<div class="partners-items" id="partners">
-					<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
-					<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
+					<div class="partners-items-wrapper short">
+						<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-0.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-1.svg);"></div>
+						<div class="item" style="background-image: url(img/partners_item-2.svg);"></div>
+					</div>
 				</div>
-				<div class="next-field" id="partners_next"></div>
 			</div>
 
 			<div class="container">

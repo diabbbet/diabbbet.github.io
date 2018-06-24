@@ -1055,13 +1055,13 @@ ul, ol {
              -o-transition-delay: 1000ms;
                 transition-delay: 1000ms; }
       .how .how-wrapper.animate.visible .item.item-4 {
-        -webkit-transition-delay: 1500ms;
-             -o-transition-delay: 1500ms;
-                transition-delay: 1500ms; }
-      .how .how-wrapper.animate.visible .item.item-5 {
         -webkit-transition-delay: 2000ms;
              -o-transition-delay: 2000ms;
                 transition-delay: 2000ms; }
+      .how .how-wrapper.animate.visible .item.item-5 {
+        -webkit-transition-delay: 1500ms;
+             -o-transition-delay: 1500ms;
+                transition-delay: 1500ms; }
   .how .how-bottom {
     position: relative;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1335,13 +1335,13 @@ ul, ol {
           top: 64px; }
       .calculator .calculator-wrapper .calculator-graph .year {
         position: absolute;
-        top: 100%;
         font-size: 16px;
         font-family: "Circular Std", sans-serif;
         color: #FFFFFF;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
-                transform: translateX(-50%); }
+                transform: translateX(-50%);
+        top: 100%; }
         .calculator .calculator-wrapper .calculator-graph .year.y-1 {
           left: 40px; }
         .calculator .calculator-wrapper .calculator-graph .year.y-2 {
@@ -1600,12 +1600,11 @@ ul, ol {
           transition: 100ms; }
         .refferal .diagramm-wrapper .item .refferal-diagramm .center-text {
           position: absolute;
-          top: 178px;
-          left: 0;
-          right: 0;
+          top: 184px;
+          left: 135px;
           text-align: center;
           color: #fff;
-          font-size: 10px; }
+          font-size: 18px; }
         .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing {
           cursor: pointer; }
           .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing:hover + .line-procurement + .text-marketing {
@@ -1733,7 +1732,11 @@ ul, ol {
       top: 100%;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%);
+      top: -webkit-calc(100% - 50px);
+      top: calc(100% - 50px);
+      cursor: pointer;
+      padding-top: 50px; }
       .roadmap .roadmap-graph .year.y-1 {
         left: 70px; }
       .roadmap .roadmap-graph .year.y-2 {
@@ -1802,7 +1805,8 @@ ul, ol {
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      background-color: transparent; }
       .team .team-items .item .col {
         -webkit-box-flex: 1;
         -webkit-flex: 1 50%;
@@ -1868,9 +1872,13 @@ ul, ol {
   .team .team-controlls {
     margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 70px; }
+    padding-top: 70px;
+    background-color: transparent; }
+    .team .team-controlls .slick-list {
+      background-color: transparent; }
     .team .team-controlls .item {
-      text-align: center; }
+      text-align: center;
+      background-color: transparent; }
       .team .team-controlls .item.slick-current .name {
         color: #F12986; }
     .team .team-controlls .item-content {
@@ -1911,15 +1919,36 @@ ul, ol {
   background-color: #1D206E;
   overflow: hidden; }
   .partners .partners-items {
-    margin-top: 130px; }
+    margin-top: 90px;
+    position: relative;
+    height: 160px; }
+    .partners .partners-items .partners-items-wrapper {
+      position: absolute;
+      top: 50%;
+      margin-top: -40px;
+      left: 0;
+      white-space: nowrap;
+      -webkit-transition: 50ms;
+      -o-transition: 50ms;
+      transition: 50ms; }
+      .partners .partners-items .partners-items-wrapper.short {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
     .partners .partners-items .item {
+      display: inline-block;
       width: 150px;
       height: 80px;
       background-repeat: no-repeat;
       background-position: center center; }
   .partners .partners-wrapper {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     .partners .partners-wrapper .prev-field {
       position: absolute;
       top: 0;
@@ -1939,7 +1968,7 @@ ul, ol {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 160px;
+    margin-top: 120px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2464,7 +2493,20 @@ ul, ol {
   .partners {
     padding: 60px 0 0; }
     .partners .partners-items {
-      margin-top: 80px; }
+      margin-top: 80px;
+      height: auto; }
+      .partners .partners-items .partners-items-wrapper {
+        position: static;
+        top: auto;
+        margin: auto;
+        white-space: normal; }
+        .partners .partners-items .partners-items-wrapper.short {
+          left: auto;
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none; }
+        .partners .partners-items .partners-items-wrapper .item {
+          display: block; }
     .partners .partners-form {
       margin-top: 70px;
       -webkit-box-orient: vertical;
