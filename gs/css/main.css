@@ -62,8 +62,8 @@ body {
       -webkit-transform: scale(2);
           -ms-transform: scale(2);
               transform: scale(2);
-      -webkit-animation: wawes infinite 3000ms linear;
-              animation: wawes infinite 3000ms linear;
+      -webkit-animation: wawes infinite 3000ms ease-out;
+              animation: wawes infinite 3000ms ease-out;
       -webkit-animation-play-state: running;
               animation-play-state: running; }
       .wrapper .circles-wrapper .circle.circle-1 {
