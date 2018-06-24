@@ -59,47 +59,63 @@ body {
       border: 1px solid #000;
       -webkit-border-radius: 50%;
               border-radius: 50%;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0); }
+    .wrapper .circles-wrapper.animate .circle {
       -webkit-transform: scale(2);
           -ms-transform: scale(2);
-              transform: scale(2);
-      -webkit-animation: wawes infinite 12000ms linear;
-              animation: wawes infinite 12000ms linear; }
-      .wrapper .circles-wrapper .circle.circle-1 {
-        -webkit-animation-delay: 1000ms;
-                animation-delay: 1000ms; }
-      .wrapper .circles-wrapper .circle.circle-2 {
-        -webkit-animation-delay: 2000ms;
-                animation-delay: 2000ms; }
-      .wrapper .circles-wrapper .circle.circle-3 {
-        -webkit-animation-delay: 3000ms;
-                animation-delay: 3000ms; }
-      .wrapper .circles-wrapper .circle.circle-4 {
-        -webkit-animation-delay: 4000ms;
-                animation-delay: 4000ms; }
-      .wrapper .circles-wrapper .circle.circle-5 {
-        -webkit-animation-delay: 5000ms;
-                animation-delay: 5000ms; }
-      .wrapper .circles-wrapper .circle.circle-6 {
-        -webkit-animation-delay: 6000ms;
-                animation-delay: 6000ms; }
-      .wrapper .circles-wrapper .circle.circle-7 {
-        -webkit-animation-delay: 7000ms;
-                animation-delay: 7000ms; }
-      .wrapper .circles-wrapper .circle.circle-8 {
-        -webkit-animation-delay: 8000ms;
-                animation-delay: 8000ms; }
-      .wrapper .circles-wrapper .circle.circle-9 {
-        -webkit-animation-delay: 9000ms;
-                animation-delay: 9000ms; }
-      .wrapper .circles-wrapper .circle.circle-10 {
-        -webkit-animation-delay: 10000ms;
-                animation-delay: 10000ms; }
-      .wrapper .circles-wrapper .circle.circle-11 {
-        -webkit-animation-delay: 11000ms;
-                animation-delay: 11000ms; }
-      .wrapper .circles-wrapper .circle.circle-12 {
-        -webkit-animation-delay: 12000ms;
-                animation-delay: 12000ms; }
+              transform: scale(2); }
+      .wrapper .circles-wrapper.animate .circle.circle-1 {
+        -webkit-transition-duration: 5000ms;
+             -o-transition-duration: 5000ms;
+                transition-duration: 5000ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-2 {
+        -webkit-transition-duration: 5400ms;
+             -o-transition-duration: 5400ms;
+                transition-duration: 5400ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-3 {
+        -webkit-transition-duration: 5000ms;
+             -o-transition-duration: 5000ms;
+                transition-duration: 5000ms;
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-4 {
+        -webkit-transition-duration: 5400ms;
+             -o-transition-duration: 5400ms;
+                transition-duration: 5400ms;
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-5 {
+        -webkit-transition-duration: 5800ms;
+             -o-transition-duration: 5800ms;
+                transition-duration: 5800ms;
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-6 {
+        -webkit-transition-duration: 5000ms;
+             -o-transition-duration: 5000ms;
+                transition-duration: 5000ms;
+        -webkit-transition-delay: 1000ms;
+             -o-transition-delay: 1000ms;
+                transition-delay: 1000ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-7 {
+        -webkit-transition-duration: 5400ms;
+             -o-transition-duration: 5400ms;
+                transition-duration: 5400ms;
+        -webkit-transition-delay: 1000ms;
+             -o-transition-delay: 1000ms;
+                transition-delay: 1000ms; }
+      .wrapper .circles-wrapper.animate .circle.circle-8 {
+        -webkit-transition-duration: 5800ms;
+             -o-transition-duration: 5800ms;
+                transition-duration: 5800ms;
+        -webkit-transition-delay: 1000ms;
+             -o-transition-delay: 1000ms;
+                transition-delay: 1000ms; }
   .wrapper .left {
     position: absolute;
     left: 0;
@@ -222,15 +238,23 @@ body {
 @-webkit-keyframes wawes {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0); }
+            transform: scale(0);
+    opacity: 1; }
+  50% {
+    opacity: 1; }
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2); } }
+            transform: scale(2);
+    opacity: 0; } }
 
 @keyframes wawes {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0); }
+            transform: scale(0);
+    opacity: 1; }
+  50% {
+    opacity: 1; }
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2); } }
+            transform: scale(2);
+    opacity: 0; } }
