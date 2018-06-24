@@ -64,42 +64,40 @@ body {
 			left: 0; right: 0;
 			border: 1px solid #000;
 			border-radius: 50%;
-			transform: scale(0);
+			transform: scale(2);
+			animation: wawes infinite 3000ms linear;
+			animation-play-state: running;
+			&.circle-1 {
+				animation-delay: 300ms;
+			}
+			&.circle-2 {
+				animation-delay: 600ms;
+			}
+			&.circle-3 {
+				animation-delay: 900ms;
+			}
+			&.circle-4 {
+				animation-delay: 1200ms;
+			}
+			&.circle-5 {
+				animation-delay: 1500ms;
+			}
+			&.circle-6 {
+				animation-delay: 1800ms;
+			}
+			&.circle-7 {
+				animation-delay: 2100ms;
+			}
+			&.circle-8 {
+				animation-delay: 2400ms;
+			}
+			&.circle-9 {
+				animation-delay: 2700ms;
+			}
 		}
-		&.animate {
+		&.stop {
 			.circle {
-				// animation: wawes 12000ms linear;
-				transform: scale(2);
-				&.circle-1 {
-					transition-duration: 5000ms;
-				}
-				&.circle-2 {
-					transition-duration: 5400ms;
-				}
-				&.circle-3 {
-					transition-duration: 5000ms;
-					transition-delay: 500ms;
-				}
-				&.circle-4 {
-					transition-duration: 5400ms;
-					transition-delay: 500ms;
-				}
-				&.circle-5 {
-					transition-duration: 5800ms;
-					transition-delay: 500ms;
-				}
-				&.circle-6 {
-					transition-duration: 5000ms;
-					transition-delay: 1000ms;
-				}
-				&.circle-7 {
-					transition-duration: 5400ms;
-					transition-delay: 1000ms;
-				}
-				&.circle-8 {
-					transition-duration: 5800ms;
-					transition-delay: 1000ms;
-				}
+				animation-play-state: paused;
 			}
 		}
 	}
@@ -198,13 +196,8 @@ body {
 @keyframes wawes {
 	0% {
 		transform: scale(0);
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
 	}
 	100% {
 		transform: scale(2);
-		opacity: 0;
 	}
 }
