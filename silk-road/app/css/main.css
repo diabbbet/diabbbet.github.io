@@ -1312,7 +1312,8 @@ ul, ol {
               flex: 0 1 583px;
       height: 498px;
       background-image: url("../img/calc_graph.svg");
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      background-repeat: no-repeat; }
       .calculator .calculator-wrapper .calculator-graph .price {
         position: absolute;
         font-size: 17px;
@@ -2091,6 +2092,103 @@ ul, ol {
     height: 522px;
     background-image: url("../img/partners_bg.png"); }
 
+.refferal, .calculator {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+  -webkit-transform: translateY(100vh);
+      -ms-transform: translateY(100vh);
+          transform: translateY(100vh); }
+  .refferal.show, .calculator.show {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .refferal.hide, .calculator.hide {
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh); }
+
+.last-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(100vh);
+      -ms-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+  overflow: auto; }
+  .last-screen.show {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+
+.first-screen {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms; }
+  .first-screen.hide {
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh); }
+
+.how-1 {
+  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: translateY(100vh);
+      -ms-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms; }
+  .how-1.show {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .how-1.hide {
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh); }
+
+.how-2 {
+  padding-top: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+  -webkit-transform: translateY(100vh);
+      -ms-transform: translateY(100vh);
+          transform: translateY(100vh); }
+  .how-2.show {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .how-2.hide {
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh); }
+
 @-webkit-keyframes glowing {
   0% {
     -webkit-box-shadow: 0 0 20px #1bb895; }
@@ -2726,8 +2824,120 @@ ul, ol {
               background-size: 100%;
       height: 200px;
       margin-top: 50px; }
+      .how .how-bottom .left .how-diagramm svg {
+        max-width: 100%;
+        height: auto; }
+        .how .how-bottom .left .how-diagramm svg .text-10 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .text-15 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .text-20 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .text-55 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .line-10 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .line-15 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .line-20 {
+          opacity: 1; }
+        .how .how-bottom .left .how-diagramm svg .line-55 {
+          opacity: 1; }
   .calculator .calculator-triangle {
     border-bottom-width: 20px; }
   .calculator .calculator-wrapper .calc .calc-controlls {
     max-width: 310px;
-    width: 100%; } }
+    width: 100%; }
+  .calculator .calculator-wrapper .calculator-graph {
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    height: 290px; }
+    .calculator .calculator-wrapper .calculator-graph .price.price-1 {
+      left: 7%;
+      top: 200px; }
+    .calculator .calculator-wrapper .calculator-graph .price.price-2 {
+      left: 36%;
+      top: 150px; }
+    .calculator .calculator-wrapper .calculator-graph .price.price-3 {
+      left: 66%;
+      top: 110px; }
+    .calculator .calculator-wrapper .calculator-graph .price.price-4 {
+      left: 80%;
+      top: 40px; }
+    .calculator .calculator-wrapper .calculator-graph .year.y-1 {
+      left: 7%; }
+    .calculator .calculator-wrapper .calculator-graph .year.y-2 {
+      left: 36%; }
+    .calculator .calculator-wrapper .calculator-graph .year.y-3 {
+      left: 66%; }
+    .calculator .calculator-wrapper .calculator-graph .year.y-4 {
+      left: 96%; }
+  .refferal .lines-wrapper {
+    opacity: 1 !important;
+    position: static !important; }
+    .refferal .lines-wrapper .lines {
+      margin-top: 30px; }
+    .refferal .lines-wrapper .item {
+      margin-top: 30px; }
+      .refferal .lines-wrapper .item .percent {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 50px;
+            -ms-flex: 0 1 50px;
+                flex: 0 1 50px; }
+      .refferal .lines-wrapper .item .text {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100px;
+            -ms-flex: 0 1 100px;
+                flex: 0 1 100px; }
+  .refferal .diagramm-wrapper {
+    margin-top: 30px;
+    opacity: 1 !important; }
+    .refferal .diagramm-wrapper .item .refferal-diagramm {
+      display: none;
+      height: auto; }
+      .refferal .diagramm-wrapper .item .refferal-diagramm .center-text {
+        display: none; }
+      .refferal .diagramm-wrapper .item .refferal-diagramm svg {
+        max-width: 100%;
+        height: auto; }
+  .roadmap .roadmap-graph {
+    width: 100%;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    height: 200px;
+    margin-top: 50px; }
+    .roadmap .roadmap-graph .rectangle {
+      width: 160px;
+      height: 60px;
+      left: 10px;
+      padding: 10px; }
+      .roadmap .roadmap-graph .rectangle .red-text {
+        font-size: 12px; }
+      .roadmap .roadmap-graph .rectangle .white-text {
+        font-size: 12px; }
+    .roadmap .roadmap-graph .year.y-1 {
+      left: 7%; }
+    .roadmap .roadmap-graph .year.y-2 {
+      left: 30%; }
+    .roadmap .roadmap-graph .year.y-3 {
+      left: 48%; }
+    .roadmap .roadmap-graph .year.y-4 {
+      left: 68%; }
+    .roadmap .roadmap-graph .year.y-5 {
+      left: 87%; }
+  .team .team-items {
+    margin-top: 50px; }
+    .team .team-items .item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .team .team-items .item .col .photo {
+        margin: auto; }
+      .team .team-items .item .col .name {
+        margin-top: 30px; }
+  .team .team-controlls .item-content .photo-wrapper {
+    width: 80px;
+    height: 80px; } }
