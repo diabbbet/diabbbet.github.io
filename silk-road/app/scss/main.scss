@@ -848,8 +848,8 @@ a {
 
 .how {
 	position: relative;
-	padding-top: 90px;
-	padding-bottom: 125px;
+	padding-top: 40px;
+	padding-bottom: 35px;
 	background-color: #0C0E46;
 	background-image: url('../img/how_bg.png');
 	background-repeat: no-repeat;
@@ -862,9 +862,8 @@ a {
 		flex-wrap: wrap;
 		justify-content: center;
 		padding-top: 5px;
-		margin: 120px auto 0;
+		margin: 0 auto 0;
 		max-width: 830px;
-		padding-bottom: 95px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -881,7 +880,7 @@ a {
 		.item {
 			width: 33.33333%;
 			padding: 0 20px;
-			margin-top: 45px;
+			margin-top: 10px;
 			&.item-2 {
 				position: relative;
 				top: 50px;
@@ -960,36 +959,11 @@ a {
 				height: 23px;
 			}
 		}
-		&.animate {
-			.item {
-				opacity: 0;
-				transition: 500ms;
-			}
-			&.visible {
-				.item {
-					opacity: 1;
-					&.item-2 {
-						transition-delay: 500ms;
-					}
-					&.item-3 {
-						transition-delay: 1000ms;
-					}
-					&.item-4 {
-						transition-delay: 2000ms;
-					}
-					&.item-5 {
-						transition-delay: 1500ms;
-					}
-				}
-			}
-		}
 	}
 	.how-bottom {
 		position: relative;
-		border-top: 1px solid rgba(255,255,255, 0.05);
 		display: flex;
 		flex-direction: row;
-		padding-top: 60px;
 		.line {
 			position: absolute;
 			top: 116px;
@@ -1100,7 +1074,7 @@ a {
 
 .calculator {
 	position: relative;
-	padding: 80px 0 50px;
+	padding: 50px 0 40px;
 	background-color: #1D206E;
 	background-image: url('../img/calc_bg.png');
 	background-repeat: no-repeat;
@@ -1128,13 +1102,13 @@ a {
 			flex: 1 0;
 			padding-right: 120px;
 			.calc-controlls {
-				padding-top: 20px;
+				padding-top: 10px;
 			}
 			.total {
 				position: relative;
 				display: flex;
 				align-items: center;
-				margin-top: 35px;
+				margin-top: 20px;
 				&:after {
 					content: '$';
 					position: absolute;
@@ -1163,7 +1137,7 @@ a {
 				height: 4px;
 				border-radius: 2px;
 				background: rgba(255, 255, 255, 0.1);
-				margin-top: 30px;
+				margin-top: 20px;
 				.ui-slider-range-min {
 					height: 4px;
 					border-radius: 2px;
@@ -1213,7 +1187,7 @@ a {
 				justify-content: space-between;
 				font-size: 16px;
 				color: #FFFFFF;
-				padding: 30px 0 15px;
+				padding: 20px 0 10px;
 				border-bottom: 1px dashed rgba(#FFFFFF, 0.1);
 				&:last-child {
 					border: none;
@@ -1277,7 +1251,7 @@ a {
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		margin-top: 60px;
+		margin-top: 20px;
 		.btn-invest {
 			display: block;
 			width: 210px;
@@ -1323,14 +1297,6 @@ a {
 			position: absolute;
 			top: 0;
 			left: 0; right: 0;
-			&.animate {
-				opacity: 1;
-				transition: 100ms;
-				transition-delay: 2500ms;
-				&.visible {
-					opacity: 0;
-				}
-			}
 		}
 	}
 	.h2 {
@@ -1408,78 +1374,6 @@ a {
 				.line {
 					.line-fill {
 						background: linear-gradient(270deg, #28FBCB 0%, #1D206E 98.61%);
-					}
-				}
-			}
-		}
-		&.animate {
-			.item {
-				&.item-1 {
-					.line {
-						.line-fill {
-							width: 100%;
-							transition: 1000ms;
-						}
-					}
-				}
-				&.item-2 {
-					.line {
-						.line-fill {
-							width: 100%;
-							transition: 1000ms;
-						}
-					}
-				}
-				&.item-3 {
-					.line {
-						.line-fill {
-							width: 100%;
-							transition: 1000ms;
-						}
-					}
-				}
-				&.item-4 {
-					.line {
-						.line-fill {
-							width: 100%;
-							transition: 1000ms;
-						}
-					}
-				}
-			}
-			&.visible {
-				.item {
-					&.item-1 {
-						.line {
-							.line-fill {
-								width: 87%;
-								transition: 500ms;
-							}
-						}
-					}
-					&.item-2 {
-						.line {
-							.line-fill {
-								width: 25%;
-								transition-delay: 500ms;
-							}
-						}
-					}
-					&.item-3 {
-						.line {
-							.line-fill {
-								width: 25%;
-								transition-delay: 1000ms;
-							}
-						}
-					}
-					&.item-4 {
-						.line {
-							.line-fill {
-								transition-delay: 1500ms;
-								width: 15%;
-							}
-						}
 					}
 				}
 			}
@@ -1588,22 +1482,6 @@ a {
 							}
 						}
 					}
-				}
-			}
-		}
-		&.animate {
-			opacity: 0;
-			.item {
-				.refferal-diagramm {
-					transform: scale(0);
-					transition: 1000ms;
-				}
-			}
-			&.visible {
-				opacity: 1;
-				.refferal-diagramm {
-					transform: scale(1);
-					transition-delay: 3000ms;
 				}
 			}
 		}
@@ -2027,69 +1905,69 @@ a {
 	}
 }
 
-.refferal, .calculator {
-	position: fixed;
-	top: 0; bottom: 0;
-	right: 0; left: 0;
-	transition: 400ms;
-	transform: translateY(100vh);
-	&.show {
-		transform: translateY(0);
-	}
-	&.hide {
-		transform: translateY(-100vh);
-	}
-}
+// .refferal, .calculator {
+// 	position: fixed;
+// 	top: 0; bottom: 0;
+// 	right: 0; left: 0;
+// 	transition: 400ms;
+// 	transform: translateY(100vh);
+// 	&.show {
+// 		transform: translateY(0);
+// 	}
+// 	&.hide {
+// 		transform: translateY(-100vh);
+// 	}
+// }
 
-.last-screen {
-	position: fixed;
-	top: 0; bottom: 0;
-	left: 0; right: 0;
-	transform: translateY(100vh);
-	transition: 400ms;
-	overflow: auto;
-	&.show {
-		transform: translateY(0);
-	}
-}
-.first-screen {
-	transform: translateY(0);
-	transition: 400ms;
-	&.hide {
-		transform: translateY(-100vh);
-	}
-}
+// .last-screen {
+// 	position: fixed;
+// 	top: 0; bottom: 0;
+// 	left: 0; right: 0;
+// 	transform: translateY(100vh);
+// 	transition: 400ms;
+// 	overflow: auto;
+// 	&.show {
+// 		transform: translateY(0);
+// 	}
+// }
+// .first-screen {
+// 	transform: translateY(0);
+// 	transition: 400ms;
+// 	&.hide {
+// 		transform: translateY(-100vh);
+// 	}
+// }
 
-.how-1 {
-	padding-bottom: 0;
-	position: fixed;
-	top: 0; bottom: 0;
-	left: 0; right: 0;
-	z-index: 1;
-	transform: translateY(100vh);
-	transition: 400ms;
-	&.show {
-		transform: translateY(0);
-	}
-	&.hide {
-		transform: translateY(-100vh);
-	}
-}
-.how-2 {
-	padding-top: 0;
-	position: fixed;
-	top: 0; bottom: 0;
-	left: 0; right: 0;
-	z-index: 1;
-	transition: 400ms;
-	transform: translateY(100vh);
-	&.show {
-		transform: translateY(0);
-	}
-	&.hide {
-		transform: translateY(-100vh);
-	}
-}
+// .how-1 {
+// 	padding-bottom: 0;
+// 	position: fixed;
+// 	top: 0; bottom: 0;
+// 	left: 0; right: 0;
+// 	z-index: 1;
+// 	transform: translateY(100vh);
+// 	transition: 400ms;
+// 	&.show {
+// 		transform: translateY(0);
+// 	}
+// 	&.hide {
+// 		transform: translateY(-100vh);
+// 	}
+// }
+// .how-2 {
+// 	padding-top: 0;
+// 	position: fixed;
+// 	top: 0; bottom: 0;
+// 	left: 0; right: 0;
+// 	z-index: 1;
+// 	transition: 400ms;
+// 	transform: translateY(100vh);
+// 	&.show {
+// 		transform: translateY(0);
+// 	}
+// 	&.hide {
+// 		transform: translateY(-100vh);
+// 	}
+// }
 
 @keyframes glowing {
 	0% { -webkit-box-shadow: 0 0 20px#1bb895; }

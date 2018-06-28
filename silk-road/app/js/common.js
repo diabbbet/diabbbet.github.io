@@ -1,5 +1,11 @@
 $(function() {
 
+	if ($(window).height() > 666) {
+		$('#fullpage').fullpage({
+			scrollOverflow: true
+		});
+	}
+
 	$('.animate').viewportChecker();
 
 	// team-slider
@@ -182,7 +188,7 @@ $(function() {
 
 	// calculator();
 
-	scrollable();
+	// scrollable();
 
 });
 
@@ -351,6 +357,11 @@ function scrollable() {
 			if ($('.refferal').is(':hover')) {
 				$('.refferal').addClass('hide').removeClass('show');
 				$('.last-screen').addClass('show');
+			}
+		} else {
+			if ($('.last-screen').is(':hover') && wOffset == 0) {
+				$('.refferal').addClass('show').removeClass('hide');
+				$('.last-screen').addClass('hide');
 			}
 		}
 

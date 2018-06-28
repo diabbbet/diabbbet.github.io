@@ -931,8 +931,8 @@ ul, ol {
 
 .how {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 125px;
+  padding-top: 40px;
+  padding-bottom: 35px;
   background-color: #0C0E46;
   background-image: url("../img/how_bg.png");
   background-repeat: no-repeat;
@@ -957,9 +957,8 @@ ul, ol {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 5px;
-    margin: 120px auto 0;
-    max-width: 830px;
-    padding-bottom: 95px; }
+    margin: 0 auto 0;
+    max-width: 830px; }
     .how .how-wrapper:before {
       content: '';
       position: absolute;
@@ -975,7 +974,7 @@ ul, ol {
     .how .how-wrapper .item {
       width: 33.33333%;
       padding: 0 20px;
-      margin-top: 45px; }
+      margin-top: 10px; }
       .how .how-wrapper .item.item-2 {
         position: relative;
         top: 50px; }
@@ -1039,32 +1038,8 @@ ul, ol {
         left: 330px;
         width: 163px;
         height: 23px; }
-    .how .how-wrapper.animate .item {
-      opacity: 0;
-      -webkit-transition: 500ms;
-      -o-transition: 500ms;
-      transition: 500ms; }
-    .how .how-wrapper.animate.visible .item {
-      opacity: 1; }
-      .how .how-wrapper.animate.visible .item.item-2 {
-        -webkit-transition-delay: 500ms;
-             -o-transition-delay: 500ms;
-                transition-delay: 500ms; }
-      .how .how-wrapper.animate.visible .item.item-3 {
-        -webkit-transition-delay: 1000ms;
-             -o-transition-delay: 1000ms;
-                transition-delay: 1000ms; }
-      .how .how-wrapper.animate.visible .item.item-4 {
-        -webkit-transition-delay: 2000ms;
-             -o-transition-delay: 2000ms;
-                transition-delay: 2000ms; }
-      .how .how-wrapper.animate.visible .item.item-5 {
-        -webkit-transition-delay: 1500ms;
-             -o-transition-delay: 1500ms;
-                transition-delay: 1500ms; }
   .how .how-bottom {
     position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1073,8 +1048,7 @@ ul, ol {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-            flex-direction: row;
-    padding-top: 60px; }
+            flex-direction: row; }
     .how .how-bottom .line {
       position: absolute;
       top: 116px;
@@ -1172,7 +1146,7 @@ ul, ol {
 
 .calculator {
   position: relative;
-  padding: 80px 0 50px;
+  padding: 50px 0 40px;
   background-color: #1D206E;
   background-image: url("../img/calc_bg.png");
   background-repeat: no-repeat;
@@ -1212,7 +1186,7 @@ ul, ol {
               flex: 1 0;
       padding-right: 120px; }
       .calculator .calculator-wrapper .calc .calc-controlls {
-        padding-top: 20px; }
+        padding-top: 10px; }
       .calculator .calculator-wrapper .calc .total {
         position: relative;
         display: -webkit-box;
@@ -1223,7 +1197,7 @@ ul, ol {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-top: 35px; }
+        margin-top: 20px; }
         .calculator .calculator-wrapper .calc .total:after {
           content: '$';
           position: absolute;
@@ -1253,7 +1227,7 @@ ul, ol {
         -webkit-border-radius: 2px;
                 border-radius: 2px;
         background: rgba(255, 255, 255, 0.1);
-        margin-top: 30px; }
+        margin-top: 20px; }
         .calculator .calculator-wrapper .calc .range-slider .ui-slider-range-min {
           height: 4px;
           -webkit-border-radius: 2px;
@@ -1300,7 +1274,7 @@ ul, ol {
                 justify-content: space-between;
         font-size: 16px;
         color: #FFFFFF;
-        padding: 30px 0 15px;
+        padding: 20px 0 10px;
         border-bottom: 1px dashed rgba(255, 255, 255, 0.1); }
         .calculator .calculator-wrapper .calc .calc-month:last-child {
           border: none; }
@@ -1369,7 +1343,7 @@ ul, ol {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 60px; }
+    margin-top: 20px; }
     .calculator .calculator-btns .btn-invest {
       display: block;
       width: 210px;
@@ -1413,16 +1387,6 @@ ul, ol {
       top: 0;
       left: 0;
       right: 0; }
-      .refferal .container .lines-wrapper.animate {
-        opacity: 1;
-        -webkit-transition: 100ms;
-        -o-transition: 100ms;
-        transition: 100ms;
-        -webkit-transition-delay: 2500ms;
-             -o-transition-delay: 2500ms;
-                transition-delay: 2500ms; }
-        .refferal .container .lines-wrapper.animate.visible {
-          opacity: 0; }
   .refferal .h2 {
     text-align: left; }
   .refferal .lines {
@@ -1508,46 +1472,6 @@ ul, ol {
         background: -webkit-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
         background: -o-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
         background: linear-gradient(270deg, #28FBCB 0%, #1D206E 98.61%); }
-    .refferal .lines.animate .item.item-1 .line .line-fill {
-      width: 100%;
-      -webkit-transition: 1000ms;
-      -o-transition: 1000ms;
-      transition: 1000ms; }
-    .refferal .lines.animate .item.item-2 .line .line-fill {
-      width: 100%;
-      -webkit-transition: 1000ms;
-      -o-transition: 1000ms;
-      transition: 1000ms; }
-    .refferal .lines.animate .item.item-3 .line .line-fill {
-      width: 100%;
-      -webkit-transition: 1000ms;
-      -o-transition: 1000ms;
-      transition: 1000ms; }
-    .refferal .lines.animate .item.item-4 .line .line-fill {
-      width: 100%;
-      -webkit-transition: 1000ms;
-      -o-transition: 1000ms;
-      transition: 1000ms; }
-    .refferal .lines.animate.visible .item.item-1 .line .line-fill {
-      width: 87%;
-      -webkit-transition: 500ms;
-      -o-transition: 500ms;
-      transition: 500ms; }
-    .refferal .lines.animate.visible .item.item-2 .line .line-fill {
-      width: 25%;
-      -webkit-transition-delay: 500ms;
-           -o-transition-delay: 500ms;
-              transition-delay: 500ms; }
-    .refferal .lines.animate.visible .item.item-3 .line .line-fill {
-      width: 25%;
-      -webkit-transition-delay: 1000ms;
-           -o-transition-delay: 1000ms;
-              transition-delay: 1000ms; }
-    .refferal .lines.animate.visible .item.item-4 .line .line-fill {
-      -webkit-transition-delay: 1500ms;
-           -o-transition-delay: 1500ms;
-              transition-delay: 1500ms;
-      width: 15%; }
   .refferal .diagramm-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1638,24 +1562,6 @@ ul, ol {
               opacity: 1; }
               .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement:hover + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement {
                 opacity: 0.1; }
-    .refferal .diagramm-wrapper.animate {
-      opacity: 0; }
-      .refferal .diagramm-wrapper.animate .item .refferal-diagramm {
-        -webkit-transform: scale(0);
-            -ms-transform: scale(0);
-                transform: scale(0);
-        -webkit-transition: 1000ms;
-        -o-transition: 1000ms;
-        transition: 1000ms; }
-      .refferal .diagramm-wrapper.animate.visible {
-        opacity: 1; }
-        .refferal .diagramm-wrapper.animate.visible .refferal-diagramm {
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transition-delay: 3000ms;
-               -o-transition-delay: 3000ms;
-                  transition-delay: 3000ms; }
 
 .roadmap {
   position: relative;
@@ -2091,103 +1997,6 @@ ul, ol {
     width: 765px;
     height: 522px;
     background-image: url("../img/partners_bg.png"); }
-
-.refferal, .calculator {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms;
-  -webkit-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-          transform: translateY(100vh); }
-  .refferal.show, .calculator.show {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-  .refferal.hide, .calculator.hide {
-    -webkit-transform: translateY(-100vh);
-        -ms-transform: translateY(-100vh);
-            transform: translateY(-100vh); }
-
-.last-screen {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-          transform: translateY(100vh);
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms;
-  overflow: auto; }
-  .last-screen.show {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-
-.first-screen {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms; }
-  .first-screen.hide {
-    -webkit-transform: translateY(-100vh);
-        -ms-transform: translateY(-100vh);
-            transform: translateY(-100vh); }
-
-.how-1 {
-  padding-bottom: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  -webkit-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-          transform: translateY(100vh);
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms; }
-  .how-1.show {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-  .how-1.hide {
-    -webkit-transform: translateY(-100vh);
-        -ms-transform: translateY(-100vh);
-            transform: translateY(-100vh); }
-
-.how-2 {
-  padding-top: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms;
-  -webkit-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-          transform: translateY(100vh); }
-  .how-2.show {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-  .how-2.hide {
-    -webkit-transform: translateY(-100vh);
-        -ms-transform: translateY(-100vh);
-            transform: translateY(-100vh); }
 
 @-webkit-keyframes glowing {
   0% {
