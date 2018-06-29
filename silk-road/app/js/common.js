@@ -1,8 +1,37 @@
 $(function() {
 
-	if ($(window).height() > 666) {
+	if ($(window).height() > 666 && $(window).width() > 999) {
 		$('#fullpage').fullpage({
-			scrollOverflow: true
+			scrollOverflow: true,
+			dragAndMove: false,
+			onLeave: function(index, nextIndex, direction){
+				if (nextIndex == 2) {
+					$('.how-wrapper').addClass('visible');
+				}
+				if (nextIndex == 5) {
+					$('.lines-wrapper, .lines, .diagramm-wrapper').addClass('visible');
+				}
+				if (nextIndex == 4) {
+					$('#sidebar').addClass('visible');
+				} else {
+					$('#sidebar').removeClass('visible');
+				}
+			}
+		});
+
+		$('#sidebar .label').on('click', function() {
+			var $this = $(this)
+			$this.parent().addClass('show');
+
+			setTimeout(function(){
+				$this.parent().removeClass('show');
+				$.fn.fullpage.silentMoveTo(4);
+			}, 500);
+		});
+	}  else {
+		$(window).on('load', function() {
+			var mainHeight = $('.main').height();
+			$('#sidebar').css('top', (mainHeight+29) + 'px');
 		});
 	}
 
@@ -92,12 +121,12 @@ $(function() {
 		mainHeight();
 	});
 
-	$('.anchor-btn').on('click', function() {
-		var dataAnchor = $(this).attr('data-anchor');
-		var topPos = $('.anchor-link').offset().top;
-		$('body,html').animate({scrollTop: topPos}, 1000);
-		return false;
-	});
+	// $('.anchor-btn').on('click', function() {
+	// 	var dataAnchor = $(this).attr('data-anchor');
+	// 	var topPos = $('.anchor-link').offset().top;
+	// 	$('body,html').animate({scrollTop: topPos}, 1000);
+	// 	return false;
+	// });
 
 
 	$('.range-slider').each(function() {
@@ -187,8 +216,6 @@ $(function() {
 	});
 
 	// calculator();
-
-	// scrollable();
 
 });
 
@@ -318,52 +345,6 @@ function countdown() {
 }
 
 function calculator() {
-	var profitability = $('#btc').val() * 0.00007777;
-	var profitabilityASIC = profitability * 1000000000000;
-	var profitabilityKoeff = profitabilityASIC * ($('#asic').val() / 1000000000000 / 1000000000000) * 30;
-	var deductions = profitabilityKoeff * 0.7;
-	var dividends = deductions * $('#invest').val();
-	console.log(dividends);
-}
-
-function scrollable() {
-	$(window).on('mousewheel', function() {
-		var firstHeight = $('.first-screen').height();
-		var wH = $(window).height();
-		var wOffset = $(window).scrollTop();
-
-		if (event.deltaY > 0) {
-			if ($('.first-screen').is(':hover') && firstHeight == (wH + wOffset)) {
-				$('.first-screen').addClass('hide');
-				$('.how-1').addClass('show');
-				$('body').addClass('hidden');
-			}
-
-			if ($('.how-1').is(':hover')) {
-				$('.how-1').addClass('hide').removeClass('show');
-				$('.how-2').addClass('show');
-			}
-
-			if ($('.how-2').is(':hover')) {
-				$('.how-2').addClass('hide').removeClass('show');
-				$('.calculator').addClass('show');
-			}
-
-			if ($('.calculator').is(':hover')) {
-				$('.calculator').addClass('hide').removeClass('show');
-				$('.refferal').addClass('show');
-			}
-
-			if ($('.refferal').is(':hover')) {
-				$('.refferal').addClass('hide').removeClass('show');
-				$('.last-screen').addClass('show');
-			}
-		} else {
-			if ($('.last-screen').is(':hover') && wOffset == 0) {
-				$('.refferal').addClass('show').removeClass('hide');
-				$('.last-screen').addClass('hide');
-			}
-		}
-
-	});
+	var frstMonth = 0.02286438 * $('#invest').val() *  $('#btc').val() / $('#asic');
+	// var secondMonth = 7 * $('#invest').val() *  $('#btc').val() / $('#asic');
 }

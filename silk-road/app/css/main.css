@@ -154,18 +154,22 @@ ul, ol {
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0;
+          -ms-flex: 1 0;
+              flex: 1 0;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
       .header .header-wrapper .nav .item {
         font-family: "Circular Std", sans-serif;
         font-size: 16px;
         color: #FFFFFF;
-        margin-left: 75px;
         text-decoration: none;
         -webkit-transition: 100ms;
         -o-transition: 100ms;
         transition: 100ms; }
-        .header .header-wrapper .nav .item:first-child {
-          margin-left: 0; }
         .header .header-wrapper .nav .item:hover {
           color: #F12986; }
 
@@ -183,10 +187,6 @@ ul, ol {
   -webkit-transition: 200ms;
   -o-transition: 200ms;
   transition: 200ms; }
-  .sidebar.active {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0); }
   .sidebar .circle-btn {
     position: absolute;
     top: 50%;
@@ -210,7 +210,11 @@ ul, ol {
             transform: rotate(90deg) translateX(-20px);
     font-family: "Circular Std", sans-serif;
     font-size: 20px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+    cursor: pointer; }
   .sidebar .social-btns {
     position: absolute;
     bottom: 0;
@@ -228,7 +232,7 @@ ul, ol {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
+    width: 80px; }
     .sidebar .social-btns .social-btn {
       margin-bottom: 35px;
       -webkit-transition: 100ms;
@@ -256,6 +260,24 @@ ul, ol {
       transition: 100ms; }
       .sidebar .social-btns .chat-btn:hover {
         background-color: #0e13d9; }
+  .sidebar.active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .sidebar.show {
+    width: 120%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .sidebar.visible {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+    .sidebar.visible .label {
+      color: #F12986; }
 
 .main {
   position: relative;
@@ -931,8 +953,8 @@ ul, ol {
 
 .how {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #0C0E46;
   background-image: url("../img/how_bg.png");
   background-repeat: no-repeat;
@@ -957,7 +979,7 @@ ul, ol {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 5px;
-    margin: 0 auto 0;
+    margin: 120px auto 0;
     max-width: 830px; }
     .how .how-wrapper:before {
       content: '';
@@ -974,10 +996,10 @@ ul, ol {
     .how .how-wrapper .item {
       width: 33.33333%;
       padding: 0 20px;
-      margin-top: 10px; }
+      margin-top: 45px; }
       .how .how-wrapper .item.item-2 {
         position: relative;
-        top: 50px; }
+        top: 30px; }
       .how .how-wrapper .item .icon {
         position: relative;
         width: 150px;
@@ -1038,6 +1060,29 @@ ul, ol {
         left: 330px;
         width: 163px;
         height: 23px; }
+    .how .how-wrapper.animate .item {
+      opacity: 0;
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
+    .how .how-wrapper.animate.visible .item {
+      opacity: 1; }
+      .how .how-wrapper.animate.visible .item.item-2 {
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+      .how .how-wrapper.animate.visible .item.item-3 {
+        -webkit-transition-delay: 1000ms;
+             -o-transition-delay: 1000ms;
+                transition-delay: 1000ms; }
+      .how .how-wrapper.animate.visible .item.item-4 {
+        -webkit-transition-delay: 2000ms;
+             -o-transition-delay: 2000ms;
+                transition-delay: 2000ms; }
+      .how .how-wrapper.animate.visible .item.item-5 {
+        -webkit-transition-delay: 1500ms;
+             -o-transition-delay: 1500ms;
+                transition-delay: 1500ms; }
   .how .how-bottom {
     position: relative;
     display: -webkit-box;
@@ -1145,8 +1190,6 @@ ul, ol {
           background-color: #d90e6c; }
 
 .calculator {
-  position: relative;
-  padding: 50px 0 40px;
   background-color: #1D206E;
   background-image: url("../img/calc_bg.png");
   background-repeat: no-repeat;
@@ -1186,7 +1229,7 @@ ul, ol {
               flex: 1 0;
       padding-right: 120px; }
       .calculator .calculator-wrapper .calc .calc-controlls {
-        padding-top: 10px; }
+        padding-top: 20px; }
       .calculator .calculator-wrapper .calc .total {
         position: relative;
         display: -webkit-box;
@@ -1197,7 +1240,7 @@ ul, ol {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-top: 20px; }
+        margin-top: 35px; }
         .calculator .calculator-wrapper .calc .total:after {
           content: '$';
           position: absolute;
@@ -1227,7 +1270,7 @@ ul, ol {
         -webkit-border-radius: 2px;
                 border-radius: 2px;
         background: rgba(255, 255, 255, 0.1);
-        margin-top: 20px; }
+        margin-top: 30px; }
         .calculator .calculator-wrapper .calc .range-slider .ui-slider-range-min {
           height: 4px;
           -webkit-border-radius: 2px;
@@ -1274,7 +1317,7 @@ ul, ol {
                 justify-content: space-between;
         font-size: 16px;
         color: #FFFFFF;
-        padding: 20px 0 10px;
+        padding: 30px 0 15px;
         border-bottom: 1px dashed rgba(255, 255, 255, 0.1); }
         .calculator .calculator-wrapper .calc .calc-month:last-child {
           border: none; }
@@ -1343,7 +1386,7 @@ ul, ol {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20px; }
+    margin-top: 40px; }
     .calculator .calculator-btns .btn-invest {
       display: block;
       width: 210px;
@@ -1387,6 +1430,16 @@ ul, ol {
       top: 0;
       left: 0;
       right: 0; }
+      .refferal .container .lines-wrapper.animate {
+        opacity: 1;
+        -webkit-transition: 100ms;
+        -o-transition: 100ms;
+        transition: 100ms;
+        -webkit-transition-delay: 2500ms;
+             -o-transition-delay: 2500ms;
+                transition-delay: 2500ms; }
+        .refferal .container .lines-wrapper.animate.visible {
+          opacity: 0; }
   .refferal .h2 {
     text-align: left; }
   .refferal .lines {
@@ -1472,6 +1525,46 @@ ul, ol {
         background: -webkit-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
         background: -o-linear-gradient(right, #28FBCB 0%, #1D206E 98.61%);
         background: linear-gradient(270deg, #28FBCB 0%, #1D206E 98.61%); }
+    .refferal .lines.animate .item.item-1 .line .line-fill {
+      width: 100%;
+      -webkit-transition: 1000ms;
+      -o-transition: 1000ms;
+      transition: 1000ms; }
+    .refferal .lines.animate .item.item-2 .line .line-fill {
+      width: 100%;
+      -webkit-transition: 1000ms;
+      -o-transition: 1000ms;
+      transition: 1000ms; }
+    .refferal .lines.animate .item.item-3 .line .line-fill {
+      width: 100%;
+      -webkit-transition: 1000ms;
+      -o-transition: 1000ms;
+      transition: 1000ms; }
+    .refferal .lines.animate .item.item-4 .line .line-fill {
+      width: 100%;
+      -webkit-transition: 1000ms;
+      -o-transition: 1000ms;
+      transition: 1000ms; }
+    .refferal .lines.animate.visible .item.item-1 .line .line-fill {
+      width: 87%;
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
+    .refferal .lines.animate.visible .item.item-2 .line .line-fill {
+      width: 25%;
+      -webkit-transition-delay: 500ms;
+           -o-transition-delay: 500ms;
+              transition-delay: 500ms; }
+    .refferal .lines.animate.visible .item.item-3 .line .line-fill {
+      width: 25%;
+      -webkit-transition-delay: 1000ms;
+           -o-transition-delay: 1000ms;
+              transition-delay: 1000ms; }
+    .refferal .lines.animate.visible .item.item-4 .line .line-fill {
+      -webkit-transition-delay: 1500ms;
+           -o-transition-delay: 1500ms;
+              transition-delay: 1500ms;
+      width: 15%; }
   .refferal .diagramm-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1562,6 +1655,24 @@ ul, ol {
               opacity: 1; }
               .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement:hover + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement {
                 opacity: 0.1; }
+    .refferal .diagramm-wrapper.animate {
+      opacity: 0; }
+      .refferal .diagramm-wrapper.animate .item .refferal-diagramm {
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: 1000ms;
+        -o-transition: 1000ms;
+        transition: 1000ms; }
+      .refferal .diagramm-wrapper.animate.visible {
+        opacity: 1; }
+        .refferal .diagramm-wrapper.animate.visible .refferal-diagramm {
+          -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transition-delay: 3000ms;
+               -o-transition-delay: 3000ms;
+                  transition-delay: 3000ms; }
 
 .roadmap {
   position: relative;
@@ -2046,7 +2157,472 @@ ul, ol {
   .sidebar .social-btns .social-btn {
     margin-bottom: 20px; }
   .sidebar .social-btns .gray-line {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .how {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    background-color: #0C0E46;
+    background-image: url("../img/how_bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden; }
+    .how .how-wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 5px;
+      margin: 0 auto 0;
+      max-width: 830px; }
+      .how .how-wrapper:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1046px;
+        width: 2092px;
+        height: 578px;
+        background-image: url("../img/how_graph.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        pointer-events: none; }
+      .how .how-wrapper .item {
+        width: 33.33333%;
+        padding: 0 20px;
+        margin-top: 30px; }
+        .how .how-wrapper .item.item-2 {
+          position: relative;
+          top: 30px; }
+        .how .how-wrapper .item .icon {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          background-color: #0C0E46;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin: auto; }
+          .how .how-wrapper .item .icon.icon-0 {
+            background-image: url("../img/how_icon-0.svg"); }
+          .how .how-wrapper .item .icon.icon-1 {
+            background-image: url("../img/how_icon-1.svg"); }
+          .how .how-wrapper .item .icon.icon-2 {
+            background-image: url("../img/how_icon-2.svg"); }
+          .how .how-wrapper .item .icon.icon-3 {
+            background-image: url("../img/how_icon-3.svg"); }
+          .how .how-wrapper .item .icon.icon-4 {
+            background-image: url("../img/how_icon-4.svg"); }
+        .how .how-wrapper .item .title {
+          font-weight: 500;
+          font-size: 18px;
+          text-align: center;
+          letter-spacing: -0.3px;
+          color: #FFFFFF;
+          max-width: 215px;
+          margin: auto;
+          line-height: 1.3; }
+        .how .how-wrapper .item .desc {
+          line-height: 24px;
+          font-size: 14px;
+          text-align: center;
+          color: #50528E;
+          max-width: 215px;
+          margin: 18px auto 0; }
+      .how .how-wrapper .line {
+        position: absolute; }
+        .how .how-wrapper .line.line-0 {
+          background-image: url("../img/how_line-0.svg");
+          top: 140px;
+          left: 200px;
+          width: 161px;
+          height: 45px; }
+        .how .how-wrapper .line.line-1 {
+          background-image: url("../img/how_line-1.svg");
+          top: 140px;
+          left: 470px;
+          width: 162px;
+          height: 45px; }
+        .how .how-wrapper .line.line-2 {
+          background-image: url("../img/how_line-2.svg");
+          top: 185px;
+          left: 660px;
+          width: 64px;
+          height: 197px; }
+        .how .how-wrapper .line.line-3 {
+          background-image: url("../img/how_line-3.svg");
+          top: 380px;
+          left: 330px;
+          width: 163px;
+          height: 23px; }
+      .how .how-wrapper.animate .item {
+        opacity: 0;
+        -webkit-transition: 500ms;
+        -o-transition: 500ms;
+        transition: 500ms; }
+      .how .how-wrapper.animate.visible .item {
+        opacity: 1; }
+        .how .how-wrapper.animate.visible .item.item-2 {
+          -webkit-transition-delay: 500ms;
+               -o-transition-delay: 500ms;
+                  transition-delay: 500ms; }
+        .how .how-wrapper.animate.visible .item.item-3 {
+          -webkit-transition-delay: 1000ms;
+               -o-transition-delay: 1000ms;
+                  transition-delay: 1000ms; }
+        .how .how-wrapper.animate.visible .item.item-4 {
+          -webkit-transition-delay: 2000ms;
+               -o-transition-delay: 2000ms;
+                  transition-delay: 2000ms; }
+        .how .how-wrapper.animate.visible .item.item-5 {
+          -webkit-transition-delay: 1500ms;
+               -o-transition-delay: 1500ms;
+                  transition-delay: 1500ms; }
+    .how .how-bottom {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .how .how-bottom .line {
+        position: absolute;
+        top: 116px;
+        left: 593px;
+        width: 75px;
+        height: 488px;
+        background-image: url("../img/how_line.svg"); }
+      .how .how-bottom .title {
+        line-height: 40px;
+        font-family: "Circular Std", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+        margin-right: 80px; }
+      .how .how-bottom .left {
+        -webkit-box-flex: 62%;
+        -webkit-flex: 62%;
+            -ms-flex: 62%;
+                flex: 62%; }
+        .how .how-bottom .left .how-diagramm {
+          width: 570px;
+          height: 333px;
+          margin-top: 100px; }
+          .how .how-bottom .left .how-diagramm .text-10 {
+            -webkit-transition: 100ms;
+            -o-transition: 100ms;
+            transition: 100ms;
+            opacity: 0; }
+          .how .how-bottom .left .how-diagramm .text-15 {
+            -webkit-transition: 100ms;
+            -o-transition: 100ms;
+            transition: 100ms;
+            opacity: 0; }
+          .how .how-bottom .left .how-diagramm .text-20 {
+            -webkit-transition: 100ms;
+            -o-transition: 100ms;
+            transition: 100ms;
+            opacity: 0; }
+          .how .how-bottom .left .how-diagramm .text-55 {
+            -webkit-transition: 100ms;
+            -o-transition: 100ms;
+            transition: 100ms;
+            opacity: 0; }
+          .how .how-bottom .left .how-diagramm .line-10 {
+            cursor: pointer; }
+            .how .how-bottom .left .how-diagramm .line-10:hover + .line-20 + .text-55 + .text-10 {
+              opacity: 1; }
+          .how .how-bottom .left .how-diagramm .line-15 {
+            cursor: pointer; }
+            .how .how-bottom .left .how-diagramm .line-15:hover + .line-55 + .line-10 + .line-20 + .text-55 + .text-10 + .text-15 {
+              opacity: 1; }
+          .how .how-bottom .left .how-diagramm .line-20 {
+            cursor: pointer; }
+            .how .how-bottom .left .how-diagramm .line-20:hover + .text-55 + .text-10 + .text-15 + .text-20 {
+              opacity: 1; }
+          .how .how-bottom .left .how-diagramm .line-55 {
+            cursor: pointer; }
+            .how .how-bottom .left .how-diagramm .line-55:hover + .line-10 + .line-20 + .text-55 {
+              opacity: 1; }
+      .how .how-bottom .right {
+        -webkit-box-flex: 38%;
+        -webkit-flex: 38%;
+            -ms-flex: 38%;
+                flex: 38%; }
+        .how .how-bottom .right .how-icon {
+          width: 173px;
+          height: 167px;
+          background-image: url("../img/how_icon.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin: 110px auto 0; }
+        .how .how-bottom .right .btn-how {
+          display: block;
+          margin: 50px auto 0;
+          width: 210px;
+          height: 55px;
+          line-height: 55px;
+          background-color: #F12986;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 700;
+          font-size: 12px;
+          text-align: center;
+          letter-spacing: 0.428571px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          -webkit-transition: 100ms;
+          -o-transition: 100ms;
+          transition: 100ms; }
+          .how .how-bottom .right .btn-how:hover {
+            background-color: #d90e6c; }
+  .calculator {
+    padding: 30px 0 0;
+    background-color: #1D206E;
+    background-image: url("../img/calc_bg.png");
+    background-repeat: no-repeat;
+    background-position: center 50px; }
+    .calculator .calculator-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent #0C0E46 transparent transparent;
+      border-top-width: 0px;
+      border-bottom-width: 50px;
+      border-left-width: 0px; }
+    .calculator .h2 {
+      text-align: left; }
+    .calculator .calculator-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.1); }
+      .calculator .calculator-wrapper .calc {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0;
+            -ms-flex: 1 0;
+                flex: 1 0;
+        padding-right: 120px; }
+        .calculator .calculator-wrapper .calc .calc-controlls {
+          padding-top: 10px; }
+        .calculator .calculator-wrapper .calc .total {
+          position: relative;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-top: 20px; }
+          .calculator .calculator-wrapper .calc .total:after {
+            content: '$';
+            position: absolute;
+            top: 50%;
+            right: 35%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            color: #fff;
+            line-height: 1; }
+          .calculator .calculator-wrapper .calc .total .label {
+            width: 60%;
+            font-size: 18px;
+            color: #FFFFFF;
+            opacity: 0.3; }
+          .calculator .calculator-wrapper .calc .total .total-input {
+            width: 40%;
+            border: none;
+            padding: 5px 15px 5px 25px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-family: "Circular Std", sans-serif;
+            color: #FFFFFF; }
+        .calculator .calculator-wrapper .calc .range-slider {
+          height: 4px;
+          -webkit-border-radius: 2px;
+                  border-radius: 2px;
+          background: rgba(255, 255, 255, 0.1);
+          margin-top: 20px; }
+          .calculator .calculator-wrapper .calc .range-slider .ui-slider-range-min {
+            height: 4px;
+            -webkit-border-radius: 2px;
+                    border-radius: 2px; }
+          .calculator .calculator-wrapper .calc .range-slider[data-range="1"] .ui-slider-range-min {
+            background: #F12986; }
+          .calculator .calculator-wrapper .calc .range-slider[data-range="2"] .ui-slider-range-min {
+            background: #1CC5FF; }
+          .calculator .calculator-wrapper .calc .range-slider[data-range="3"] .ui-slider-range-min {
+            background: #28FBCB; }
+          .calculator .calculator-wrapper .calc .range-slider .ui-slider-handle {
+            top: 50%;
+            margin-top: -15px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer; }
+            .calculator .calculator-wrapper .calc .range-slider .ui-slider-handle:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              margin-top: -20px;
+              height: 40px;
+              width: 40px;
+              left: 50%;
+              margin-left: -20px;
+              background-image: url("../img/range-slider_caret.png");
+              background-position: center center;
+              pointer-events: none; }
+        .calculator .calculator-wrapper .calc .calc-months {
+          margin-top: 30px; }
+        .calculator .calculator-wrapper .calc .calc-month {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          font-size: 16px;
+          color: #FFFFFF;
+          padding: 20px 0 10px;
+          border-bottom: 1px dashed rgba(255, 255, 255, 0.1); }
+          .calculator .calculator-wrapper .calc .calc-month:last-child {
+            border: none; }
+      .calculator .calculator-wrapper .calculator-graph {
+        position: relative;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 583px;
+            -ms-flex: 0 1 583px;
+                flex: 0 1 583px;
+        height: 498px;
+        background-image: url("../img/calc_graph.svg");
+        margin-bottom: 30px;
+        background-repeat: no-repeat; }
+        .calculator .calculator-wrapper .calculator-graph .price {
+          position: absolute;
+          font-size: 17px;
+          font-family: "Circular Std", sans-serif;
+          color: #FFFFFF;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+          .calculator .calculator-wrapper .calculator-graph .price.price-1 {
+            left: 40px;
+            top: 378px; }
+          .calculator .calculator-wrapper .calculator-graph .price.price-2 {
+            left: 208px;
+            top: 279px; }
+          .calculator .calculator-wrapper .calculator-graph .price.price-3 {
+            left: 383px;
+            top: 205px; }
+          .calculator .calculator-wrapper .calculator-graph .price.price-4 {
+            left: 492px;
+            top: 64px; }
+        .calculator .calculator-wrapper .calculator-graph .year {
+          position: absolute;
+          font-size: 16px;
+          font-family: "Circular Std", sans-serif;
+          color: #FFFFFF;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          top: 100%; }
+          .calculator .calculator-wrapper .calculator-graph .year.y-1 {
+            left: 40px; }
+          .calculator .calculator-wrapper .calculator-graph .year.y-2 {
+            left: 208px; }
+          .calculator .calculator-wrapper .calculator-graph .year.y-3 {
+            left: 383px; }
+          .calculator .calculator-wrapper .calculator-graph .year.y-4 {
+            left: 560px; }
+    .calculator .calculator-btns {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20px; }
+      .calculator .calculator-btns .btn-invest {
+        display: block;
+        width: 210px;
+        height: 55px;
+        line-height: 55px;
+        background: #1CC5FF;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.428571px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        -webkit-transition: 100ms;
+        -o-transition: 100ms;
+        transition: 100ms;
+        margin-right: 40px; }
+        .calculator .calculator-btns .btn-invest:hover {
+          background-color: #00ade8; }
+      .calculator .calculator-btns .btn-hw {
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none; }
+        .calculator .calculator-btns .btn-hw:hover {
+          text-decoration: underline; } }
 
 @media (max-width: 1043px) {
   .container {
@@ -2074,7 +2650,28 @@ ul, ol {
       display: none;
       background: #0C0E46; }
       .header .header-wrapper .nav.mobile {
-        display: block; }
+        display: block;
+        padding-top: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        z-index: 120; }
+        .header .header-wrapper .nav.mobile .item {
+          margin-top: 30px; }
   .sidebar .circle-btn {
     margin-top: 0;
     top: 40%; }
@@ -2502,9 +3099,8 @@ ul, ol {
       .main .buttons .btn-blue {
         margin-top: 20px; }
   .sidebar {
-    position: relative;
+    position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
     height: 80px;
@@ -2539,6 +3135,7 @@ ul, ol {
       .sidebar .social-btns .social-btn {
         margin: 0 10px; }
       .sidebar .social-btns .chat-btn {
+        display: none;
         position: absolute;
         top: 50%;
         right: 20px;
@@ -2553,7 +3150,7 @@ ul, ol {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
   .video {
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 30px; }
     .video:after {
       display: none; }
