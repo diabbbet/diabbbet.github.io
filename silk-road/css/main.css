@@ -212,7 +212,14 @@ ul, ol {
     background-image: url("../img/chevron-left.svg");
     background-position: center center;
     background-repeat: no-repeat;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms; }
+    .sidebar .circle-btn.active {
+      -webkit-transform: scale(-1, 1);
+          -ms-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
   .sidebar .label {
     position: absolute;
     top: 50%;

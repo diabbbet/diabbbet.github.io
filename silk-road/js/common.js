@@ -184,8 +184,10 @@ $(function() {
 
 	$('#sidebar').on('mouseenter', function() {
 		$(this).addClass('active');
+		$(this).find('.circle-btn').addClass('active');
 	}).on('mouseleave', function() {
 		$(this).removeClass('active');
+		$(this).find('.circle-btn').removeClass('active');
 	});
 
 	if ($(window).width() < 1024) {
