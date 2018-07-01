@@ -219,6 +219,10 @@ $(function() {
 
 });
 
+$(window).on('load', function() {
+	$('#load').fadeOut();
+});
+
 // form
 function form() {
 
