@@ -199,13 +199,13 @@ $(function() {
 		$('#roadmap_graph .rectangle .white-text').text($(this).attr('data-white'));
 	});
 
-	$('.refferal-diagramm .line-diagramm')
-	.on('mouseenter', function() {
+	$('.refferal-diagramm .line-diagramm').on('mouseenter', function() {
 		var percent = $(this).attr('data-percent');
 		$('.refferal-diagramm .center-text').text(percent);
-	})
-	.on('mouseleave', function() {
-		$('.refferal-diagramm .center-text').text('');
+		var dataLock = $(this).attr('data-lock');
+		$('.lock-lock').removeClass('active');
+		$('.lock-lock[data-lock="'+dataLock+'"]').addClass('active');
+
 	});
 
 	$('.btn-invest').on('click', function() {
@@ -215,6 +215,9 @@ $(function() {
 	$('.how-diagramm .line').on('mouseenter', function() {
 		var percent = $(this).attr('data-percent');
 		$('.how-diagramm .num').text(percent + '%');
+		var attr = $(this).attr('data-color');
+		$('.how-diagramm .lock').removeClass('active');
+		$('.how-diagramm .lock[data-color="'+attr+'"]').addClass('active');
 	});
 
 

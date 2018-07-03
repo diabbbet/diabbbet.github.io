@@ -1433,44 +1433,16 @@ ul, ol {
         margin-top: 100px; }
         .how .how-bottom .left .how-diagramm .num {
           position: absolute;
-          top: 49%;
-          left: 41%;
+          top: 47%;
+          left: 39%;
           color: #fff;
           font-size: 40px; }
-        .how .how-bottom .left .how-diagramm .text-10 {
+        .how .how-bottom .left .how-diagramm .lock {
           -webkit-transition: 100ms;
           -o-transition: 100ms;
           transition: 100ms;
           opacity: 0; }
-        .how .how-bottom .left .how-diagramm .text-15 {
-          -webkit-transition: 100ms;
-          -o-transition: 100ms;
-          transition: 100ms;
-          opacity: 0; }
-        .how .how-bottom .left .how-diagramm .text-20 {
-          -webkit-transition: 100ms;
-          -o-transition: 100ms;
-          transition: 100ms;
-          opacity: 0; }
-        .how .how-bottom .left .how-diagramm .text-55 {
-          -webkit-transition: 100ms;
-          -o-transition: 100ms;
-          transition: 100ms; }
-        .how .how-bottom .left .how-diagramm .line-10 {
-          cursor: pointer; }
-          .how .how-bottom .left .how-diagramm .line-10:hover + .line-20 + .text-55 + .text-10 {
-            opacity: 1; }
-        .how .how-bottom .left .how-diagramm .line-15 {
-          cursor: pointer; }
-          .how .how-bottom .left .how-diagramm .line-15:hover + .line-55 + .line-10 + .line-20 + .text-55 + .text-10 + .text-15 {
-            opacity: 1; }
-        .how .how-bottom .left .how-diagramm .line-20 {
-          cursor: pointer; }
-          .how .how-bottom .left .how-diagramm .line-20:hover + .text-55 + .text-10 + .text-15 + .text-20 {
-            opacity: 1; }
-        .how .how-bottom .left .how-diagramm .line-55 {
-          cursor: pointer; }
-          .how .how-bottom .left .how-diagramm .line-55:hover + .line-10 + .line-20 + .text-55 {
+          .how .how-bottom .left .how-diagramm .lock.active {
             opacity: 1; }
     .how .how-bottom .right {
       -webkit-box-flex: 38%;
@@ -1924,55 +1896,29 @@ ul, ol {
           -webkit-transition: 100ms;
           -o-transition: 100ms;
           transition: 100ms; }
+          .refferal .diagramm-wrapper .item .refferal-diagramm .text-marketing.active, .refferal .diagramm-wrapper .item .refferal-diagramm .text-bounty.active, .refferal .diagramm-wrapper .item .refferal-diagramm .text-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .text-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .text-procurement.active {
+            opacity: 1; }
         .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-marketing, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-bounty, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-team, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-team, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-procurement {
           opacity: 0;
           -webkit-transition: 100ms;
           -o-transition: 100ms;
           transition: 100ms; }
+          .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-marketing.active, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-bounty.active, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .crcl-procurement.active {
+            opacity: 1; }
         .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-marketing, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-bounty, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-team, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-team, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-procurement {
           opacity: 0;
           -webkit-transition: 100ms;
           -o-transition: 100ms;
           transition: 100ms; }
+          .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-marketing.active, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-bounty.active, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-team.active, .refferal .diagramm-wrapper .item .refferal-diagramm .arrow-procurement.active {
+            opacity: 0.1; }
         .refferal .diagramm-wrapper .item .refferal-diagramm .center-text {
           position: absolute;
-          top: 184px;
-          left: 135px;
+          top: 174px;
+          left: 117px;
           text-align: center;
           color: #fff;
-          font-size: 18px; }
-        .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing {
-          cursor: pointer; }
-          .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing:hover + .line-procurement + .text-marketing {
-            opacity: 1; }
-            .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing:hover + .line-procurement + .text-marketing + .crcl-marketing {
-              opacity: 1; }
-              .refferal .diagramm-wrapper .item .refferal-diagramm .line-marketing:hover + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing {
-                opacity: 0.1; }
-        .refferal .diagramm-wrapper .item .refferal-diagramm .line-bounty {
-          cursor: pointer; }
-          .refferal .diagramm-wrapper .item .refferal-diagramm .line-bounty:hover + .line-team + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty {
-            opacity: 1; }
-            .refferal .diagramm-wrapper .item .refferal-diagramm .line-bounty:hover + .line-team + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty {
-              opacity: 1; }
-              .refferal .diagramm-wrapper .item .refferal-diagramm .line-bounty:hover + .line-team + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty {
-                opacity: 0.1; }
-        .refferal .diagramm-wrapper .item .refferal-diagramm .line-team {
-          cursor: pointer; }
-          .refferal .diagramm-wrapper .item .refferal-diagramm .line-team:hover + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement + .text-team {
-            opacity: 1; }
-            .refferal .diagramm-wrapper .item .refferal-diagramm .line-team:hover + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement + .text-team + .crcl-team {
-              opacity: 1; }
-              .refferal .diagramm-wrapper .item .refferal-diagramm .line-team:hover + .line-marketing + .line-procurement + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement + .text-team + .crcl-team + .arrow-team {
-                opacity: 0.1; }
-        .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement {
-          cursor: pointer; }
-          .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement:hover + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement {
-            opacity: 1; }
-            .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement:hover + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement {
-              opacity: 1; }
-              .refferal .diagramm-wrapper .item .refferal-diagramm .line-procurement:hover + .text-marketing + .crcl-marketing + .arrow-marketing + .text-bounty + .crcl-bounty + .arrow-bounty + .text-procurement + .crcl-procurement + .arrow-procurement {
-                opacity: 0.1; }
+          font-size: 40px; }
 
 .roadmap {
   position: relative;
