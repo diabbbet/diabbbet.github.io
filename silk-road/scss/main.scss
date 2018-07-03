@@ -287,6 +287,7 @@ a {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	overflow: hidden;
 	.main-angar {
 		position: absolute;
 		top: 0;
@@ -298,7 +299,7 @@ a {
 		background-repeat: no-repeat;
 		background-image: url('../img/angar-bg-fill.png');
 		z-index: 2;
-		opacity: 0.2;
+		animation: glowing 3s infinite linear;
 	}
 	.main-angar2 {
 		position: absolute;
@@ -316,24 +317,104 @@ a {
 		top: 0; left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('../img/line1.svg'), url('../img/line2.svg'), url('../img/line3.svg'), url('../img/line4.svg');
+		background-image: url('../img/line1.svg');
 		background-position: center center;
 		background-repeat: repeat-x;
 		background-size: 100%;
 		z-index: 3;
 		animation: lines 20s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines-1 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line2.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lines 40s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines-2 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line3.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lines 60s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines-3 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line4.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lines 80s linear infinite;
+		pointer-events: none;
 	}
 	.repeat-lines2 {
 		position: absolute;
 		top: 0; left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('../img/line1.svg'), url('../img/line2.svg'), url('../img/line3.svg'), url('../img/line4.svg');
+		background-image: url('../img/line1.svg');
 		background-position: center center;
 		background-repeat: repeat-x;
 		background-size: 100%;
 		z-index: 3;
 		animation: lineses 20s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines2-1 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line2.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lineses 40s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines2-2 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line3.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lineses 60s linear infinite;
+		pointer-events: none;
+	}
+	.repeat-lines2-3 {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/line4.svg');
+		background-position: center center;
+		background-repeat: repeat-x;
+		background-size: 100%;
+		z-index: 3;
+		animation: lineses 80s linear infinite;
+		pointer-events: none;
 	}
 	.main-triangle {
 		position: absolute;
@@ -355,6 +436,7 @@ a {
 		height: 100%;
 		max-width: 1024px;
 		margin: auto;
+		z-index: 3;
 	}
 	.header-indent {
 		width: 100%;
@@ -1116,6 +1198,7 @@ a {
 				background-repeat: no-repeat;
 				background-position: center center;
 				margin: auto;
+				border-radius: 50%;
 				&.icon-0 {
 					background-image: url('../img/how_icon-0.svg');
 				}
@@ -1230,9 +1313,16 @@ a {
 		.left {
 			flex: 62%;
 			.how-diagramm {
+				position: relative;
 				width: 570px;
 				height: 333px;
 				margin-top: 100px;
+				.num {
+					position: absolute;
+					top: 52%;
+					left: 45%;
+					color: #fff;
+				}
 				.text-10 {
 					transition: 100ms;
 					opacity: 0;
@@ -1891,6 +1981,11 @@ a {
 			top: calc(100% - 50px);
 			cursor: pointer;
 			padding-top: 50px;
+			&:hover {
+				.num {
+					color: #F12986;
+				}
+			}
 			&.y-1 {
 				left: 70px;
 			}
@@ -2238,9 +2333,9 @@ a {
 }
 
 @keyframes glowing {
-	0% { -webkit-box-shadow: 0 0 20px#1bb895; }
-	50% { -webkit-box-shadow: 0 0 20px transparent; }
-	100% { -webkit-box-shadow: 0 0 20px #1bb895; }
+	0% { opacity: 0; }
+	50% { opacity: 0.2; }
+	100% { opacity: 0; }
 }
 
 @keyframes scaling {
@@ -3064,6 +3159,30 @@ a {
 	}
 
 	.main {
+		.repeat-lines {
+			display: none;
+		}
+		.repeat-lines-1 {
+			display: none;
+		}
+		.repeat-lines-2 {
+			display: none;
+		}
+		.repeat-lines-3 {
+			display: none;
+		}
+		.repeat-lines2 {
+			display: none;
+		}
+		.repeat-lines2-1 {
+			display: none;
+		}
+		.repeat-lines2-2 {
+			display: none;
+		}
+		.repeat-lines2-3 {
+			display: none;
+		}
 		height: auto;
 		padding-bottom: 80px;
 		.main-triangle {

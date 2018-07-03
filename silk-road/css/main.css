@@ -305,7 +305,8 @@ ul, ol {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  overflow: hidden; }
   .main .main-angar {
     position: absolute;
     top: 0;
@@ -318,7 +319,8 @@ ul, ol {
     background-repeat: no-repeat;
     background-image: url("../img/angar-bg-fill.png");
     z-index: 2;
-    opacity: 0.2; }
+    -webkit-animation: glowing 3s infinite linear;
+            animation: glowing 3s infinite linear; }
   .main .main-angar2 {
     position: absolute;
     top: 0;
@@ -336,28 +338,120 @@ ul, ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/line1.svg"), url("../img/line2.svg"), url("../img/line3.svg"), url("../img/line4.svg");
+    background-image: url("../img/line1.svg");
     background-position: center center;
     background-repeat: repeat-x;
     -webkit-background-size: 100% 100%;
             background-size: 100%;
     z-index: 3;
     -webkit-animation: lines 20s linear infinite;
-            animation: lines 20s linear infinite; }
+            animation: lines 20s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line2.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lines 40s linear infinite;
+            animation: lines 40s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line3.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lines 60s linear infinite;
+            animation: lines 60s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line4.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lines 80s linear infinite;
+            animation: lines 80s linear infinite;
+    pointer-events: none; }
   .main .repeat-lines2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/line1.svg"), url("../img/line2.svg"), url("../img/line3.svg"), url("../img/line4.svg");
+    background-image: url("../img/line1.svg");
     background-position: center center;
     background-repeat: repeat-x;
     -webkit-background-size: 100% 100%;
             background-size: 100%;
     z-index: 3;
     -webkit-animation: lineses 20s linear infinite;
-            animation: lineses 20s linear infinite; }
+            animation: lineses 20s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines2-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line2.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lineses 40s linear infinite;
+            animation: lineses 40s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines2-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line3.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lineses 60s linear infinite;
+            animation: lineses 60s linear infinite;
+    pointer-events: none; }
+  .main .repeat-lines2-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/line4.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    z-index: 3;
+    -webkit-animation: lineses 80s linear infinite;
+            animation: lineses 80s linear infinite;
+    pointer-events: none; }
   .main .main-triangle {
     position: absolute;
     bottom: 0;
@@ -390,7 +484,8 @@ ul, ol {
             align-items: center;
     height: 100%;
     max-width: 1024px;
-    margin: auto; }
+    margin: auto;
+    z-index: 3; }
   .main .header-indent {
     width: 100%;
     height: 185px; }
@@ -1222,7 +1317,9 @@ ul, ol {
         background-color: #0C0E46;
         background-repeat: no-repeat;
         background-position: center center;
-        margin: auto; }
+        margin: auto;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
         .how .how-wrapper .item .icon.icon-0 {
           background-image: url("../img/how_icon-0.svg"); }
         .how .how-wrapper .item .icon.icon-1 {
@@ -1330,9 +1427,15 @@ ul, ol {
           -ms-flex: 62%;
               flex: 62%; }
       .how .how-bottom .left .how-diagramm {
+        position: relative;
         width: 570px;
         height: 333px;
         margin-top: 100px; }
+        .how .how-bottom .left .how-diagramm .num {
+          position: absolute;
+          top: 52%;
+          left: 45%;
+          color: #fff; }
         .how .how-bottom .left .how-diagramm .text-10 {
           -webkit-transition: 100ms;
           -o-transition: 100ms;
@@ -1936,6 +2039,8 @@ ul, ol {
       top: calc(100% - 50px);
       cursor: pointer;
       padding-top: 50px; }
+      .roadmap .roadmap-graph .year:hover .num {
+        color: #F12986; }
       .roadmap .roadmap-graph .year.y-1 {
         left: 70px; }
       .roadmap .roadmap-graph .year.y-2 {
@@ -2292,19 +2397,19 @@ ul, ol {
 
 @-webkit-keyframes glowing {
   0% {
-    -webkit-box-shadow: 0 0 20px #1bb895; }
+    opacity: 0; }
   50% {
-    -webkit-box-shadow: 0 0 20px transparent; }
+    opacity: 0.2; }
   100% {
-    -webkit-box-shadow: 0 0 20px #1bb895; } }
+    opacity: 0; } }
 
 @keyframes glowing {
   0% {
-    -webkit-box-shadow: 0 0 20px #1bb895; }
+    opacity: 0; }
   50% {
-    -webkit-box-shadow: 0 0 20px transparent; }
+    opacity: 0.2; }
   100% {
-    -webkit-box-shadow: 0 0 20px #1bb895; } }
+    opacity: 0; } }
 
 @-webkit-keyframes scaling {
   0% {
@@ -3408,6 +3513,22 @@ ul, ol {
   .main {
     height: auto;
     padding-bottom: 80px; }
+    .main .repeat-lines {
+      display: none; }
+    .main .repeat-lines-1 {
+      display: none; }
+    .main .repeat-lines-2 {
+      display: none; }
+    .main .repeat-lines-3 {
+      display: none; }
+    .main .repeat-lines2 {
+      display: none; }
+    .main .repeat-lines2-1 {
+      display: none; }
+    .main .repeat-lines2-2 {
+      display: none; }
+    .main .repeat-lines2-3 {
+      display: none; }
     .main .main-triangle {
       border-top-width: 45px; }
     .main .header-indent {

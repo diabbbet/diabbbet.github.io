@@ -1,17 +1,21 @@
 $(function() {
 
-	if ($(window).height() > 666 && $(window).width() > 999) {
+	if ($(window) && $(window).width() > 999) {
+		$('.video').addClass('animate');
 		$('#fullpage').fullpage({
 			scrollOverflow: true,
 			dragAndMove: false,
 			onLeave: function(index, nextIndex, direction){
 				if (nextIndex == 2) {
-					$('.how-wrapper').addClass('visible');
-				}
-				if (nextIndex == 5) {
-					$('.lines-wrapper, .lines, .diagramm-wrapper').addClass('visible');
+					$('.video').addClass('visible');
 				}
 				if (nextIndex == 4) {
+					$('.how-wrapper').addClass('visible');
+				}
+				if (nextIndex == 7) {
+					$('.lines-wrapper, .lines, .diagramm-wrapper').addClass('visible');
+				}
+				if (nextIndex == 6) {
 					$('#sidebar').addClass('visible');
 				} else {
 					$('#sidebar').removeClass('visible');
@@ -19,14 +23,18 @@ $(function() {
 			}
 		});
 
-		$('#sidebar .label').on('click', function() {
-			var $this = $(this)
+		$('#sidebar .label, #sidebar .circle-btn').on('click', function() {
+			var $this = $(this);
 			$this.parent().addClass('show');
 
 			setTimeout(function(){
 				$this.parent().removeClass('show');
-				$.fn.fullpage.silentMoveTo(4);
+				$.fn.fullpage.silentMoveTo(6);
 			}, 500);
+		});
+
+		$('[data-link]').on('click', function() {
+			var link = $(this).attr('data-link');
 		});
 	}  else {
 		$(window).on('load', function() {
@@ -121,13 +129,6 @@ $(function() {
 		mainHeight();
 	});
 
-	// $('.anchor-btn').on('click', function() {
-	// 	var dataAnchor = $(this).attr('data-anchor');
-	// 	var topPos = $('.anchor-link').offset().top;
-	// 	$('body,html').animate({scrollTop: topPos}, 1000);
-	// 	return false;
-	// });
-
 
 	$('.range-slider').each(function() {
 		var item = $(this).attr('data-range')*1;
@@ -177,11 +178,6 @@ $(function() {
 		$('#video video').attr('src', url);
 	});
 
-	$('#scroll_btn').on('click', function() {
-		var top = $('.video').offset().top ++;
-		$('body,html').animate({scrollTop: top}, 1000);
-	});
-
 	$('#sidebar').on('mouseenter', function() {
 		$(this).addClass('active');
 		$(this).find('.circle-btn').addClass('active');
@@ -217,7 +213,18 @@ $(function() {
 		$('.refferal-diagramm .center-text').text('');
 	});
 
-	// calculator();
+	$('.btn-invest').on('click', function() {
+		calculator();
+	});
+
+	$('.how-diagramm .line').on('mouseenter', function() {
+		var percent = $(this).attr('data-percent');
+		$('.how-diagramm .num').text(percent + '%');
+	})
+	.on('mouseleave', function() {
+		$('.how-diagramm .num').text('');
+	});
+
 
 });
 
@@ -351,6 +358,12 @@ function countdown() {
 }
 
 function calculator() {
-	var frstMonth = 0.02286438 * $('#invest').val() *  $('#btc').val() / $('#asic');
-	// var secondMonth = 7 * $('#invest').val() *  $('#btc').val() / $('#asic');
+	var frstMonth = 0.02286438 * ($('#invest').val()*1) *  ($('#btc').val()*1) / ($('#asic').val()*1);
+	$('#month_1 span').text(Math.round(frstMonth));
+	var secondMonth = 7 * $('#invest').val() /  1 + frstMonth;
+	$('#month_2 span').text(Math.round(secondMonth));
+	var thirdMonth = 8 * $('#invest').val() /  1 + secondMonth;
+	$('#month_3 span').text(Math.round(thirdMonth));
+	var fourMonth = 7 * $('#invest').val() /  1 + thirdMonth;
+	$('#month_4 span').text(Math.round(fourMonth));
 }
