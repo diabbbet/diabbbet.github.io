@@ -358,12 +358,59 @@ function countdown() {
 }
 
 function calculator() {
-	var frstMonth = 0.02286438 * ($('#invest').val()*1) *  ($('#btc').val()*1) / ($('#asic').val()*1);
-	$('#month_1 span').text(Math.round(frstMonth));
-	var secondMonth = 7 * $('#invest').val() /  1 + frstMonth;
-	$('#month_2 span').text(Math.round(secondMonth));
-	var thirdMonth = 8 * $('#invest').val() /  1 + secondMonth;
-	$('#month_3 span').text(Math.round(thirdMonth));
-	var fourMonth = 7 * $('#invest').val() /  1 + thirdMonth;
-	$('#month_4 span').text(Math.round(fourMonth));
+	var month_1 = 0.02286438 * ($('#invest').val()*1) *  ($('#btc').val()*1) / ($('#asic').val()*1);
+	$('#month_1 span').text(Math.round(month_1));
+	var month_2 = 7 * $('#invest').val() /  1 + month_1;
+	$('#month_2 span').text(Math.round(month_2));
+	var month_3 = 8 * $('#invest').val() /  1 + month_2;
+	$('#month_3 span').text(Math.round(month_3));
+	var month_4 = 7 * $('#invest').val() /  1 + month_3;
+	$('#month_4 span').text(Math.round(month_4));
+	var  month_5 = 8 * $('#invest').val() /  1 + month_4;
+	var  month_6 = 9 * $('#invest').val() /  1 + month_5;
+	$('#y1 span').text(Math.round(month_6));
+	var  month_7 = 8 * $('#invest').val() /  1 + month_6;
+	var  month_8 = 9 * $('#invest').val() /  1 + month_7;
+	var  month_9 = 9 * $('#invest').val() /  1 + month_8;
+	var  month_10 = 10 * $('#invest').val() /  1 + month_9;
+	var  month_11 = 10 * $('#invest').val() /  1 + month_10;
+	var  month_12 = 10 * $('#invest').val() /  1 + month_11;
+	var  month_13 = 10 * $('#invest').val() /  1 + month_12;
+	var  month_14 = 11 * $('#invest').val() /  1 + month_13;
+	var  month_15 = 11 * $('#invest').val() /  1 + month_14;
+	var  month_16 = 12 * $('#invest').val() /  1 + month_15;
+	var  month_17 = 12 * $('#invest').val() /  1 + month_16;
+	var  month_18 = 12 * $('#invest').val() /  1 + month_17;
+	$('#y2 span').text(Math.round(month_18));
+	var  month_19 = 13 * $('#invest').val() /  1 + month_18;
+	var  month_20 = 14 * $('#invest').val() /  1 + month_19;
+	var  month_21 = 13 * $('#invest').val() /  1 + month_20;
+	var  month_22 = 15 * $('#invest').val() /  1 + month_21;
+	var  month_23 = 15 * $('#invest').val() /  1 + month_22;
+	var  month_24 = 17 * $('#invest').val() /  1 + month_23;
+	var  month_25 = 16 * $('#invest').val() /  1 + month_24;
+	var  month_26 = 18 * $('#invest').val() /  1 + month_25;
+	var  month_27 = 16 * $('#invest').val() /  1 + month_26;
+	var  month_28 = 18 * $('#invest').val() /  1 + month_27;
+	var  month_29 = 19 * $('#invest').val() /  1 + month_28;
+	var  month_30 = 20 * $('#invest').val() /  1 + month_29;
+	$('#y3 span').text(Math.round(month_30));
+	var  month_31 = 21 * $('#invest').val() /  1 + month_30;
+	var  month_32 = 22 * $('#invest').val() /  1 + month_31;
+	var  month_33 = 22 * $('#invest').val() /  1 + month_32;
+	var  month_34 = 23 * $('#invest').val() /  1 + month_33;
+	var  month_35 = 24 * $('#invest').val() /  1 + month_34;
+	var  month_36 = 25 * $('#invest').val() /  1 + month_35;
+	var  month_37 = 27 * $('#invest').val() /  1 + month_36;
+	var  month_38 = 28 * $('#invest').val() /  1 + month_37;
+	var  month_39 = 28 * $('#invest').val() /  1 + month_38;
+	var  month_40 = 27 * $('#invest').val() /  1 + month_39;
+	var  month_41 = 31 * $('#invest').val() /  1 + month_40;
+	var  month_42 = 31 * $('#invest').val() /  1 + month_41;
+	$('#y4 span').text(Math.round(month_42));
+
+	$(".calculator-graph").addClass('build');
+	setTimeout(function(){
+		$(".calculator-graph").removeClass('build');
+	}, 500);
 }

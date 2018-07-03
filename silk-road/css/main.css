@@ -1648,7 +1648,29 @@ ul, ol {
       height: 498px;
       background-image: url("../img/calc_graph.svg");
       margin-bottom: 30px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      overflow: hidden; }
+      .calculator .calculator-wrapper .calculator-graph:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #1D206E;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms; }
+      .calculator .calculator-wrapper .calculator-graph.build:after {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; }
       .calculator .calculator-wrapper .calculator-graph .price {
         position: absolute;
         font-size: 17px;

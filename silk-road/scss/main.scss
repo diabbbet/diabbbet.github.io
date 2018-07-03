@@ -1535,6 +1535,22 @@ a {
 			background-image: url('../img/calc_graph.svg');
 			margin-bottom: 30px;
 			background-repeat: no-repeat;
+			overflow: hidden;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0; left: 0;
+				bottom: 0; right: 0;
+				background-color: #1D206E;
+				transform: translateX(100%);
+				transition: 300ms;
+			}
+			&.build {
+				&:after {
+					transform: translateX(0);
+					transition: none;
+				}
+			}
 			.price {
 				position: absolute;
 				font-size: 17px;
