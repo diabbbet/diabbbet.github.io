@@ -1319,9 +1319,10 @@ a {
 				margin-top: 100px;
 				.num {
 					position: absolute;
-					top: 52%;
-					left: 45%;
+					top: 49%;
+					left: 41%;
 					color: #fff;
+					font-size: 40px;
 				}
 				.text-10 {
 					transition: 100ms;
@@ -1337,7 +1338,6 @@ a {
 				}
 				.text-55 {
 					transition: 100ms;
-					opacity: 0;
 				}
 				.line-10 {
 					cursor: pointer;
@@ -1535,19 +1535,18 @@ a {
 			background-image: url('../img/calc_graph.svg');
 			margin-bottom: 30px;
 			background-repeat: no-repeat;
-			overflow: hidden;
 			&:after {
 				content: '';
 				position: absolute;
-				top: 0; left: 0;
-				bottom: 0; right: 0;
+				top: 0; right: 0;
+				bottom: 0;
 				background-color: #1D206E;
-				transform: translateX(100%);
+				width: 0;
 				transition: 300ms;
 			}
 			&.build {
 				&:after {
-					transform: translateX(0);
+					width: 110%;
 					transition: none;
 				}
 			}
@@ -2004,18 +2003,63 @@ a {
 			}
 			&.y-1 {
 				left: 70px;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					width: 30px;
+					height: 30px;
+					left: 0; right: 0;
+					margin: auto;
+				}
 			}
 			&.y-2 {
 				left: 288px;
+				&:after {
+					content: '';
+					position: absolute;
+					top: -110%;
+					width: 30px;
+					height: 30px;
+					left: 0; right: 0;
+					margin: auto;
+				}
 			}
 			&.y-3 {
 				left: 506px;
+				&:after {
+					content: '';
+					position: absolute;
+					top: -220%;
+					width: 30px;
+					height: 30px;
+					left: 0; right: 0;
+					margin: auto;
+				}
 			}
 			&.y-4 {
 				left: 725px;
+				&:after {
+					content: '';
+					position: absolute;
+					top: -335%;
+					width: 30px;
+					height: 30px;
+					left: 0; right: 0;
+					margin: auto;
+				}
 			}
 			&.y-5 {
 				left: 943px;
+				&:after {
+					content: '';
+					position: absolute;
+					top: -630%;
+					width: 30px;
+					height: 30px;
+					left: 0; right: 0;
+					margin: auto;
+				}
 			}
 			.num {
 				font-size: 16px;

@@ -194,14 +194,9 @@ $(function() {
 		});
 	}
 
-	$('#roadmap_graph').find('.year')
-	.on('mouseenter', function() {
+	$('#roadmap_graph').find('.year').on('mouseenter', function() {
 		$('#roadmap_graph .rectangle .red-text').text($(this).attr('data-red'));
 		$('#roadmap_graph .rectangle .white-text').text($(this).attr('data-white'));
-	})
-	.on('mouseleave', function() {
-		$('#roadmap_graph .rectangle .red-text').text('');
-		$('#roadmap_graph .rectangle .white-text').text('');
 	});
 
 	$('.refferal-diagramm .line-diagramm')
@@ -220,9 +215,6 @@ $(function() {
 	$('.how-diagramm .line').on('mouseenter', function() {
 		var percent = $(this).attr('data-percent');
 		$('.how-diagramm .num').text(percent + '%');
-	})
-	.on('mouseleave', function() {
-		$('.how-diagramm .num').text('');
 	});
 
 

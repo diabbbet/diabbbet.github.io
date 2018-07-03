@@ -1433,9 +1433,10 @@ ul, ol {
         margin-top: 100px; }
         .how .how-bottom .left .how-diagramm .num {
           position: absolute;
-          top: 52%;
-          left: 45%;
-          color: #fff; }
+          top: 49%;
+          left: 41%;
+          color: #fff;
+          font-size: 40px; }
         .how .how-bottom .left .how-diagramm .text-10 {
           -webkit-transition: 100ms;
           -o-transition: 100ms;
@@ -1454,8 +1455,7 @@ ul, ol {
         .how .how-bottom .left .how-diagramm .text-55 {
           -webkit-transition: 100ms;
           -o-transition: 100ms;
-          transition: 100ms;
-          opacity: 0; }
+          transition: 100ms; }
         .how .how-bottom .left .how-diagramm .line-10 {
           cursor: pointer; }
           .how .how-bottom .left .how-diagramm .line-10:hover + .line-20 + .text-55 + .text-10 {
@@ -1648,26 +1648,20 @@ ul, ol {
       height: 498px;
       background-image: url("../img/calc_graph.svg");
       margin-bottom: 30px;
-      background-repeat: no-repeat;
-      overflow: hidden; }
+      background-repeat: no-repeat; }
       .calculator .calculator-wrapper .calculator-graph:after {
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
-        bottom: 0;
         right: 0;
+        bottom: 0;
         background-color: #1D206E;
-        -webkit-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-                transform: translateX(100%);
+        width: 0;
         -webkit-transition: 300ms;
         -o-transition: 300ms;
         transition: 300ms; }
       .calculator .calculator-wrapper .calculator-graph.build:after {
-        -webkit-transform: translateX(0);
-            -ms-transform: translateX(0);
-                transform: translateX(0);
+        width: 110%;
         -webkit-transition: none;
         -o-transition: none;
         transition: none; }
@@ -2065,14 +2059,59 @@ ul, ol {
         color: #F12986; }
       .roadmap .roadmap-graph .year.y-1 {
         left: 70px; }
+        .roadmap .roadmap-graph .year.y-1:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          right: 0;
+          margin: auto; }
       .roadmap .roadmap-graph .year.y-2 {
         left: 288px; }
+        .roadmap .roadmap-graph .year.y-2:after {
+          content: '';
+          position: absolute;
+          top: -110%;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          right: 0;
+          margin: auto; }
       .roadmap .roadmap-graph .year.y-3 {
         left: 506px; }
+        .roadmap .roadmap-graph .year.y-3:after {
+          content: '';
+          position: absolute;
+          top: -220%;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          right: 0;
+          margin: auto; }
       .roadmap .roadmap-graph .year.y-4 {
         left: 725px; }
+        .roadmap .roadmap-graph .year.y-4:after {
+          content: '';
+          position: absolute;
+          top: -335%;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          right: 0;
+          margin: auto; }
       .roadmap .roadmap-graph .year.y-5 {
         left: 943px; }
+        .roadmap .roadmap-graph .year.y-5:after {
+          content: '';
+          position: absolute;
+          top: -630%;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          right: 0;
+          margin: auto; }
       .roadmap .roadmap-graph .year .num {
         font-size: 16px;
         color: #FFFFFF;
