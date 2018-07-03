@@ -36,7 +36,7 @@ $(function() {
 		$('[data-link]').on('click', function() {
 			var link = $(this).attr('data-link');
 		});
-	}  else {
+	} else {
 		$(window).on('load', function() {
 			var mainHeight = $('.main').height();
 			$('#sidebar').css('top', (mainHeight+29) + 'px');
@@ -120,13 +120,13 @@ $(function() {
 	// triangles
 	triangles();
 	// main height
-	mainHeight();
+	// mainHeight();
 
 	// resize
 	$(window).on('resize', function() {
 		// triangles
 		triangles();
-		mainHeight();
+		// mainHeight();
 	});
 
 
