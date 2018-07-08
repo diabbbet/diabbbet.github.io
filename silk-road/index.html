@@ -67,11 +67,11 @@
 				<div class="burger" id="burger"></div>
 				<div class="logo"></div>
 				<nav class="nav" id="nav">
-					<a href="#" class="item">Advantages</a>
-					<a href="#" class="item">For Investors</a>
-					<a href="#" class="item">Roadmap</a>
+					<a href="#" data-link="advantages" class="item">Advantages</a>
+					<a href="#" data-link="how" class="item">For Investors</a>
+					<a href="#" data-link="roadmap" class="item">Roadmap</a>
 					<a href="docs/wp.pdf" target="_blank" class="item">Whitepaper</a>
-					<a href="#section-9" class="item">Team</a>
+					<a href="#" data-link="team" class="item">Team</a>
 					<a href="#" class="item">FAQ</a>
 				</nav>
 			</div>
@@ -147,11 +147,11 @@
 				</div>
 			</div>
 
-			<a href="#" class="scroll-btn" id="scroll_btn"></a>
+			<a href="#" data-link="video" class="scroll-btn" id="scroll_btn"></a>
 		</div>
 	</section>
 
-	<section class="video">
+	<section class="video" data-anchor="video">
 		<div class="bg-block">
 			<div class="dot-1" style="background-image: url(img/dot1.png);"></div>
 			<div class="dot-2" style="background-image: url(img/dot2.png);"></div>
@@ -193,7 +193,7 @@
 		</div>
 	</section>
 
-	<section class="our-head">
+	<section class="our-head" data-anchor="advantages">
 		<div class="container">
 			<h2 class="h2">9 our advatages</h2>
 		</div>
@@ -243,7 +243,7 @@
 		</div>
 	</section>
 
-	<section class="how how-1">
+	<section class="how how-1" data-anchor="how">
 		<div class="container">
 			<h2 class="h2">How do investors make money?</h2>
 
@@ -478,7 +478,7 @@
 		</div>
 	</section>
 
-	<section class="roadmap">
+	<section class="roadmap" data-anchor="roadmap">
 		<div class="roadmap-triangle" id="roadmap_triangle"></div>
 		<div class="container">
 			<h2 class="h2">Roadmap</h2>
@@ -810,9 +810,6 @@
 	</section>
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
-	<script src="js/libs/scrolloverflow.min.js"></script>
-	<script src="js/libs/jquery.fullpage.min.js"></script>
-	<!-- <script src="js/libs/jquery.mousewheel.min.js"></script> -->
 	<script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/libs/jquery-ui.min.js"></script>
