@@ -188,23 +188,23 @@ ul, ol {
   position: fixed;
   top: 0;
   height: 100%;
-  right: 0;
+  left: 0;
   width: 80px;
   background: #131568;
   z-index: 100;
-  -webkit-transform: translateX(90%);
-      -ms-transform: translateX(90%);
-          transform: translateX(90%);
+  -webkit-transform: translateX(-90%);
+      -ms-transform: translateX(-90%);
+          transform: translateX(-90%);
   -webkit-transition: 200ms;
   -o-transition: 200ms;
   transition: 200ms; }
   .sidebar .circle-btn {
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     width: 25px;
     height: 25px;
-    margin-left: -12.5px;
+    margin-right: -12.5px;
     margin-top: -12.5px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -215,14 +215,18 @@ ul, ol {
     cursor: pointer;
     -webkit-transition: 200ms;
     -o-transition: 200ms;
-    transition: 200ms; }
+    transition: 200ms;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
     .sidebar .circle-btn.active {
-      -webkit-transform: scale(-1, 1);
-          -ms-transform: scale(-1, 1);
-              transform: scale(-1, 1); }
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
   .sidebar .label {
     position: absolute;
     top: 50%;
+    right: -5px;
     -webkit-transform: rotate(90deg) translateX(-20px);
         -ms-transform: rotate(90deg) translateX(-20px);
             transform: rotate(90deg) translateX(-20px);
@@ -235,6 +239,7 @@ ul, ol {
     cursor: pointer; }
   .sidebar .social-btns {
     position: absolute;
+    right: -3px;
     bottom: 0;
     top: 60%;
     display: -webkit-box;
@@ -2402,6 +2407,106 @@ ul, ol {
     height: 522px;
     background-image: url("../img/partners_bg.png"); }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  padding: 100px 0;
+  overflow: auto; }
+  .modal .modal-content {
+    position: relative;
+    max-width: 940px;
+    min-height: 100%;
+    margin: auto;
+    padding: 100px 88px 30px;
+    background-image: url("../img/modal-content-bg.png");
+    background-position: top center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat; }
+    .modal .modal-content .modal-close {
+      position: absolute;
+      top: 65px;
+      right: 80px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer; }
+      .modal .modal-content .modal-close span {
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5px;
+        width: 25px;
+        height: 3px;
+        background: #B3237D;
+        -webkit-box-shadow: 0px 0px 8px #CC1E8A;
+                box-shadow: 0px 0px 8px #CC1E8A; }
+        .modal .modal-content .modal-close span:first-child {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        .modal .modal-content .modal-close span:last-child {
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+    .modal .modal-content .faq-title {
+      font-weight: bold;
+      font-size: 60px;
+      letter-spacing: -1px;
+      color: #FFFFFF;
+      margin: 0 0 10px 0;
+      padding: 0 52px; }
+    .modal .modal-content .faq-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 35px 52px 30px; }
+      .modal .modal-content .faq-item:last-child {
+        border: none; }
+      .modal .modal-content .faq-item .faq-item-title {
+        font-weight: bold;
+        font-size: 24px;
+        color: #FFFFFF; }
+      .modal .modal-content .faq-item .faq-item-desc {
+        font-weight: 900;
+        line-height: 26px;
+        font-size: 16px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        margin-top: 12px; }
+    .modal .modal-content .infograf-title {
+      font-weight: bold;
+      font-size: 48px;
+      text-align: center;
+      letter-spacing: -0.8px;
+      color: #FFFFFF;
+      max-width: 430px;
+      margin: auto; }
+    .modal .modal-content .infograf-desc {
+      font-weight: 900;
+      line-height: 28px;
+      font-size: 18px;
+      text-align: center;
+      color: #50528E;
+      margin-top: 40px; }
+    .modal .modal-content .infograf-diagramm-title {
+      font-weight: bold;
+      font-size: 28px;
+      letter-spacing: -0.466667px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-top: 60px; }
+    .modal .modal-content .modal-diagramm {
+      max-width: 730px;
+      height: 345px;
+      margin: 45px auto 0;
+      background-image: url("../img/modal-diagramm.svg");
+      background-repeat: no-repeat;
+      background-position: 100%;
+      margin-bottom: 90px; }
+
 @-webkit-keyframes glowing {
   0% {
     opacity: 0; }
@@ -3883,7 +3988,45 @@ ul, ol {
               -ms-flex-order: 1;
                   order: 1; }
         .partners .partners-form .item .partners-logo {
-          text-align: center; } }
+          text-align: center; }
+  .modal {
+    padding: 60px 0 70px; }
+    .modal .modal-content {
+      max-width: 640px;
+      padding: 80px 35px 30px; }
+      .modal .modal-content .modal-close {
+        width: 20px;
+        top: 32px;
+        right: 32px; }
+        .modal .modal-content .modal-close span {
+          width: 20px; }
+      .modal .modal-content .faq-title {
+        font-size: 48px;
+        margin-bottom: 5px;
+        padding: 0 30px 0; }
+      .modal .modal-content .faq-item {
+        padding: 30px 30px 20px; }
+        .modal .modal-content .faq-item .faq-item-title {
+          font-size: 21px; }
+        .modal .modal-content .faq-item .faq-item-title {
+          font-size: 14px;
+          line-height: 24px; }
+      .modal .modal-content .infograf-title {
+        font-size: 40px; }
+      .modal .modal-content .infograf-desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 35px; }
+      .modal .modal-content .infograf-diagramm-title {
+        font-size: 28px;
+        margin-top: 40px; }
+      .modal .modal-content .modal-diagramm {
+        width: 585px;
+        height: 399px;
+        background-image: url("../img/modal-diagramm-tablet.svg");
+        -webkit-background-size: 100% 100%;
+                background-size: 100%;
+        background-position: center center; } }
 
 @media (max-width: 699px) {
   h1, .h1 {
@@ -4197,4 +4340,39 @@ ul, ol {
         margin-top: 30px; }
   .team .team-controlls .item-content .photo-wrapper {
     width: 80px;
-    height: 80px; } }
+    height: 80px; }
+  .modal {
+    padding: 20px 20px 60px; }
+    .modal .modal-content {
+      padding-top: 65px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px; }
+      .modal .modal-content .modal-close {
+        top: 24px;
+        right: 20px;
+        width: 18px;
+        height: 18px; }
+        .modal .modal-content .modal-close span {
+          width: 18px; }
+      .modal .modal-content .faq-title {
+        font-size: 28px;
+        padding: 0;
+        text-align: center; }
+      .modal .modal-content .faq-item {
+        padding-left: 0;
+        padding-right: 0; }
+      .modal .modal-content .faq-item-title {
+        font-size: 18px;
+        text-align: center; }
+      .modal .modal-content .faq-item-desc {
+        font-size: 18px;
+        text-align: center;
+        font-size: 14px; }
+      .modal .modal-content .infograf-title {
+        text-align: center;
+        font-size: 28px; }
+      .modal .modal-content .modal-diagramm {
+        width: 331px;
+        height: 355px;
+        margin-top: 20px; } }

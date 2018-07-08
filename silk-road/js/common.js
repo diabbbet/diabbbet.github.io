@@ -199,6 +199,18 @@ $(function() {
 		$('.how-diagramm .lock[data-color="'+attr+'"]').addClass('active');
 	});
 
+	$('[data-modal-link]').on('click', function() {
+		var modal = $(this).attr('data-modal-link');
+		$('[data-modal="'+modal+'"]').show();
+		$('body').addClass('hidden');
+		return false;
+	});
+
+	$('.modal .modal-close').on('click', function() {
+		$('body').removeClass('hidden');
+		$(this).closest('.modal').hide();
+	});
+
 
 });
 
