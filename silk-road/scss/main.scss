@@ -115,7 +115,7 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0; right: 0;
-	z-index: 4;
+	z-index: 199;
 	.burger {
 		display: none;
 		position: absolute;
@@ -146,6 +146,9 @@ a {
 			transition: 100ms;
 		}
 		&.active {
+			position: fixed;
+			top: 26px;
+			margin: 0;
 			&:before {
 				transform: translateY(4px) rotate(45deg);
 			}
@@ -286,7 +289,7 @@ a {
 	position: relative;
 	padding-bottom: 10px;
 	height: 100%;
-	background-image: url('../img/angar-bg.png');
+	background-image: url('../img/hero-img.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -303,17 +306,6 @@ a {
 		background-image: url('../img/angar-bg-fill.png');
 		z-index: 2;
 		animation: glowing 3s infinite linear;
-	}
-	.main-angar2 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-image: url('../img/angar-bg2.png');
 	}
 	.repeat-lines {
 		position: absolute;
@@ -1372,6 +1364,8 @@ a {
 }
 
 .calculator {
+	padding: 80px 0;
+	position: relative;
 	background-color: #1D206E;
 	background-image: url('../img/calc_bg.png');
 	background-repeat: no-repeat;
@@ -2971,7 +2965,6 @@ a {
 	}
 
 	.calculator {
-		padding: 30px 0 0;
 		background-color: #1D206E;
 		background-image: url('../img/calc_bg.png');
 		background-repeat: no-repeat;
@@ -3685,6 +3678,7 @@ a {
 			}
 			.modal-diagramm {
 				width: 585px;
+				max-width: 100%;
 				height: 399px;
 				background-image: url('../img/modal-diagramm-tablet.svg');
 				background-size: 100%;
