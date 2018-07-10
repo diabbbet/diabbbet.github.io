@@ -4092,10 +4092,11 @@ ul, ol {
       .main .buttons .btn-blue {
         margin-top: 20px; }
   .sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
     height: 80px;
     width: 100%;
     -webkit-transform: none;
@@ -4374,4 +4375,15 @@ ul, ol {
       .modal .modal-content .modal-diagramm {
         width: 331px;
         height: 355px;
-        margin-top: 20px; } }
+        margin-top: 20px;
+        margin-bottom: 0; } }
+
+@media (max-width: 360px) {
+  .how .how-bottom .left .how-diagramm {
+    max-width: 300px; }
+  .how .how-bottom .num {
+    position: absolute !important;
+    top: 40% !important;
+    left: 40% !important;
+    color: #fff !important;
+    font-size: 24px !important; } }
