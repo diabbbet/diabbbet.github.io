@@ -3441,8 +3441,8 @@ a {
 			padding-top: 50px;
 			.num {
 				position: absolute !important;
-				top: 45% !important;
-				left: 40% !important;
+				top: 48% !important;
+				left: 44% !important;
 				color: #fff !important;
 				font-size: 30px !important;
 			}
@@ -3914,6 +3914,10 @@ a {
 			}
 		}
 		.how-bottom {
+			.num {
+				top: 45% !important;
+				left: 40% !important;
+			}
 			.left {
 				.how-diagramm {
 					width: 100%;

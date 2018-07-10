@@ -1,14 +1,25 @@
 $(function() {
 
 	$('#sidebar .label, #sidebar .circle-btn').on('click', function() {
-		var $this = $(this);
-		$this.parent().addClass('show');
-		var top = $('.calculator').offset().top;
-		$('body,html').animate({scrollTop: top}, 1000);
+		if ($(window).width() < 1025 && $(this).hasClass('circle-btn')) {
+			$('#sidebar').addClass('active');
+			$('#sidebar').find('.circle-btn').addClass('active');
+		} else {
+			var $this = $(this);
+			$this.parent().addClass('show');
+			var top = $('.calculator').offset().top;
+			$('body,html').animate({scrollTop: top}, 1000);
 
-		setTimeout(function(){
-			$this.parent().removeClass('show');
-		}, 500);
+			setTimeout(function(){
+				$this.parent().removeClass('show');
+			}, 500);
+		}
+		
+	});
+
+	$('body').find('*').not('.circle-btn, #sidebar').on('click', function() {
+		$('#sidebar').removeClass('active');
+		$('#sidebar').find('.circle-btn').removeClass('active');
 	});
 
 	$('[data-link]').on('click', function() {
@@ -160,13 +171,17 @@ $(function() {
 		$('#video video').attr('src', url);
 	});
 
-	$('#sidebar').on('mouseenter', function() {
-		$(this).addClass('active');
-		$(this).find('.circle-btn').addClass('active');
-	}).on('mouseleave', function() {
-		$(this).removeClass('active');
-		$(this).find('.circle-btn').removeClass('active');
-	});
+	if ($(window).width() > 1024) {
+
+		$('#sidebar').on('mouseenter', function() {
+			$(this).addClass('active');
+			$(this).find('.circle-btn').addClass('active');
+		}).on('mouseleave', function() {
+			$(this).removeClass('active');
+			$(this).find('.circle-btn').removeClass('active');
+		});
+
+	}
 
 	$('#burger').on('click', function() {
 		$('body').toggleClass('hidden');

@@ -3809,8 +3809,8 @@ ul, ol {
       padding-top: 50px; }
       .how .how-bottom .num {
         position: absolute !important;
-        top: 45% !important;
-        left: 40% !important;
+        top: 48% !important;
+        left: 44% !important;
         color: #fff !important;
         font-size: 30px !important; }
       .how .how-bottom .title {
@@ -4219,6 +4219,9 @@ ul, ol {
                 transform: none !important;
         top: 0 !important;
         margin-top: 30px; }
+    .how .how-bottom .num {
+      top: 45% !important;
+      left: 40% !important; }
     .how .how-bottom .left .how-diagramm {
       width: 100%;
       -webkit-background-size: 100% 100%;
