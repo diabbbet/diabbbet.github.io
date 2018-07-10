@@ -1439,7 +1439,7 @@ ul, ol {
         .how .how-bottom .left .how-diagramm .num {
           position: absolute;
           top: 47%;
-          left: 39%;
+          left: 43%;
           color: #fff;
           font-size: 40px; }
         .how .how-bottom .left .how-diagramm .lock {
@@ -3813,8 +3813,12 @@ ul, ol {
           -ms-flex-direction: column;
               flex-direction: column;
       padding-top: 50px; }
-      .how .how-bottom .line {
-        display: none; }
+      .how .how-bottom .num {
+        position: absolute !important;
+        top: 45% !important;
+        left: 40% !important;
+        color: #fff !important;
+        font-size: 30px !important; }
       .how .how-bottom .title {
         margin: auto;
         text-align: center; }

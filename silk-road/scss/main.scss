@@ -1323,7 +1323,7 @@ a {
 				.num {
 					position: absolute;
 					top: 47%;
-					left: 39%;
+					left: 43%;
 					color: #fff;
 					font-size: 40px;
 				}
@@ -3446,8 +3446,12 @@ a {
 		.how-bottom {
 			flex-direction: column;
 			padding-top: 50px;
-			.line {
-				display: none;
+			.num {
+				position: absolute !important;
+				top: 45% !important;
+				left: 40% !important;
+				color: #fff !important;
+				font-size: 30px !important;
 			}
 			.title {
 				margin: auto;
