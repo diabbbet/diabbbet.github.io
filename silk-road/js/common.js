@@ -17,6 +17,19 @@ $(function() {
 		
 	});
 
+	var spoilerCheck = 0;
+	$('.spoiler-btn').on('click', function() {
+		if (spoilerCheck == 0) {
+			$(this).text('Скрыть');
+			$(this).parent().find('.desc').addClass('full');
+			spoilerCheck = 1;
+		} else {
+			$(this).text('Показать еще');
+			$(this).parent().find('.desc').removeClass('full');
+			spoilerCheck = 0;
+		}
+	});
+
 	$('body').find('*').not('.circle-btn, #sidebar').on('click', function() {
 		$('#sidebar').removeClass('active');
 		$('#sidebar').find('.circle-btn').removeClass('active');
@@ -47,7 +60,6 @@ $(function() {
 	$('#team_controlls').slick({
 		slidesToShow: 5,
 		arrows: false,
-		draggable: false,
 		asNavFor: '#team',
 		focusOnSelect: true,
 		infinite: false,

@@ -1256,8 +1256,9 @@ ul, ol {
         line-height: 26px;
         font-size: 16px;
         text-align: center;
-        color: #50528E;
-        margin-top: 20px; }
+        color: #fff;
+        margin-top: 20px;
+        opacity: 0.8; }
 
 .how {
   position: relative;
@@ -1733,6 +1734,9 @@ ul, ol {
     position: relative; }
   .refferal .h2 {
     text-align: left; }
+  @media (min-width: 1044px) {
+    .refferal.refferal-2 .h2 {
+      font-size: 40px; } }
   .refferal .lines {
     margin-top: 70px; }
     .refferal .lines .item {
@@ -1884,9 +1888,10 @@ ul, ol {
       .refferal .diagramm-wrapper .item .desc {
         line-height: 26px;
         font-size: 16px;
-        color: #50528E;
+        color: #fff;
         max-width: 390px;
-        margin-top: 35px; }
+        margin-top: 35px;
+        opacity: 0.8; }
       .refferal .diagramm-wrapper .item .refferal-diagramm {
         position: relative;
         width: 300px;
@@ -2151,7 +2156,17 @@ ul, ol {
           opacity: 0.4;
           font-weight: 400;
           margin-top: 30px;
-          max-width: 430px; }
+          max-width: 430px;
+          overflow: hidden;
+          max-height: 175px; }
+          .team .team-items .item .col .desc.full {
+            max-height: 100%; }
+        .team .team-items .item .col .spoiler-btn {
+          color: #F12986;
+          cursor: pointer;
+          margin-top: 10px; }
+          .team .team-items .item .col .spoiler-btn:hover {
+            text-decoration: underline; }
         .team .team-items .item .col .social {
           display: -webkit-box;
           display: -webkit-flex;
@@ -2211,7 +2226,9 @@ ul, ol {
           bottom: -1px;
           width: 47px;
           height: 60px;
-          margin: auto; }
+          margin: auto;
+          -webkit-background-size: 100% 100%;
+                  background-size: 100%; }
       .team .team-controlls .item-content .name {
         font-weight: 500;
         font-size: 14px;
@@ -2220,7 +2237,8 @@ ul, ol {
         margin-top: 30px;
         -webkit-transition: 100ms;
         -o-transition: 100ms;
-        transition: 100ms; }
+        transition: 100ms;
+        padding: 0 5px; }
       .team .team-controlls .item-content:hover .name {
         color: #F12986; }
 

@@ -1139,8 +1139,9 @@ a {
 				line-height: 26px;
 				font-size: 16px;
 				text-align: center;
-				color: #50528E;
+				color: #fff;
 				margin-top: 20px;
+				opacity: 0.8;
 			}
 		}
 	}
@@ -1599,22 +1600,16 @@ a {
 	background-repeat: no-repeat;
 	.container {
 		position: relative;
-		.lines-wrapper {
-			// position: absolute;
-			// top: 0;
-			// left: 0; right: 0;
-			// &.animate {	
-			// 	opacity: 1;	
-			// 	transition: 100ms;	
-			// 	transition-delay: 2500ms;	
-			// 	&.visible {	
-			// 		opacity: 0;	
-			// 	}	
-			// }
-		}
 	}
 	.h2 {
 		text-align: left;
+	}
+	&.refferal-2 {
+		@media (min-width: 1044px) {
+			.h2 {
+				font-size: 40px;
+			}
+		}
 	}
 	.lines {
 		margin-top: 70px;
@@ -1777,9 +1772,10 @@ a {
 			.desc {
 				line-height: 26px;
 				font-size: 16px;
-				color: #50528E;
+				color: #fff;
 				max-width: 390px;
 				margin-top: 35px;
+				opacity: 0.8;
 			}
 			.refferal-diagramm {
 				position: relative;
@@ -2067,6 +2063,19 @@ a {
 					font-weight: 400;
 					margin-top: 30px;
 					max-width: 430px;
+					overflow: hidden;
+					max-height: 175px;
+					&.full {
+						max-height: 100%;
+					}
+				}
+				.spoiler-btn {
+					color: #F12986;
+					cursor: pointer;
+					margin-top: 10px;
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 				.social {
 					display: flex;
@@ -2130,6 +2139,7 @@ a {
 					width: 47px;
 					height: 60px;
 					margin: auto;
+					background-size: 100%;
 				}
 			}
 			.name {
@@ -2139,6 +2149,7 @@ a {
 				color: #fff;
 				margin-top: 30px;
 				transition: 100ms;
+				padding: 0 5px;
 			}
 			&:hover {
 				.name {
