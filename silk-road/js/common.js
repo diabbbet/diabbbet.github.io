@@ -62,7 +62,10 @@ $(function() {
 		arrows: false,
 		asNavFor: '#team',
 		focusOnSelect: true,
-		infinite: false,
+		infinite: true,
+		swipeToSlide: true,
+		centerMode: true,
+		centerPadding: 0,
 		responsive: [{
 			breakpoint: 1044,
 			settings: {
