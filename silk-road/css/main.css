@@ -196,25 +196,24 @@ ul, ol {
   width: 80px;
   background: #131568;
   z-index: 100;
-  -webkit-transform: translateX(-90%);
-      -ms-transform: translateX(-90%);
-          transform: translateX(-90%);
+  -webkit-transform: translateX(-62.5%);
+      -ms-transform: translateX(-62.5%);
+          transform: translateX(-62.5%);
   -webkit-transition: 200ms;
   -o-transition: 200ms;
   transition: 200ms; }
   .sidebar .circle-btn {
     position: absolute;
     top: 50%;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    margin-right: -12.5px;
-    margin-top: -12.5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     background-color: #fff;
     background-image: url("../img/chevron-left.svg");
-    background-position: center center;
+    background-position: 6px center;
     background-repeat: no-repeat;
     cursor: pointer;
     -webkit-transition: 200ms;
@@ -230,7 +229,7 @@ ul, ol {
   .sidebar .label {
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: 2px;
     -webkit-transform: rotate(90deg) translateX(-20px);
         -ms-transform: rotate(90deg) translateX(-20px);
             transform: rotate(90deg) translateX(-20px);
@@ -241,9 +240,11 @@ ul, ol {
     -o-transition: 200ms;
     transition: 200ms;
     cursor: pointer; }
+    .sidebar .label:hover {
+      color: #F12986; }
   .sidebar .social-btns {
     position: absolute;
-    right: -3px;
+    left: 0;
     bottom: 0;
     top: 60%;
     display: -webkit-box;
@@ -259,7 +260,7 @@ ul, ol {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80px; }
+    width: 60px; }
     .sidebar .social-btns .social-btn {
       margin-bottom: 35px;
       -webkit-transition: 100ms;
