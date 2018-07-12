@@ -17,6 +17,11 @@ $(function() {
 		
 	});
 
+	$('#lng').find('.item.active').on('click', function() {
+		$(this).closest('#lng').toggleClass('open');
+		return false;
+	});
+
 	var spoilerCheck = 0;
 	$('.spoiler-btn').on('click', function() {
 		if (spoilerCheck == 0) {
