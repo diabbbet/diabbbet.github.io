@@ -176,7 +176,8 @@ ul, ol {
               flex: 1 0;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
-              justify-content: space-around; }
+              justify-content: space-around;
+      max-width: 650px; }
       .header .header-wrapper .nav .item {
         font-family: "Circular Std", sans-serif;
         font-size: 16px;
