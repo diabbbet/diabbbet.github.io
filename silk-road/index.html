@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://vjs.zencdn.net/7.0.3/video-js.css">
 	<link rel="stylesheet" href="css/libs/slick.css">
 	<link rel="stylesheet" href="css/libs/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/main.css?v=7">
+	<link rel="stylesheet" href="css/main.css?v=9">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
 			</div>
 
 			<div class="buttons">
-				<a href="http://invest.silkroadmining.io" class="btn-pink">Start with us</a>
+				<a href="#" data-modal-link="form" class="btn-pink">Start with us</a>
 				<a href="docs/wp1.pdf" target="_blank" class="btn-blue">Whitepaper</a>
 			</div>
 
@@ -1035,6 +1035,25 @@
 			</div>
 		</div>
 
+		<div class="modal" data-modal="form">
+			<div class="modal-form">
+				<div class="modal-close">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="modal-form-title">Token sale</div>
+
+				<form id="modal_form">
+					<label class="field">
+						<input type="email" name="email" class="input-text validate placeholder" data-validate="email" data-placeholder="Type your E-mail">
+					</label>
+					<button class="btn-submit">Subscribe</button>
+					<div class="grats" id="grats2"><span></span></div>
+				</form>
+			</div>
+		</div>
+
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
 		<script src="js/libs/slick.min.js"></script>
@@ -1042,6 +1061,6 @@
 		<script src="js/libs/punch.js"></script>
 		<script src="js/libs/jquery.viewportchecker.js"></script>
 		<script src="js/libs/form.js"></script>
-		<script src="js/common.js?v=4"></script>
+		<script src="js/common.js?v=7"></script>
 	</body>
 	</html>

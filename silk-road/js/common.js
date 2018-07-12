@@ -119,6 +119,7 @@ $(function() {
 
 	// form
 	form();
+	form2();
 	// countdown
 	countdown();
 
@@ -303,6 +304,62 @@ function form() {
 			setTimeout(function(){
 				clearForm($form);
 				$('#grats').hide();
+			}, 2000);
+		}
+	}
+}
+
+// form
+function form2() {
+
+	if ($('#modal_form').length) {
+		var $form = $('#modal_form');
+		$form.on('change', '.validate', function(){
+			validateField($(this));
+		});
+
+		$form.find('.btn-submit').on('click', function(){
+			if ($(this).hasClass('disabled')) {
+				return false;
+			} else {
+				if (validateForm($form)) {
+					$(this).addClass('disabled');
+					var data = $form.serialize();
+					$.ajax({
+						url: 'mail.php',
+						type: 'POST',
+						dataType: 'json',
+						data: data,
+						success: function(data) {
+							successForm();
+						},
+						error: function(data) {
+							errorForm();
+						},
+						timeout: 60000
+					});
+				}
+				return false;
+			}
+		});
+
+		function successForm() {
+			$('#grats2 span').text('Заявка отправлена!');
+			$('#grats2').show();
+
+			setTimeout(function(){
+				clearForm($form);
+				$('#grats2').hide();
+			}, 2000);
+		}
+
+		function errorForm() {
+			$('#grats2 span').text('Что-то пошло не так!');
+			$('#grats2').show();
+
+			setTimeout(function(){
+				clearForm($form);
+				$('#grats2').hide();
 			}, 2000);
 		}
 	}
