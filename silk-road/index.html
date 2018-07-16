@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://vjs.zencdn.net/7.0.3/video-js.css">
 	<link rel="stylesheet" href="css/libs/slick.css">
 	<link rel="stylesheet" href="css/libs/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/main.css?v=10">
+	<link rel="stylesheet" href="css/main.css?v=11">
 </head>
 
 <body>
@@ -38,15 +38,23 @@
 					<a href="docs/wp1.pdf" target="_blank" class="item">Whitepaper</a>
 					<a href="#" data-link="team" class="item">Team</a>
 					<a href="#" data-modal-link="faq" class="item">FAQ</a>
+
+					<div class="item lang">
+						<div class="lang-item lang-change">RU/language <div class="icon-triangle"></div></div>
+						<div class="lang-popup">
+							<a href="#" class="lang-item">EN/language</a>
+							<a href="#" class="lang-item">GR/language</a>
+						</div>
+					</div>
 				</nav>
-				<div class="lng" id="lng">
+				<!-- <div class="lng" id="lng">
 					<div class="lng-wrapper">
 						<a href="#" class="item active" style="background-image: url(img/lng/us.svg);"></a>
 						<a href="#" class="item" style="background-image: url(img/lng/ru.svg);"></a>
 						<a href="#" class="item" style="background-image: url(img/lng/chi.svg);"></a>
 						<a href="#" class="item" style="background-image: url(img/lng/uae.svg);"></a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</header>
@@ -334,24 +342,24 @@
 						<div class="calc-controlls">
 							<div class="total">
 								<div class="label">Investment amount:</div>
-								<input id="invest" type="text" class="total-input" data-range="1" data-min="100" data-max="20000000" data-val="800000" value="800000">
+								<input id="invest" type="text" class="total-input" data-range="1" data-min="100" data-max="20000000" data-val="2000" value="2000">
 							</div>
 
-							<div class="range-slider" data-range="1" data-val="800000" data-min="100" data-max="20000000" data-step="10"></div>
+							<div class="range-slider" data-range="1" data-val="2000" data-min="100" data-max="20000000" data-step="10"></div>
 
 							<div class="total">
 								<div class="label">BTC price:</div>
-								<input id="btc" type="text" class="total-input" data-range="2" data-min="6000" data-max="25000" data-val="6500" value="6500">
+								<input id="btc" type="text" class="total-input" data-range="2" data-min="6000" data-max="25000" data-val="9000" value="9000">
 							</div>
 
-							<div class="range-slider" data-range="2" data-min="6000" data-max="25000" data-step="100" data-val="6500"></div>
+							<div class="range-slider" data-range="2" data-min="6000" data-max="25000" data-step="100" data-val="9000"></div>
 
 							<div class="total">
 								<div class="label">ASIC price:</div>
-								<input id="asic" type="text" class="total-input" data-range="3" data-min="500" data-max="4000" data-step="100" data-val="2000" value="2000">
+								<input id="asic" type="text" class="total-input" data-range="3" data-min="500" data-max="4000" data-step="100" data-val="800" value="800">
 							</div>
 
-							<div class="range-slider" data-range="3" data-min="500" data-max="4000" data-step="100" data-val="2000"></div>
+							<div class="range-slider" data-range="3" data-min="500" data-max="4000" data-step="100" data-val="800"></div>
 						</div>
 
 						<div class="calc-months">
@@ -1069,6 +1077,6 @@
 		<script src="js/libs/punch.js"></script>
 		<script src="js/libs/jquery.viewportchecker.js"></script>
 		<script src="js/libs/form.js"></script>
-		<script src="js/common.js?v=10"></script>
+		<script src="js/common.js?v=11"></script>
 	</body>
 	</html>

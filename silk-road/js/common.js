@@ -17,10 +17,15 @@ $(function() {
 		
 	});
 
-	$('#lng').find('.item.active').on('click', function() {
-		$(this).closest('#lng').toggleClass('open');
-		return false;
+	$('.lang-change').on('click', function() {
+		$(this).siblings('.lang-popup').toggleClass('active');
+		$(this).toggleClass('active');
 	});
+
+	// $('#lng').find('.item.active').on('click', function() {
+	// 	$(this).closest('#lng').toggleClass('open');
+	// 	return false;
+	// });
 
 	var spoilerCheck = 0;
 	$('.spoiler-btn').on('click', function() {
