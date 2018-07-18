@@ -1520,7 +1520,7 @@ ul, ol {
         margin-top: 100px; }
         .how .how-bottom .left .how-diagramm .num {
           position: absolute;
-          top: 47%;
+          top: 155px;
           left: 43%;
           color: #fff;
           font-size: 40px; }
@@ -4030,7 +4030,7 @@ ul, ol {
       padding-top: 50px; }
       .how .how-bottom .num {
         position: absolute !important;
-        top: 48% !important;
+        top: 160px !important;
         left: 44% !important;
         color: #fff !important;
         font-size: 30px !important; }
@@ -4446,7 +4446,7 @@ ul, ol {
         top: 0 !important;
         margin-top: 30px; }
     .how .how-bottom .num {
-      top: 45% !important;
+      top: 87px !important;
       left: 40% !important; }
     .how .how-bottom .left .how-diagramm {
       width: 100%;
@@ -4626,7 +4626,7 @@ ul, ol {
     max-width: 300px; }
   .how .how-bottom .num {
     position: absolute !important;
-    top: 40% !important;
+    top: 80px !important;
     left: 40% !important;
     color: #fff !important;
     font-size: 24px !important; } }
