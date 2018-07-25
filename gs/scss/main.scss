@@ -96,6 +96,13 @@ body {
 	letter-spacing: -0.4px;
 	color: #ffffff;
 	line-height: 100px;
+	transition: 500ms;
+	transform: translateY(0);
+	opacity: 1;
+	&.animate {
+		transform: translateY(100px);
+		opacity: 0;
+	}
 	a {
 		display: inline-block;
 		text-decoration: none;
