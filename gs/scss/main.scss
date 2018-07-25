@@ -52,53 +52,12 @@ body {
 	overflow: hidden;
 	.circles-wrapper {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 960px;
-		height: 960px;
-		margin-left: -480px;
-		margin-top: -480px;
-		.circle {
-			position: absolute;
-			top: 0; bottom: 0;
-			left: 0; right: 0;
-			border: 1px solid #000;
-			border-radius: 50%;
-			transform: scale(2);
-			animation: wawes infinite 3000ms linear;
-			animation-play-state: running;
-			&.circle-1 {
-				animation-delay: 300ms;
-			}
-			&.circle-2 {
-				animation-delay: 600ms;
-			}
-			&.circle-3 {
-				animation-delay: 900ms;
-			}
-			&.circle-4 {
-				animation-delay: 1200ms;
-			}
-			&.circle-5 {
-				animation-delay: 1500ms;
-			}
-			&.circle-6 {
-				animation-delay: 1800ms;
-			}
-			&.circle-7 {
-				animation-delay: 2100ms;
-			}
-			&.circle-8 {
-				animation-delay: 2400ms;
-			}
-			&.circle-9 {
-				animation-delay: 2700ms;
-			}
-		}
-		&.stop {
-			.circle {
-				animation-play-state: paused;
-			}
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		svg {
+			width: 100%;
+			height: 100%;
 		}
 	}
 	.left {
@@ -190,14 +149,5 @@ body {
 				color: #fff;
 			}
 		}
-	}
-}
-
-@keyframes wawes {
-	0% {
-		transform: scale(0);
-	}
-	100% {
-		transform: scale(2);
 	}
 }
