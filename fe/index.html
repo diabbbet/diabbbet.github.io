@@ -9,49 +9,414 @@
 <link href="app.css" rel="stylesheet"></head>
 
 <body>
-	<header>
+	<header class="animate-section">
 		<div class="container flex align-center space-between flex-column-mob">
 			<div class="logo">
-				<img src="../img/logo.svg" alt="">
+				<img src="logo.svg" alt="">
 			</div>
 
 			<nav class="nav">
-				<div class="item"><a href="#">White paper</a></div>
-				<div class="item"><a href="#">Partnenrs</a></div>
-				<div class="item"><a href="#">Roadmap</a></div>
-				<div class="item"><a href="#">Team</a></div>
-				<div class="item"><a href="#">Contact</a></div>
-				<div class="item lang">RU</div>
+				<div class="nav-cnt">
+					<div class="item animate-1"><a href="#">White paper</a></div>
+					<div class="item animate-2"><a href="#" data-link="partners">Partners</a></div>
+					<div class="item animate-3"><a href="#" data-link="roadmap">Roadmap</a></div>
+					<div class="item animate-4"><a href="#" data-link="team">Team</a></div>
+					<div class="item animate-5"><a href="#">Contact</a></div>
+					<div class="item animate-6 lang">
+						<div class="lang-wrapper">
+							<div class="lang-item active">RU</div>
+							<div class="lang-popup">
+								<a href="#" class="lang-item">EN</a>
+								<a href="#" class="lang-item">ZH</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</nav>
+
+			<div class="burger" id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 	</header>
+
 	<main>
-		<section class="main-section">
+		<section class="main-section animate-section">
 			<div class="main-section__string">Finexpo</div>
+
 			<div class="main-section__img"></div>
 
 			<div class="container">
-				<h1 class="h1">Some headline information</h1>
-				<p class="text lg white opacity">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue
-					enim, pulvinar lobortis nibh lacinia at.</p>
+				<h1 class="h1 animate-1">Some headline information</h1>
+
+				<p class="text light lg white opacity animate-2">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.</p>
 
 				<div class="btns-wrapper">
-					<a href="#" class="btn md white">Video <svg width="9" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v10l9-5-9-5z" fill="#F58A1E" /></svg></a>
-					<a href="#" class="btn md white">White paper</a>
+					<a href="#" class="btn md white animate-3">Video <svg width="9" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v10l9-5-9-5z" fill="#F58A1E" /></svg></a>
+
+					<a href="#" class="btn md white animate-4">White paper</a>
 				</div>
 			</div>
 		</section>
 
-		<section class="default-section black">
+		<section class="default-section black animate-section">
+			<div class="container md">
+				<p class="text sm light white animate-1">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros <span class="blue">eget libero posuere vulputate</span>. Etiam elit elit, elementum sed varius at, adipiscing vitae est.</p>
+
+				<a href="#" class="btn lg blue mt24 animate-2">Private Area</a>
+			</div>
+		</section>
+
+		<section class="default-section white animate-section">
+			<div class="container md">
+				<h2 class="h2 black animate-1">About us</h2>
+
+				<p class="text light sm mt16 animate-2"><span class="blue">Mauris non tempor quam, et lacinia sapien.</span></p>
+
+				<p class="text light sm black mt16 animate-3">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie.</p>
+			</div>
+		</section>
+
+		<section class="default-section advantages animate-section">
+			<div class="container md">
+				<h2 class="h2 black animate-1">Our Advantages</h2>
+
+				<div class="row">
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-2">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="31" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.4 2h20.2L29 8.8H2L5.4 2z" stroke="#181818" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path stroke="#181818" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M5.4 8.8h20.3V24H5.4z"/><path stroke="#181818" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M12.1 15.5h6.8V24h-6.8z"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Cryptocurrency services in one place</p>
+						</div>
+					</div>
+
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-3">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="32" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 10c0-1.8 1.4-3.3 3.2-3.3 1.8 0 3.2 1.5 3.2 3.3 0 1.8-1.4 3.3-3.2 3.3a3.3 3.3 0 0 1-3.2-3.3zm14.4 6.7H4.8c-.9 0-1.6-.8-1.6-1.7V5c0-1 .7-1.7 1.6-1.7h22.4c.9 0 1.6.8 1.6 1.7v10c0 1-.7 1.7-1.6 1.7zM0 3.3v13.4C0 18.5 1.4 20 3.2 20h25.6c1.8 0 3.2-1.5 3.2-3.3V3.3C32 1.5 30.6 0 28.8 0H3.2A3.3 3.3 0 0 0 0 3.3z" fill="#181818"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Sources of Projected Income</p>
+						</div>
+					</div>
+
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-4">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="26" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2 8c0-3-2.3-5.4-5.2-5.4A5.2 5.2 0 0 0 7.8 8c0 3 2.3 5.3 5.2 5.3 2.9 0 5.2-2.4 5.2-5.3zM26 26.3h-6.5v-2.7h3.6c-1-5-5.2-7.9-10.1-7.9-5 0-9 3-10.1 8h3.6v2.6H0c0-6 3.4-10.5 8.1-12.3A8 8 0 0 1 13 0c4.3 0 7.8 3.5 7.8 8a8 8 0 0 1-3 6C22.7 16 26 20.5 26 26.5zm-11.7-2.7h2.6v2.7h-2.6V29h-2.6v-2.6H9.1v-2.7h2.6v-2.6h2.6v2.6z" fill="#181818"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Open to partnership</p>
+						</div>
+					</div>
+
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-5">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.4 16.8h19.2V2.4H2.4v14.4zM0 0v19.2h10.8v2.4H7.2V24h9.6v-2.4h-3.6v-2.4H24V0H0z" fill="#181818"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Token</p>
+						</div>
+					</div>
+
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-6">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="31" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.4 6.2h6.2V0h-6.2v6.2zM24.8 28H31v-6.2h-6.2V28zM0 28h6.2v-6.2H0V28zm4.7-9.3H1.5v-6.3H14v-3h3.2v3h12.3v6.3h-3v-3.1H4.6v3z" fill="#181818"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Franchise</p>
+						</div>
+					</div>
+
+					<div class="col w33 w50-tablet w100-mob mt48">
+						<div class="advantages-item animate-7">
+							<div class="advantages-icon">
+								<div class="block top"></div>
+
+								<div class="block bottom"></div>
+
+								<div class="icon">
+									<svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.4 16.6a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zM5.6 25.2a2.8 2.8 0 0 1 0-5.6c3.7 0 3.7 5.6 0 5.6zm0-16.8a2.8 2.8 0 0 1 0-5.6c3.7 0 3.7 5.6 0 5.6zm16.8-.2c-1.7 0-3.2.8-4.2 2l-7-4A5.6 5.6 0 0 0 5.5 0a5.6 5.6 0 1 0 4.6 8.8l6.7 4V15L10 19a5.6 5.6 0 0 0-10 3.4 5.6 5.6 0 1 0 11.1-.8l7-4.1a5.6 5.6 0 0 0 9.9-3.7c0-3-2.5-5.6-5.6-5.6z" fill="#181818"/></svg>
+								</div>
+							</div>
+
+							<p class="text lg bold blue mt24">Referral program</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="default-section white animate-section" data-anchor="partners">
+			<div class="container md">
+				<h2 class="h2 black animate-1">Our partners</h2>
+
+				<div class="row">
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-2"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-3"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-4"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-5"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-6"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-7"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-8"></div>
+					</div>
+					<div class="col w25 w50-tablet mt48">
+						<div class="partners-item  animate-9"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="default-section roadmap animate-section" data-anchor="roadmap">
 			<div class="container">
-				<p class="text sm white">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros <span class="blue">eget
-						libero posuere vulputate</span>. Etiam elit elit, elementum sed varius at, adipiscing vitae est.</p>
-				<a href="#" class="btn lg blue">Private Area</a>
+				<h2 class="h2 white animate-1">Roadmap</h2>
+
+				<div class="roadmap-items-wrapper mt48">
+					<div class="roadmap-items">
+						<div class="roadmap-item animate-fade-1">
+							<div class="circle active">
+								<span></span>
+							</div>
+
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+
+						<div class="roadmap-item mt48 animate-fade-2">
+							<div class="circle"></div>
+							
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+
+						<div class="roadmap-item mt48 animate-fade-3">
+							<div class="circle"></div>
+							
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+
+						<div class="roadmap-item mt48 animate-fade-4">
+							<div class="circle"></div>
+							
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+
+						<div class="roadmap-item mt48 animate-fade-5">
+							<div class="circle"></div>
+							
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+
+						<div class="roadmap-item mt48 animate-fade-6">
+							<div class="circle"></div>
+							
+							<p class="text lg white bold">June, 2019</p>
+
+							<p class="text sm xs-mob light white">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="default-section white animate-section" data-anchor="team">
+			<div class="container md">
+				<h2 class="h2 black animate-1">Team</h2>
+
+				<div class="row">
+					<div class="col w20 w50-tablet w100-mob mt48 animate-2">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold blue mt16">Aaron Murray</p>
+
+						<p class="text sm bold orange">Должность</p>
+
+						<p class="text sm blue">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-3">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold blue mt16">Aaron Murray</p>
+
+						<p class="text sm bold orange">Должность</p>
+
+						<p class="text sm blue">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-4">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold blue mt16">Aaron Murray</p>
+
+						<p class="text sm bold orange">Должность</p>
+
+						<p class="text sm blue">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-5">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold blue mt16">Aaron Murray</p>
+
+						<p class="text sm bold orange">Должность</p>
+
+						<p class="text sm blue">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-6">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold blue mt16">Aaron Murray</p>
+
+						<p class="text sm bold orange">Должность</p>
+
+						<p class="text sm blue">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="default-section gray animate-section">
+			<div class="container md">
+				<h2 class="h2 white animate-1">Advisors</h2>
+
+				<div class="row">
+					<div class="col w20 w50-tablet w100-mob mt48 animate-2">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold light-blue mt16">Aaron Murray</p>
+
+						<p class="text sm white opacity bold">Должность</p>
+
+						<p class="text sm white opacity">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-3">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold light-blue mt16">Aaron Murray</p>
+
+						<p class="text sm white opacity bold">Должность</p>
+
+						<p class="text sm white opacity">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-4">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold light-blue mt16">Aaron Murray</p>
+
+						<p class="text sm white opacity bold">Должность</p>
+
+						<p class="text sm white opacity">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+
+					<div class="col w20 w50-tablet w100-mob mt48 animate-5">
+						<div class="people-photo" style="background-image: url('../img/people-fish.png');"></div>
+
+						<p class="text xl bold light-blue mt16">Aaron Murray</p>
+
+						<p class="text sm white opacity bold">Должность</p>
+
+						<p class="text sm white opacity">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
-	<footer>footer</footer>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col fix-280 w100-tablet pt45 pb45 pt40-tablet pb40-tablet">
+					<div class="logo">
+						<img src="logo.svg" alt="">
+					</div>
+				</div>
+
+				<div class="col fluid w100-tablet pt45 pb45 pt32-tablet pb32-tablet bordered">
+					<form class="form" id="email_form">
+						<input type="email" placeholder="E-mail" required class="input mr30">
+						<button type="submit" class="btn md blue">Отправить</button>
+					</form>
+				</div>
+
+				<div class="col fix-230 w100-tablet pt45 pb45 pt40-tablet pb40-tablet">
+					<div class="social">
+						<a target="_blank" href="#" class="social-item">
+							<svg width="26" height="26" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.6.2c-2 0-4 .6-5.4 2a7.7 7.7 0 0 0-2 5.5C0 9-.4 18.8.6 21.4c.7 1.8 2 3.1 3.8 3.8.8.3 1.8.5 3.1.6 11.5.5 15.8.2 17.6-4.4.3-.8.6-1.7.6-3.1.5-11.5 0-14-2-16C22 .6 20.2-.5 7.5.1zm.1 23.3c-1.2 0-2-.3-2.4-.5-1.1-.4-2-1.3-2.4-2.4a67 67 0 0 1-.5-12.8c.1-1.5.4-2.9 1.4-4 1.3-1.2 3-1.8 14.4-1.3 1.5 0 2.8.3 3.9 1.4 1.3 1.3 2 3 1.4 14.3 0 1.3-.3 2-.5 2.4-1.1 3-3.8 3.4-15.3 2.9zM18.3 6a1.6 1.6 0 1 0 3.1 0 1.6 1.6 0 0 0-3 0zM6.3 13a6.6 6.6 0 1 0 13.3 0 6.6 6.6 0 0 0-13.3 0zm2.4 0a4.3 4.3 0 1 1 8.6 0 4.3 4.3 0 0 1-8.6 0z"/></svg>
+						</a>
+
+						<a target="_blank" href="#" class="social-item">
+							<svg width="13" height="26" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 26V14.3h3.5l.6-5.2H8.9V6.6c0-1.4 0-2.7 1.9-2.7h1.9V.2L9.4 0C6 0 3.8 2.2 3.8 6.1v3H0v5.2h3.8V26h5z"/></svg>
+						</a>
+
+						<a target="_blank" href="#" class="social-item">
+							<svg width="26" height="26" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 13.7h-.1a2.2 2.2 0 0 0-2.2-1.6c-.2 0-.5 0-.7.2l-2.5.8-1.7-5 2.5-.8c1-.3 1.8-1.4 1.5-2.6-.3-1-1.2-1.6-2.2-1.6l-.6.1-2.6.9-.8-2.5a2.3 2.3 0 0 0-4.3 1.3V3l.8 2.5 1.5 4.5 1.6 4.6-4.9 1.6-1.6-4.9L14 10 13 5.5 8.3 7.1l-.8-2.5A2.3 2.3 0 0 0 3 6L4 8.7l1.4 4.2L7 17.7l-2.4.8a2.3 2.3 0 0 0-1.4 3c.3.8 1.1 1.4 2 1.4.3 0 .6 0 .9-.2l2.4-.8.8 2.5a2.3 2.3 0 1 0 4.3-1.4l-.9-2.6 4.9-1.6.8 2.6a2.3 2.3 0 0 0 4.3-1.4l-.8-2.7 2.6-1s.9-.3 1.1-.7c.4-.6.5-1.3.3-1.9zM4.8 13l-2 .6-.7.2a2.2 2.2 0 0 1-2.1-1.6c-.3-1.2.3-2.4 1.4-2.8L4 8.6l.9 4.4z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <script type="text/javascript" src="main.js"></script></body>
 
